@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "lastModified": "2025-08-20T20:56:56.962Z",
+  "site": {
+    "title": "Rare Compute",
+    "description": "",
+    "author": "",
+    "baseUrl": "",
+    "ignorePatterns": {
+      "custom": [
+        "req-docs/**",
+        "rare-research-web/**"
+      ],
+      "enabled": true
+    }
+  },
+  "quartz": {
+    "enableSPA": true,
+    "enablePopovers": true,
+    "theme": {
+      "mode": "light"
+    },
+    "template": {
+      "id": "vanilla-quartz",
+      "name": "Vanilla Quartz",
+      "type": "github",
+      "url": "https://github.com/Clinamenic/meridian-quartz.git",
+      "branch": "meridian-main",
+      "description": "Default Meridian-Quartz template",
+      "isDefault": true
+    }
+  },
+  "deployment": {
+    "branch": "main",
+    "customCNAME": false
+  },
+  "metadata": {
+    "createdAt": "2025-08-20T20:56:56.954Z",
+    "workspacePath": "/Users/gideon/Hub/private/projects/RareResearch/org/website",
+    "initialized": true
+  }
+}
