@@ -75,13 +75,23 @@ const config: QuartzConfig = {
 **Key Changes**:
 
 - **Build Script**: Delegates to `.quartz/` directory
-- **Dependencies**: Includes all necessary Quartz dependencies at root level
+- **Minimal Dependencies**: No duplicate dependencies - all managed in `.quartz/`
+- **Clean Architecture**: Root only contains essential scripts
 
 ```json
 {
+  "name": "rarecompute-website",
+  "version": "1.0.0",
+  "description": "RareCompute website built with custom Quartz framework",
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  },
   "scripts": {
     "build": "cd .quartz && npm run build",
-    "serve": "cd .quartz && npm run serve"
+    "serve": "cd .quartz && npm run serve",
+    "quartz": "cd .quartz && tsx ./quartz/bootstrap-cli.mjs"
   }
 }
 ```
@@ -155,13 +165,15 @@ const config: QuartzConfig = {
 
 ### 3. Dependency Management
 
-**Decision**: Install dependencies in `.quartz/` directory
+**Decision**: Install dependencies only in `.quartz/` directory
 
 **Rationale**:
 
 - Keeps framework dependencies isolated
 - Maintains standard npm workflow
 - Avoids conflicts with root-level dependencies
+- Eliminates duplicate dependencies and reduces repository size
+- Single source of truth for all Quartz framework dependencies
 
 ### 4. GitHub Actions Simplification
 
@@ -193,6 +205,12 @@ const config: QuartzConfig = {
 
 **Solution**: Changed to `npm install` for better compatibility
 
+### Issue 4: Duplicate Dependencies
+
+**Problem**: Root and `.quartz/` directories both contained identical dependencies
+
+**Solution**: Removed all dependencies from root `package.json`, keeping only essential scripts
+
 ## Troubleshooting Solutions Applied
 
 | Issue                  | Solution                                |
@@ -201,6 +219,7 @@ const config: QuartzConfig = {
 | Cache path errors      | Removed cache configuration             |
 | Lockfile compatibility | Changed npm ci to npm install           |
 | Build path issues      | Used -d .. and -o public parameters     |
+| Duplicate dependencies | Removed root dependencies, kept only in .quartz/ |
 
 ## Benefits of This Architecture
 
@@ -209,6 +228,8 @@ const config: QuartzConfig = {
 3. **Standard Deployment**: Uses standard GitHub Pages workflow
 4. **Flexible Content**: Markdown files can be organized in root directory
 5. **Version Control**: All files are tracked in single repository
+6. **Efficient Dependencies**: No duplicate dependencies, single source of truth
+7. **Smaller Repository**: Reduced size by eliminating duplicate node_modules
 
 ## Maintenance Notes
 
@@ -227,8 +248,8 @@ const config: QuartzConfig = {
 ## Files Modified
 
 - `.quartz/quartz.config.ts` - Base URL and build configuration
-- `.quartz/package.json` - Build script parameters
-- `package.json` - Root-level build delegation
+- `.quartz/package.json` - Build script parameters and all dependencies
+- `package.json` - Minimal root configuration with script delegation only
 - `.github/workflows/deploy.yml` - GitHub Actions deployment workflow
 - `.gitignore` - Updated to include/exclude appropriate files
 
