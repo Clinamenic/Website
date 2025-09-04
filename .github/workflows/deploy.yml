@@ -24,8 +24,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22 # Match the Node version requirement from package.json
-          cache: "npm"
-          cache-dependency-path: ".quartz/package-lock.json"
       - name: Install Dependencies
         run: cd .quartz && npm ci
       - name: Build Quartz
