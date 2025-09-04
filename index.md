@@ -60,7 +60,7 @@ title: Rare Compute
 <div class="home-title-container" style="display: flex; flex-direction: row; gap: 20px; justify-content: center; align-items: center"> 
   <img style="width: 100px; height: 100px;" src="https://cdn.prod.website-files.com/664535c28e5d1426bc0a6cfc/6650a7cf72212e3832b7dfab_RC%20Logo%20New.png">
   <div>
-  <h1 class="home-title" style="text-transform: uppercase; margin: 0; font-weight: 200; font-size: clamp(35px, 6vw, 45px); wrap: no-wrap; text-align: center">Rare Compute</h1>
+  <h1 class="home-title" style="text-transform: uppercase; margin: 0rem 0rem; font-weight: 200; font-size: clamp(30px, 6vw, 45px); wrap: no-wrap; text-align: center">Rare Compute</h1>
   <p style="margin: 0; font-size: 16px; line-height: 1rem; justify-content: center;text-align: center;">Pioneering Cures Through
 Collaborative Computing</p>
   </div>
@@ -74,8 +74,8 @@ Rare Compute is a democratic, non-profit consortium uniting patients, doctors, a
 
 Join us in this critical mission as we mobilize the power of GPU-driven technology to unravel the complexities of DNA. Together, we can empower a global community eager for breakthroughs, placing hope back into the hands of those who suffer from rare diseases and giving long-awaited answers to the families who need them most, We're here to make a difference and change lives, one discovery at a time.
 
+See
 
-See 
 - [[Resources]]
 - [[Publications]]
 - [[Mission]]

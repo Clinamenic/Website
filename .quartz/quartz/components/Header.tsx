@@ -42,10 +42,12 @@ header h1 {
 
 .header-nav {
   padding: 0.75rem 1.5rem;
-  margin: 0.5rem 1rem;
+  margin: 0rem 1rem 0.5rem 1rem;
   background-color: var(--light);
   border: 1px solid var(--lightgray);
-  border-radius: 10px;
+  border-top: none;
+  border-bottom-left-radius: var(--border-radius-normal);
+  border-bottom-right-radius: var(--border-radius-normal);
   display: flex;
   gap: 1rem;
   align-items: center;

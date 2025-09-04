@@ -9,7 +9,7 @@
   border-color: var(--dark);
   background-color: var(--light);
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: var(--border-radius-normal);
   opacity: 0;
   transition: 0.2s;
 
@@ -55,7 +55,7 @@ pre {
   & > #mermaid-space {
     border: 1px solid var(--lightgray);
     background-color: var(--light);
-    border-radius: 5px;
+    border-radius: var(--border-radius-normal);
     position: fixed;
     top: 50%;
     left: 50%;

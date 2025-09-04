@@ -213,12 +213,12 @@ const config: QuartzConfig = {
 
 ## Troubleshooting Solutions Applied
 
-| Issue                  | Solution                                |
-| ---------------------- | --------------------------------------- |
-| Submodule errors       | Converted .quartz/ to regular directory |
-| Cache path errors      | Removed cache configuration             |
-| Lockfile compatibility | Changed npm ci to npm install           |
-| Build path issues      | Used -d .. and -o public parameters     |
+| Issue                  | Solution                                         |
+| ---------------------- | ------------------------------------------------ |
+| Submodule errors       | Converted .quartz/ to regular directory          |
+| Cache path errors      | Removed cache configuration                      |
+| Lockfile compatibility | Changed npm ci to npm install                    |
+| Build path issues      | Used -d .. and -o public parameters              |
 | Duplicate dependencies | Removed root dependencies, kept only in .quartz/ |
 
 ## Benefits of This Architecture
