@@ -1,0 +1,29 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext == "md"
+        - file.folder != "private/reference"
+        - file.folder != "private/archive"
+        - file.folder != "private/test"
+        - file.folder != "private/templates"
+    order:
+      - file.name
+      - uuid
+      - title
+      - type
+      - license
+      - publish
+      - date
+      - file.tags
+    sort:
+      - property: type
+        direction: ASC
+    columnSize:
+      file.name: 430
+      note.title: 459
+      note.type: 145
+      note.license: 149
+      file.tags: 462
+      note.uuid: 358

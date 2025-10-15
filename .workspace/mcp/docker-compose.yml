@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # MarkItDown MCP Server
+  markitdown:
+    build: ./servers/markitdown
+    container_name: markitdown-mcp
+    restart: unless-stopped
+    volumes:
+      # Mount workspace for file access
+      - ../../:/workdir/workspace:ro
+      # Mount user home directory for broader file access
+      - ${HOME}:/workdir/home:ro
+    stdin_open: true
+    tty: true
+    networks:
+      - mcp-network
+
+  # MCP Inspector for debugging (optional)
+  mcp-inspector:
+    image: node:18-alpine
+    container_name: mcp-inspector
+    restart: unless-stopped
+    working_dir: /app
+    command: sh -c "npm install -g @modelcontextprotocol/inspector && npx @modelcontextprotocol/inspector"
+    ports:
+      - "5173:5173"
+    networks:
+      - mcp-network
+    profiles:
+      - debug
+
+networks:
+  mcp-network:
+    driver: bridge
+
+volumes:
+  mcp_data:
+    driver: local

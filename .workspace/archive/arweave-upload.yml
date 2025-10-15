@@ -1,0 +1,102 @@
+name: Selective Arweave Upload
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for all branches and tags
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install arweave js-yaml
+
+      - name: Get changed markdown files
+        id: changed-files
+        run: |
+          if [ "${{ github.event_name }}" == "push" ]; then
+            changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '\.md$' || true)
+          else
+            changed_files=$(git diff --name-only HEAD~1 HEAD | grep '\.md$' || true)
+          fi
+
+          if [ -z "$changed_files" ]; then
+            echo "No markdown files changed. Exiting."
+            echo "files=" >> $GITHUB_OUTPUT
+          else
+            echo "files=$changed_files" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload changed files
+        if: steps.changed-files.outputs.files != ''
+        run: |
+          node <<EOF
+          const Arweave = require('arweave');
+          const fs = require('fs');
+          const yaml = require('js-yaml');
+
+          const arweave = Arweave.init({
+            host: 'arweave.net',
+            port: 443,
+            protocol: 'https'
+          });
+
+          let wallet;
+          try {
+            wallet = JSON.parse(process.env.ARWEAVE_WALLET);
+            console.log("Wallet parsed successfully");
+          } catch (error) {
+            console.error("Error parsing ARWEAVE_WALLET:", error);
+            process.exit(1);
+          }
+
+          async function uploadFile(filePath) {
+            try {
+              const fileContent = fs.readFileSync(filePath, 'utf8');
+              const frontmatter = yaml.loadFront(fileContent);
+              const uuid = frontmatter.uuid;
+
+              if (!uuid) {
+                console.log(`No UUID found for ${filePath}. Skipping.`);
+                return;
+              }
+
+              const transaction = await arweave.createTransaction({ data: fileContent }, wallet);
+              transaction.addTag('Content-Type', 'text/markdown');
+              transaction.addTag('UUID', uuid);
+
+              await arweave.transactions.sign(transaction, wallet);
+              await arweave.transactions.post(transaction);
+
+              console.log(`Uploaded ${filePath} with UUID ${uuid}. Transaction ID: ${transaction.id}`);
+            } catch (error) {
+              console.error(`Error uploading ${filePath}:`, error);
+            }
+          }
+
+          async function processFiles() {
+            const files = process.env.CHANGED_FILES.split(' ').filter(Boolean);
+            console.log("Files to process:", files);
+            for (const file of files) {
+              await uploadFile(file);
+            }
+          }
+
+          processFiles().catch(error => {
+            console.error("Error in processFiles:", error);
+            process.exit(1);
+          });
+          EOF
+        env:
+          ARWEAVE_WALLET: ${{ secrets.ARWEAVE_WALLET }}
+          CHANGED_FILES: ${{ steps.changed-files.outputs.files }}

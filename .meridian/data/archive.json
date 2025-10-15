@@ -1,0 +1,1327 @@
+{
+  "uploads": [
+    {
+      "filename": "Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "filePath": "/Users/gideon/Hub/public/website/content/zettelgarten/Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "fileSize": 10763,
+      "contentType": "text/markdown",
+      "tags": [
+        "uuid:22647dd6-7c7b-438b-9da9-20773f493e50",
+        "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+        "author:Spencer Saar Cavanaugh",
+        "Content-Type:text/markdown",
+        "file-size:10763",
+        "content-hash:sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+        "upload-timestamp:2025-09-17T18:34:09.410Z",
+        "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+        "tag:micropolitics",
+        "tag:site-resource/article",
+        "meridian:resource-id:ur_meefijyg8oyxby2gohm"
+      ],
+      "transactionId": "x8nQt_D95l72yLNLOzjifk5cOO-WVKfnj5ZQzHr__yg",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00002506",
+        "usd": "0.00"
+      },
+      "id": "mfobmd0hb7yixx5huub",
+      "uploadedAt": "2025-09-17T18:34:12.449Z"
+    },
+    {
+      "filename": "Automatos V1 Main Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1 Main Banner.png",
+      "fileSize": 712416,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:4a5a9e09-5028-4260-8b5a-925ad3fcdd21",
+        "title:Automatos V1 Main Banner",
+        "Content-Type:image/png",
+        "file-size:712416",
+        "content-hash:sha256:4a5a9e0950282260bb5a925ad3fcdd21426dbffeab97b8b4afdb6ef353ca1c6a",
+        "upload-timestamp:2025-09-19T00:11:19.831Z"
+      ],
+      "transactionId": "ru3S8PwLs3Lq5F-wC23jHe9mfG0-lZ01tCviUG1z4rk",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00165872"
+      },
+      "id": "mfq33tlrxn8yposevzo",
+      "uploadedAt": "2025-09-19T00:11:22.911Z"
+    },
+    {
+      "filename": "Automatos V1E1 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E1 Banner Square.png",
+      "fileSize": 69927,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:7b5a75a1-8a01-4199-8d49-6995deb48c89",
+        "title:Automatos V1E1 Banner Square",
+        "Content-Type:image/png",
+        "file-size:69927",
+        "content-hash:sha256:7b5a75a18a0141994d496995deb48c89f2faee046f8a23fae2b834baac5fcd6c",
+        "upload-timestamp:2025-09-19T00:11:23.013Z"
+      ],
+      "transactionId": "eNJyJEwmt6Hd2V_42xe-9kEtPMrIE-po_CJS64ZbEEA",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00016281"
+      },
+      "id": "mfq33uzu2r0xvv5xjlq",
+      "uploadedAt": "2025-09-19T00:11:24.714Z"
+    },
+    {
+      "filename": "Automatos V1E1 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E1 Banner.png",
+      "fileSize": 498471,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:15441623-9aa6-4db7-805d-f3b918faac2b",
+        "title:Automatos V1E1 Banner",
+        "Content-Type:image/png",
+        "file-size:498471",
+        "content-hash:sha256:154416239aa68db7f05df3b918faac2b91f4da5f165b21b5df63fedaf45e2856",
+        "upload-timestamp:2025-09-19T00:11:24.804Z"
+      ],
+      "transactionId": "FHWrLlz3qpU2eNpYuUVYB9QRJ7eWMLJPmTzm2vn2N4U",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00116059"
+      },
+      "id": "mfq33wivckfwilko1us",
+      "uploadedAt": "2025-09-19T00:11:26.695Z"
+    },
+    {
+      "filename": "Automatos V1E2 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E2 Banner Square.png",
+      "fileSize": 72246,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:e461375a-5941-4be8-8e56-1b8a02a1125a",
+        "title:Automatos V1E2 Banner Square",
+        "Content-Type:image/png",
+        "file-size:72246",
+        "content-hash:sha256:e461375a59413be82e561b8a02a1125adf2cfd618573fa2f4c664f765db8ebc7",
+        "upload-timestamp:2025-09-19T00:11:26.788Z"
+      ],
+      "transactionId": "_rlVQNJVvezo-XxNIl6fq33gB5sO_K82ox1suVmlhWE",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00016821"
+      },
+      "id": "mfq33xz9kk49tlnqgpl",
+      "uploadedAt": "2025-09-19T00:11:28.581Z"
+    },
+    {
+      "filename": "Automatos V1E2 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E2 Banner.png",
+      "fileSize": 485030,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:68f9dda1-8e98-4916-8208-87957c4dda7f",
+        "title:Automatos V1E2 Banner",
+        "Content-Type:image/png",
+        "file-size:485030",
+        "content-hash:sha256:68f9dda18e98f916920887957c4dda7ffade88fcf8423eaa76e419226a4e09b3",
+        "upload-timestamp:2025-09-19T00:11:28.666Z"
+      ],
+      "transactionId": "kaGBy7LyLxCcFJqRUz_3E23QEXDowzexBx1GM6JW0Vk",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00112930"
+      },
+      "id": "mfq33zha6kkw0yr4liu",
+      "uploadedAt": "2025-09-19T00:11:30.526Z"
+    },
+    {
+      "filename": "Automatos V1E3 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E3 Banner Square.png",
+      "fileSize": 988734,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:9bdbee46-dc37-4162-8480-8f290dc2e6b3",
+        "title:Automatos V1E3 Banner Square",
+        "Content-Type:image/png",
+        "file-size:988734",
+        "content-hash:sha256:9bdbee46dc37816264808f290dc2e6b3afb768032b53b726e70f68608ecddeaa",
+        "upload-timestamp:2025-09-19T00:11:30.613Z"
+      ],
+      "transactionId": "gY7r2S3K2vEijB7ALpaq21So9BfNfmJlDSaiaoiBYa8",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00230208"
+      },
+      "id": "mfq341bxbr913yqqs45",
+      "uploadedAt": "2025-09-19T00:11:32.925Z"
+    },
+    {
+      "filename": "Automatos V1E3 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E3 Banner.png",
+      "fileSize": 480785,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:a4d346ae-b772-46d2-8d08-b4e6e2ade574",
+        "title:Automatos V1E3 Banner",
+        "Content-Type:image/png",
+        "file-size:480785",
+        "content-hash:sha256:a4d346aeb772c6d22d08b4e6e2ade5742643b1bb6b3445ab7272e6b369a02540",
+        "upload-timestamp:2025-09-19T00:11:33.008Z"
+      ],
+      "transactionId": "_SLdnfftL4Jt8mt6OOCtvlE_4aV9jhu0lrgnSZuLNmk",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00111941"
+      },
+      "id": "mfq3433suw0vm45dvp",
+      "uploadedAt": "2025-09-19T00:11:35.224Z"
+    },
+    {
+      "filename": "Automatos V1E4 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E4 Banner Square.png",
+      "fileSize": 83181,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:2f47c974-437c-4d80-8a60-367770921457",
+        "title:Automatos V1E4 Banner Square",
+        "Content-Type:image/png",
+        "file-size:83181",
+        "content-hash:sha256:2f47c974437c0d80ba60367770921457c61c2ba5dcbc716d5eb025c6573344b0",
+        "upload-timestamp:2025-09-19T00:11:35.356Z"
+      ],
+      "transactionId": "DASLpm2_xbB-QM1QeC3Mdpuo_NmMQqwbOH-YMOcPEds",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00019367"
+      },
+      "id": "mfq344m5p83uekkogrf",
+      "uploadedAt": "2025-09-19T00:11:37.181Z"
+    },
+    {
+      "filename": "Automatos V1E4 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E4 Banner.png",
+      "fileSize": 504304,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:bcea4c2c-0e97-4bce-89b6-4e2b3a7bb5a4",
+        "title:Automatos V1E4 Banner",
+        "Content-Type:image/png",
+        "file-size:504304",
+        "content-hash:sha256:bcea4c2c0e972bcea9b64e2b3a7bb5a4e59aed0f250b84d28ab5e16b77a330fb",
+        "upload-timestamp:2025-09-19T00:11:37.266Z"
+      ],
+      "transactionId": "TRce_HUOBA04f6wceBQg3DkzUp7BZBrUqI3tzxUJtno",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00117417"
+      },
+      "id": "mfq346brroces7hdgfo",
+      "uploadedAt": "2025-09-19T00:11:39.399Z"
+    },
+    {
+      "filename": "Automatos V1E5 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E5 Banner Square.png",
+      "fileSize": 85956,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:fb788ff0-bb36-4436-8b92-41752abcc1c2",
+        "title:Automatos V1E5 Banner Square",
+        "Content-Type:image/png",
+        "file-size:85956",
+        "content-hash:sha256:fb788ff0bb3644365b9241752abcc1c2cba6baffd682486a19aa709c2f68983e",
+        "upload-timestamp:2025-09-19T00:11:39.486Z"
+      ],
+      "transactionId": "choAYNdYaGNef35TjY7ml2siXn6ew51JHb3KTHs9LI4",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00020013"
+      },
+      "id": "mfq347syse9rs556fa",
+      "uploadedAt": "2025-09-19T00:11:41.314Z"
+    },
+    {
+      "filename": "Automatos V1E5 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E5 Banner.png",
+      "fileSize": 524191,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:e1d80c50-9bc3-43df-860a-890c43b5c03f",
+        "title:Automatos V1E5 Banner",
+        "Content-Type:image/png",
+        "file-size:524191",
+        "content-hash:sha256:e1d80c509bc333df160a890c43b5c03f66b5acc8d78967e7eb4c46846150334f",
+        "upload-timestamp:2025-09-19T00:11:41.389Z"
+      ],
+      "transactionId": "aZYHxlolZAcCBsfaytx68tYwX6RCdtWRoNndthUcK3o",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00122048"
+      },
+      "id": "mfq349hvc6dsvr2qgpr",
+      "uploadedAt": "2025-09-19T00:11:43.507Z"
+    },
+    {
+      "filename": "Automatos V1E6 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E6 Banner Square.png",
+      "fileSize": 83846,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:4f8ee680-12c8-4de2-809f-d8dc1c6339c9",
+        "title:Automatos V1E6 Banner Square",
+        "Content-Type:image/png",
+        "file-size:83846",
+        "content-hash:sha256:4f8ee68012c81de2d09fd8dc1c6339c9bd1c41a93eeaf027c2ba742040719deb",
+        "upload-timestamp:2025-09-19T00:11:43.590Z"
+      ],
+      "transactionId": "1FAS6fAdokW4nnHJymJ02CBm-Ki_qMvvrTHHnafBfx8",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00019522"
+      },
+      "id": "mfq34b1hm68qgm7pb4",
+      "uploadedAt": "2025-09-19T00:11:45.509Z"
+    },
+    {
+      "filename": "Automatos V1E6 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E6 Banner.png",
+      "fileSize": 490701,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:88cb45a9-082e-4981-8530-50a893319629",
+        "title:Automatos V1E6 Banner",
+        "Content-Type:image/png",
+        "file-size:490701",
+        "content-hash:sha256:88cb45a9082e4981853050a8933196290569bed5a4b63eb05440dfddcef3a52e",
+        "upload-timestamp:2025-09-19T00:11:45.589Z"
+      ],
+      "transactionId": "BmOLAdJbnQWVC0ALcVtPbvn1DLGAFGEPUJE19OtIVdo",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00114250"
+      },
+      "id": "mfq34cw2d28a1p4fvyg",
+      "uploadedAt": "2025-09-19T00:11:47.906Z"
+    },
+    {
+      "filename": "Automatos V1E7 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E7 Banner Square.png",
+      "fileSize": 82230,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:a86d8f24-482f-4689-8897-8611875e53df",
+        "title:Automatos V1E7 Banner Square",
+        "Content-Type:image/png",
+        "file-size:82230",
+        "content-hash:sha256:a86d8f24482f068908978611875e53dfea09846404b3a099b1c9b83c33d0685c",
+        "upload-timestamp:2025-09-19T00:11:47.987Z"
+      ],
+      "transactionId": "95GuKnLPaoyuInkkhqOz9R9jXMe8oCWI1dRW-Mzt434",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00019146"
+      },
+      "id": "mfq34efo56jbuv69jil",
+      "uploadedAt": "2025-09-19T00:11:49.908Z"
+    },
+    {
+      "filename": "Automatos V1E7 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E7 Banner.png",
+      "fileSize": 481085,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:b3c7250b-1b17-44c3-880d-243e564ada20",
+        "title:Automatos V1E7 Banner",
+        "Content-Type:image/png",
+        "file-size:481085",
+        "content-hash:sha256:b3c7250b1b17c4c3180d243e564ada20941b6b2cf872445da6d6eda82fd643a2",
+        "upload-timestamp:2025-09-19T00:11:50.005Z"
+      ],
+      "transactionId": "CTf3sFs2Fxbas4qmHJko60umDjZP537WDUT_Fq1yZs4",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00112011"
+      },
+      "id": "mfq34g3e3xn0dy3uo1l",
+      "uploadedAt": "2025-09-19T00:11:52.058Z"
+    },
+    {
+      "filename": "Automatos V1E8 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E8 Banner Square.png",
+      "fileSize": 74539,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:c9c49c70-2891-4a71-8c2e-29aa07281add",
+        "title:Automatos V1E8 Banner Square",
+        "Content-Type:image/png",
+        "file-size:74539",
+        "content-hash:sha256:c9c49c7028913a716c2e29aa07281addc6b27327ce51460e98b37c6c0e6e0387",
+        "upload-timestamp:2025-09-19T00:11:52.139Z"
+      ],
+      "transactionId": "eMTbdzvgqG67CmotCMofSaxVXgaFN6MUqvqTsoVoSso",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00017355"
+      },
+      "id": "mfq34hotqw08pgvnor",
+      "uploadedAt": "2025-09-19T00:11:54.125Z"
+    },
+    {
+      "filename": "Automatos V1E8 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E8 Banner.png",
+      "fileSize": 502008,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:02037596-91aa-4653-8558-7a3c6ca04bed",
+        "title:Automatos V1E8 Banner",
+        "Content-Type:image/png",
+        "file-size:502008",
+        "content-hash:sha256:0203759691aa865305587a3c6ca04bed56a7740f00972ab141afde94b363da9a",
+        "upload-timestamp:2025-09-19T00:11:54.210Z"
+      ],
+      "transactionId": "r9V3rs5Ti5-uzbTI0Uz2eucqetChR8eDWmiF0oxEUbM",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00116883"
+      },
+      "id": "mfq34nbnywrfcrln809",
+      "uploadedAt": "2025-09-19T00:12:01.427Z"
+    },
+    {
+      "filename": "Automatos V1E9 Banner Square.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E9 Banner Square.png",
+      "fileSize": 80972,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:22644873-daa0-4ab9-89cf-f852f1fb8e74",
+        "title:Automatos V1E9 Banner Square",
+        "Content-Type:image/png",
+        "file-size:80972",
+        "content-hash:sha256:22644873daa0aab9c9cff852f1fb8e7470eb8ca10a685734026bbcb95e5f2e92",
+        "upload-timestamp:2025-09-19T00:12:01.579Z"
+      ],
+      "transactionId": "862kaZXUurfdSZzrfXhpy-h2_SMA4wf6SV2r2mFBans",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00018853"
+      },
+      "id": "mfq34ospez724xryzdp",
+      "uploadedAt": "2025-09-19T00:12:03.337Z"
+    },
+    {
+      "filename": "Automatos V1E9 Banner.png",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E9 Banner.png",
+      "fileSize": 495018,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:2aca7579-3ca7-4f90-8d08-e76dfdf577d8",
+        "title:Automatos V1E9 Banner",
+        "Content-Type:image/png",
+        "file-size:495018",
+        "content-hash:sha256:2aca75793ca74f90ed08e76dfdf577d84460282f5fbc2a156f4abc1bc780a3c5",
+        "upload-timestamp:2025-09-19T00:12:03.414Z"
+      ],
+      "transactionId": "jzWJvgZBDoEQsLWwGH76B1jbd_tMR5JEpBL9kNf4B6U",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00115255"
+      },
+      "id": "mfq34ql8iecc4ulv9ym",
+      "uploadedAt": "2025-09-19T00:12:05.660Z"
+    },
+    {
+      "filename": "OnlyTrue-BigBlob.ttf",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-BigBlob.ttf",
+      "fileSize": 1291840,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:f54922ea-3a15-4bb4-8f73-570272713db1",
+        "title:OnlyTrue-BigBlob",
+        "Content-Type:font/ttf",
+        "file-size:1291840",
+        "content-hash:sha256:f54922ea3a15cbb49f73570272713db14d954afb3d769a612ee11e842c9a63a8",
+        "upload-timestamp:2025-10-03T16:18:04.592Z"
+      ],
+      "transactionId": "SlCZVNOBwJAQaK1Y6ZwH_YzhF-jE0bIx_LhjguHAt8E",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00300780"
+      },
+      "id": "mgb1szt5ljw67pvh3v",
+      "uploadedAt": "2025-10-03T16:18:07.817Z"
+    },
+    {
+      "filename": "OnlyTrue-Neutral.ttf",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-Neutral.ttf",
+      "fileSize": 1102628,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:1931923f-c37c-457e-82bf-98f14cbfd26f",
+        "title:OnlyTrue-Neutral",
+        "Content-Type:font/ttf",
+        "file-size:1102628",
+        "content-hash:sha256:1931923fc37c457e92bf98f14cbfd26f39f8df668e01e5d1a31058fb27aa4013",
+        "upload-timestamp:2025-10-03T16:18:07.917Z"
+      ],
+      "transactionId": "lLH07orFxYe40KKzoXPcilXHVYiL1SkOqzWfm5MwK8I",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00256726"
+      },
+      "id": "mgb1t2ovkj25og5z9eg",
+      "uploadedAt": "2025-10-03T16:18:11.551Z"
+    },
+    {
+      "filename": "OnlyTrue-Small.ttf",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-Small.ttf",
+      "fileSize": 2209128,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:61f9fd01-f81d-41c1-8556-d61c351eaf12",
+        "title:OnlyTrue-Small",
+        "Content-Type:font/ttf",
+        "file-size:2209128",
+        "content-hash:sha256:61f9fd01f81da1c10556d61c351eaf126a172004c3eada3855460da5126c296a",
+        "upload-timestamp:2025-10-03T16:18:11.646Z"
+      ],
+      "transactionId": "MuRoBK2msVYyqK3DGEMJCCnkhA_9GWARLpO9u0Gqc0M",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00514353"
+      },
+      "id": "mgb1t4rubf0zk0z2x9t",
+      "uploadedAt": "2025-10-03T16:18:14.250Z"
+    },
+    {
+      "filename": "Berzulis-PIZIUS.ttf",
+      "filePath": "/Users/gideon/Desktop/Pizius (Pi-zius)/Berzulis-PIZIUS.ttf",
+      "fileSize": 35580,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:a9509c74-8cc7-4729-8781-e98f6c547de2",
+        "title:Berzulis-PIZIUS",
+        "Content-Type:font/ttf",
+        "file-size:35580",
+        "content-hash:sha256:a9509c748cc7b7297781e98f6c547de203dae1ca447057cf4aea2d700e6effbd",
+        "upload-timestamp:2025-10-03T16:19:15.910Z"
+      ],
+      "transactionId": "wwBlrX-jmylhEzA_uUWgvsoD1iQKqiAkAT3u8RyuLXc",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00008284",
+        "usd": "0.00"
+      },
+      "id": "mgb1ui6um81asj381q",
+      "uploadedAt": "2025-10-03T16:19:18.294Z"
+    },
+    {
+      "filename": "PostScript® OpenType® font.otf",
+      "filePath": "/Users/gideon/Desktop/PostScript® OpenType® font.otf",
+      "fileSize": 89740,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:6c75087e-1c1b-48fb-8be6-3f7f1fb4c5ef",
+        "title:PostScript® OpenType® font",
+        "Content-Type:font/otf",
+        "file-size:89740",
+        "content-hash:sha256:6c75087e1c1b38fbcbe63f7f1fb4c5efc7c1294d18a0757665b6f2a6920946ac",
+        "upload-timestamp:2025-10-12T18:38:33.337Z"
+      ],
+      "transactionId": "2MNLEwRwL0ERMQCe2CiHpcX4misMDQdo_1IzUH2pkZo",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00020894",
+        "usd": "0.00"
+      },
+      "id": "mgo1sazwgw1zyfuo1tj",
+      "uploadedAt": "2025-10-12T18:38:35.948Z"
+    },
+    {
+      "filename": "TrueType® OpenType® font.ttf",
+      "filePath": "/Users/gideon/Desktop/TrueType® OpenType® font.ttf",
+      "fileSize": 89740,
+      "contentType": "application/octet-stream",
+      "tags": [
+        "uuid:53f91199-981e-4d08-84b0-506150628d92",
+        "title:TrueType® OpenType® font",
+        "Content-Type:font/ttf",
+        "file-size:89740",
+        "content-hash:sha256:53f91199981ead0874b0506150628d92a5d1421441abe961ce1a5859b9d6ef98",
+        "upload-timestamp:2025-10-12T18:38:36.020Z"
+      ],
+      "transactionId": "M3lblLK8t10Tj03aeCeMCkMiILrFgSOSmL4UJJkfPMM",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00020894"
+      },
+      "id": "mgo1scm4oou6o262kx",
+      "uploadedAt": "2025-10-12T18:38:38.044Z"
+    }
+  ],
+  "wallet": {
+    "address": ""
+  },
+  "files": [
+    {
+      "uuid": "22647dd6-7c7b-438b-9da9-20773f493e50",
+      "title": "Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+      "filePath": "/Users/gideon/Hub/public/website/content/zettelgarten/Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "contentHash": "sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+      "fileSize": 10763,
+      "mimeType": "text/markdown",
+      "created": "2025-08-15T16:59:28.808Z",
+      "modified": "2025-08-16T15:41:16.111Z",
+      "tags": [],
+      "metadata": {
+        "author": [
+          "Spencer Saar Cavanaugh"
+        ],
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "x8nQt_D95l72yLNLOzjifk5cOO-WVKfnj5ZQzHr__yg",
+          "timestamp": "2025-09-17T18:34:12.614Z",
+          "link": "https://www.arweave.net/x8nQt_D95l72yLNLOzjifk5cOO-WVKfnj5ZQzHr__yg",
+          "tags": [
+            "uuid:22647dd6-7c7b-438b-9da9-20773f493e50",
+            "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+            "author:Spencer Saar Cavanaugh",
+            "Content-Type:text/markdown",
+            "file-size:10763",
+            "content-hash:sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+            "upload-timestamp:2025-09-17T18:34:09.410Z",
+            "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+            "tag:micropolitics",
+            "tag:site-resource/article",
+            "meridian:resource-id:ur_meefijyg8oyxby2gohm"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "4a5a9e09-5028-4260-8b5a-925ad3fcdd21",
+      "title": "Automatos V1 Main Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1 Main Banner.png",
+      "contentHash": "sha256:4a5a9e0950282260bb5a925ad3fcdd21426dbffeab97b8b4afdb6ef353ca1c6a",
+      "fileSize": 712416,
+      "mimeType": "image/png",
+      "created": "2025-09-18T23:57:29.541Z",
+      "modified": "2025-09-18T23:57:29.542Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "ru3S8PwLs3Lq5F-wC23jHe9mfG0-lZ01tCviUG1z4rk",
+          "timestamp": "2025-09-19T00:11:22.971Z",
+          "link": "https://www.arweave.net/ru3S8PwLs3Lq5F-wC23jHe9mfG0-lZ01tCviUG1z4rk",
+          "tags": [
+            "uuid:4a5a9e09-5028-4260-8b5a-925ad3fcdd21",
+            "title:Automatos V1 Main Banner",
+            "Content-Type:image/png",
+            "file-size:712416",
+            "content-hash:sha256:4a5a9e0950282260bb5a925ad3fcdd21426dbffeab97b8b4afdb6ef353ca1c6a",
+            "upload-timestamp:2025-09-19T00:11:19.831Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "7b5a75a1-8a01-4199-8d49-6995deb48c89",
+      "title": "Automatos V1E1 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E1 Banner Square.png",
+      "contentHash": "sha256:7b5a75a18a0141994d496995deb48c89f2faee046f8a23fae2b834baac5fcd6c",
+      "fileSize": 69927,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:13:57.719Z",
+      "modified": "2025-09-18T22:13:57.720Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "eNJyJEwmt6Hd2V_42xe-9kEtPMrIE-po_CJS64ZbEEA",
+          "timestamp": "2025-09-19T00:11:24.758Z",
+          "link": "https://www.arweave.net/eNJyJEwmt6Hd2V_42xe-9kEtPMrIE-po_CJS64ZbEEA",
+          "tags": [
+            "uuid:7b5a75a1-8a01-4199-8d49-6995deb48c89",
+            "title:Automatos V1E1 Banner Square",
+            "Content-Type:image/png",
+            "file-size:69927",
+            "content-hash:sha256:7b5a75a18a0141994d496995deb48c89f2faee046f8a23fae2b834baac5fcd6c",
+            "upload-timestamp:2025-09-19T00:11:23.013Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "15441623-9aa6-4db7-805d-f3b918faac2b",
+      "title": "Automatos V1E1 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E1 Banner.png",
+      "contentHash": "sha256:154416239aa68db7f05df3b918faac2b91f4da5f165b21b5df63fedaf45e2856",
+      "fileSize": 498471,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:12:51.188Z",
+      "modified": "2025-09-18T22:12:51.188Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "FHWrLlz3qpU2eNpYuUVYB9QRJ7eWMLJPmTzm2vn2N4U",
+          "timestamp": "2025-09-19T00:11:26.749Z",
+          "link": "https://www.arweave.net/FHWrLlz3qpU2eNpYuUVYB9QRJ7eWMLJPmTzm2vn2N4U",
+          "tags": [
+            "uuid:15441623-9aa6-4db7-805d-f3b918faac2b",
+            "title:Automatos V1E1 Banner",
+            "Content-Type:image/png",
+            "file-size:498471",
+            "content-hash:sha256:154416239aa68db7f05df3b918faac2b91f4da5f165b21b5df63fedaf45e2856",
+            "upload-timestamp:2025-09-19T00:11:24.804Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e461375a-5941-4be8-8e56-1b8a02a1125a",
+      "title": "Automatos V1E2 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E2 Banner Square.png",
+      "contentHash": "sha256:e461375a59413be82e561b8a02a1125adf2cfd618573fa2f4c664f765db8ebc7",
+      "fileSize": 72246,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:14:23.751Z",
+      "modified": "2025-09-18T22:14:23.752Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "_rlVQNJVvezo-XxNIl6fq33gB5sO_K82ox1suVmlhWE",
+          "timestamp": "2025-09-19T00:11:28.622Z",
+          "link": "https://www.arweave.net/_rlVQNJVvezo-XxNIl6fq33gB5sO_K82ox1suVmlhWE",
+          "tags": [
+            "uuid:e461375a-5941-4be8-8e56-1b8a02a1125a",
+            "title:Automatos V1E2 Banner Square",
+            "Content-Type:image/png",
+            "file-size:72246",
+            "content-hash:sha256:e461375a59413be82e561b8a02a1125adf2cfd618573fa2f4c664f765db8ebc7",
+            "upload-timestamp:2025-09-19T00:11:26.788Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "68f9dda1-8e98-4916-8208-87957c4dda7f",
+      "title": "Automatos V1E2 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E2 Banner.png",
+      "contentHash": "sha256:68f9dda18e98f916920887957c4dda7ffade88fcf8423eaa76e419226a4e09b3",
+      "fileSize": 485030,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:13:16.179Z",
+      "modified": "2025-09-18T22:13:16.179Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "kaGBy7LyLxCcFJqRUz_3E23QEXDowzexBx1GM6JW0Vk",
+          "timestamp": "2025-09-19T00:11:30.563Z",
+          "link": "https://www.arweave.net/kaGBy7LyLxCcFJqRUz_3E23QEXDowzexBx1GM6JW0Vk",
+          "tags": [
+            "uuid:68f9dda1-8e98-4916-8208-87957c4dda7f",
+            "title:Automatos V1E2 Banner",
+            "Content-Type:image/png",
+            "file-size:485030",
+            "content-hash:sha256:68f9dda18e98f916920887957c4dda7ffade88fcf8423eaa76e419226a4e09b3",
+            "upload-timestamp:2025-09-19T00:11:28.666Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "9bdbee46-dc37-4162-8480-8f290dc2e6b3",
+      "title": "Automatos V1E3 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E3 Banner Square.png",
+      "contentHash": "sha256:9bdbee46dc37816264808f290dc2e6b3afb768032b53b726e70f68608ecddeaa",
+      "fileSize": 988734,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:11:39.440Z",
+      "modified": "2025-09-18T22:11:40.504Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "gY7r2S3K2vEijB7ALpaq21So9BfNfmJlDSaiaoiBYa8",
+          "timestamp": "2025-09-19T00:11:32.967Z",
+          "link": "https://www.arweave.net/gY7r2S3K2vEijB7ALpaq21So9BfNfmJlDSaiaoiBYa8",
+          "tags": [
+            "uuid:9bdbee46-dc37-4162-8480-8f290dc2e6b3",
+            "title:Automatos V1E3 Banner Square",
+            "Content-Type:image/png",
+            "file-size:988734",
+            "content-hash:sha256:9bdbee46dc37816264808f290dc2e6b3afb768032b53b726e70f68608ecddeaa",
+            "upload-timestamp:2025-09-19T00:11:30.613Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a4d346ae-b772-46d2-8d08-b4e6e2ade574",
+      "title": "Automatos V1E3 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E3 Banner.png",
+      "contentHash": "sha256:a4d346aeb772c6d22d08b4e6e2ade5742643b1bb6b3445ab7272e6b369a02540",
+      "fileSize": 480785,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:10:13.740Z",
+      "modified": "2025-09-18T22:10:13.740Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "_SLdnfftL4Jt8mt6OOCtvlE_4aV9jhu0lrgnSZuLNmk",
+          "timestamp": "2025-09-19T00:11:35.293Z",
+          "link": "https://www.arweave.net/_SLdnfftL4Jt8mt6OOCtvlE_4aV9jhu0lrgnSZuLNmk",
+          "tags": [
+            "uuid:a4d346ae-b772-46d2-8d08-b4e6e2ade574",
+            "title:Automatos V1E3 Banner",
+            "Content-Type:image/png",
+            "file-size:480785",
+            "content-hash:sha256:a4d346aeb772c6d22d08b4e6e2ade5742643b1bb6b3445ab7272e6b369a02540",
+            "upload-timestamp:2025-09-19T00:11:33.008Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "2f47c974-437c-4d80-8a60-367770921457",
+      "title": "Automatos V1E4 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E4 Banner Square.png",
+      "contentHash": "sha256:2f47c974437c0d80ba60367770921457c61c2ba5dcbc716d5eb025c6573344b0",
+      "fileSize": 83181,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:14:35.571Z",
+      "modified": "2025-09-18T22:14:35.574Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "DASLpm2_xbB-QM1QeC3Mdpuo_NmMQqwbOH-YMOcPEds",
+          "timestamp": "2025-09-19T00:11:37.218Z",
+          "link": "https://www.arweave.net/DASLpm2_xbB-QM1QeC3Mdpuo_NmMQqwbOH-YMOcPEds",
+          "tags": [
+            "uuid:2f47c974-437c-4d80-8a60-367770921457",
+            "title:Automatos V1E4 Banner Square",
+            "Content-Type:image/png",
+            "file-size:83181",
+            "content-hash:sha256:2f47c974437c0d80ba60367770921457c61c2ba5dcbc716d5eb025c6573344b0",
+            "upload-timestamp:2025-09-19T00:11:35.356Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bcea4c2c-0e97-4bce-89b6-4e2b3a7bb5a4",
+      "title": "Automatos V1E4 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E4 Banner.png",
+      "contentHash": "sha256:bcea4c2c0e972bcea9b64e2b3a7bb5a4e59aed0f250b84d28ab5e16b77a330fb",
+      "fileSize": 504304,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:16:08.311Z",
+      "modified": "2025-09-18T22:16:08.311Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "TRce_HUOBA04f6wceBQg3DkzUp7BZBrUqI3tzxUJtno",
+          "timestamp": "2025-09-19T00:11:39.434Z",
+          "link": "https://www.arweave.net/TRce_HUOBA04f6wceBQg3DkzUp7BZBrUqI3tzxUJtno",
+          "tags": [
+            "uuid:bcea4c2c-0e97-4bce-89b6-4e2b3a7bb5a4",
+            "title:Automatos V1E4 Banner",
+            "Content-Type:image/png",
+            "file-size:504304",
+            "content-hash:sha256:bcea4c2c0e972bcea9b64e2b3a7bb5a4e59aed0f250b84d28ab5e16b77a330fb",
+            "upload-timestamp:2025-09-19T00:11:37.266Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "fb788ff0-bb36-4436-8b92-41752abcc1c2",
+      "title": "Automatos V1E5 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E5 Banner Square.png",
+      "contentHash": "sha256:fb788ff0bb3644365b9241752abcc1c2cba6baffd682486a19aa709c2f68983e",
+      "fileSize": 85956,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:14:50.691Z",
+      "modified": "2025-09-18T22:14:50.691Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "choAYNdYaGNef35TjY7ml2siXn6ew51JHb3KTHs9LI4",
+          "timestamp": "2025-09-19T00:11:41.349Z",
+          "link": "https://www.arweave.net/choAYNdYaGNef35TjY7ml2siXn6ew51JHb3KTHs9LI4",
+          "tags": [
+            "uuid:fb788ff0-bb36-4436-8b92-41752abcc1c2",
+            "title:Automatos V1E5 Banner Square",
+            "Content-Type:image/png",
+            "file-size:85956",
+            "content-hash:sha256:fb788ff0bb3644365b9241752abcc1c2cba6baffd682486a19aa709c2f68983e",
+            "upload-timestamp:2025-09-19T00:11:39.486Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e1d80c50-9bc3-43df-860a-890c43b5c03f",
+      "title": "Automatos V1E5 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E5 Banner.png",
+      "contentHash": "sha256:e1d80c509bc333df160a890c43b5c03f66b5acc8d78967e7eb4c46846150334f",
+      "fileSize": 524191,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:16:31.876Z",
+      "modified": "2025-09-18T22:16:31.876Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "aZYHxlolZAcCBsfaytx68tYwX6RCdtWRoNndthUcK3o",
+          "timestamp": "2025-09-19T00:11:43.541Z",
+          "link": "https://www.arweave.net/aZYHxlolZAcCBsfaytx68tYwX6RCdtWRoNndthUcK3o",
+          "tags": [
+            "uuid:e1d80c50-9bc3-43df-860a-890c43b5c03f",
+            "title:Automatos V1E5 Banner",
+            "Content-Type:image/png",
+            "file-size:524191",
+            "content-hash:sha256:e1d80c509bc333df160a890c43b5c03f66b5acc8d78967e7eb4c46846150334f",
+            "upload-timestamp:2025-09-19T00:11:41.389Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "4f8ee680-12c8-4de2-809f-d8dc1c6339c9",
+      "title": "Automatos V1E6 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E6 Banner Square.png",
+      "contentHash": "sha256:4f8ee68012c81de2d09fd8dc1c6339c9bd1c41a93eeaf027c2ba742040719deb",
+      "fileSize": 83846,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:15:00.308Z",
+      "modified": "2025-09-18T22:15:00.308Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "1FAS6fAdokW4nnHJymJ02CBm-Ki_qMvvrTHHnafBfx8",
+          "timestamp": "2025-09-19T00:11:45.544Z",
+          "link": "https://www.arweave.net/1FAS6fAdokW4nnHJymJ02CBm-Ki_qMvvrTHHnafBfx8",
+          "tags": [
+            "uuid:4f8ee680-12c8-4de2-809f-d8dc1c6339c9",
+            "title:Automatos V1E6 Banner Square",
+            "Content-Type:image/png",
+            "file-size:83846",
+            "content-hash:sha256:4f8ee68012c81de2d09fd8dc1c6339c9bd1c41a93eeaf027c2ba742040719deb",
+            "upload-timestamp:2025-09-19T00:11:43.590Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "88cb45a9-082e-4981-8530-50a893319629",
+      "title": "Automatos V1E6 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E6 Banner.png",
+      "contentHash": "sha256:88cb45a9082e4981853050a8933196290569bed5a4b63eb05440dfddcef3a52e",
+      "fileSize": 490701,
+      "mimeType": "image/png",
+      "created": "2025-09-18T23:55:02.140Z",
+      "modified": "2025-09-18T23:55:02.140Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "BmOLAdJbnQWVC0ALcVtPbvn1DLGAFGEPUJE19OtIVdo",
+          "timestamp": "2025-09-19T00:11:47.941Z",
+          "link": "https://www.arweave.net/BmOLAdJbnQWVC0ALcVtPbvn1DLGAFGEPUJE19OtIVdo",
+          "tags": [
+            "uuid:88cb45a9-082e-4981-8530-50a893319629",
+            "title:Automatos V1E6 Banner",
+            "Content-Type:image/png",
+            "file-size:490701",
+            "content-hash:sha256:88cb45a9082e4981853050a8933196290569bed5a4b63eb05440dfddcef3a52e",
+            "upload-timestamp:2025-09-19T00:11:45.589Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a86d8f24-482f-4689-8897-8611875e53df",
+      "title": "Automatos V1E7 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E7 Banner Square.png",
+      "contentHash": "sha256:a86d8f24482f068908978611875e53dfea09846404b3a099b1c9b83c33d0685c",
+      "fileSize": 82230,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:15:33.142Z",
+      "modified": "2025-09-18T22:15:33.143Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "95GuKnLPaoyuInkkhqOz9R9jXMe8oCWI1dRW-Mzt434",
+          "timestamp": "2025-09-19T00:11:49.945Z",
+          "link": "https://www.arweave.net/95GuKnLPaoyuInkkhqOz9R9jXMe8oCWI1dRW-Mzt434",
+          "tags": [
+            "uuid:a86d8f24-482f-4689-8897-8611875e53df",
+            "title:Automatos V1E7 Banner Square",
+            "Content-Type:image/png",
+            "file-size:82230",
+            "content-hash:sha256:a86d8f24482f068908978611875e53dfea09846404b3a099b1c9b83c33d0685c",
+            "upload-timestamp:2025-09-19T00:11:47.987Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "b3c7250b-1b17-44c3-880d-243e564ada20",
+      "title": "Automatos V1E7 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E7 Banner.png",
+      "contentHash": "sha256:b3c7250b1b17c4c3180d243e564ada20941b6b2cf872445da6d6eda82fd643a2",
+      "fileSize": 481085,
+      "mimeType": "image/png",
+      "created": "2025-09-18T23:56:12.931Z",
+      "modified": "2025-09-18T23:56:12.932Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "CTf3sFs2Fxbas4qmHJko60umDjZP537WDUT_Fq1yZs4",
+          "timestamp": "2025-09-19T00:11:52.095Z",
+          "link": "https://www.arweave.net/CTf3sFs2Fxbas4qmHJko60umDjZP537WDUT_Fq1yZs4",
+          "tags": [
+            "uuid:b3c7250b-1b17-44c3-880d-243e564ada20",
+            "title:Automatos V1E7 Banner",
+            "Content-Type:image/png",
+            "file-size:481085",
+            "content-hash:sha256:b3c7250b1b17c4c3180d243e564ada20941b6b2cf872445da6d6eda82fd643a2",
+            "upload-timestamp:2025-09-19T00:11:50.005Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "c9c49c70-2891-4a71-8c2e-29aa07281add",
+      "title": "Automatos V1E8 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E8 Banner Square.png",
+      "contentHash": "sha256:c9c49c7028913a716c2e29aa07281addc6b27327ce51460e98b37c6c0e6e0387",
+      "fileSize": 74539,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:15:46.105Z",
+      "modified": "2025-09-18T22:15:46.106Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "eMTbdzvgqG67CmotCMofSaxVXgaFN6MUqvqTsoVoSso",
+          "timestamp": "2025-09-19T00:11:54.160Z",
+          "link": "https://www.arweave.net/eMTbdzvgqG67CmotCMofSaxVXgaFN6MUqvqTsoVoSso",
+          "tags": [
+            "uuid:c9c49c70-2891-4a71-8c2e-29aa07281add",
+            "title:Automatos V1E8 Banner Square",
+            "Content-Type:image/png",
+            "file-size:74539",
+            "content-hash:sha256:c9c49c7028913a716c2e29aa07281addc6b27327ce51460e98b37c6c0e6e0387",
+            "upload-timestamp:2025-09-19T00:11:52.139Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "02037596-91aa-4653-8558-7a3c6ca04bed",
+      "title": "Automatos V1E8 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E8 Banner.png",
+      "contentHash": "sha256:0203759691aa865305587a3c6ca04bed56a7740f00972ab141afde94b363da9a",
+      "fileSize": 502008,
+      "mimeType": "image/png",
+      "created": "2025-09-18T23:56:49.059Z",
+      "modified": "2025-09-18T23:56:49.060Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "r9V3rs5Ti5-uzbTI0Uz2eucqetChR8eDWmiF0oxEUbM",
+          "timestamp": "2025-09-19T00:12:01.464Z",
+          "link": "https://www.arweave.net/r9V3rs5Ti5-uzbTI0Uz2eucqetChR8eDWmiF0oxEUbM",
+          "tags": [
+            "uuid:02037596-91aa-4653-8558-7a3c6ca04bed",
+            "title:Automatos V1E8 Banner",
+            "Content-Type:image/png",
+            "file-size:502008",
+            "content-hash:sha256:0203759691aa865305587a3c6ca04bed56a7740f00972ab141afde94b363da9a",
+            "upload-timestamp:2025-09-19T00:11:54.210Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "22644873-daa0-4ab9-89cf-f852f1fb8e74",
+      "title": "Automatos V1E9 Banner Square",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E9 Banner Square.png",
+      "contentHash": "sha256:22644873daa0aab9c9cff852f1fb8e7470eb8ca10a685734026bbcb95e5f2e92",
+      "fileSize": 80972,
+      "mimeType": "image/png",
+      "created": "2025-09-18T22:15:54.357Z",
+      "modified": "2025-09-18T22:15:54.357Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "862kaZXUurfdSZzrfXhpy-h2_SMA4wf6SV2r2mFBans",
+          "timestamp": "2025-09-19T00:12:03.370Z",
+          "link": "https://www.arweave.net/862kaZXUurfdSZzrfXhpy-h2_SMA4wf6SV2r2mFBans",
+          "tags": [
+            "uuid:22644873-daa0-4ab9-89cf-f852f1fb8e74",
+            "title:Automatos V1E9 Banner Square",
+            "Content-Type:image/png",
+            "file-size:80972",
+            "content-hash:sha256:22644873daa0aab9c9cff852f1fb8e7470eb8ca10a685734026bbcb95e5f2e92",
+            "upload-timestamp:2025-09-19T00:12:01.579Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "2aca7579-3ca7-4f90-8d08-e76dfdf577d8",
+      "title": "Automatos V1E9 Banner",
+      "filePath": "/Users/gideon/Desktop/Automatos V1E9 Banner.png",
+      "contentHash": "sha256:2aca75793ca74f90ed08e76dfdf577d84460282f5fbc2a156f4abc1bc780a3c5",
+      "fileSize": 495018,
+      "mimeType": "image/png",
+      "created": "2025-09-18T23:57:19.911Z",
+      "modified": "2025-09-18T23:57:19.911Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "jzWJvgZBDoEQsLWwGH76B1jbd_tMR5JEpBL9kNf4B6U",
+          "timestamp": "2025-09-19T00:12:05.696Z",
+          "link": "https://www.arweave.net/jzWJvgZBDoEQsLWwGH76B1jbd_tMR5JEpBL9kNf4B6U",
+          "tags": [
+            "uuid:2aca7579-3ca7-4f90-8d08-e76dfdf577d8",
+            "title:Automatos V1E9 Banner",
+            "Content-Type:image/png",
+            "file-size:495018",
+            "content-hash:sha256:2aca75793ca74f90ed08e76dfdf577d84460282f5fbc2a156f4abc1bc780a3c5",
+            "upload-timestamp:2025-09-19T00:12:03.414Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "f54922ea-3a15-4bb4-8f73-570272713db1",
+      "title": "OnlyTrue-BigBlob",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-BigBlob.ttf",
+      "contentHash": "sha256:f54922ea3a15cbb49f73570272713db14d954afb3d769a612ee11e842c9a63a8",
+      "fileSize": 1291840,
+      "mimeType": "font/ttf",
+      "created": "2025-01-15T22:19:48.000Z",
+      "modified": "2025-01-15T22:19:48.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "SlCZVNOBwJAQaK1Y6ZwH_YzhF-jE0bIx_LhjguHAt8E",
+          "timestamp": "2025-10-03T16:18:07.865Z",
+          "link": "https://www.arweave.net/SlCZVNOBwJAQaK1Y6ZwH_YzhF-jE0bIx_LhjguHAt8E",
+          "tags": [
+            "uuid:f54922ea-3a15-4bb4-8f73-570272713db1",
+            "title:OnlyTrue-BigBlob",
+            "Content-Type:font/ttf",
+            "file-size:1291840",
+            "content-hash:sha256:f54922ea3a15cbb49f73570272713db14d954afb3d769a612ee11e842c9a63a8",
+            "upload-timestamp:2025-10-03T16:18:04.592Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "1931923f-c37c-457e-82bf-98f14cbfd26f",
+      "title": "OnlyTrue-Neutral",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-Neutral.ttf",
+      "contentHash": "sha256:1931923fc37c457e92bf98f14cbfd26f39f8df668e01e5d1a31058fb27aa4013",
+      "fileSize": 1102628,
+      "mimeType": "font/ttf",
+      "created": "2025-01-15T22:19:48.000Z",
+      "modified": "2025-01-15T22:19:48.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "lLH07orFxYe40KKzoXPcilXHVYiL1SkOqzWfm5MwK8I",
+          "timestamp": "2025-10-03T16:18:11.592Z",
+          "link": "https://www.arweave.net/lLH07orFxYe40KKzoXPcilXHVYiL1SkOqzWfm5MwK8I",
+          "tags": [
+            "uuid:1931923f-c37c-457e-82bf-98f14cbfd26f",
+            "title:OnlyTrue-Neutral",
+            "Content-Type:font/ttf",
+            "file-size:1102628",
+            "content-hash:sha256:1931923fc37c457e92bf98f14cbfd26f39f8df668e01e5d1a31058fb27aa4013",
+            "upload-timestamp:2025-10-03T16:18:07.917Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "61f9fd01-f81d-41c1-8556-d61c351eaf12",
+      "title": "OnlyTrue-Small",
+      "filePath": "/Users/gideon/Desktop/Onlytrou/OnlyTrue-Small.ttf",
+      "contentHash": "sha256:61f9fd01f81da1c10556d61c351eaf126a172004c3eada3855460da5126c296a",
+      "fileSize": 2209128,
+      "mimeType": "font/ttf",
+      "created": "2025-01-15T22:19:48.000Z",
+      "modified": "2025-01-15T22:19:48.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "MuRoBK2msVYyqK3DGEMJCCnkhA_9GWARLpO9u0Gqc0M",
+          "timestamp": "2025-10-03T16:18:14.289Z",
+          "link": "https://www.arweave.net/MuRoBK2msVYyqK3DGEMJCCnkhA_9GWARLpO9u0Gqc0M",
+          "tags": [
+            "uuid:61f9fd01-f81d-41c1-8556-d61c351eaf12",
+            "title:OnlyTrue-Small",
+            "Content-Type:font/ttf",
+            "file-size:2209128",
+            "content-hash:sha256:61f9fd01f81da1c10556d61c351eaf126a172004c3eada3855460da5126c296a",
+            "upload-timestamp:2025-10-03T16:18:11.646Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "a9509c74-8cc7-4729-8781-e98f6c547de2",
+      "title": "Berzulis-PIZIUS",
+      "filePath": "/Users/gideon/Desktop/Pizius (Pi-zius)/Berzulis-PIZIUS.ttf",
+      "contentHash": "sha256:a9509c748cc7b7297781e98f6c547de203dae1ca447057cf4aea2d700e6effbd",
+      "fileSize": 35580,
+      "mimeType": "font/ttf",
+      "created": "2022-05-25T16:36:33.000Z",
+      "modified": "2022-05-25T16:36:33.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "wwBlrX-jmylhEzA_uUWgvsoD1iQKqiAkAT3u8RyuLXc",
+          "timestamp": "2025-10-03T16:19:18.332Z",
+          "link": "https://www.arweave.net/wwBlrX-jmylhEzA_uUWgvsoD1iQKqiAkAT3u8RyuLXc",
+          "tags": [
+            "uuid:a9509c74-8cc7-4729-8781-e98f6c547de2",
+            "title:Berzulis-PIZIUS",
+            "Content-Type:font/ttf",
+            "file-size:35580",
+            "content-hash:sha256:a9509c748cc7b7297781e98f6c547de203dae1ca447057cf4aea2d700e6effbd",
+            "upload-timestamp:2025-10-03T16:19:15.910Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "6c75087e-1c1b-48fb-8be6-3f7f1fb4c5ef",
+      "title": "PostScript® OpenType® font",
+      "filePath": "/Users/gideon/Desktop/PostScript® OpenType® font.otf",
+      "contentHash": "sha256:6c75087e1c1b38fbcbe63f7f1fb4c5efc7c1294d18a0757665b6f2a6920946ac",
+      "fileSize": 89740,
+      "mimeType": "font/otf",
+      "created": "2025-10-12T06:41:54.944Z",
+      "modified": "2025-10-12T06:41:54.944Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "2MNLEwRwL0ERMQCe2CiHpcX4misMDQdo_1IzUH2pkZo",
+          "timestamp": "2025-10-12T18:38:35.991Z",
+          "link": "https://www.arweave.net/2MNLEwRwL0ERMQCe2CiHpcX4misMDQdo_1IzUH2pkZo",
+          "tags": [
+            "uuid:6c75087e-1c1b-48fb-8be6-3f7f1fb4c5ef",
+            "title:PostScript® OpenType® font",
+            "Content-Type:font/otf",
+            "file-size:89740",
+            "content-hash:sha256:6c75087e1c1b38fbcbe63f7f1fb4c5efc7c1294d18a0757665b6f2a6920946ac",
+            "upload-timestamp:2025-10-12T18:38:33.337Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "53f91199-981e-4d08-84b0-506150628d92",
+      "title": "TrueType® OpenType® font",
+      "filePath": "/Users/gideon/Desktop/TrueType® OpenType® font.ttf",
+      "contentHash": "sha256:53f91199981ead0874b0506150628d92a5d1421441abe961ce1a5859b9d6ef98",
+      "fileSize": 89740,
+      "mimeType": "font/ttf",
+      "created": "2025-10-12T06:41:56.293Z",
+      "modified": "2025-10-12T06:41:56.294Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "M3lblLK8t10Tj03aeCeMCkMiILrFgSOSmL4UJJkfPMM",
+          "timestamp": "2025-10-12T18:38:38.088Z",
+          "link": "https://www.arweave.net/M3lblLK8t10Tj03aeCeMCkMiILrFgSOSmL4UJJkfPMM",
+          "tags": [
+            "uuid:53f91199-981e-4d08-84b0-506150628d92",
+            "title:TrueType® OpenType® font",
+            "Content-Type:font/ttf",
+            "file-size:89740",
+            "content-hash:sha256:53f91199981ead0874b0506150628d92a5d1421441abe961ce1a5859b9d6ef98",
+            "upload-timestamp:2025-10-12T18:38:36.020Z"
+          ]
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2025-10-12T18:38:38.092Z",
+  "version": "2.0"
+}

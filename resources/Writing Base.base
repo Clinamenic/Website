@@ -1,0 +1,25 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext == "md"
+        - file.folder == "content/writing"
+    order:
+      - date
+      - file.name
+      - type
+      - license
+      - uuid
+    sort:
+      - property: date
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: uuid
+        direction: ASC
+    columnSize:
+      note.date: 133
+      file.name: 648
+      note.type: 124
+      note.license: 151

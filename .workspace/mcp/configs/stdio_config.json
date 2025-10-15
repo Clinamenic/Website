@@ -1,0 +1,9 @@
+{
+    "_comment": "STDIO configuration for MCP servers (alternative to Docker)",
+    "_note": "This configuration uses direct STDIO connections instead of Docker",
+    "mcpServers": {
+        "markitdown": {
+            "command": "markitdown-mcp"
+        }
+    }
+}

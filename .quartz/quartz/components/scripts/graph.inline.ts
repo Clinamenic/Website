@@ -14,7 +14,7 @@ import {
   drag,
   zoom,
 } from "d3"
-import { Text, Graphics, Application, Container, Circle } from "pixi.js"
+import { Text, Graphics, Application, Container, Circle, Sprite, Texture } from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
 import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
@@ -22,7 +22,7 @@ import { D3Config } from "../Graph"
 
 type GraphicsInfo = {
   color: string
-  gfx: Graphics
+  gfx: Graphics | Sprite
   alpha: number
   active: boolean
 }
@@ -52,6 +52,29 @@ type NodeRenderData = GraphicsInfo & {
   label: Text
 }
 
+type NodeStyles = {
+  regularNode: {
+    fillColor: string
+    strokeColor: string
+    strokeWidth: number
+  }
+  tagNode: {
+    fillColor: string
+    strokeColor: string
+    strokeWidth: number
+    backgroundColor: string
+    backgroundRadius: number
+  }
+  zettelNode: {
+    fillColor: string
+    strokeColor: string
+    strokeWidth: number
+    backgroundColor: string
+    backgroundRadius: number
+    textColor: string
+  }
+}
+
 const localStorageKey = "graph-visited"
 function getVisited(): Set<SimpleSlug> {
   return new Set(JSON.parse(localStorage.getItem(localStorageKey) ?? "[]"))
@@ -68,34 +91,178 @@ type TweenNode = {
   stop: () => void
 }
 
-// workaround for pixijs webgpu issue: https://github.com/pixijs/pixijs/issues/11389
-async function determineGraphicsAPI(): Promise<"webgpu" | "webgl"> {
-  const adapter = await navigator.gpu?.requestAdapter().catch(() => null)
-  const device = adapter && (await adapter.requestDevice().catch(() => null))
-  if (!device) {
-    return "webgl"
+function resolveStrokeColor(color: string): string {
+  if (color === "none") {
+    return "#000000"
   }
-
-  const canvas = document.createElement("canvas")
-  const gl =
-    (canvas.getContext("webgl2") as WebGL2RenderingContext | null) ??
-    (canvas.getContext("webgl") as WebGLRenderingContext | null)
-
-  // we have to return webgl so pixijs automatically falls back to canvas
-  if (!gl) {
-    return "webgl"
+  if (color.startsWith("var(")) {
+    // Extract the CSS variable name
+    const varName = color.slice(4, -1)
+    // Get the computed value
+    const computed = getComputedStyle(document.documentElement).getPropertyValue(varName).trim()
+    // Convert the color to hex
+    if (computed.startsWith("#")) {
+      return computed
+    }
+    // For now, just return black if we can't parse it
+    return "#000000"
   }
-
-  const webglMaxTextures = gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS)
-  const webgpuMaxTextures = device.limits.maxSampledTexturesPerShaderStage
-
-  return webglMaxTextures === webgpuMaxTextures ? "webgpu" : "webgl"
+  if (color.startsWith("#")) {
+    return color
+  }
+  // If we can't parse the color, return black
+  return "#000000"
 }
 
-async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
+function resolveFillColor(color: string): number {
+  if (color === "none") {
+    return 0x000000
+  }
+  if (color.startsWith("var(")) {
+    // Extract the CSS variable name
+    const varName = color.slice(4, -1)
+    // Get the computed value
+    const computed = getComputedStyle(document.documentElement).getPropertyValue(varName).trim()
+    // Convert the color to hex
+    if (computed.startsWith("#")) {
+      return parseInt(computed.slice(1), 16)
+    }
+    // For now, just return black if we can't parse it
+    return 0x000000
+  }
+  if (color.startsWith("#")) {
+    return parseInt(color.slice(1), 16)
+  }
+  // If we can't parse the color, return black
+  return 0x000000
+}
+
+function createHashtagGraphics(radius: number, styles: NodeStyles["tagNode"]): Graphics {
+  // Scale the path to fit within the given radius
+  const scale = radius / 18 // SVG viewBox is 36x36, so divide by 2 for radius
+  
+  // Center offset (since SVG viewBox is 0,0,36,36 we need to center around 18,18)
+  const offsetX = -18 * scale
+  const offsetY = -18 * scale
+  
+  const gfx = new Graphics()
+    // Draw background circle for hashtag
+    .beginFill(resolveFillColor(styles.backgroundColor))
+    .circle(0, 0, radius * styles.backgroundRadius)
+    .endFill()
+    // Draw outer shape for hashtag
+    .beginFill(resolveFillColor(styles.fillColor))
+    .moveTo(31.87 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(26.32 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(27.32 * scale + offsetX, 5.17 * scale + offsetY)
+    .lineTo(26.35 * scale + offsetX, 4 * scale + offsetY)
+    .lineTo(24.35 * scale + offsetX, 4 * scale + offsetY)
+    .lineTo(23.35 * scale + offsetX, 4.78 * scale + offsetY)
+    .lineTo(22.33 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(16.93 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(17.93 * scale + offsetX, 5.17 * scale + offsetY)
+    .lineTo(17 * scale + offsetX, 4 * scale + offsetY)
+    .lineTo(15 * scale + offsetX, 4 * scale + offsetY)
+    .lineTo(14 * scale + offsetX, 4.78 * scale + offsetY)
+    .lineTo(13 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(7 * scale + offsetX, 10 * scale + offsetY)
+    .lineTo(6 * scale + offsetX, 10.8 * scale + offsetY)
+    .lineTo(5.59 * scale + offsetX, 12.8 * scale + offsetY)
+    .lineTo(6.59 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(12.14 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(10.5 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(4.5 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(3.5 * scale + offsetX, 22.8 * scale + offsetY)
+    .lineTo(3.09 * scale + offsetX, 24.8 * scale + offsetY)
+    .lineTo(4.09 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(9.68 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(8.68 * scale + offsetX, 30.83 * scale + offsetY)
+    .lineTo(9.68 * scale + offsetX, 32 * scale + offsetY)
+    .lineTo(11.68 * scale + offsetX, 32 * scale + offsetY)
+    .lineTo(12.63 * scale + offsetX, 31.22 * scale + offsetY)
+    .lineTo(13.67 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(19.07 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(18.07 * scale + offsetX, 30.83 * scale + offsetY)
+    .lineTo(19.07 * scale + offsetX, 32 * scale + offsetY)
+    .lineTo(21.07 * scale + offsetX, 32 * scale + offsetY)
+    .lineTo(22.07 * scale + offsetX, 31.22 * scale + offsetY)
+    .lineTo(23.05 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(29.05 * scale + offsetX, 26 * scale + offsetY)
+    .lineTo(30.05 * scale + offsetX, 25.2 * scale + offsetY)
+    .lineTo(30.45 * scale + offsetX, 23.2 * scale + offsetY)
+    .lineTo(29.45 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(23.87 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(25.5 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(31.5 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(32.5 * scale + offsetX, 13.2 * scale + offsetY)
+    .lineTo(32.91 * scale + offsetX, 11.2 * scale + offsetY)
+    .lineTo(31.91 * scale + offsetX, 10 * scale + offsetY)
+    .closePath()
+    .endFill()
+    // Draw inner square for hashtag in background color to create the hole effect
+    .beginFill(resolveFillColor(styles.backgroundColor))
+    .moveTo(19.87 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(14.47 * scale + offsetX, 22 * scale + offsetY)
+    .lineTo(16.11 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(21.51 * scale + offsetX, 14 * scale + offsetY)
+    .lineTo(19.87 * scale + offsetX, 22 * scale + offsetY)
+    .closePath()
+    .endFill()
+
+  return gfx
+}
+
+function createZettelGraphics(radius: number, styles: NodeStyles["zettelNode"]): Graphics {
+  const container = new Graphics()
+  
+  // Draw background circle
+  container
+    .beginFill(resolveFillColor(styles.backgroundColor))
+    .circle(0, 0, radius * styles.backgroundRadius)
+    .endFill()
+
+  // Create text for the ζ symbol
+  const zetaText = new Text()
+  zetaText.text = "ζ"
+  zetaText.style.fontSize = radius * 1.4
+  zetaText.style.fill = resolveFillColor(styles.textColor)
+  zetaText.style.fontFamily = "serif"
+  zetaText.anchor.set(0.5, 0.5)
+  
+  container.addChild(zetaText)
+  
+  return container
+}
+
+async function renderGraph(container: string, fullSlug: FullSlug) {
   const slug = simplifySlug(fullSlug)
   const visited = getVisited()
+  const graph = document.getElementById(container)
+  if (!graph) return
   removeAllChildren(graph)
+
+  const defaultNodeStyles: NodeStyles = {
+    regularNode: {
+      fillColor: "var(--secondary)",
+      strokeColor: "var(--dark)",
+      strokeWidth: 0.5
+    },
+    tagNode: {
+      fillColor: "white",
+      strokeColor: "white",
+      strokeWidth: 0,
+      backgroundColor: "var(--gray)",
+      backgroundRadius: 1.2
+    },
+    zettelNode: {
+      fillColor: "var(--tertiary)",
+      strokeColor: "var(--dark)",
+      strokeWidth: 0.5,
+      backgroundColor: "var(--light)",
+      backgroundRadius: 1.3,
+      textColor: "var(--dark)"
+    }
+  }
 
   let {
     drag: enableDrag,
@@ -110,8 +277,18 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     removeTags,
     showTags,
     focusOnHover,
-    enableRadial,
+    nodeStyles
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
+
+  // Use default styles if none provided and ensure all node types have styles
+  const styles: NodeStyles = {
+    regularNode: (nodeStyles?.regularNode ?? defaultNodeStyles.regularNode),
+    tagNode: (nodeStyles?.tagNode ?? defaultNodeStyles.tagNode),
+    zettelNode: (nodeStyles?.zettelNode ?? defaultNodeStyles.zettelNode)
+  }
+
+  // Load the hashtag SVG texture
+  const tagTexture = await Texture.from("/static/hashtag_solid_icon_235931.svg")
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
     Object.entries<ContentDetails>(await fetchData).map(([k, v]) => [
@@ -168,7 +345,10 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   const nodes = [...neighbourhood].map((url) => {
-    const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
+    // For tag nodes, add spaces after each subtag to enable wrapping
+    const text = url.startsWith("tags/") 
+      ? "#" + url.substring(5).split("/").join(" / ")
+      : (data.get(url)?.title ?? url)
     return {
       id: url,
       text,
@@ -189,14 +369,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   const height = Math.max(graph.offsetHeight, 250)
 
   // we virtualize the simulation and use pixi to actually render it
+  // Calculate the radius of the container circle
+  const radius = Math.min(width, height) / 2 - 40 // 40px padding
   const simulation: Simulation<NodeData, LinkData> = forceSimulation<NodeData>(graphData.nodes)
     .force("charge", forceManyBody().strength(-100 * repelForce))
     .force("center", forceCenter().strength(centerForce))
     .force("link", forceLink(graphData.links).distance(linkDistance))
     .force("collide", forceCollide<NodeData>((n) => collisionRadius(n)).iterations(3))
-
-  const radius = (Math.min(width, height) / 2) * 0.8
-  if (enableRadial) simulation.force("radial", forceRadial(radius).strength(0.2))
 
   // precompute style prop strings as pixi doesn't support css variables
   const cssVars = [
@@ -290,7 +469,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         alpha = l.active ? 1 : 0
       }
 
-      l.color = computedStyleMap["--lightgray"]
+      l.color = computedStyleMap["--dark"]
       tweenGroup.add(new Tweened<LinkRenderData>(l).to({ alpha }, 200))
     }
 
@@ -311,28 +490,31 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const activeScale = defaultScale * 1.1
     for (const n of nodeRenderData) {
       const nodeId = n.simulationData.id
+      let targetAlpha = 0
 
-      if (hoveredNodeId === nodeId) {
-        tweenGroup.add(
-          new Tweened<Text>(n.label).to(
-            {
-              alpha: 1,
-              scale: { x: activeScale, y: activeScale },
-            },
-            100,
-          ),
-        )
-      } else {
-        tweenGroup.add(
-          new Tweened<Text>(n.label).to(
-            {
-              alpha: n.label.alpha,
-              scale: { x: defaultScale, y: defaultScale },
-            },
-            100,
-          ),
-        )
+      if (hoveredNodeId === nodeId || hoveredNeighbours.has(nodeId)) {
+        targetAlpha = 1
       }
+
+      tweenGroup.add(
+        new Tweened<Text>(n.label).to(
+          {
+            alpha: targetAlpha,
+            scale: { x: activeScale, y: activeScale },
+          },
+          100,
+        ),
+      )
+
+      tweenGroup.add(
+        new Tweened<Text>(n.label).to(
+          {
+            alpha: targetAlpha,
+            scale: { x: hoveredNodeId === nodeId ? activeScale : defaultScale, y: hoveredNodeId === nodeId ? activeScale : defaultScale },
+          },
+          100,
+        ),
+      )
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -356,7 +538,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
         alpha = n.active ? 1 : 0.2
       }
 
-      tweenGroup.add(new Tweened<Graphics>(n.gfx, tweenGroup).to({ alpha }, 200))
+      if (n.gfx instanceof Graphics) {
+        tweenGroup.add(new Tweened<Graphics>(n.gfx, tweenGroup).to({ alpha }, 200))
+      } else {
+        tweenGroup.add(new Tweened<Sprite>(n.gfx, tweenGroup).to({ alpha }, 200))
+      }
     }
 
     tweenGroup.getAll().forEach((tw) => tw.start())
@@ -377,7 +563,6 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   tweens.forEach((tween) => tween.stop())
   tweens.clear()
 
-  const pixiPreference = await determineGraphicsAPI()
   const app = new Application()
   await app.init({
     width,
@@ -386,7 +571,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     autoStart: false,
     autoDensity: true,
     backgroundAlpha: 0,
-    preference: pixiPreference,
+    preference: "webgpu",
     resolution: window.devicePixelRatio,
     eventMode: "static",
   })
@@ -396,62 +581,86 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   stage.interactive = false
 
   const labelsContainer = new Container<Text>({ zIndex: 3, isRenderGroup: true })
-  const nodesContainer = new Container<Graphics>({ zIndex: 2, isRenderGroup: true })
+  const nodesContainer = new Container<Graphics | Sprite>({ zIndex: 2, isRenderGroup: true })
   const linkContainer = new Container<Graphics>({ zIndex: 1, isRenderGroup: true })
   stage.addChild(nodesContainer, labelsContainer, linkContainer)
 
   for (const n of graphData.nodes) {
     const nodeId = n.id
 
-    const label = new Text({
-      interactive: false,
-      eventMode: "none",
-      text: n.text,
-      alpha: 0,
-      anchor: { x: 0.5, y: 1.2 },
-      style: {
-        fontSize: fontSize * 12,
-        fill: computedStyleMap["--dark"],
-        fontFamily: computedStyleMap["--bodyFont"],
-        stroke: computedStyleMap["--light"],
-        wordWrap: true,
-        wordWrapWidth: 60,
-        align: 'center',
-        lineHeight: fontSize * 14,
-      },
-      resolution: window.devicePixelRatio * 4,
-    })
+    const label = new Text()
+    label.interactive = false
+    label.eventMode = "none"
+    label.text = n.text
+    label.alpha = 0
+    label.anchor.set(0.5, 1.2)
+    label.style.fontSize = fontSize * 12
+    label.style.fill = computedStyleMap["--dark"]
+    label.style.fontFamily = computedStyleMap["--bodyFont"]
+    label.style.stroke = computedStyleMap["--light"]
+    label.style.wordWrap = true
+    label.style.wordWrapWidth = 60
+    label.style.align = 'center'
+    label.style.lineHeight = fontSize * 14
+    label.resolution = window.devicePixelRatio * 4
     label.scale.set(1 / scale)
 
     let oldLabelOpacity = 0
     const isTagNode = nodeId.startsWith("tags/")
-    const gfx = new Graphics({
-      interactive: true,
-      label: nodeId,
-      eventMode: "static",
-      hitArea: new Circle(0, 0, nodeRadius(n)),
-      cursor: "pointer",
-    })
-      .circle(0, 0, nodeRadius(n))
-      .fill({ color: isTagNode ? computedStyleMap["--light"] : color(n) })
-      .on("pointerover", (e) => {
-        updateHoverInfo(e.target.label)
-        oldLabelOpacity = label.alpha
-        if (!dragging) {
-          renderPixiFromD3()
-        }
-      })
-      .on("pointerleave", () => {
-        updateHoverInfo(null)
-        label.alpha = oldLabelOpacity
-        if (!dragging) {
-          renderPixiFromD3()
-        }
+    const nodeDetails = data.get(nodeId)
+    const isZettelNode = nodeDetails?.type === "zettel"
+    
+    let gfx: Graphics
+    if (isTagNode) {
+      // Create a hashtag icon for tag nodes
+      gfx = createHashtagGraphics(nodeRadius(n), styles.tagNode)
+      gfx.interactive = true
+      gfx.eventMode = "static"
+      gfx.cursor = "pointer"
+      gfx.hitArea = new Circle(0, 0, nodeRadius(n) * styles.tagNode.backgroundRadius)
+    } else if (isZettelNode) {
+      // Create a ζ symbol for zettel nodes
+      gfx = createZettelGraphics(nodeRadius(n), styles.zettelNode)
+      gfx.interactive = true
+      gfx.eventMode = "static"
+      gfx.cursor = "pointer"
+      gfx.hitArea = new Circle(0, 0, nodeRadius(n) * styles.zettelNode.backgroundRadius)
+    } else {
+      // Create a circle for regular nodes
+      gfx = new Graphics({
+        interactive: true,
+        eventMode: "static",
+        hitArea: new Circle(0, 0, nodeRadius(n)),
+        cursor: "pointer",
       })
 
-    if (isTagNode) {
-      gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
+      // Apply stroke style first if it's not "none"
+      if (styles.regularNode.strokeColor !== "none") {
+        gfx.lineStyle(styles.regularNode.strokeWidth, resolveStrokeColor(styles.regularNode.strokeColor))
+      }
+
+      // Then draw the filled circle
+      gfx.beginFill(resolveFillColor(styles.regularNode.fillColor))
+        .circle(0, 0, nodeRadius(n))
+        .endFill()
     }
+
+    // Add common event handlers
+    gfx.label = nodeId
+    gfx.on("pointerover", (e) => {
+      updateHoverInfo(e.target.label)
+      oldLabelOpacity = label.alpha
+      if (!dragging) {
+        renderPixiFromD3()
+      }
+    })
+    gfx.on("pointerleave", () => {
+      updateHoverInfo(null)
+      label.alpha = oldLabelOpacity
+      if (!dragging) {
+        renderPixiFromD3()
+      }
+    })
 
     nodesContainer.addChild(gfx)
     labelsContainer.addChild(label)
@@ -460,7 +669,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       simulationData: n,
       gfx,
       label,
-      color: color(n),
+      color: '#' + resolveFillColor(
+        isTagNode 
+          ? styles.tagNode.fillColor 
+          : isZettelNode 
+            ? styles.zettelNode.fillColor 
+            : styles.regularNode.fillColor
+      ).toString(16).padStart(6, '0'),
       alpha: 1,
       active: false,
     }
@@ -476,7 +691,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       simulationData: l,
       gfx,
       color: computedStyleMap["--lightgray"],
-      alpha: 1,
+      alpha: 0.1,
       active: false,
     }
 
@@ -545,21 +760,20 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
           // zoom adjusts opacity of labels too
           const scale = transform.k * opacityScale
-          let scaleOpacity = Math.max((scale - 1) / 3.75, 0)
           const activeNodes = nodeRenderData.filter((n) => n.active).flatMap((n) => n.label)
 
           for (const label of labelsContainer.children) {
-            if (!activeNodes.includes(label)) {
-              label.alpha = scaleOpacity
+            if (activeNodes.includes(label)) {
+              label.alpha = 1
+            } else {
+              label.alpha = 0
             }
           }
         }),
     )
   }
 
-  let stopAnimation = false
   function animate(time: number) {
-    if (stopAnimation) return
     for (const n of nodeRenderData) {
       const { x, y } = n.simulationData
       if (!x || !y) continue
@@ -571,11 +785,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
 
     for (const l of linkRenderData) {
       const linkData = l.simulationData
-      l.gfx.clear()
-      l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
-      l.gfx
-        .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
-        .stroke({ alpha: l.alpha, width: 0.3, color: l.color })
+      if (l.gfx instanceof Graphics) {
+        l.gfx.clear()
+        l.gfx.moveTo(linkData.source.x! + width / 2, linkData.source.y! + height / 2)
+        l.gfx
+          .lineTo(linkData.target.x! + width / 2, linkData.target.y! + height / 2)
+          .stroke({ alpha: l.alpha, width: 0.3, color: l.color })
+      }
     }
 
     tweens.forEach((t) => t.update(time))
@@ -583,101 +799,61 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     requestAnimationFrame(animate)
   }
 
-  requestAnimationFrame(animate)
-  return () => {
-    stopAnimation = true
-    app.destroy()
-  }
-}
-
-let localGraphCleanups: (() => void)[] = []
-let globalGraphCleanups: (() => void)[] = []
-
-function cleanupLocalGraphs() {
-  for (const cleanup of localGraphCleanups) {
-    cleanup()
-  }
-  localGraphCleanups = []
-}
-
-function cleanupGlobalGraphs() {
-  for (const cleanup of globalGraphCleanups) {
-    cleanup()
-  }
-  globalGraphCleanups = []
+  const graphAnimationFrameHandle = requestAnimationFrame(animate)
+  window.addCleanup(() => cancelAnimationFrame(graphAnimationFrameHandle))
 }
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const slug = e.detail.url
   addToVisited(simplifySlug(slug))
+  await renderGraph("graph-container", slug)
 
-  async function renderLocalGraph() {
-    cleanupLocalGraphs()
-    const localGraphContainers = document.getElementsByClassName("graph-container")
-    for (const container of localGraphContainers) {
-      localGraphCleanups.push(await renderGraph(container as HTMLElement, slug))
-    }
-  }
-
-  await renderLocalGraph()
+  // Function to re-render the graph when the theme changes
   const handleThemeChange = () => {
-    void renderLocalGraph()
+    renderGraph("graph-container", slug)
   }
 
+  // event listener for theme change
   document.addEventListener("themechange", handleThemeChange)
+
+  // cleanup for the event listener
   window.addCleanup(() => {
     document.removeEventListener("themechange", handleThemeChange)
   })
 
-  const containers = [...document.getElementsByClassName("global-graph-outer")] as HTMLElement[]
-  async function renderGlobalGraph() {
-    const slug = getFullSlug(window)
-    for (const container of containers) {
-      container.classList.add("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = "1"
-      }
+  const container = document.getElementById("global-graph-outer")
+  const sidebar = container?.closest(".sidebar") as HTMLElement
 
-      const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
-      registerEscapeHandler(container, hideGlobalGraph)
-      if (graphContainer) {
-        globalGraphCleanups.push(await renderGraph(graphContainer, slug))
-      }
+  function renderGlobalGraph() {
+    const slug = getFullSlug(window)
+    container?.classList.add("active")
+    if (sidebar) {
+      sidebar.style.zIndex = "1"
     }
+
+    renderGraph("global-graph-container", slug)
+    registerEscapeHandler(container, hideGlobalGraph)
   }
 
   function hideGlobalGraph() {
-    cleanupGlobalGraphs()
-    for (const container of containers) {
-      container.classList.remove("active")
-      const sidebar = container.closest(".sidebar") as HTMLElement
-      if (sidebar) {
-        sidebar.style.zIndex = ""
-      }
+    container?.classList.remove("active")
+    if (sidebar) {
+      sidebar.style.zIndex = ""
     }
   }
 
   async function shortcutHandler(e: HTMLElementEventMap["keydown"]) {
     if (e.key === "g" && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
       e.preventDefault()
-      const anyGlobalGraphOpen = containers.some((container) =>
-        container.classList.contains("active"),
-      )
-      anyGlobalGraphOpen ? hideGlobalGraph() : renderGlobalGraph()
+      const globalGraphOpen = container?.classList.contains("active")
+      globalGraphOpen ? hideGlobalGraph() : renderGlobalGraph()
     }
   }
 
-  const containerIcons = document.getElementsByClassName("global-graph-icon")
-  Array.from(containerIcons).forEach((icon) => {
-    icon.addEventListener("click", renderGlobalGraph)
-    window.addCleanup(() => icon.removeEventListener("click", renderGlobalGraph))
-  })
+  const containerIcon = document.getElementById("global-graph-icon")
+  containerIcon?.addEventListener("click", renderGlobalGraph)
+  window.addCleanup(() => containerIcon?.removeEventListener("click", renderGlobalGraph))
 
   document.addEventListener("keydown", shortcutHandler)
-  window.addCleanup(() => {
-    document.removeEventListener("keydown", shortcutHandler)
-    cleanupLocalGraphs()
-    cleanupGlobalGraphs()
-  })
+  window.addCleanup(() => document.removeEventListener("keydown", shortcutHandler))
 })

@@ -1,0 +1,204 @@
+@use "../../styles/variables.scss" as *;
+
+.sidenotes-container {
+  position: relative;
+  pointer-events: none; /* Allow clicks to pass through the container */
+}
+
+.sidenotes-left,
+.sidenotes-right {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 348px;
+  max-width: 348px;
+  pointer-events: none; /* Allow clicks to pass through, re-enable on individual tiles */
+  z-index: 0;
+  
+  /* Hide scrollbar while keeping functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Webkit browsers */
+  }
+}
+
+.sidenotes-left {
+  /* Position to the left of the main content, matching sidebar positioning */
+  left: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth + 1rem);
+  
+  @media all and (max-width: $fullPageWidth) {
+    display: none;
+  }
+}
+
+.sidenotes-right {
+  /* Position to the right of the main content, matching sidebar positioning */
+  right: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth + 1rem);
+  
+  @media all and (max-width: $fullPageWidth) {
+    display: none;
+  }
+}
+
+.sidenotes-stack {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sidenote-tile {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  pointer-events: auto; /* Re-enable clicks on the actual sidenotes */
+  background: var(--light);
+  border: 1px solid var(--darkgray);
+  border-radius: $standardRadius;
+  padding: 0; /* Remove padding from tile, add to individual sections */
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Make tile a flex container */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent tile itself from scrolling */
+  
+  /* Default positioning - will be overridden by JavaScript */
+  top: 0;
+  
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-color: var(--tertiary);
+    z-index: 2;
+  }
+
+  &:hover .sidenote-header {
+    background: var(--tertiary);
+  }
+  &:hover .sidenote-title {
+    color: black;
+  }
+  
+  &.card {
+  }
+  
+  &.minimal {
+    background: transparent;
+    box-shadow: none;
+    
+    &:hover {
+      background: var(--lightgray);
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+
+.sidenote-header {
+  /* Sticky header at top of tile */
+  flex-shrink: 0; /* Don't shrink header */
+  padding: 0.25rem 1rem 0.25rem 1rem; /* Add padding back */
+  background: var(--darkgray); /* Ensure header has background */
+  
+  .sidenote-title {
+    font-weight: 600;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    &:hover {
+      color: black !important;
+    }
+  }
+}
+
+.sidenote-content {
+  /* Scrollable content area */
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; /* Enable scrolling */
+  padding: 0.5rem 1rem 1rem 1rem; /* Add padding back */
+  
+  .sidenote-text {
+    font-family: "MapleMono";
+    font-weight: 100;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--darkgray);
+    > blockquote {
+      display: none;
+    }
+  }
+  
+  .sidenote-tag {
+    color: var(--secondary);
+    font-weight: 500;
+    background-color: var(--highlight);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin: 0 0.1rem;
+  }
+}
+
+/* Block highlighting when hovering over sidenotes */
+.block-highlighted {
+  background-color: var(--highlight);
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.2s ease;
+}
+
+/* Hide sidenotes on mobile by default */
+@media all and (max-width: $mobileBreakpoint) {
+  .sidenotes-container {
+    display: none;
+  }
+  
+  .sidenotes-container[data-show-mobile="true"] {
+    display: block;
+    
+    .sidenotes-left,
+    .sidenotes-right {
+      position: relative;
+      width: 100%;
+      left: auto;
+      right: auto;
+      margin: 1rem 0;
+    }
+    
+    .sidenote-tile {
+      position: relative;
+      top: auto !important;
+    }
+  }
+}
+
+
+// Animation for sidenotes appearing
+@keyframes fade-in {
+  0%{ opacity: 0%; }
+  50%{ opacity: 0%; }
+  100%{ opacity: 100%; } 
+}
+
+.sidenotes-left .sidenote-tile {
+  animation: fade-in 1s ease-in-out;
+}
+
+.sidenotes-right .sidenote-tile {
+  animation: fade-in 1s ease-in-out;
+  
+  @keyframes slideInFromSide {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+} 

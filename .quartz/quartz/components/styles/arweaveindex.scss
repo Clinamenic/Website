@@ -1,0 +1,126 @@
+.arweave-history {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem 1rem 1rem;
+  border-radius: 8px;
+  background-color: var(--lightgray);
+  border: 1px solid var(--gray);
+  width: 100%;
+  max-width: 367px;
+  max-height: 250px;
+  overflow-y: hidden;
+
+  h3 {
+    margin: 0 0 0.75rem 0;
+    font-family: 'GeistMono';
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--dark);
+  }
+
+  .arweave-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    border: 1px solid var(--gray);
+    border-radius: 6px;
+    height: 186px;
+    max-height: 186px;
+    overflow-y: scroll;
+  }
+
+  .arweave-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    border-bottom: 1px solid var(--gray);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .arweave-timestamp {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--darkgray);
+    font-size: 0.7rem;
+    font-weight: 200;
+    padding-left: 0.5rem;
+  }
+
+  .arweave-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .arweave-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary);
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: color 0.2s ease;
+    padding: 4px;
+
+    .external-link-icon {
+      opacity: 0.75;
+    }
+
+    &:hover {
+      color: var(--tertiary);
+      .external-link-icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  .download-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    margin: 0;
+    cursor: pointer;
+    color: var(--secondary);
+    transition: color 0.2s ease;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      opacity: 0.75;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover {
+      color: var(--tertiary);
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .arweave-entry {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .arweave-actions {
+      padding-left: 0;
+    }
+  }
+} 

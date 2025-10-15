@@ -18,12 +18,40 @@ export interface D3Config {
   removeTags: string[]
   showTags: boolean
   focusOnHover?: boolean
-  enableRadial?: boolean
+  // Node styling
+  nodeStyles?: {
+    regularNode: {
+      fillColor: string  // defaults to color(n)
+      strokeColor: string  // defaults to none
+      strokeWidth: number  // defaults to 0
+    }
+    tagNode: {
+      fillColor: string  // defaults to color(n)
+      strokeColor: string  // defaults to color(n)
+      strokeWidth: number  // defaults to 2
+      backgroundColor: string  // defaults to --gray
+      backgroundRadius: number  // defaults to 1.2 (multiplier of node radius)
+    }
+    zettelNode?: {
+      fillColor: string  // defaults to --tertiary
+      strokeColor: string  // defaults to --dark
+      strokeWidth: number  // defaults to 0.5
+      backgroundColor: string  // defaults to --light
+      backgroundRadius: number  // defaults to 1.3 (multiplier of node radius)  
+      textColor: string  // defaults to --dark
+    }
+  }
 }
 
 interface GraphOptions {
   localGraph: Partial<D3Config> | undefined
   globalGraph: Partial<D3Config> | undefined
+  showGraph?: (frontmatter: Frontmatter) => boolean
+}
+
+interface Frontmatter {
+  quartzShowGraph?: boolean
+  // ... other frontmatter properties
 }
 
 const defaultOptions: GraphOptions = {
@@ -32,43 +60,75 @@ const defaultOptions: GraphOptions = {
     zoom: true,
     depth: 1,
     scale: 1.1,
-    repelForce: 0.5,
+    repelForce: 3.0,
     centerForce: 0.3,
-    linkDistance: 30,
-    fontSize: 0.6,
+    linkDistance: 20,
+    fontSize: 0.5,
     opacityScale: 1,
     showTags: true,
     removeTags: [],
     focusOnHover: false,
-    enableRadial: false,
+    nodeStyles: {
+      regularNode: {
+        fillColor: "var(--secondary)",
+        strokeColor: "var(--dark)",
+        strokeWidth: 0.5
+      },
+      tagNode: {
+        fillColor: "white",
+        strokeColor: "white",
+        strokeWidth: 0,
+        backgroundColor: "var(--gray)",
+        backgroundRadius: 1.2
+      }
+    }
   },
   globalGraph: {
     drag: true,
     zoom: true,
     depth: -1,
     scale: 0.9,
-    repelForce: 0.5,
-    centerForce: 0.2,
-    linkDistance: 30,
-    fontSize: 0.6,
+    repelForce: 3.0,
+    centerForce: 0.3,
+    linkDistance: 20,
+    fontSize: 0.5,
     opacityScale: 1,
     showTags: true,
     removeTags: [],
     focusOnHover: true,
-    enableRadial: true,
+    nodeStyles: {
+      regularNode: {
+        fillColor: "var(--secondary)",
+        strokeColor: "var(--dark)",
+        strokeWidth: 0.5
+      },
+      tagNode: {
+        fillColor: "white",
+        strokeColor: "white",
+        strokeWidth: 0,
+        backgroundColor: "var(--gray)",
+        backgroundRadius: 1.2
+      }
+    }
   },
+  showGraph: (frontmatter: any) => frontmatter?.quartzShowGraph ?? false,
 }
 
-export default ((opts?: Partial<GraphOptions>) => {
-  const Graph: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+export default ((opts?: GraphOptions) => {
+  const Graph: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
+    const showGraph = opts?.showGraph ?? defaultOptions.showGraph
+
+    if (showGraph && fileData.frontmatter && !showGraph(fileData.frontmatter)) {
+      return null
+    }
     return (
       <div class={classNames(displayClass, "graph")}>
-        <h3>{i18n(cfg.locale).components.graph.title}</h3>
+        {/*<h3>{i18n(cfg.locale).components.graph.title}</h3>*/}
         <div class="graph-outer">
-          <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
-          <button class="global-graph-icon" aria-label="Global Graph">
+          <div id="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
+          <button id="global-graph-icon" aria-label="Global Graph">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +155,8 @@ export default ((opts?: Partial<GraphOptions>) => {
             </svg>
           </button>
         </div>
-        <div class="global-graph-outer">
-          <div class="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>
+        <div id="global-graph-outer">
+          <div id="global-graph-container" data-cfg={JSON.stringify(globalGraph)}></div>
         </div>
       </div>
     )

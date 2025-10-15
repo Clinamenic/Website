@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "markitdown": {
+            "command": "docker",
+            "args": [
+                "run",
+                "--rm",
+                "-i",
+                "-v",
+                "/Users/gideon:/workdir/home",
+                "-v",
+                "/Users/gideon/Hub/private/resources/starter-electron:/workdir/workspace",
+                "markitdown-mcp:latest"
+            ]
+        }
+    }
+}

@@ -1,5 +1,80 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "content": "test post",
+      "platforms": [
+        "bluesky"
+      ],
+      "status": "posted",
+      "id": "mbuyr57p7xjwpri5lbg",
+      "createdAt": "2025-06-13T15:29:34.501Z"
+    },
+    {
+      "content": "Test post 2",
+      "platforms": [
+        "bluesky"
+      ],
+      "status": "posted",
+      "postResults": {
+        "bluesky": {
+          "success": true,
+          "url": "https://bsky.app/profile/gideonbooker.bsky.social/post/3lrirdogv6s2w"
+        }
+      },
+      "id": "mbuz1gj37ankwwrelre",
+      "createdAt": "2025-06-13T15:37:35.727Z"
+    },
+    {
+      "content": "test X post",
+      "platforms": [
+        "x"
+      ],
+      "status": "failed",
+      "postResults": {
+        "x": {
+          "success": false,
+          "error": "Error invoking remote method 'x:post-tweet': Error: Request failed with code 403"
+        }
+      },
+      "id": "mbv0a1xqgkkggffynva",
+      "createdAt": "2025-06-13T16:12:16.334Z"
+    },
+    {
+      "content": "Test X post 2",
+      "platforms": [
+        "x"
+      ],
+      "status": "posted",
+      "postResults": {
+        "x": {
+          "success": true,
+          "url": "https://x.com/deonoffthebook/status/1933560374063702514"
+        }
+      },
+      "id": "mbv0lyt9qf1wa9vliem",
+      "createdAt": "2025-06-13T16:21:32.157Z"
+    },
+    {
+      "content": "test dual post 1",
+      "platforms": [
+        "bluesky",
+        "x"
+      ],
+      "status": "posted",
+      "postResults": {
+        "bluesky": {
+          "success": true,
+          "url": "https://bsky.app/profile/gideonbooker.bsky.social/post/3lrittmosri2o"
+        },
+        "x": {
+          "success": true,
+          "url": "https://x.com/deonoffthebook/status/1933560570306765225"
+        }
+      },
+      "id": "mbv0myscywhtqel9vn",
+      "createdAt": "2025-06-13T16:22:18.780Z"
+    }
+  ],
   "drafts": [],
   "accounts": {}
 }

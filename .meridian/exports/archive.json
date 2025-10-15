@@ -1,0 +1,527 @@
+{
+  "uploads": [
+    {
+      "filename": "helene-de-sparte-act-ii-set-design-1912 Leon Bakst.jpg",
+      "filePath": "/Users/gideon/Desktop/helene-de-sparte-act-ii-set-design-1912 Leon Bakst.jpg",
+      "fileSize": 96802,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:df1144d4-c4b0-4964-8a8c-a27ae50ec805",
+        "title:helene-de-sparte-act-ii-set-design-1912 Leon Bakst",
+        "Content-Type:image/jpeg",
+        "file-size:96802",
+        "content-hash:sha256:df1144d4c4b0f9648a8ca27ae50ec80590b61fe696d86987a3d85c3086dc2f7c",
+        "upload-timestamp:2025-08-06T17:05:41.962Z"
+      ],
+      "transactionId": "5IINZaGUt6aGgIiXDw_AJYRNq6ixTGIrdSHTqk0GGDE",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00022538"
+      },
+      "id": "me07yv0uxpd8opxsr2b",
+      "uploadedAt": "2025-08-06T17:05:46.641Z"
+    },
+    {
+      "filename": "Leon Bakst, Daphnis and chloe set design.jpg.jpg",
+      "filePath": "/Users/gideon/Desktop/Leon Bakst, Daphnis and chloe set design.jpg.jpg",
+      "fileSize": 148090,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:ae989ccd-0217-4e49-8845-e37b20102bca",
+        "title:Leon Bakst, Daphnis and chloe set design.jpg",
+        "Content-Type:image/jpeg",
+        "file-size:148090",
+        "content-hash:sha256:ae989ccd02175e492845e37b20102bca038ee50fe647f903a6c2a2e8be4d25c0",
+        "upload-timestamp:2025-08-06T17:05:47.276Z"
+      ],
+      "transactionId": "33Q8AcnxWiJCE0VkrCAceKcRn7N7IyS-ogdX1pdDJiY",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00034480",
+        "usd": "0.00"
+      },
+      "id": "me07yx5l78ubqhgqk3r",
+      "uploadedAt": "2025-08-06T17:05:49.401Z"
+    },
+    {
+      "filename": "Léon S. Bakst,  scheherazade.jpg",
+      "filePath": "/Users/gideon/Desktop/Léon S. Bakst,  scheherazade.jpg",
+      "fileSize": 219611,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:ac77de29-9b7b-4843-8de9-de3a0d162710",
+        "title:Léon S. Bakst,  scheherazade",
+        "Content-Type:image/jpeg",
+        "file-size:219611",
+        "content-hash:sha256:ac77de299b7b78433de9de3a0d162710c501bf95932109c8e58ed7a0dd0a2485",
+        "upload-timestamp:2025-08-06T17:05:49.536Z"
+      ],
+      "transactionId": "b7Tc8AZwBsu5i5mEqk9Sx0Pq5AGg2uUHkh7zBQ4ykK8",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00051132",
+        "usd": "0.00"
+      },
+      "id": "me07yyxbigevo8t609",
+      "uploadedAt": "2025-08-06T17:05:51.695Z"
+    },
+    {
+      "filename": "Léon S. Bakst, Vorhang ‘Elysium’, 1906.jpg",
+      "filePath": "/Users/gideon/Desktop/Léon S. Bakst, Vorhang ‘Elysium’, 1906.jpg",
+      "fileSize": 577311,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:51025d8c-ab33-457a-8c3d-15332aef0f3f",
+        "title:Léon S. Bakst, Vorhang ‘Elysium’, 1906",
+        "Content-Type:image/jpeg",
+        "file-size:577311",
+        "content-hash:sha256:51025d8cab33d57aec3d15332aef0f3f693625ce10cbd1118c2d30b5062c9a76",
+        "upload-timestamp:2025-08-06T17:05:51.819Z"
+      ],
+      "transactionId": "0uWwSE5iNMk4DogrlVkctZ4EqrWbmX76q_W6gIIa_E0",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00134416",
+        "usd": "0.01"
+      },
+      "id": "me07z0x7ju6tbjnda5b",
+      "uploadedAt": "2025-08-06T17:05:54.283Z"
+    },
+    {
+      "filename": "Salomon Kleiner, Castle Pommersfelden staircase.jpg",
+      "filePath": "/Users/gideon/Desktop/Salomon Kleiner, Castle Pommersfelden staircase.jpg",
+      "fileSize": 107141,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:abbc348d-9636-4430-8838-c8fce8da4b98",
+        "title:Salomon Kleiner, Castle Pommersfelden staircase",
+        "Content-Type:image/jpeg",
+        "file-size:107141",
+        "content-hash:sha256:abbc348d96361430c838c8fce8da4b98b58b391032eb4a60085275c59988c77d",
+        "upload-timestamp:2025-08-06T17:23:53.960Z"
+      ],
+      "transactionId": "3XTxG2KBGgJD-d5OacXzOdWb5Y30H70tBX-NYZPWjJI",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00024946",
+        "usd": "0.00"
+      },
+      "id": "me08m8lltltcsqzkmci",
+      "uploadedAt": "2025-08-06T17:23:57.322Z"
+    },
+    {
+      "filename": "Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan.jpg",
+      "filePath": "/Users/gideon/Desktop/Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan.jpg",
+      "fileSize": 251874,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:43bcc26f-1882-4b72-8c16-4179cead4e1c",
+        "title:Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan",
+        "Content-Type:image/jpeg",
+        "file-size:251874",
+        "content-hash:sha256:43bcc26f18825b727c164179cead4e1c9ec13d534b6c6a476c6cd43549f3488f",
+        "upload-timestamp:2025-08-06T17:23:57.514Z"
+      ],
+      "transactionId": "SvakOTtWCTRZZqUZTgxn3mGDNPOLwM3oJAXA1jUiJIQ",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00058644",
+        "usd": "0.00"
+      },
+      "id": "me08mayepbv259fy99p",
+      "uploadedAt": "2025-08-06T17:24:00.374Z"
+    },
+    {
+      "filename": "Salomon_Kleiner, Marble Gallery.jpg",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Marble Gallery.jpg",
+      "fileSize": 401452,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:838a7ed5-cbb8-49df-804a-5d3d282173b6",
+        "title:Salomon_Kleiner, Marble Gallery",
+        "Content-Type:image/jpeg",
+        "file-size:401452",
+        "content-hash:sha256:838a7ed5cbb8a9df804a5d3d282173b6be5b5f46a2d6536fb5f8f79722e27c8b",
+        "upload-timestamp:2025-08-06T17:24:00.491Z"
+      ],
+      "transactionId": "UCnKNvLuGR4L6Ir3r3gPi9ygoMw66Q2vlspBCAXnOFs",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00093470",
+        "usd": "0.01"
+      },
+      "id": "me08md0dejz9u7agsa9",
+      "uploadedAt": "2025-08-06T17:24:03.037Z"
+    },
+    {
+      "filename": "Salomon_Kleiner, Painted Cabinet.jpg",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Painted Cabinet.jpg",
+      "fileSize": 556009,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:e652aac5-5a1c-4a58-8cda-7da586f6d2eb",
+        "title:Salomon_Kleiner, Painted Cabinet",
+        "Content-Type:image/jpeg",
+        "file-size:556009",
+        "content-hash:sha256:e652aac55a1c5a585cda7da586f6d2ebbbffe8d177d62e9a5cb5c97317624909",
+        "upload-timestamp:2025-08-06T17:24:03.170Z"
+      ],
+      "transactionId": "wbUzS-_SaKLd-Hb57ESUZdCEehrzHAAp1QDfwcxM29Y",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00129456",
+        "usd": "0.01"
+      },
+      "id": "me08mfaz9jr8lphmnvq",
+      "uploadedAt": "2025-08-06T17:24:06.011Z"
+    },
+    {
+      "filename": "Salomon_Kleiner, Vue du grand Escalier.jpg",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Vue du grand Escalier.jpg",
+      "fileSize": 422640,
+      "contentType": "image/jpeg",
+      "tags": [
+        "uuid:d887bcc1-f6a3-41cb-8f86-0ff14c56a2c0",
+        "title:Salomon_Kleiner, Vue du grand Escalier",
+        "Content-Type:image/jpeg",
+        "file-size:422640",
+        "content-hash:sha256:d887bcc1f6a321cb8f860ff14c56a2c09b542850a0c2cc465020d55d8c10a622",
+        "upload-timestamp:2025-08-06T17:24:06.104Z"
+      ],
+      "transactionId": "QpADUP1dK-BnKXwDlfw6FALKtp5CpDtNjFz1S1--cj4",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00098404",
+        "usd": "0.01"
+      },
+      "id": "me08mhfv9djdjhk3wyw",
+      "uploadedAt": "2025-08-06T17:24:08.779Z"
+    },
+    {
+      "filename": "Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "filePath": "/Users/gideon/Hub/public/website/content/zettelgarten/Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "fileSize": 10763,
+      "contentType": "text/markdown",
+      "tags": [
+        "uuid:22647dd6-7c7b-438b-9da9-20773f493e50",
+        "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+        "author:Spencer Saar Cavanaugh",
+        "Content-Type:text/markdown",
+        "file-size:10763",
+        "content-hash:sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+        "upload-timestamp:2025-08-16T15:45:18.854Z",
+        "test-tag:test-value"
+      ],
+      "transactionId": "4i6Y5Ncc_EbntkGLwv5d8gEflFSSoV1PhQCvO-Xuuvk",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00002506",
+        "usd": "0.00"
+      },
+      "id": "meefhytfd74iq3gnse8",
+      "uploadedAt": "2025-08-16T15:45:21.795Z"
+    }
+  ],
+  "wallet": {
+    "address": ""
+  },
+  "files": [
+    {
+      "uuid": "df1144d4-c4b0-4964-8a8c-a27ae50ec805",
+      "title": "helene-de-sparte-act-ii-set-design-1912 Leon Bakst",
+      "filePath": "/Users/gideon/Desktop/helene-de-sparte-act-ii-set-design-1912 Leon Bakst.jpg",
+      "contentHash": "sha256:df1144d4c4b0f9648a8ca27ae50ec80590b61fe696d86987a3d85c3086dc2f7c",
+      "fileSize": 96802,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:02:04.745Z",
+      "modified": "2025-08-06T17:02:04.745Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "5IINZaGUt6aGgIiXDw_AJYRNq6ixTGIrdSHTqk0GGDE",
+          "timestamp": "2025-08-06T17:05:46.964Z",
+          "link": "https://www.arweave.net/5IINZaGUt6aGgIiXDw_AJYRNq6ixTGIrdSHTqk0GGDE",
+          "tags": [
+            "uuid:df1144d4-c4b0-4964-8a8c-a27ae50ec805",
+            "title:helene-de-sparte-act-ii-set-design-1912 Leon Bakst",
+            "Content-Type:image/jpeg",
+            "file-size:96802",
+            "content-hash:sha256:df1144d4c4b0f9648a8ca27ae50ec80590b61fe696d86987a3d85c3086dc2f7c",
+            "upload-timestamp:2025-08-06T17:05:41.962Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "ae989ccd-0217-4e49-8845-e37b20102bca",
+      "title": "Leon Bakst, Daphnis and chloe set design.jpg",
+      "filePath": "/Users/gideon/Desktop/Leon Bakst, Daphnis and chloe set design.jpg.jpg",
+      "contentHash": "sha256:ae989ccd02175e492845e37b20102bca038ee50fe647f903a6c2a2e8be4d25c0",
+      "fileSize": 148090,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:04:05.769Z",
+      "modified": "2025-08-06T17:04:05.769Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "33Q8AcnxWiJCE0VkrCAceKcRn7N7IyS-ogdX1pdDJiY",
+          "timestamp": "2025-08-06T17:05:49.442Z",
+          "link": "https://www.arweave.net/33Q8AcnxWiJCE0VkrCAceKcRn7N7IyS-ogdX1pdDJiY",
+          "tags": [
+            "uuid:ae989ccd-0217-4e49-8845-e37b20102bca",
+            "title:Leon Bakst, Daphnis and chloe set design.jpg",
+            "Content-Type:image/jpeg",
+            "file-size:148090",
+            "content-hash:sha256:ae989ccd02175e492845e37b20102bca038ee50fe647f903a6c2a2e8be4d25c0",
+            "upload-timestamp:2025-08-06T17:05:47.276Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "ac77de29-9b7b-4843-8de9-de3a0d162710",
+      "title": "Léon S. Bakst,  scheherazade",
+      "filePath": "/Users/gideon/Desktop/Léon S. Bakst,  scheherazade.jpg",
+      "contentHash": "sha256:ac77de299b7b78433de9de3a0d162710c501bf95932109c8e58ed7a0dd0a2485",
+      "fileSize": 219611,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:01:02.119Z",
+      "modified": "2025-08-06T17:01:02.119Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "b7Tc8AZwBsu5i5mEqk9Sx0Pq5AGg2uUHkh7zBQ4ykK8",
+          "timestamp": "2025-08-06T17:05:51.719Z",
+          "link": "https://www.arweave.net/b7Tc8AZwBsu5i5mEqk9Sx0Pq5AGg2uUHkh7zBQ4ykK8",
+          "tags": [
+            "uuid:ac77de29-9b7b-4843-8de9-de3a0d162710",
+            "title:Léon S. Bakst,  scheherazade",
+            "Content-Type:image/jpeg",
+            "file-size:219611",
+            "content-hash:sha256:ac77de299b7b78433de9de3a0d162710c501bf95932109c8e58ed7a0dd0a2485",
+            "upload-timestamp:2025-08-06T17:05:49.536Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "51025d8c-ab33-457a-8c3d-15332aef0f3f",
+      "title": "Léon S. Bakst, Vorhang ‘Elysium’, 1906",
+      "filePath": "/Users/gideon/Desktop/Léon S. Bakst, Vorhang ‘Elysium’, 1906.jpg",
+      "contentHash": "sha256:51025d8cab33d57aec3d15332aef0f3f693625ce10cbd1118c2d30b5062c9a76",
+      "fileSize": 577311,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:00:02.435Z",
+      "modified": "2025-08-06T17:00:02.435Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "0uWwSE5iNMk4DogrlVkctZ4EqrWbmX76q_W6gIIa_E0",
+          "timestamp": "2025-08-06T17:05:54.303Z",
+          "link": "https://www.arweave.net/0uWwSE5iNMk4DogrlVkctZ4EqrWbmX76q_W6gIIa_E0",
+          "tags": [
+            "uuid:51025d8c-ab33-457a-8c3d-15332aef0f3f",
+            "title:Léon S. Bakst, Vorhang ‘Elysium’, 1906",
+            "Content-Type:image/jpeg",
+            "file-size:577311",
+            "content-hash:sha256:51025d8cab33d57aec3d15332aef0f3f693625ce10cbd1118c2d30b5062c9a76",
+            "upload-timestamp:2025-08-06T17:05:51.819Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "abbc348d-9636-4430-8838-c8fce8da4b98",
+      "title": "Salomon Kleiner, Castle Pommersfelden staircase",
+      "filePath": "/Users/gideon/Desktop/Salomon Kleiner, Castle Pommersfelden staircase.jpg",
+      "contentHash": "sha256:abbc348d96361430c838c8fce8da4b98b58b391032eb4a60085275c59988c77d",
+      "fileSize": 107141,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:15:26.725Z",
+      "modified": "2025-08-06T17:15:26.726Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "3XTxG2KBGgJD-d5OacXzOdWb5Y30H70tBX-NYZPWjJI",
+          "timestamp": "2025-08-06T17:23:57.412Z",
+          "link": "https://www.arweave.net/3XTxG2KBGgJD-d5OacXzOdWb5Y30H70tBX-NYZPWjJI",
+          "tags": [
+            "uuid:abbc348d-9636-4430-8838-c8fce8da4b98",
+            "title:Salomon Kleiner, Castle Pommersfelden staircase",
+            "Content-Type:image/jpeg",
+            "file-size:107141",
+            "content-hash:sha256:abbc348d96361430c838c8fce8da4b98b58b391032eb4a60085275c59988c77d",
+            "upload-timestamp:2025-08-06T17:23:53.960Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "43bcc26f-1882-4b72-8c16-4179cead4e1c",
+      "title": "Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan",
+      "filePath": "/Users/gideon/Desktop/Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan.jpg",
+      "contentHash": "sha256:43bcc26f18825b727c164179cead4e1c9ec13d534b6c6a476c6cd43549f3488f",
+      "fileSize": 251874,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:19:38.485Z",
+      "modified": "2025-08-06T17:19:38.486Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "SvakOTtWCTRZZqUZTgxn3mGDNPOLwM3oJAXA1jUiJIQ",
+          "timestamp": "2025-08-06T17:24:00.412Z",
+          "link": "https://www.arweave.net/SvakOTtWCTRZZqUZTgxn3mGDNPOLwM3oJAXA1jUiJIQ",
+          "tags": [
+            "uuid:43bcc26f-1882-4b72-8c16-4179cead4e1c",
+            "title:Salomon Kleiner, Prospect du Second Apartement des Princes de Cote de la Poissonneirie marque D. sans le Plan",
+            "Content-Type:image/jpeg",
+            "file-size:251874",
+            "content-hash:sha256:43bcc26f18825b727c164179cead4e1c9ec13d534b6c6a476c6cd43549f3488f",
+            "upload-timestamp:2025-08-06T17:23:57.514Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "838a7ed5-cbb8-49df-804a-5d3d282173b6",
+      "title": "Salomon_Kleiner, Marble Gallery",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Marble Gallery.jpg",
+      "contentHash": "sha256:838a7ed5cbb8a9df804a5d3d282173b6be5b5f46a2d6536fb5f8f79722e27c8b",
+      "fileSize": 401452,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:16:33.422Z",
+      "modified": "2025-08-06T17:16:33.422Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "UCnKNvLuGR4L6Ir3r3gPi9ygoMw66Q2vlspBCAXnOFs",
+          "timestamp": "2025-08-06T17:24:03.061Z",
+          "link": "https://www.arweave.net/UCnKNvLuGR4L6Ir3r3gPi9ygoMw66Q2vlspBCAXnOFs",
+          "tags": [
+            "uuid:838a7ed5-cbb8-49df-804a-5d3d282173b6",
+            "title:Salomon_Kleiner, Marble Gallery",
+            "Content-Type:image/jpeg",
+            "file-size:401452",
+            "content-hash:sha256:838a7ed5cbb8a9df804a5d3d282173b6be5b5f46a2d6536fb5f8f79722e27c8b",
+            "upload-timestamp:2025-08-06T17:24:00.491Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "e652aac5-5a1c-4a58-8cda-7da586f6d2eb",
+      "title": "Salomon_Kleiner, Painted Cabinet",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Painted Cabinet.jpg",
+      "contentHash": "sha256:e652aac55a1c5a585cda7da586f6d2ebbbffe8d177d62e9a5cb5c97317624909",
+      "fileSize": 556009,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:13:14.638Z",
+      "modified": "2025-08-06T17:13:14.638Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "wbUzS-_SaKLd-Hb57ESUZdCEehrzHAAp1QDfwcxM29Y",
+          "timestamp": "2025-08-06T17:24:06.043Z",
+          "link": "https://www.arweave.net/wbUzS-_SaKLd-Hb57ESUZdCEehrzHAAp1QDfwcxM29Y",
+          "tags": [
+            "uuid:e652aac5-5a1c-4a58-8cda-7da586f6d2eb",
+            "title:Salomon_Kleiner, Painted Cabinet",
+            "Content-Type:image/jpeg",
+            "file-size:556009",
+            "content-hash:sha256:e652aac55a1c5a585cda7da586f6d2ebbbffe8d177d62e9a5cb5c97317624909",
+            "upload-timestamp:2025-08-06T17:24:03.170Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "d887bcc1-f6a3-41cb-8f86-0ff14c56a2c0",
+      "title": "Salomon_Kleiner, Vue du grand Escalier",
+      "filePath": "/Users/gideon/Desktop/Salomon_Kleiner, Vue du grand Escalier.jpg",
+      "contentHash": "sha256:d887bcc1f6a321cb8f860ff14c56a2c09b542850a0c2cc465020d55d8c10a622",
+      "fileSize": 422640,
+      "mimeType": "image/jpeg",
+      "created": "2025-08-06T17:18:35.624Z",
+      "modified": "2025-08-06T17:18:35.625Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "QpADUP1dK-BnKXwDlfw6FALKtp5CpDtNjFz1S1--cj4",
+          "timestamp": "2025-08-06T17:24:08.812Z",
+          "link": "https://www.arweave.net/QpADUP1dK-BnKXwDlfw6FALKtp5CpDtNjFz1S1--cj4",
+          "tags": [
+            "uuid:d887bcc1-f6a3-41cb-8f86-0ff14c56a2c0",
+            "title:Salomon_Kleiner, Vue du grand Escalier",
+            "Content-Type:image/jpeg",
+            "file-size:422640",
+            "content-hash:sha256:d887bcc1f6a321cb8f860ff14c56a2c09b542850a0c2cc465020d55d8c10a622",
+            "upload-timestamp:2025-08-06T17:24:06.104Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "22647dd6-7c7b-438b-9da9-20773f493e50",
+      "title": "Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+      "filePath": "/Users/gideon/Hub/public/website/content/zettelgarten/Reflections on Deep-Network Diplomacy and Micropolitical Stabilization.md",
+      "contentHash": "sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+      "fileSize": 10763,
+      "mimeType": "text/markdown",
+      "created": "2025-08-15T16:59:28.808Z",
+      "modified": "2025-08-16T15:41:16.111Z",
+      "tags": [],
+      "metadata": {
+        "author": [
+          "Spencer Saar Cavanaugh"
+        ],
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "4i6Y5Ncc_EbntkGLwv5d8gEflFSSoV1PhQCvO-Xuuvk",
+          "timestamp": "2025-08-16T15:45:21.837Z",
+          "link": "https://www.arweave.net/4i6Y5Ncc_EbntkGLwv5d8gEflFSSoV1PhQCvO-Xuuvk",
+          "tags": [
+            "uuid:22647dd6-7c7b-438b-9da9-20773f493e50",
+            "title:Reflections on Deep-Network Diplomacy and Micropolitical Stabilization",
+            "author:Spencer Saar Cavanaugh",
+            "Content-Type:text/markdown",
+            "file-size:10763",
+            "content-hash:sha256:d22c75683761e37ff866bf82fb0c4189f6703bb6dba88bce52d5bc07ec56d9b3",
+            "upload-timestamp:2025-08-16T15:45:18.854Z",
+            "test-tag:test-value"
+          ]
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2025-08-16T15:45:21.840Z",
+  "version": "2.0"
+}

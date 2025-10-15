@@ -1,0 +1,124 @@
+main {
+    --color-prettylights-syntax-comment: var(--gray);
+    --color-prettylights-syntax-constant: var(--secondary);
+    --color-prettylights-syntax-entity: var(--tertiary);
+    --color-prettylights-syntax-storage-modifier-import: var(--light);
+    --color-prettylights-syntax-entity-tag: var(--secondary);
+    --color-prettylights-syntax-keyword: var(--tertiary);
+    --color-prettylights-syntax-string: var(--secondary);
+    --color-prettylights-syntax-variable: var(--tertiary);
+    --color-prettylights-syntax-brackethighlighter-unmatched: var(--tertiary);
+    --color-prettylights-syntax-invalid-illegal-text: var(--light);
+    --color-prettylights-syntax-invalid-illegal-bg: var(--darkgray);
+    --color-prettylights-syntax-carriage-return-text: var(--light);
+    --color-prettylights-syntax-carriage-return-bg: var(--darkgray);
+    --color-prettylights-syntax-string-regexp: var(--secondary);
+    --color-prettylights-syntax-markup-list: var(--tertiary);
+    --color-prettylights-syntax-markup-heading: var(--secondary);
+    --color-prettylights-syntax-markup-italic: var(--light);
+    --color-prettylights-syntax-markup-bold: var(--light);
+    --color-prettylights-syntax-markup-deleted-text: var(--lightgray);
+    --color-prettylights-syntax-markup-deleted-bg: var(--darkgray);
+    --color-prettylights-syntax-markup-inserted-text: var(--secondary);
+    --color-prettylights-syntax-markup-inserted-bg: var(--darkgray);
+    --color-prettylights-syntax-markup-changed-text: var(--tertiary);
+    --color-prettylights-syntax-markup-changed-bg: var(--darkgray);
+    --color-prettylights-syntax-markup-ignored-text: var(--light);
+    --color-prettylights-syntax-markup-ignored-bg: var(--secondary);
+    --color-prettylights-syntax-meta-diff-range: var(--tertiary);
+    --color-prettylights-syntax-brackethighlighter-angle: var(--gray);
+    --color-prettylights-syntax-sublimelinter-gutter-mark: var(--gray);
+    --color-prettylights-syntax-constant-other-reference-link: var(--secondary);
+    --color-btn-text: var(--light);
+    --color-btn-bg: var(--darkgray);
+    --color-btn-border: var(--gray);
+    --color-btn-shadow: 0 0 transparent;
+    --color-btn-inset-shadow: 0 0 transparent;
+    --color-btn-hover-bg: var(--gray);
+    --color-btn-hover-border: var(--light);
+    --color-btn-active-bg: var(--darkgray);
+    --color-btn-active-border: var(--light);
+    --color-btn-selected-bg: var(--dark);
+    --color-btn-primary-text: var(--light);
+    --color-btn-primary-bg: var(--secondary);
+    --color-btn-primary-border: var(--tertiary);
+    --color-btn-primary-shadow: 0 0 transparent;
+    --color-btn-primary-inset-shadow: 0 0 transparent;
+    --color-btn-primary-hover-bg: var(--tertiary);
+    --color-btn-primary-hover-border: var(--light);
+    --color-btn-primary-selected-bg: var(--secondary);
+    --color-btn-primary-selected-shadow: 0 0 transparent;
+    --color-btn-primary-disabled-text: var(--lightgray);
+    --color-btn-primary-disabled-bg: var(--gray);
+    --color-btn-primary-disabled-border: var(--darkgray);
+    --color-action-list-item-default-hover-bg: var(--lightgray);
+    --color-segmented-control-bg: var(--gray);
+    --color-segmented-control-button-bg: var(--dark);
+    --color-segmented-control-button-selected-border: var(--light);
+    --color-fg-default: var(--light);
+    --color-fg-muted: var(--gray);
+    --color-fg-subtle: var(--darkgray);
+    --color-canvas-default: var(--dark);
+    --color-canvas-overlay: var(--darkgray);
+    --color-canvas-inset: var(--dark);
+    --color-canvas-subtle: var(--darkgray);
+    --color-border-default: var(--gray);
+    --color-border-muted: var(--darkgray);
+    --color-neutral-muted: var(--gray);
+    --color-accent-fg: var(--secondary);
+    --color-accent-emphasis: var(--tertiary);
+    --color-accent-muted: var(--secondary);
+    --color-accent-subtle: var(--darkgray);
+    --color-success-fg: var(--secondary);
+    --color-attention-fg: var(--tertiary);
+    --color-attention-muted: var(--secondary);
+    --color-attention-subtle: var(--darkgray);
+    --color-danger-fg: var(--tertiary);
+    --color-danger-muted: var(--secondary);
+    --color-danger-subtle: var(--darkgray);
+    --color-primer-shadow-inset: 0 0 transparent;
+    --color-scale-gray-7: var(--gray);
+    --color-scale-blue-8: var(--secondary);
+  
+    --color-social-reaction-bg-hover: var(--darkgray);
+    --color-social-reaction-bg-reacted-hover: var(--secondary);
+}
+
+main .pagination-loader-container {
+    background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+}
+
+/*! Custom CSS */
+
+.gsc-reactions-count {
+    display: none;
+}
+
+.gsc-timeline {
+    flex-direction: column-reverse;
+}
+
+.gsc-header {
+    padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+    order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+    order: 2;
+    margin-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-timeline {
+    order: 3;
+}
+
+.gsc-homepage-bg {
+    background-color: var(--dark);
+}
+
+main .gsc-loading-image {
+    background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif");
+}

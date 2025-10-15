@@ -1,29 +1,28 @@
 @use "../../styles/variables.scss" as *;
 
 .graph {
-  max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
   & > h3 {
     font-size: 1rem;
     margin: 0;
   }
 
   & > .graph-outer {
-    border-radius: var(--border-radius-normal);
-    border: 1px solid var(--lightgray);
+    max-width: var(--pageContentWidth);
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    background-color: var(--lightgray);
     box-sizing: border-box;
     height: 250px;
-    margin: 0.5em 0;
+    margin: 1rem 0rem 0rem 0rem;
     position: relative;
     overflow: hidden;
 
-    & > .global-graph-icon {
-      cursor: pointer;
+    & > #global-graph-icon {
+      // cursor: pointer;
       background: none;
       border: none;
       color: var(--dark);
-      opacity: 0.5;
+      opacity: 0;
       width: 24px;
       height: 24px;
       position: absolute;
@@ -31,22 +30,16 @@
       margin: 0.3rem;
       top: 0;
       right: 0;
-      border-radius: 4px;
+      border-radius: 10px;
       background-color: transparent;
       transition: background-color 0.5s ease;
-      cursor: pointer;
       &:hover {
-        background-color: var(--lightgray);
+        opacity: 0;
       }
     }
   }
 
-  .graph-container {
-    background-color: var(--light);
-    opacity: 1;
-  }
-
-  & > .global-graph-outer {
+  & > #global-graph-outer {
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -54,17 +47,17 @@
     width: 100vw;
     height: 100%;
     backdrop-filter: blur(4px);
-    display: none;
+    visibility: hidden;
     overflow: hidden;
 
     &.active {
-      display: inline-block;
+      visibility: visible;
     }
 
-    & > .global-graph-container {
-      border: 1px solid var(--lightgray);
+    & > #global-graph-container {
+      border: 1px solid var(--gray);
       background-color: var(--light);
-      border-radius: var(--border-radius-normal);
+      border-radius: 10px;
       box-sizing: border-box;
       position: fixed;
       top: 50%;
@@ -72,8 +65,14 @@
       transform: translate(-50%, -50%);
       height: 80vh;
       width: 80vw;
+      overflow: hidden;
 
-      @media all and not ($desktop) {
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      @media all and (max-width: $fullPageWidth) {
         width: 90%;
       }
     }

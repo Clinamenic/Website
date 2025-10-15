@@ -1,0 +1,124 @@
+name: Arweave Query Test
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: "Setup Arweave JS and YAML"
+        run: npm install arweave js-yaml
+
+      - name: "Query Arweave for hashes"
+        run: |
+          node <<EOF
+          const Arweave = require('arweave');
+          const fs = require('fs').promises;
+          const yaml = require('js-yaml');
+          const path = require('path');
+
+          const arweave = Arweave.init({
+            host: 'arweave.net',
+            port: 443,
+            protocol: 'https'
+          });
+
+          async function getRepoFiles(dir) {
+            const entries = await fs.readdir(dir, { withFileTypes: true });
+            const files = await Promise.all(entries.map((entry) => {
+              const res = path.resolve(dir, entry.name);
+              return entry.isDirectory() ? getRepoFiles(res) : res;
+            }));
+            return files.flat().filter(file => file.endsWith('.md'));
+          }
+
+          async function queryArweaveHashes() {
+            const files = await getRepoFiles('Content');
+
+            for (const file of files) {
+              const content = await fs.readFile(file, 'utf8');
+              const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+              
+              if (frontmatterMatch) {
+                const frontmatter = yaml.load(frontmatterMatch[1]);
+                
+                if (frontmatter['arweave-track'] === true && frontmatter.uuid) {
+                  const query = `
+                    query {
+                      transactions(
+                        tags: [
+                          { name: "UUID", values: ["${frontmatter.uuid}"] }
+                        ],
+                        sort: HEIGHT_DESC
+                      ) {
+                        edges {
+                          node {
+                            id
+                            block {
+                              timestamp
+                            }
+                          }
+                        }
+                      }
+                    }
+                  `;
+
+                  const response = await arweave.api.post('graphql', { query });
+                  const newHashes = response.data.data.transactions.edges.map(edge => ({
+                    hash: edge.node.id,
+                    timestamp: new Date(edge.node.block.timestamp * 1000).toISOString()
+                  }));
+
+                  if (!frontmatter['arweave-hashes']) {
+                    frontmatter['arweave-hashes'] = [];
+                  }
+
+                  const existingHashes = new Set(frontmatter['arweave-hashes'].map(item => item.hash));
+                  let hasNewHashes = false;
+
+                  for (const { hash, timestamp } of newHashes) {
+                    if (!existingHashes.has(hash)) {
+                      frontmatter['arweave-hashes'].push({ hash, timestamp });
+                      hasNewHashes = true;
+                    }
+                  }
+
+                  if (hasNewHashes) {
+                    console.log(`Added new hashes for ${file}`);
+                    await updateFileFrontmatter(file, frontmatter);
+                  } else {
+                    console.log(`No new hashes for ${file}`);
+                  }
+                }
+              }
+            }
+          }
+
+          async function updateFileFrontmatter(file, frontmatter) {
+            let content = await fs.readFile(file, 'utf8');
+            const newFrontmatter = yaml.dump(frontmatter);
+            content = content.replace(/^---\n[\s\S]*?\n---/, `---\n${newFrontmatter}---`);
+            await fs.writeFile(file, content, 'utf8');
+          }
+
+          queryArweaveHashes();
+          EOF
+
+      - name: "Commit updated files"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update Arweave hashes in frontmatter" || echo "No changes to commit"
+          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git

@@ -1,17 +1,11 @@
-@use "../../styles/variables.scss" as *;
-
-.toc {
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  min-height: 1.4rem;
-  flex: 0 0.5 auto;
-  &:has(button.toc-header.collapsed) {
-    flex: 0 1 1.4rem;
-  }
+.toc-container {
+  border: 1px solid var(--gray);
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
-button.toc-header {
+button#toc {
   background-color: transparent;
   border: none;
   text-align: left;
@@ -38,23 +32,43 @@ button.toc-header {
   }
 }
 
-ul.toc-content.overflow {
+#toc-content {
   list-style: none;
+  overflow: hidden;
+  max-height: none;
+  transition:
+    max-height 0.5s ease,
+    visibility 0s linear 0s;
   position: relative;
-  margin: 0.5rem 0;
-  padding: 0;
-  max-height: calc(100% - 2rem);
-  overscroll-behavior: contain;
-  list-style: none;
+  visibility: visible;
 
-  & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
+  &.collapsed {
     transition:
-      0.5s ease opacity,
-      0.3s ease color;
-    &.in-view {
-      opacity: 0.75;
+      max-height 0.5s ease,
+      visibility 0s linear 0.5s;
+    visibility: hidden;
+  }
+
+  &.collapsed > .overflow::after {
+    opacity: 0;
+  }
+
+  & ul {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+    & > li {
+      font-weight: 200;
+    }
+    & > li > a {
+      color: var(--dark);
+      opacity: 0.35;
+      transition:
+        0.5s ease opacity,
+        0.3s ease color;
+      &.in-view {
+        opacity: 0.75;
+      }
     }
   }
 

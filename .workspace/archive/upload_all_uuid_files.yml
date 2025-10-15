@@ -1,0 +1,92 @@
+name: Upload All MD Files with UUID
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install arweave js-yaml
+
+      - name: Create upload script
+        run: |
+          cat << EOF > upload_all_script.js
+          import Arweave from 'arweave';
+          import { promises as fs } from 'fs';
+          import path from 'path';
+          import yaml from 'js-yaml';
+
+          const arweave = Arweave.init({
+            host: 'arweave.net',
+            port: 443,
+            protocol: 'https'
+          });
+
+          let wallet;
+          try {
+            wallet = JSON.parse(process.env.ARWEAVE_WALLET);
+            console.log("Wallet parsed successfully");
+          } catch (error) {
+            console.error("Error parsing ARWEAVE_WALLET:", error);
+            process.exit(1);
+          }
+
+          async function getMarkdownFiles(dir) {
+            const entries = await fs.readdir(dir, { withFileTypes: true });
+            const files = await Promise.all(entries.map((entry) => {
+              const res = path.resolve(dir, entry.name);
+              return entry.isDirectory() ? getMarkdownFiles(res) : res;
+            }));
+            return files.flat().filter(file => file.endsWith('.md'));
+          }
+
+          async function uploadFile(filePath) {
+            try {
+              const fileContent = await fs.readFile(filePath, 'utf8');
+              const frontmatter = yaml.loadFront(fileContent);
+              const uuid = frontmatter.uuid;
+
+              if (!uuid) {
+                console.log(`No UUID found for ${filePath}. Skipping.`);
+                return;
+              }
+
+              const transaction = await arweave.createTransaction({ data: fileContent }, wallet);
+              transaction.addTag('Content-Type', 'text/markdown');
+              transaction.addTag('UUID', uuid);
+
+              await arweave.transactions.sign(transaction, wallet);
+              await arweave.transactions.post(transaction);
+
+              console.log(`Uploaded ${filePath} with UUID ${uuid}. Transaction ID: ${transaction.id}`);
+            } catch (error) {
+              console.error(`Error uploading ${filePath}: ${error.message}`);
+            }
+          }
+
+          async function processAllFiles() {
+            const files = await getMarkdownFiles('.');
+            console.log("Files to process:", files);
+            for (const file of files) {
+              await uploadFile(file);
+            }
+          }
+
+          processAllFiles().catch(error => {
+            console.error("Error in processAllFiles:", error.message);
+            process.exit(1);
+          });
+          EOF
+
+      - name: Upload all markdown files with UUID
+        run: node upload_all_script.js
+        env:
+          ARWEAVE_WALLET: ${{ secrets.ARWEAVE_WALLET }}

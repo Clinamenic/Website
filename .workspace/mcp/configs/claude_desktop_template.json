@@ -1,0 +1,24 @@
+{
+    "_comment": "Template for Claude Desktop MCP configuration. Copy this to your Claude Desktop config location.",
+    "_instructions": [
+        "1. Copy this file contents to your Claude Desktop configuration",
+        "2. Update the volume mount paths to match your system",
+        "3. Build the Docker images first using the setup script",
+        "4. Restart Claude Desktop after configuration"
+    ],
+    "mcpServers": {
+        "markitdown": {
+            "command": "docker",
+            "args": [
+                "run",
+                "--rm",
+                "-i",
+                "-v",
+                "$HOME:/workdir/home",
+                "-v",
+                "/path/to/your/workspace:/workdir/workspace",
+                "markitdown-mcp:latest"
+            ]
+        }
+    }
+}

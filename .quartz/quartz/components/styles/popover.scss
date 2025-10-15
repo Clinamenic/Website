@@ -16,32 +16,30 @@
 
 .popover {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   overflow: visible;
   padding: 1rem;
-  left: 0;
-  top: 0;
-  will-change: transform;
+
+  .banner {
+    display: none;
+  }
 
   & > .popover-inner {
     position: relative;
     width: 30rem;
     max-height: 20rem;
-    padding: 0 1rem 1rem 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     font-weight: initial;
     font-style: initial;
     line-height: normal;
     font-size: initial;
     font-family: var(--bodyFont);
-    border: 1px solid var(--lightgray);
+    border: 1px solid var(--gray);
     background-color: var(--light);
-    border-radius: var(--border-radius-normal);
+    border-radius: 10px;
     box-shadow: 6px 6px 36px 0 rgba(0, 0, 0, 0.25);
     overflow: auto;
-    overscroll-behavior: contain;
     white-space: normal;
-    user-select: none;
-    cursor: default;
   }
 
   & > .popover-inner[data-content-type] {
@@ -76,12 +74,12 @@
     opacity 0.3s ease,
     visibility 0.3s ease;
 
-  @media all and ($mobile) {
+  @media all and (max-width: $mobileBreakpoint) {
     display: none !important;
   }
 }
 
-.active-popover,
+a:hover .popover,
 .popover:hover {
   animation: dropin 0.3s ease;
   animation-fill-mode: forwards;

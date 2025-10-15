@@ -1,7 +1,7 @@
 {
-  "name": "rarecompute-website",
-  "version": "1.0.0",
-  "description": "RareCompute website built with custom Quartz framework",
+  "name": "website",
+  "version": "3.0.0",
+  "description": "Website built with custom Quartz framework",
   "type": "module",
   "engines": {
     "node": ">=22",

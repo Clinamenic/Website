@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext == "md"
+        - author.contains("Spencer Saar Cavanaugh")
+        - type == "zettel"
+    order:
+      - date
+      - file.name
+      - title
+      - reference
+    sort:
+      - property: date
+        direction: ASC
+      - property: reference
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 90
+      note.title: 523

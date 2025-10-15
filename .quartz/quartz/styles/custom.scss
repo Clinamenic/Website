@@ -1,3 +1,861 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
+@import "../components/styles/authorname.scss";
+@import "../components/styles/publishdate.scss";
+@import "../components/styles/licenseinfo.scss";
 
 // put your custom CSS here!
+
+:root {
+  --main-border-rad: 10px;
+}
+
+.heading1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.body-p{
+  text-align: justify;
+  font-size: small;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.text-box{
+  position: relative;
+  background-color: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-radius: $standardRadius;
+  padding: 1rem;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.test-image-box{
+  width: 300px;  /* or any desired width */
+  height: 300px;
+  position: relative;
+  --light: red;
+  --lightgray: blue;
+  // background-image: url('https://mgogss5tjplk6loo44xiyhilk6euzgbx7mu52av7tzon5mmghvhq.arweave.net/YZxpS7NL1q8tzucujB0LV4lMmDf7Kd0Cv55c3rGGPU8');
+  -webkit-mask-image: url('https://mgogss5tjplk6loo44xiyhilk6euzgbx7mu52av7tzon5mmghvhq.arweave.net/YZxpS7NL1q8tzucujB0LV4lMmDf7Kd0Cv55c3rGGPU8');
+  mask-image: url('https://mgogss5tjplk6loo44xiyhilk6euzgbx7mu52av7tzon5mmghvhq.arweave.net/YZxpS7NL1q8tzucujB0LV4lMmDf7Kd0Cv55c3rGGPU8');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.experience-box{
+  position: relative;
+  background-color: var(--lightgray);
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  padding-left: 10px; 
+  padding-right: 10px;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.gallery-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+.gallery1 {
+  display: grid;
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  grid-template-columns: repeat(1, 100%);
+  grid-auto-rows: auto;
+  justify-content: center;
+  grid-row-gap: 1rem;
+}
+
+.gallery2 {
+  display: grid;
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  grid-template-columns: repeat(2, calc((100% - 1rem) / 2));
+  grid-auto-rows: auto;
+  justify-content: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  @media only screen and (max-width: 750px) {
+    grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.gallery2-fixed {
+  display: grid;
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  grid-template-columns: repeat(2, calc((100% - 1rem) / 2));
+  grid-template-rows: repeat(infinite, 49%);
+  justify-content: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+.gallery3 {
+  display: grid;
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  grid-template-columns: repeat(3, calc((100% - 2rem) / 3));
+  grid-template-rows: repeat(infinite, 48%);
+  justify-content: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  @media only screen and (max-width: 750px) {
+    grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.footer-gallery3 {
+  display: grid;
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  grid-template-columns: 0.4fr 0.7fr 0.9fr;
+  grid-template-rows: repeat(infinite, 48%);
+  justify-content: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  @media only screen and (max-width: 750px) {
+    grid-template-columns: repeat(1, 100%);
+    }
+}
+
+.gallery4 {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 3rem) / 4));
+  grid-template-rows: repeat(infinite, 48%);
+  width: 100%;
+  max-width: var(--pageContentWidth);
+  justify-content: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  @media only screen and (max-width: 750px) {
+  grid-template-columns: repeat(2, calc((100% - 1rem) / 2));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  }
+}
+
+
+.gallery-tile-exp{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  background-color: var(--secondary);
+  margin: 0rem 0rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+} 
+.gallery-tile-exp:hover {
+  background-color: var(--tertiary);
+}
+.gallery-tile-exp .body-p {
+  font-size: 0.70rem !important;
+  line-height: 20px;
+  margin: 0rem;
+  padding: 0rem;
+  color: white !important;
+}
+.gallery-tile-exp:hover .body-p {
+  color: black !important;
+}
+.gallery-tile-exp img {
+  margin: 0rem 0rem 0rem 0rem;
+  transition: all 0.3s ease;
+  padding: 0.25rem
+}
+.gallery-tile-exp:hover img {
+  filter: invert(100%);
+}
+
+.clinamenic-cube{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  animation: fade-in 3s ease-in;
+  padding-top: 0rem;
+}
+
+.Clinamenic-Slide{
+  margin-left: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 90px;
+  width: 90px;
+  cursor: default;
+}
+
+.tri-column{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1rem;
+}
+@media only screen and (max-width: 830px) {
+  .tri-column {
+    grid-template-columns: 100%;
+  }
+}
+
+.side-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (max-width: 830px) {
+  .side-column {
+    display: none;
+  }
+}
+
+
+
+.pdf-embed {
+  width: calc(100% - 2px);
+  height: 600px;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+}
+
+.newsletter{
+  bottom: 0;
+  display: grid;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 830px) {
+  .newsletter {
+      display: none;
+  }
+}
+
+#dynamicTextAlt{
+  display: none;
+  position: absolute;
+  text-align: center;
+  height: 20px;
+  width: 275px;
+  right: -6rem;
+  top: 0.5rem;
+  color: yellow;
+  text-shadow:
+    -1.5px -1.5px 0 black,
+    1.5px -1.5px 0 black,
+    -1.5px 1.5px 0 black,
+    1.5px 1.5px 0 black;
+  font-size: 0.75rem;
+  font-family: 'Minecraft', sans-serif;
+  letter-spacing: 3px;
+  animation: text-pulse 1.8s ease-in-out infinite;
+  transform: rotate(6deg);
+  z-index: 1;
+}
+@media only screen and (max-width: 830px) {
+  #dynamicTextAlt{
+      display: none;
+  }
+}
+
+.spacer10{
+  height: 10px;
+  width: 10px;
+}
+
+@keyframes slide-from-left {
+  0% { opacity: 0%; transform: translateX(-250px); }
+  100% { opacity: 100%; transform: translateX(0px); }
+}
+
+@keyframes slide-from-right {
+  0% { opacity: 0%; transform: translateX(250px); }
+  100% { opacity: 100%; transform: translateX(0px); }
+}
+@keyframes slide-right-400 {
+  0% { opacity: 0%; transform: translateX(-400px); }
+  100% { opacity: 100%; transform: translateX(0px); }
+}
+@keyframes slide-left-400 {
+  0% { opacity: 0%; transform: translateX(400px); }
+  100% { opacity: 100%; transform: translateX(0px); }
+}
+
+
+
+@keyframes fade-in {
+  0%{ opacity: 0%; }
+  50%{ opacity: 0%; }
+  100%{ opacity: 100%; } 
+}
+@keyframes fade-up {
+  0%{ opacity: 0%; transform:translateY(25px)}
+  100%{ opacity: 100%; transform:translateY(0px)} 
+}
+@keyframes fade-down {
+  0%{ opacity: 0%; transform:translateY(-25px)}
+  100%{ opacity: 100%; transform:translateY(0px)} 
+}
+@keyframes fade-down-100 {
+  0%{ opacity: 0%; transform:translateY(-100px)}
+  100%{ opacity: 100%; transform:translateY(0px)} 
+}
+@keyframes fade-down-300 {
+  0%{ opacity: 0%; transform:translateY(-300px)}
+  100%{ opacity: 100%; transform:translateY(0px)} 
+}
+
+
+@keyframes text-pulse {
+  0%{ font-size: 0.9rem; }
+  50%{ font-size: 1.2rem; } 
+  100%{ font-size: 0.9rem; }
+}
+
+@keyframes slide-up {
+  0% { transform: translateY(-250px); }
+  100% { transform: translateY(0px); }
+}
+
+// GALLERY IMAGE STYLES
+.gallery-row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery-column {
+  box-sizing: border-box;
+  flex: 50%;
+  max-width: calc(50% - 0.5rem);
+  > .img-wrapper {
+    margin: 1rem 0rem;
+  }
+}
+
+.gallery-column img {
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0rem;
+  border: 1px solid var(--gray)
+}
+
+// END GALLERY IMAGE STYLES
+
+// IMAGE MODAL STYLES
+.image-modal-outer {
+  position: fixed;
+  z-index: 10002;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .image-modal-container {
+    border: 0px solid var(--gray);
+    background-color: var(--light);
+    border-radius: 0px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+
+    &.active {
+
+    }
+
+    .image-modal-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      overflow: auto;
+
+      img {
+        top: 0;
+        max-height: calc(100% - 3rem);
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0rem;
+        z-index: 10001;
+      }
+
+      p {
+        position: fixed;
+        background-color: var(--light);
+        height: auto;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 1rem auto;
+        bottom: 0;
+        text-align: center;
+        font-style: italic;
+        color: var(--dark);
+      }
+    }
+
+    .close-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgb(246, 146, 146);
+      border: 1px solid var(--gray);
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+      z-index: 10002;
+
+      &:hover {
+        background: rgb(242, 91, 91);
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: var(--dark);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+// END IMAGE MODAL STYLES
+
+// IMAGE HOVER CAPTION STYLES
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: auto;  // Allow the wrapper to size to its content
+  &:hover {
+      cursor: pointer;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-hover-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--tertiary);
+    color: black;
+    padding: 0.4rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+    z-index: 10;
+    margin: 0;
+    border: 1px solid var(--gray);
+    border-bottom-right-radius: $standardRadius;
+    border-bottom-left-radius: $standardRadius;
+    max-height: 35%; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+  }
+  
+  &:hover .img-hover-caption {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// Ensure img-wrapper works in different column layouts
+.gallery-row .img-wrapper,
+.gallery-column .img-wrapper {
+  margin: 1rem 0rem;
+  display: block;
+  width: 100%;
+}
+
+// END IMAGE MODAL CAPTION STYLES 
+
+// Marquee
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  gap: 1rem;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee:hover .exp-overlay {
+    opacity: 0.85;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50.25%);
+  }
+}
+
+
+.exp-tile {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(121, 197, 126, 0.6);
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  margin: 0rem 0.2rem;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  > img {
+    margin: 5px;
+    width: 90px;
+    height: 90px;
+  }
+  > .exp-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    background-color: var(--tertiary);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    > p {
+      text-align: center;
+      line-height: 1.2rem;
+      font-size: 0.8rem;
+      color: black;
+      margin: 0rem;
+      padding: 0rem;
+    }
+  }
+}
+
+.exp-tile:hover .exp-text {
+  opacity: 0.9;
+}
+
+// Copy button styling
+.copy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  padding: 4px;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+  background-color: var(--light);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: color 0.1s !important;
+  }
+
+  &:hover {
+    background-color: var(--lightgray);
+  }
+
+  &:active {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--light);
+  }
+}
+
+// Service Tile Styles
+
+div[id^="service-"] {
+  margin-bottom: 0rem; /* Space between service blocks */
+  background: transparent; /* Ensure container is transparent */
+  border-radius: $standardRadius; /* Rounded corners for the whole container */
+  overflow: hidden; /* Ensure child borders stay within container */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Apply shadow to the container */
+  border: 1px solid var(--gray);
+}
+
+.service-tile {
+  overscroll-behavior: none;
+  box-sizing: border-box;
+  height: auto;
+  border: 0px solid var(--gray);
+  padding: 1rem;
+  border-radius: 0px;
+  background-color: var(--light);
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(121, 197, 126, 0.15),
+    rgba(121, 197, 126, 0.15) 23px,
+    rgba(121, 197, 126, 0.35) 23px,
+    rgba(121, 197, 126, 0.35) 24px
+  );
+  background-size: 200% 200%;
+  animation: moveStripes 3s linear infinite;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  > * {
+    font-size: 0.65rem;
+  }
+}
+
+.service-tile:hover {
+
+}
+
+.service-tile-banner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "GeistMono";
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0.8rem;
+  background-color: var(--lightgray);
+  border-bottom: 1px solid var(--gray);
+  border-top-left-radius: $standardRadius;
+  border-top-right-radius: $standardRadius;
+  color: var(--darkgray);
+  padding: 0.25rem;
+  padding-top: calc(0.25rem + 1px);
+  margin: 0rem;
+  transition: all 0.2s ease;
+}
+
+.service-tile h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+  font-family: "GeistMono";
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+  > a {
+    padding: 0.25rem;
+    position: absolute;
+    background: transparent;
+  }
+}
+
+.service-tile p {
+  margin-bottom: 0.75rem;
+  color: var(--darkgray);
+  font-weight: 200;
+  line-height: 1.75;
+}
+
+.service-tile-description {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.service-tile-offerings {
+  > strong {
+    font-family: "GeistMono";
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+// Style for the offering descriptions within top-level service tiles
+.service-tile-offerings li .offering-desc {
+  color: var(--darkgray); /* Match the color of other description text */
+  /* Add any other desired styles here, e.g., font-size, padding */
+}
+
+.service-tile-price {
+  margin-top: 1rem;
+}
+
+.service-tile strong {
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.service-tile ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.service-tile li {
+  color: var(--darkgray);
+  line-height: 1.75;
+}
+
+.service-tile-deliverables,
+.service-tile-services,
+.service-tile-discounts {
+  margin-top: 1rem;
+}
+
+.service-tile-error {
+  border-color: #ff5252;
+  background-color: #ffeded;
+  color: #d32f2f;
+  padding: 1rem;
+}
+
+.service-tile-explore {
+  position: relative;
+  width: 1fr; /* Ensure it spans the full width */
+  left: 0;
+  right: 0;
+  background-color: var(--lightgray); /* Match banner background */
+  margin: 0rem;
+  border-radius: 0 0 $standardRadius $standardRadius; /* Round bottom corners like footer */
+  border-top: 1px solid var(--gray);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.service-tile-explore a.button, /* Target the link */
+.service-tile-explore a { /* Be more general just in case */
+  color: var(--dark); /* Match banner text color */
+  background-color: transparent;
+  font-family: "GeistMono";
+  font-size: 0.7rem;
+  font-weight: 200;
+  line-height: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  padding-top: calc(0.25rem + 1px);
+  display: inline-block; /* Ensure proper block behavior for link */
+  > #text {
+    text-transform: uppercase;
+  }
+}
+
+/* Dark mode adjustments */
+:root.dark .service-tile {
+  background-color: var(--darkgray);
+  border-color: var(--dark);
+}
+
+:root.dark .service-tile h3 {
+  color: var(--light);
+}
+
+:root.dark .service-tile p {
+  color: var(--lightgray);
+}
+
+:root.dark .service-tile strong {
+  color: var(--light);
+}
+
+:root.dark .service-tile li {
+  color: var(--lightgray);
+}
+
+:root.dark .service-tile-error {
+  background-color: rgba(255, 82, 82, 0.2);
+  color: #ff8a8a;
+}
+

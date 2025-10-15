@@ -1,42 +1,28 @@
 {
   "version": "1.0.0",
-  "lastModified": "2025-08-20T20:56:56.962Z",
+  "lastModified": "2025-10-01T17:35:06.809Z",
   "site": {
-    "title": "Rare Compute",
+    "title": "Digital Garden",
     "description": "",
-    "author": "",
-    "baseUrl": "",
-    "ignorePatterns": {
-      "custom": [
-        "req-docs/**",
-        "rare-research-web/**"
-      ],
-      "enabled": true
-    }
+    "author": ""
   },
   "quartz": {
     "enableSPA": true,
     "enablePopovers": true,
     "theme": {
-      "mode": "light"
-    },
-    "template": {
-      "id": "vanilla-quartz",
-      "name": "Vanilla Quartz",
-      "type": "github",
-      "url": "https://github.com/Clinamenic/meridian-quartz.git",
-      "branch": "meridian-main",
-      "description": "Default Meridian-Quartz template",
-      "isDefault": true
+      "mode": "auto",
+      "primaryColor": "#284b63"
     }
   },
   "deployment": {
+    "provider": null,
+    "repository": null,
     "branch": "main",
-    "customCNAME": false
+    "customCNAME": true,
+    "githubPages": true
   },
   "metadata": {
-    "createdAt": "2025-08-20T20:56:56.954Z",
-    "workspacePath": "/Users/gideon/Hub/private/projects/RareResearch/org/website",
-    "initialized": true
+    "createdAt": "2025-07-08T18:08:31.024Z",
+    "workspacePath": "/Users/gideon/Hub/public/website"
   }
 }
