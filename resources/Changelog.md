@@ -25,6 +25,126 @@ type: site-page
 
 # Changelog
 
+## 3.0.0 - 2025-10-15
+
+**Commit**: `738a477` - chore(release)!: restructure repository to v3.0.0
+
+**BREAKING CHANGE**: Major architectural restructuring of the repository from build-focused to content-focused workspace.
+
+### Changed
+
+- **Content Location**: Moved all content from `content/` directory to repository root
+  - All markdown files now at root level for Obsidian-friendly editing
+  - Direct access to writing/, zettelgarten/, projects/, resources/
+  - Simplified navigation and improved editor integration
+
+- **Framework Location**: Relocated Quartz framework from `quartz/` to `.quartz/` (gitignored)
+  - Framework now treated as local build tool
+  - Separated build infrastructure from content
+  - Cleaner repository structure and file explorer
+
+- **Package Structure**: Simplified package.json to minimal wrapper
+  - Removed 100+ dependencies from root
+  - Scripts now point to `.quartz/` installation
+  - Content-focused git history without build noise
+
+- **Repository Purpose**: Transformed from build repo to editing workspace
+  - Optimized for content development and Obsidian integration
+  - Build infrastructure separated and gitignored
+  - Clean separation between content and tooling
+
+### Added
+
+- **Site Pages**:
+  - about.md - About page
+  - design.md - Design philosophy
+  - gallery.md - Gallery page
+  - typography.md - Typography guide
+  - services.md - Services overview
+  - CNAME - Domain configuration
+  - robots.txt - SEO configuration
+  - service.xml - Service schema
+  - bibliography.bib - Citation database
+
+- **Custom Quartz Components**:
+  - Banner - Site banner component
+  - Sidenotes - Tufte-style sidenotes
+  - CitationGenerator - Academic citations
+  - ArweaveIndex - Arweave integration
+  - ArticleSubtitle - Article metadata
+  - AuthorName - Author attribution
+  - LicenseInfo - License display
+  - PublishDate - Publication dates
+  - DownloadMarkdown - Content download
+  - ImageModal - Image viewer
+  - FlexContainer - Flexible layouts
+  - ExplorerNode - Enhanced explorer
+
+- **Component Enhancements**:
+  - Updated Explorer with improved navigation
+  - Enhanced Graph visualization
+  - Improved Search functionality
+  - Better TableOfContents handling
+  - Updated Footer and Header
+
+- **Workspace Documentation**:
+  - v3-restructuring.md - Architecture documentation
+  - seo-frontmatter-strategy.md - SEO strategy
+  - quartz-architecture.md - Quartz overview
+  - quartz-arweave-index.md - Arweave integration
+  - arkb-gitingest.md - Arweave tools
+  - arweave_querying_guide.md - Query documentation
+  - 2025-10-15-custom-quartz-to-website-sync.md - Sync planning
+
+- **MCP Server Infrastructure**:
+  - MarkItDown MCP server setup
+  - Docker compose configuration
+  - Server management scripts
+  - Configuration templates
+
+- **Archive Organization**:
+  - Moved historical tools and scripts to .workspace/archive/
+  - Organized reference documentation
+  - Cleaned up legacy workflows
+
+### Removed
+
+- **Legacy Pages**:
+  - About Us.md, Blog.md, Contact.md
+  - FAQ.md, Get Involved.md, In Memoriam.md
+  - Mission.md, Privacy Policy.md, Publications.md
+  - Resources.md, Terms of Use.md, Tools.md
+
+- **Deprecated Components**:
+  - ConditionalRender.tsx
+  - Flex.tsx
+  - OverflowList.tsx
+  - ReaderMode.tsx and related scripts
+  - Mermaid integration
+  - OG image generation
+  - Favicon emitter
+  - Roam transformer
+
+- **Cleaned Up**:
+  - Removed unused i18n locales (cs-CZ, fi-FI, id-ID, lt-LT, nb-NO, th-TH, tr-TR, zh-TW)
+  - Removed deprecated utility files (clone.ts, emoji.ts, fileTrie.ts, og.tsx, random.ts)
+  - Removed Giscus custom styles (now integrated)
+
+### Technical Details
+
+- 510 files changed
+- 98,214 insertions, 12,160 deletions
+- Repository structure completely reorganized
+- Content now at root for direct editing
+- Build framework in .quartz/ (gitignored)
+- Clean separation of concerns
+
+### Migration Notes
+
+This version represents a fundamental shift in repository architecture. The custom-quartz repository is now optimized for content editing and development, with the Quartz framework treated as a local build tool. For deployment, content should be synced to a separate website repository that maintains the full build infrastructure.
+
+See `.workspace/docs/arch/v3-restructuring.md` for detailed architecture documentation.
+
 ## July 18, 2025
 
 ### Zettelkasten Migration to Luhmann System
