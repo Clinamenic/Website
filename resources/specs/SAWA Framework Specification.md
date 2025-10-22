@@ -26,8 +26,6 @@ type: spec
 uuid: 567bae3f-4f72-4e79-9781-6d72b5135ffa
 ---
 
-# Semantic Arweave Web App (SAWA) Framework Specification
-
 **Version:** 0.1.0  
 **Date:** 2025-10-22  
 **Status:** Production Ready
