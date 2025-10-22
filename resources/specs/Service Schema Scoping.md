@@ -3,7 +3,7 @@ title: Service Schema Scoping
 subtitle: Exploring machine-readable representation of service offerings
 date: 2025-04-16
 publish: true
-license: CC BY-SA-4.0
+license: CC BY-SA 4.0
 quartzShowTitle: true
 quartzShowSubtitle: true
 quartzShowTOC: true

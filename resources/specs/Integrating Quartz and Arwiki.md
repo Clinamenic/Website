@@ -9,7 +9,7 @@ authorURL:
   - https://www.clinamenic.com
 date: 2025-03-19
 language: en
-license: CC BY-SA-4.0
+license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
 quartzShowBacklinks: true
@@ -185,33 +185,33 @@ function arweaveTransformLink(
   src: FullSlug,
   target: string,
   txIdMap: TxIdMap,
-  opts: ArweaveTransformOptions,
+  opts: ArweaveTransformOptions
 ): RelativeURL {
   // First transform the target using standard Quartz transformations
-  const quartzRelativeURL = transformLink(src, target, opts)
+  const quartzRelativeURL = transformLink(src, target, opts);
 
   // Extract the slug from the relative URL
-  const targetSlug = resolveRelativeURL(src, quartzRelativeURL)
+  const targetSlug = resolveRelativeURL(src, quartzRelativeURL);
 
   // Check if we have a transaction ID for this slug
   if (txIdMap.slugToTxId.has(targetSlug)) {
-    const txId = txIdMap.slugToTxId.get(targetSlug)!
+    const txId = txIdMap.slugToTxId.get(targetSlug)!;
 
     // Options for link format
     if (opts.linkType === "gateway") {
       // Format: https://arweave.net/TX_ID
-      return `https://${opts.gateway}/${txId}` as RelativeURL
+      return `https://${opts.gateway}/${txId}` as RelativeURL;
     } else if (opts.linkType === "relative") {
       // Format: relative link to TX_ID
-      return `./${txId}` as RelativeURL
+      return `./${txId}` as RelativeURL;
     } else {
       // Format: direct TX_ID
-      return txId as RelativeURL
+      return txId as RelativeURL;
     }
   }
 
   // Fall back to standard Quartz transformation if no transaction ID exists
-  return quartzRelativeURL
+  return quartzRelativeURL;
 }
 ```
 
@@ -334,64 +334,72 @@ Let's examine a concrete implementation of this process:
 ```typescript
 async function processTwoPhaseUpload(
   files: ContentTracker[],
-  options: ArweaveConfig,
+  options: ArweaveConfig
 ): Promise<UploadResult[]> {
-  const results: UploadResult[] = []
+  const results: UploadResult[] = [];
   const txIdMap: TxIdMap = {
     slugToTxId: new Map(),
     txIdToSlug: new Map(),
-  }
+  };
 
   // Phase 1: Initial upload with placeholder links
-  console.log("Phase 1: Uploading content with placeholder links...")
+  console.log("Phase 1: Uploading content with placeholder links...");
   for (const file of files) {
     // For new or modified files only
     if (file.status === "new" || file.status === "modified") {
       // Read the HTML content
-      const content = await fs.readFile(file.filePath, "utf-8")
+      const content = await fs.readFile(file.filePath, "utf-8");
 
       // Create temporary placeholder links
       // Use a pattern that can be easily replaced later, e.g., [[[TXID:some-slug]]]
-      const contentWithPlaceholders = replacePlaceholderLinks(content, file.slug)
+      const contentWithPlaceholders = replacePlaceholderLinks(
+        content,
+        file.slug
+      );
 
       // Upload to Arweave
-      const tx = await arweave.createTransaction({ data: contentWithPlaceholders })
-      tx.addTag("Content-Type", "text/html")
-      tx.addTag("App-Name", "Quartz-Arwiki")
-      tx.addTag("Page-Title", getPageTitle(file))
-      tx.addTag("Page-Slug", file.slug)
+      const tx = await arweave.createTransaction({
+        data: contentWithPlaceholders,
+      });
+      tx.addTag("Content-Type", "text/html");
+      tx.addTag("App-Name", "Quartz-Arwiki");
+      tx.addTag("Page-Title", getPageTitle(file));
+      tx.addTag("Page-Slug", file.slug);
 
-      await arweave.transactions.sign(tx, options.wallet)
-      await arweave.transactions.post(tx)
+      await arweave.transactions.sign(tx, options.wallet);
+      await arweave.transactions.post(tx);
 
       // Store transaction ID in mapping
-      txIdMap.slugToTxId.set(file.slug, tx.id)
-      txIdMap.txIdToSlug.set(tx.id, file.slug)
+      txIdMap.slugToTxId.set(file.slug, tx.id);
+      txIdMap.txIdToSlug.set(tx.id, file.slug);
 
       // Update file status
-      file.txId = tx.id
-      file.status = "uploaded"
+      file.txId = tx.id;
+      file.status = "uploaded";
 
       results.push({
         file,
         txId: tx.id,
         status: "success",
         phase: 1,
-      })
+      });
     }
   }
 
   // Phase 2: Link resolution
-  console.log("Phase 2: Resolving internal links...")
-  const filesToReupload: ContentTracker[] = []
+  console.log("Phase 2: Resolving internal links...");
+  const filesToReupload: ContentTracker[] = [];
 
   for (const file of files) {
     if (file.status === "uploaded" && file.txId) {
       // Read the current uploaded content
-      const content = await arweave.transactions.getData(file.txId, { decode: true, string: true })
+      const content = await arweave.transactions.getData(file.txId, {
+        decode: true,
+        string: true,
+      });
 
       // Replace placeholder links with actual transaction IDs
-      const resolvedContent = resolvePlaceholderLinks(content, txIdMap)
+      const resolvedContent = resolvePlaceholderLinks(content, txIdMap);
 
       // If content changed after link resolution, mark for re-upload
       if (content !== resolvedContent) {
@@ -399,44 +407,46 @@ async function processTwoPhaseUpload(
           ...file,
           resolvedContent,
           status: "pending",
-        })
+        });
       }
     }
   }
 
   // Phase 3: Final upload with resolved links
-  console.log(`Phase 3: Re-uploading ${filesToReupload.length} files with resolved links...`)
+  console.log(
+    `Phase 3: Re-uploading ${filesToReupload.length} files with resolved links...`
+  );
   for (const file of filesToReupload) {
     // Upload resolved content
     const tx = await arweave.createTransaction({
       data: file.resolvedContent,
-    })
+    });
 
-    tx.addTag("Content-Type", "text/html")
-    tx.addTag("App-Name", "Quartz-Arwiki")
-    tx.addTag("Page-Title", getPageTitle(file))
-    tx.addTag("Page-Slug", file.slug)
-    tx.addTag("Previous-Version", file.txId || "")
+    tx.addTag("Content-Type", "text/html");
+    tx.addTag("App-Name", "Quartz-Arwiki");
+    tx.addTag("Page-Title", getPageTitle(file));
+    tx.addTag("Page-Slug", file.slug);
+    tx.addTag("Previous-Version", file.txId || "");
 
     // Add Links tag with transaction IDs of linked pages
-    const linkedPages = extractLinks(file.resolvedContent)
+    const linkedPages = extractLinks(file.resolvedContent);
     if (linkedPages.length > 0) {
-      tx.addTag("Links", linkedPages.join(","))
+      tx.addTag("Links", linkedPages.join(","));
     }
 
-    await arweave.transactions.sign(tx, options.wallet)
-    await arweave.transactions.post(tx)
+    await arweave.transactions.sign(tx, options.wallet);
+    await arweave.transactions.post(tx);
 
     // Update mapping and file status
-    const oldTxId = file.txId
-    txIdMap.slugToTxId.set(file.slug, tx.id)
-    txIdMap.txIdToSlug.set(tx.id, file.slug)
+    const oldTxId = file.txId;
+    txIdMap.slugToTxId.set(file.slug, tx.id);
+    txIdMap.txIdToSlug.set(tx.id, file.slug);
     if (oldTxId) {
-      txIdMap.txIdToSlug.delete(oldTxId)
+      txIdMap.txIdToSlug.delete(oldTxId);
     }
 
-    file.txId = tx.id
-    file.status = "uploaded"
+    file.txId = tx.id;
+    file.status = "uploaded";
 
     results.push({
       file,
@@ -444,13 +454,13 @@ async function processTwoPhaseUpload(
       status: "success",
       phase: 3,
       replacedTxId: oldTxId,
-    })
+    });
   }
 
   // Save the final txIdMap for future use
-  await persistTxIdMap(txIdMap, options.localDatabase)
+  await persistTxIdMap(txIdMap, options.localDatabase);
 
-  return results
+  return results;
 }
 
 // Helper functions
@@ -458,20 +468,20 @@ function replacePlaceholderLinks(content: string, currentSlug: string): string {
   // Replace internal links with placeholder pattern
   // e.g., <a href="some-page.html"> becomes <a href="[[[TXID:some-page]]]">
   // Implementation would use a proper HTML parser
-  return content
+  return content;
 }
 
 function resolvePlaceholderLinks(content: string, txIdMap: TxIdMap): string {
   // Replace placeholders with actual transaction IDs
   // e.g., <a href="[[[TXID:some-page]]]"> becomes <a href="https://arweave.net/TX_ID">
   // Implementation would use a proper HTML parser
-  return content
+  return content;
 }
 
 function extractLinks(content: string): string[] {
   // Extract transaction IDs from all links in the content
   // Implementation would use a proper HTML parser
-  return []
+  return [];
 }
 ```
 
@@ -518,54 +528,54 @@ Here's a comprehensive implementation of the ArweaveConfig interface with detail
  */
 interface ArweaveConfig {
   // Wallet configuration
-  wallet: string | ArweaveKey // Path to JSON wallet file or wallet key object
+  wallet: string | ArweaveKey; // Path to JSON wallet file or wallet key object
 
   // Network configuration
-  gateway: string // Arweave gateway URL, e.g., "arweave.net"
-  useBundlr: boolean // Whether to use Bundlr for transaction bundling
-  bundlrNode?: string // Bundlr node URL, e.g., "https://node2.bundlr.network"
+  gateway: string; // Arweave gateway URL, e.g., "arweave.net"
+  useBundlr: boolean; // Whether to use Bundlr for transaction bundling
+  bundlrNode?: string; // Bundlr node URL, e.g., "https://node2.bundlr.network"
 
   // Upload options
-  chunkSize: number // Size of chunks for large file uploads (in bytes)
-  simultaneousUploads: number // Number of concurrent uploads
+  chunkSize: number; // Size of chunks for large file uploads (in bytes)
+  simultaneousUploads: number; // Number of concurrent uploads
 
   // Content options
-  includeGraphData: boolean // Whether to include graph visualization data
-  includeSearchIndex: boolean // Whether to include search index
-  additionalTags: Record<string, string>[] // Additional transaction tags
+  includeGraphData: boolean; // Whether to include graph visualization data
+  includeSearchIndex: boolean; // Whether to include search index
+  additionalTags: Record<string, string>[]; // Additional transaction tags
 
   // Link options
-  linkType: "gateway" | "relative" | "direct" // How to format links
-  usePathManifest: boolean // Whether to generate a path manifest
-  generateHumanReadableUrls: boolean // Whether to create human-readable URLs
+  linkType: "gateway" | "relative" | "direct"; // How to format links
+  usePathManifest: boolean; // Whether to generate a path manifest
+  generateHumanReadableUrls: boolean; // Whether to create human-readable URLs
 
   // Upload strategy
-  uploadStrategy: "full" | "incremental" | "selective" // Upload approach
+  uploadStrategy: "full" | "incremental" | "selective"; // Upload approach
 
   // For selective uploads
-  selectFiles?: FilePath[] | ((path: FilePath) => boolean) // Files to include
+  selectFiles?: FilePath[] | ((path: FilePath) => boolean); // Files to include
 
   // Persistence options
-  localDatabase: string // Path to SQLite database
-  backupManifests: boolean // Whether to backup manifests
-  manifestHistory: number // Number of historical manifests to keep
+  localDatabase: string; // Path to SQLite database
+  backupManifests: boolean; // Whether to backup manifests
+  manifestHistory: number; // Number of historical manifests to keep
 
   // Advanced options
-  forceReupload: boolean // Force reupload even if unchanged
-  checkIntegrity: boolean // Verify uploaded content integrity
-  resolveCircularDependencies: boolean // Use two-phase upload process
+  forceReupload: boolean; // Force reupload even if unchanged
+  checkIntegrity: boolean; // Verify uploaded content integrity
+  resolveCircularDependencies: boolean; // Use two-phase upload process
 
   // Retry options
-  maxRetries: number // Maximum number of upload retries
-  retryDelay: number // Delay between retries (in ms)
+  maxRetries: number; // Maximum number of upload retries
+  retryDelay: number; // Delay between retries (in ms)
 
   // Cost estimation
-  estimateCosts: boolean // Estimate costs before uploading
-  budgetLimit?: number // Maximum budget for uploads (in AR)
+  estimateCosts: boolean; // Estimate costs before uploading
+  budgetLimit?: number; // Maximum budget for uploads (in AR)
 
   // Logging and feedback
-  verbose: boolean // Enable verbose logging
-  progressCallback?: (progress: UploadProgress) => void // Progress reporting
+  verbose: boolean; // Enable verbose logging
+  progressCallback?: (progress: UploadProgress) => void; // Progress reporting
 }
 
 /**
@@ -616,7 +626,7 @@ const defaultArweaveConfig: ArweaveConfig = {
 
   // Logging
   verbose: false,
-}
+};
 ```
 
 This detailed configuration interface provides fine-grained control over all aspects of the Arweave integration:

@@ -9,7 +9,7 @@ authorURL:
   - https://www.clinamenic.com
 date:
 language: en
-license: CC BY-SA-4.0
+license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
 quartzShowBacklinks: true
