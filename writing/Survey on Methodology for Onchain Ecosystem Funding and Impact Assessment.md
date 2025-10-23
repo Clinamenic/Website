@@ -35,58 +35,6 @@ twitterCreator: "@clinamenic"
 type: report
 uuid: 98b0c624-84a8-4a8c-8c1b-ee9b2451aeb9
 ---
-
-> [!toc] Table of Contents
->
-> - Acknowledgments
-> - Abstract
-> - Section 1 - Orientation
->   - 1.1 - Nomenclature and Semantic Considerations
->     - 'Impact' and 'Outcome'
->     - 'Public Goods' and 'Network Goods'
->     - 'Platforms' and 'Protocols'
->     - 'Digital Public Infrastructure'
->     - 'Onchain'
->   - 1.2 - Selected Onchain Infrastructure
->     - Hypercerts
->     - Ethereum Attestation Service
->     - Allo Protocol and Grants Stack
->     - Grantee Accountability Protocol
->     - Additional Examples
->   - 1.3 - Selected Funding Processes
->     - Direct and Quadratic Funding
->     - Retroactive Funding
->     - Ecosystem Development Funding
->   - 1.4 - Ontological Considerations
->     - LinkedClaims and Verifiable Credentials
->     - Common Impact Data Standard
-> - Section 2 - Challenges
->   - 2.1 - Technical Challenges
->     - User Experience and Accountability
->     - Sybil Resistance
->       - Gitcoin Passport
->       - Connection-Oriented Cluster Matching
->     - Compliance and KYC
->       - Zero-Knowledge KYC
->   - 2.2 - Economic Challenges
->     - Asset Liquidity and Volatility
->     - Value Exchange
->       - Promotional Overhead
->   - 2.3 - Operational Challenges
->     - Impact Reporting Burden
->     - Accountability and Execution
-> - Section 3 - Prospective Methodology
->   - 3.1 - Ontology for Impact Assessment
->   - 3.2 - A Peer-to-Peer Fiscal Paradigm
-> - Conclusion
-> - Endnotes
-> - Bibliography
-> - Appendix on Grant Volume
-> - Disclaimers
-> - Licensing
-
----
-
 ## Acknowledgments
 
 This report was researched and written by Spencer Saar Cavanaugh of [Clinamenic LLC](https://www.clinamenic.com/). Support for this research was provided by [LexDAO](https://lexdao.org/) and [SuperBenefitDAO](https://superbenefit.org/).
