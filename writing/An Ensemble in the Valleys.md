@@ -22,7 +22,7 @@ quartzShowTitle: true
 quartzShowTOC: true
 subtitle: Auto-discursive Reflections on Active Rhizomatic Individuation
 tags:
-title: The Ensemble of the Valleys
+title: An Ensemble in the Valleys
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: publication
