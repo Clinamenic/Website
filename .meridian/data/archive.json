@@ -553,6 +553,28 @@
       },
       "id": "mgo1scm4oou6o262kx",
       "uploadedAt": "2025-10-12T18:38:38.044Z"
+    },
+    {
+      "filename": "720b0280.png",
+      "filePath": "/Users/gideon/Desktop/720b0280.png",
+      "fileSize": 1192681,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:2fe62d59-1674-4856-8f64-8fab4d41bff2",
+        "title:720b0280",
+        "Content-Type:image/png",
+        "file-size:1192681",
+        "content-hash:sha256:2fe62d5916743856af648fab4d41bff2164c651724395f4d4d8ee34731862e9f",
+        "upload-timestamp:2025-10-29T23:31:55.997Z"
+      ],
+      "transactionId": "TyUKTK8SbbtWh6vIXorI1dpDt5yDtsAa0sM0F5j8sik",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00277693",
+        "usd": "0.01"
+      },
+      "id": "mhcmr3x7n60a746g7l8",
+      "uploadedAt": "2025-10-29T23:32:00.283Z"
     }
   ],
   "wallet": {
@@ -1320,8 +1342,37 @@
           ]
         }
       ]
+    },
+    {
+      "uuid": "2fe62d59-1674-4856-8f64-8fab4d41bff2",
+      "title": "720b0280",
+      "filePath": "/Users/gideon/Desktop/720b0280.png",
+      "contentHash": "sha256:2fe62d5916743856af648fab4d41bff2164c651724395f4d4d8ee34731862e9f",
+      "fileSize": 1192681,
+      "mimeType": "image/png",
+      "created": "2025-10-29T23:31:21.520Z",
+      "modified": "2025-10-29T23:31:21.529Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "TyUKTK8SbbtWh6vIXorI1dpDt5yDtsAa0sM0F5j8sik",
+          "timestamp": "2025-10-29T23:32:00.341Z",
+          "link": "https://www.arweave.net/TyUKTK8SbbtWh6vIXorI1dpDt5yDtsAa0sM0F5j8sik",
+          "tags": [
+            "uuid:2fe62d59-1674-4856-8f64-8fab4d41bff2",
+            "title:720b0280",
+            "Content-Type:image/png",
+            "file-size:1192681",
+            "content-hash:sha256:2fe62d5916743856af648fab4d41bff2164c651724395f4d4d8ee34731862e9f",
+            "upload-timestamp:2025-10-29T23:31:55.997Z"
+          ]
+        }
+      ]
     }
   ],
-  "lastUpdated": "2025-10-12T18:38:38.092Z",
+  "lastUpdated": "2025-10-29T23:32:00.345Z",
   "version": "2.0"
 }
