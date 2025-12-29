@@ -90,6 +90,7 @@ Collected below are various self-published writings, on topics ranging from gove
 
 - [[A Rhapsody on Neurodiversity]]
 - [[A Primer on Auto-Discourse]]
+- [[An Ensemble in the Valleys]]
 
 ### Governance
 

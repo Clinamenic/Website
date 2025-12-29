@@ -1,6 +1,6 @@
 ---
 bannerURI:
-headDescription: Clinamenic LLC offers comprehensive professional services including design, writing, and knowledge management solutions. Led by Spencer Saar Cavanaugh, we specialize in organizational design, branding, and digital knowledge systems.
+headDescription: Clinamenic LLC offers comprehensive professional services across organizational design, branding, and digital knowledge systems.
 headIcon:
 keywords:
   - clinamenic
@@ -28,56 +28,46 @@ quartzShowSubtitle: false
 quartzShowTitle: false
 quartzShowTOC: false
 structuredData:
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Clinamenic LLC",
-    "url": "https://clinamenic.com",
-    "logo": "https://arweave.net/KIy4ZM-FoCYsj9DxH8WIVI-HmhZpPY4V_eVJI-1DFkw",
-    "description": "Professional services firm specializing in design, writing, and knowledge management solutions.",
-    "founder":
-      {
-        "@type": "Person",
-        "name": "Spencer Saar Cavanaugh",
-        "jobTitle": "Founder & Creative Director",
-        "sameAs": ["https://twitter.com/clinamenic"],
-      },
-    "address": { "@type": "PostalAddress", "addressCountry": "US" },
-    "sameAs": ["https://twitter.com/clinamenic"],
-    "knowsAbout":
-      [
-        "Graphic Design",
-        "Brand Strategy",
-        "Knowledge Management",
-        "Digital Gardens",
-        "DAO Governance",
-        "Web3",
-        "Organizational Design",
-      ],
-    "offers":
-      {
-        "@type": "Offer",
-        "itemOffered":
-          [
-            {
-              "@type": "Service",
-              "name": "Design Services",
-              "description": "Professional graphic design and branding services",
-            },
-            {
-              "@type": "Service",
-              "name": "Knowledge Management",
-              "description": "Digital garden and zettelkasten implementation",
-            },
-            {
-              "@type": "Service",
-              "name": "DAO Governance",
-              "description": "Organizational design and governance consulting",
-            },
-          ],
-      },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://clinamenic.com" },
-  }
+  "@context": https://schema.org
+  "@type": Organization
+  name: Clinamenic LLC
+  url: https://clinamenic.com
+  logo: https://arweave.net/KIy4ZM-FoCYsj9DxH8WIVI-HmhZpPY4V_eVJI-1DFkw
+  description: Professional services firm specializing in design, writing, and knowledge management solutions.
+  founder:
+    "@type": Person
+    name: Spencer Saar Cavanaugh
+    jobTitle: Founder & Creative Director
+    sameAs:
+      - https://twitter.com/clinamenic
+  address:
+    "@type": PostalAddress
+    addressCountry: US
+  sameAs:
+    - https://twitter.com/clinamenic
+  knowsAbout:
+    - Graphic Design
+    - Brand Strategy
+    - Knowledge Management
+    - Digital Gardens
+    - DAO Governance
+    - Web3
+    - Organizational Design
+  offers:
+    "@type": Offer
+    itemOffered:
+      - "@type": Service
+        name: Design Services
+        description: Professional graphic design and branding services
+      - "@type": Service
+        name: Knowledge Management
+        description: Digital garden and zettelkasten implementation
+      - "@type": Service
+        name: DAO Governance
+        description: Organizational design and governance consulting
+  mainEntityOfPage:
+    "@type": WebPage
+    "@id": https://clinamenic.com
 tags:
 title: Clinamenic LLC
 twitterCard: summary_large_image

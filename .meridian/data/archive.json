@@ -575,6 +575,29 @@
       },
       "id": "mhcmr3x7n60a746g7l8",
       "uploadedAt": "2025-10-29T23:32:00.283Z"
+    },
+    {
+      "filename": "An Ensemble in the Valleys.md",
+      "filePath": "/Users/gideon/Hub/website/writing/An Ensemble in the Valleys.md",
+      "fileSize": 11920,
+      "contentType": "text/markdown",
+      "tags": [
+        "uuid:7d11742f-b395-4614-af73-fceff91867cd",
+        "title:An Ensemble in the Valleys",
+        "author:Spencer Saar Cavanaugh",
+        "Content-Type:text/markdown",
+        "file-size:11920",
+        "content-hash:sha256:a848d57ea1b3e4cdeeea864236be865b05025efff829f28a0c61da6c1c442f65",
+        "upload-timestamp:2025-12-09T23:10:03.978Z"
+      ],
+      "transactionId": "dPdtO5aBeWKnLrfcm7TtJYk2qaHWvfQP9S8Onf_nlVc",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00002775",
+        "usd": "0.00"
+      },
+      "id": "miz70vhb7bnxja0iqh6",
+      "uploadedAt": "2025-12-09T23:10:06.431Z"
     }
   ],
   "wallet": {
@@ -1371,8 +1394,41 @@
           ]
         }
       ]
+    },
+    {
+      "uuid": "7d11742f-b395-4614-af73-fceff91867cd",
+      "title": "An Ensemble in the Valleys",
+      "filePath": "/Users/gideon/Hub/website/writing/An Ensemble in the Valleys.md",
+      "contentHash": "sha256:a848d57ea1b3e4cdeeea864236be865b05025efff829f28a0c61da6c1c442f65",
+      "fileSize": 11920,
+      "mimeType": "text/markdown",
+      "created": "2025-12-09T20:34:25.208Z",
+      "modified": "2025-12-09T20:57:10.645Z",
+      "tags": [],
+      "metadata": {
+        "author": [
+          "Spencer Saar Cavanaugh"
+        ],
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "dPdtO5aBeWKnLrfcm7TtJYk2qaHWvfQP9S8Onf_nlVc",
+          "timestamp": "2025-12-09T23:10:06.478Z",
+          "link": "https://www.arweave.net/dPdtO5aBeWKnLrfcm7TtJYk2qaHWvfQP9S8Onf_nlVc",
+          "tags": [
+            "uuid:7d11742f-b395-4614-af73-fceff91867cd",
+            "title:An Ensemble in the Valleys",
+            "author:Spencer Saar Cavanaugh",
+            "Content-Type:text/markdown",
+            "file-size:11920",
+            "content-hash:sha256:a848d57ea1b3e4cdeeea864236be865b05025efff829f28a0c61da6c1c442f65",
+            "upload-timestamp:2025-12-09T23:10:03.978Z"
+          ]
+        }
+      ]
     }
   ],
-  "lastUpdated": "2025-10-29T23:32:00.345Z",
+  "lastUpdated": "2025-12-09T23:10:06.499Z",
   "version": "2.0"
 }
