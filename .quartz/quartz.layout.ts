@@ -6,6 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
     Component.Darkmode(),
+    Component.PermalinkButton(),
     Component.Search(),
   ],
   afterBody: [

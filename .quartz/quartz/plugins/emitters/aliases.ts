@@ -21,6 +21,10 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       if (typeof permalink === "string") {
         slugs.push(permalink as FullSlug)
       }
+      const uuid = file.data.frontmatter?.uuid
+      if (typeof uuid === "string" && uuid.trim().length > 0) {
+        slugs.push(uuid.trim().toLowerCase() as FullSlug)
+      }
 
       for (let slug of slugs) {
         // fix any slugs that have trailing slash
@@ -46,6 +50,10 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       const permalink = file.data.frontmatter?.permalink
       if (typeof permalink === "string") {
         slugs.push(permalink as FullSlug)
+      }
+      const uuid = file.data.frontmatter?.uuid
+      if (typeof uuid === "string" && uuid.trim().length > 0) {
+        slugs.push(uuid.trim().toLowerCase() as FullSlug)
       }
 
       for (let slug of slugs) {

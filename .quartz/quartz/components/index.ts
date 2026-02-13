@@ -33,6 +33,7 @@ import ImageModal from "./ImageModal"
 import ArweaveIndex from "./ArweaveIndex"
 import FlexContainer2 from "./FlexContainer2"
 import Sidenotes from "./Sidenotes"
+import PermalinkButton from "./PermalinkButton"
 
 export {
   ArticleTitle,
@@ -70,4 +71,5 @@ export {
   ArweaveIndex,
   FlexContainer2,
   Sidenotes,
+  PermalinkButton,
 }
