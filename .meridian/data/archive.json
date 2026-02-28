@@ -598,6 +598,219 @@
       },
       "id": "miz70vhb7bnxja0iqh6",
       "uploadedAt": "2025-12-09T23:10:06.431Z"
+    },
+    {
+      "filename": "6f62982f copy.png",
+      "filePath": "/Users/gideon/Desktop/6f62982f copy.png",
+      "fileSize": 12011280,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:f31f933c-9d6a-4ca6-855c-35e7b3d68d0a",
+        "title:6f62982f copy",
+        "Content-Type:image/png",
+        "file-size:12011280",
+        "content-hash:sha256:f31f933c9d6a6ca6e55c35e7b3d68d0a261e40f0bcee5530d786ac95dabfecd0",
+        "upload-timestamp:2026-02-28T18:21:05.048Z"
+      ],
+      "transactionId": "cFzTTIAn-qlCgGavi9xlP6z-xsx6THxeZmZCWBZnmxg",
+      "status": "pending",
+      "cost": {
+        "ar": "0.02796594",
+        "usd": "0.04"
+      },
+      "id": "mm6nddmw4uiwztvn1sr",
+      "uploadedAt": "2026-02-28T18:21:13.928Z"
+    },
+    {
+      "filename": "39d96f20 copy.png",
+      "filePath": "/Users/gideon/Desktop/39d96f20 copy.png",
+      "fileSize": 6912952,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:8fa9d87a-de4e-4654-8df6-2ba16080746f",
+        "title:39d96f20 copy",
+        "Content-Type:image/png",
+        "file-size:6912952",
+        "content-hash:sha256:8fa9d87ade4ec654edf62ba16080746f2e798e4b88a4432888b7661c24196e1a",
+        "upload-timestamp:2026-02-28T18:21:14.149Z"
+      ],
+      "transactionId": "XlL4AtA1orOXWYZCO1ZC4XLuhN0WjdsKPzuQTvmLB0w",
+      "status": "pending",
+      "cost": {
+        "ar": "0.01609547",
+        "usd": "0.02"
+      },
+      "id": "mm6ndi233l3wya1yitm",
+      "uploadedAt": "2026-02-28T18:21:19.659Z"
+    },
+    {
+      "filename": "42dfd77f copy.png",
+      "filePath": "/Users/gideon/Desktop/42dfd77f copy.png",
+      "fileSize": 8839831,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:8a0a5b5a-b267-4218-85c9-72aa2ebde069",
+        "title:42dfd77f copy",
+        "Content-Type:image/png",
+        "file-size:8839831",
+        "content-hash:sha256:8a0a5b5ab267d218b5c972aa2ebde069a20d50484ddeabe7f0f87405f69e3b0f",
+        "upload-timestamp:2026-02-28T18:21:19.807Z"
+      ],
+      "transactionId": "AMbNrtzmgxR9P1ilD1w7IocEj1ISNXxt4wdZmdh6FTk",
+      "status": "pending",
+      "cost": {
+        "ar": "0.02058184",
+        "usd": "0.03"
+      },
+      "id": "mm6ndmnjz5ba56cm2d",
+      "uploadedAt": "2026-02-28T18:21:25.616Z"
+    },
+    {
+      "filename": "516c6f99.png",
+      "filePath": "/Users/gideon/Desktop/516c6f99.png",
+      "fileSize": 9695036,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:35b82f56-3ba9-4c0d-842d-5e8565d95284",
+        "title:516c6f99",
+        "Content-Type:image/png",
+        "file-size:9695036",
+        "content-hash:sha256:35b82f563ba95c0d542d5e8565d95284d7fa792d5566fd513e7dd97fc858b947",
+        "upload-timestamp:2026-02-28T18:21:25.772Z"
+      ],
+      "transactionId": "vh3Oepw2yFMlEc3nH1UsC0ubfUun1kSQkHGEbSpdls4",
+      "status": "pending",
+      "cost": {
+        "ar": "0.02257301"
+      },
+      "id": "mm6ndr74uwl1mzut1qc",
+      "uploadedAt": "2026-02-28T18:21:31.504Z"
+    },
+    {
+      "filename": "566e9395.png",
+      "filePath": "/Users/gideon/Desktop/566e9395.png",
+      "fileSize": 335258,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:25ac1898-6933-4e05-85dc-3f97be6ce780",
+        "title:566e9395",
+        "Content-Type:image/png",
+        "file-size:335258",
+        "content-hash:sha256:25ac189869332e0525dc3f97be6ce7805847f4bdf5594e8a299ed75fa826a46a",
+        "upload-timestamp:2026-02-28T18:21:31.629Z"
+      ],
+      "transactionId": "_hW4fpkd5WJOaCATESIWjUo74CCkyNna4az3GVpr_K0",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00078058"
+      },
+      "id": "mm6ndt17ujb54epf1rk",
+      "uploadedAt": "2026-02-28T18:21:33.883Z"
+    },
+    {
+      "filename": "580b85dd copy.png",
+      "filePath": "/Users/gideon/Desktop/580b85dd copy.png",
+      "fileSize": 7542261,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:4f1a68e3-0cd5-41f5-8d18-c0c9c7b5d0e3",
+        "title:580b85dd copy",
+        "Content-Type:image/png",
+        "file-size:7542261",
+        "content-hash:sha256:4f1a68e30cd561f55d18c0c9c7b5d0e3cb930daf05d87d11ef86ecf13503565d",
+        "upload-timestamp:2026-02-28T18:21:33.966Z"
+      ],
+      "transactionId": "2mIcjdkGuktJZQ9NVif0O2djGcd7pDAWE0RnfM12zVo",
+      "status": "pending",
+      "cost": {
+        "ar": "0.01756069"
+      },
+      "id": "mm6ndx2h22kwc0gvn81",
+      "uploadedAt": "2026-02-28T18:21:39.113Z"
+    },
+    {
+      "filename": "5649d210.png",
+      "filePath": "/Users/gideon/Desktop/5649d210.png",
+      "fileSize": 25243391,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:ee0e2b59-e825-4f9a-80c5-75b19cedb775",
+        "title:5649d210",
+        "Content-Type:image/png",
+        "file-size:25243391",
+        "content-hash:sha256:ee0e2b59e825af9a60c575b19cedb7752a40dc2a6ee85ccdb8d3ea0558cecb5a",
+        "upload-timestamp:2026-02-28T18:21:39.283Z"
+      ],
+      "transactionId": "KWkrOEBe2hRhQfZR8tDpSt1wlxU3qAYpED1H0DoD1WQ",
+      "status": "pending",
+      "cost": {
+        "ar": "0.05877435"
+      },
+      "id": "mm6ne83re8yl3zgwt4b",
+      "uploadedAt": "2026-02-28T18:21:53.415Z"
+    },
+    {
+      "filename": "48438cb1.png",
+      "filePath": "/Users/gideon/Desktop/48438cb1.png",
+      "fileSize": 9902358,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:8ff918a6-d0c0-4ce5-8691-d84ac8fb5cc7",
+        "title:48438cb1",
+        "Content-Type:image/png",
+        "file-size:9902358",
+        "content-hash:sha256:8ff918a6d0c0bce51691d84ac8fb5cc7bb854cbe73d47f81dee86fd2e209fd2e",
+        "upload-timestamp:2026-02-28T18:21:53.594Z"
+      ],
+      "transactionId": "YbdKa3uYm3ME7dTBgEVG1r_w1ldlZ42-bnJqGa2FxlI",
+      "status": "pending",
+      "cost": {
+        "ar": "0.02305572"
+      },
+      "id": "mm6nedsk9fnf2li6yaw",
+      "uploadedAt": "2026-02-28T18:22:00.788Z"
+    },
+    {
+      "filename": "55649fdc.png",
+      "filePath": "/Users/gideon/Desktop/55649fdc.png",
+      "fileSize": 4479962,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:bc2971e6-7f7a-4145-8dd8-3ab51b4f48e6",
+        "title:55649fdc",
+        "Content-Type:image/png",
+        "file-size:4479962",
+        "content-hash:sha256:bc2971e67f7a11456dd83ab51b4f48e6ab5250c8c9060c0b82c1971535c3f818",
+        "upload-timestamp:2026-02-28T18:22:00.919Z"
+      ],
+      "transactionId": "nqzbPRMu8E1hTRZLzaADCCC7md3zRsNZOTrDrBHv-xo",
+      "status": "pending",
+      "cost": {
+        "ar": "0.01043072"
+      },
+      "id": "mm6neh5w2rtmxa9gz2e",
+      "uploadedAt": "2026-02-28T18:22:05.156Z"
+    },
+    {
+      "filename": "63005dcc.png",
+      "filePath": "/Users/gideon/Desktop/63005dcc.png",
+      "fileSize": 3940462,
+      "contentType": "image/png",
+      "tags": [
+        "uuid:0835bdfe-d788-4d44-8deb-52dc9cca94e1",
+        "title:63005dcc",
+        "Content-Type:image/png",
+        "file-size:3940462",
+        "content-hash:sha256:0835bdfed7881d442deb52dc9cca94e185ddcd899ad2e68f58b54b13e7d37a71",
+        "upload-timestamp:2026-02-28T18:22:05.276Z"
+      ],
+      "transactionId": "uAfa2Nj94HNOEUqVm4qxjHVQu5ePOB5F7xjog-JS7RA",
+      "status": "pending",
+      "cost": {
+        "ar": "0.00917460"
+      },
+      "id": "mm6nejqoe3tj93u3ej8",
+      "uploadedAt": "2026-02-28T18:22:08.496Z"
     }
   ],
   "wallet": {
@@ -1427,8 +1640,298 @@
           ]
         }
       ]
+    },
+    {
+      "uuid": "f31f933c-9d6a-4ca6-855c-35e7b3d68d0a",
+      "title": "6f62982f copy",
+      "filePath": "/Users/gideon/Desktop/6f62982f copy.png",
+      "contentHash": "sha256:f31f933c9d6a6ca6e55c35e7b3d68d0a261e40f0bcee5530d786ac95dabfecd0",
+      "fileSize": 12011280,
+      "mimeType": "image/png",
+      "created": "2025-10-31T06:38:06.000Z",
+      "modified": "2025-10-31T06:38:06.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "cFzTTIAn-qlCgGavi9xlP6z-xsx6THxeZmZCWBZnmxg",
+          "timestamp": "2026-02-28T18:21:14.017Z",
+          "link": "https://www.arweave.net/cFzTTIAn-qlCgGavi9xlP6z-xsx6THxeZmZCWBZnmxg",
+          "tags": [
+            "uuid:f31f933c-9d6a-4ca6-855c-35e7b3d68d0a",
+            "title:6f62982f copy",
+            "Content-Type:image/png",
+            "file-size:12011280",
+            "content-hash:sha256:f31f933c9d6a6ca6e55c35e7b3d68d0a261e40f0bcee5530d786ac95dabfecd0",
+            "upload-timestamp:2026-02-28T18:21:05.048Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "8fa9d87a-de4e-4654-8df6-2ba16080746f",
+      "title": "39d96f20 copy",
+      "filePath": "/Users/gideon/Desktop/39d96f20 copy.png",
+      "contentHash": "sha256:8fa9d87ade4ec654edf62ba16080746f2e798e4b88a4432888b7661c24196e1a",
+      "fileSize": 6912952,
+      "mimeType": "image/png",
+      "created": "2025-12-03T18:02:24.000Z",
+      "modified": "2025-12-03T18:02:24.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "XlL4AtA1orOXWYZCO1ZC4XLuhN0WjdsKPzuQTvmLB0w",
+          "timestamp": "2026-02-28T18:21:19.703Z",
+          "link": "https://www.arweave.net/XlL4AtA1orOXWYZCO1ZC4XLuhN0WjdsKPzuQTvmLB0w",
+          "tags": [
+            "uuid:8fa9d87a-de4e-4654-8df6-2ba16080746f",
+            "title:39d96f20 copy",
+            "Content-Type:image/png",
+            "file-size:6912952",
+            "content-hash:sha256:8fa9d87ade4ec654edf62ba16080746f2e798e4b88a4432888b7661c24196e1a",
+            "upload-timestamp:2026-02-28T18:21:14.149Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "8a0a5b5a-b267-4218-85c9-72aa2ebde069",
+      "title": "42dfd77f copy",
+      "filePath": "/Users/gideon/Desktop/42dfd77f copy.png",
+      "contentHash": "sha256:8a0a5b5ab267d218b5c972aa2ebde069a20d50484ddeabe7f0f87405f69e3b0f",
+      "fileSize": 8839831,
+      "mimeType": "image/png",
+      "created": "2025-10-29T06:51:42.000Z",
+      "modified": "2025-10-29T06:51:42.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "AMbNrtzmgxR9P1ilD1w7IocEj1ISNXxt4wdZmdh6FTk",
+          "timestamp": "2026-02-28T18:21:25.679Z",
+          "link": "https://www.arweave.net/AMbNrtzmgxR9P1ilD1w7IocEj1ISNXxt4wdZmdh6FTk",
+          "tags": [
+            "uuid:8a0a5b5a-b267-4218-85c9-72aa2ebde069",
+            "title:42dfd77f copy",
+            "Content-Type:image/png",
+            "file-size:8839831",
+            "content-hash:sha256:8a0a5b5ab267d218b5c972aa2ebde069a20d50484ddeabe7f0f87405f69e3b0f",
+            "upload-timestamp:2026-02-28T18:21:19.807Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "35b82f56-3ba9-4c0d-842d-5e8565d95284",
+      "title": "516c6f99",
+      "filePath": "/Users/gideon/Desktop/516c6f99.png",
+      "contentHash": "sha256:35b82f563ba95c0d542d5e8565d95284d7fa792d5566fd513e7dd97fc858b947",
+      "fileSize": 9695036,
+      "mimeType": "image/png",
+      "created": "2025-12-03T19:46:32.000Z",
+      "modified": "2025-12-03T19:46:32.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "vh3Oepw2yFMlEc3nH1UsC0ubfUun1kSQkHGEbSpdls4",
+          "timestamp": "2026-02-28T18:21:31.547Z",
+          "link": "https://www.arweave.net/vh3Oepw2yFMlEc3nH1UsC0ubfUun1kSQkHGEbSpdls4",
+          "tags": [
+            "uuid:35b82f56-3ba9-4c0d-842d-5e8565d95284",
+            "title:516c6f99",
+            "Content-Type:image/png",
+            "file-size:9695036",
+            "content-hash:sha256:35b82f563ba95c0d542d5e8565d95284d7fa792d5566fd513e7dd97fc858b947",
+            "upload-timestamp:2026-02-28T18:21:25.772Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "25ac1898-6933-4e05-85dc-3f97be6ce780",
+      "title": "566e9395",
+      "filePath": "/Users/gideon/Desktop/566e9395.png",
+      "contentHash": "sha256:25ac189869332e0525dc3f97be6ce7805847f4bdf5594e8a299ed75fa826a46a",
+      "fileSize": 335258,
+      "mimeType": "image/png",
+      "created": "2025-10-30T19:38:06.000Z",
+      "modified": "2025-10-30T19:38:06.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "_hW4fpkd5WJOaCATESIWjUo74CCkyNna4az3GVpr_K0",
+          "timestamp": "2026-02-28T18:21:33.926Z",
+          "link": "https://www.arweave.net/_hW4fpkd5WJOaCATESIWjUo74CCkyNna4az3GVpr_K0",
+          "tags": [
+            "uuid:25ac1898-6933-4e05-85dc-3f97be6ce780",
+            "title:566e9395",
+            "Content-Type:image/png",
+            "file-size:335258",
+            "content-hash:sha256:25ac189869332e0525dc3f97be6ce7805847f4bdf5594e8a299ed75fa826a46a",
+            "upload-timestamp:2026-02-28T18:21:31.629Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "4f1a68e3-0cd5-41f5-8d18-c0c9c7b5d0e3",
+      "title": "580b85dd copy",
+      "filePath": "/Users/gideon/Desktop/580b85dd copy.png",
+      "contentHash": "sha256:4f1a68e30cd561f55d18c0c9c7b5d0e3cb930daf05d87d11ef86ecf13503565d",
+      "fileSize": 7542261,
+      "mimeType": "image/png",
+      "created": "2025-10-17T16:12:02.000Z",
+      "modified": "2025-10-17T16:13:16.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "2mIcjdkGuktJZQ9NVif0O2djGcd7pDAWE0RnfM12zVo",
+          "timestamp": "2026-02-28T18:21:39.162Z",
+          "link": "https://www.arweave.net/2mIcjdkGuktJZQ9NVif0O2djGcd7pDAWE0RnfM12zVo",
+          "tags": [
+            "uuid:4f1a68e3-0cd5-41f5-8d18-c0c9c7b5d0e3",
+            "title:580b85dd copy",
+            "Content-Type:image/png",
+            "file-size:7542261",
+            "content-hash:sha256:4f1a68e30cd561f55d18c0c9c7b5d0e3cb930daf05d87d11ef86ecf13503565d",
+            "upload-timestamp:2026-02-28T18:21:33.966Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "ee0e2b59-e825-4f9a-80c5-75b19cedb775",
+      "title": "5649d210",
+      "filePath": "/Users/gideon/Desktop/5649d210.png",
+      "contentHash": "sha256:ee0e2b59e825af9a60c575b19cedb7752a40dc2a6ee85ccdb8d3ea0558cecb5a",
+      "fileSize": 25243391,
+      "mimeType": "image/png",
+      "created": "2025-12-03T06:27:00.000Z",
+      "modified": "2025-12-03T06:27:00.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "KWkrOEBe2hRhQfZR8tDpSt1wlxU3qAYpED1H0DoD1WQ",
+          "timestamp": "2026-02-28T18:21:53.485Z",
+          "link": "https://www.arweave.net/KWkrOEBe2hRhQfZR8tDpSt1wlxU3qAYpED1H0DoD1WQ",
+          "tags": [
+            "uuid:ee0e2b59-e825-4f9a-80c5-75b19cedb775",
+            "title:5649d210",
+            "Content-Type:image/png",
+            "file-size:25243391",
+            "content-hash:sha256:ee0e2b59e825af9a60c575b19cedb7752a40dc2a6ee85ccdb8d3ea0558cecb5a",
+            "upload-timestamp:2026-02-28T18:21:39.283Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "8ff918a6-d0c0-4ce5-8691-d84ac8fb5cc7",
+      "title": "48438cb1",
+      "filePath": "/Users/gideon/Desktop/48438cb1.png",
+      "contentHash": "sha256:8ff918a6d0c0bce51691d84ac8fb5cc7bb854cbe73d47f81dee86fd2e209fd2e",
+      "fileSize": 9902358,
+      "mimeType": "image/png",
+      "created": "2025-10-17T06:27:48.000Z",
+      "modified": "2025-10-17T06:27:48.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "YbdKa3uYm3ME7dTBgEVG1r_w1ldlZ42-bnJqGa2FxlI",
+          "timestamp": "2026-02-28T18:22:00.835Z",
+          "link": "https://www.arweave.net/YbdKa3uYm3ME7dTBgEVG1r_w1ldlZ42-bnJqGa2FxlI",
+          "tags": [
+            "uuid:8ff918a6-d0c0-4ce5-8691-d84ac8fb5cc7",
+            "title:48438cb1",
+            "Content-Type:image/png",
+            "file-size:9902358",
+            "content-hash:sha256:8ff918a6d0c0bce51691d84ac8fb5cc7bb854cbe73d47f81dee86fd2e209fd2e",
+            "upload-timestamp:2026-02-28T18:21:53.594Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "bc2971e6-7f7a-4145-8dd8-3ab51b4f48e6",
+      "title": "55649fdc",
+      "filePath": "/Users/gideon/Desktop/55649fdc.png",
+      "contentHash": "sha256:bc2971e67f7a11456dd83ab51b4f48e6ab5250c8c9060c0b82c1971535c3f818",
+      "fileSize": 4479962,
+      "mimeType": "image/png",
+      "created": "2025-10-29T16:15:26.000Z",
+      "modified": "2025-10-29T16:15:26.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "nqzbPRMu8E1hTRZLzaADCCC7md3zRsNZOTrDrBHv-xo",
+          "timestamp": "2026-02-28T18:22:05.201Z",
+          "link": "https://www.arweave.net/nqzbPRMu8E1hTRZLzaADCCC7md3zRsNZOTrDrBHv-xo",
+          "tags": [
+            "uuid:bc2971e6-7f7a-4145-8dd8-3ab51b4f48e6",
+            "title:55649fdc",
+            "Content-Type:image/png",
+            "file-size:4479962",
+            "content-hash:sha256:bc2971e67f7a11456dd83ab51b4f48e6ab5250c8c9060c0b82c1971535c3f818",
+            "upload-timestamp:2026-02-28T18:22:00.919Z"
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "0835bdfe-d788-4d44-8deb-52dc9cca94e1",
+      "title": "63005dcc",
+      "filePath": "/Users/gideon/Desktop/63005dcc.png",
+      "contentHash": "sha256:0835bdfed7881d442deb52dc9cca94e185ddcd899ad2e68f58b54b13e7d37a71",
+      "fileSize": 3940462,
+      "mimeType": "image/png",
+      "created": "2025-10-29T16:21:12.000Z",
+      "modified": "2025-10-29T16:21:12.000Z",
+      "tags": [],
+      "metadata": {
+        "customFields": {}
+      },
+      "arweave_hashes": [
+        {
+          "hash": "uAfa2Nj94HNOEUqVm4qxjHVQu5ePOB5F7xjog-JS7RA",
+          "timestamp": "2026-02-28T18:22:08.543Z",
+          "link": "https://www.arweave.net/uAfa2Nj94HNOEUqVm4qxjHVQu5ePOB5F7xjog-JS7RA",
+          "tags": [
+            "uuid:0835bdfe-d788-4d44-8deb-52dc9cca94e1",
+            "title:63005dcc",
+            "Content-Type:image/png",
+            "file-size:3940462",
+            "content-hash:sha256:0835bdfed7881d442deb52dc9cca94e185ddcd899ad2e68f58b54b13e7d37a71",
+            "upload-timestamp:2026-02-28T18:22:05.276Z"
+          ]
+        }
+      ]
     }
   ],
-  "lastUpdated": "2025-12-09T23:10:06.499Z",
+  "lastUpdated": "2026-02-28T18:22:08.549Z",
   "version": "2.0"
 }

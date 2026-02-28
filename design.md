@@ -269,11 +269,6 @@ See [[Museotheque]] for some examples of artists who have influenced me.
             class="gallery-img"
             alt="Clinamenic Fractile"
           />
-          <img
-            src="https://i.seadn.io/gcs/files/e0d3da2759fbeff246c962b0af0f3257.gif?auto=format&dpr=1&w=1000"
-            class="gallery-img"
-            alt="Automatos_Cap"
-          />
 </div>
 
 ---
@@ -486,5 +481,31 @@ Below are some examples of my organizational maps and ontological diagrams, made
     <img class="gallery-img" src="https://arweave.net/X-2KFh2v99NmzIm_YV1vDEqsXyZXP4NbQ_L_iBG6Hs8" alt="Seed Protocol Diagram">
     <img class="gallery-img" src="https://arweave.net/OEYaGuoOApUEJ5iAFpKLRH8LHDHbsRP3RE0ipMixiB0" alt="Consortium Diagram">
     <img class="gallery-img" src="https://arweave.net/IREOyLX8UYx5zg9OWhuT-oKzi0t7kQLFcvJU6xBnW2c" alt="Moloch Framework Diagram">
+  </div>
+</div>
+
+---
+
+## Lattelier
+
+Below are selected output from [Lattelier](https://lattelier.clinamenic.com), a lattice-based distortion pattern generator I deployed to Arweave.
+
+---
+
+<div class="gallery-row">
+  <div class="gallery-column">
+    <img class="gallery-img" src="assets/63005dcc.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/6f62982f copy.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/42dfd77f copy.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/516c6f99.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/566e9395.png" alt="Lattelier Artifact">
+    
+  </div>
+  <div class="gallery-column">
+    <img class="gallery-img" src="assets/580b85dd copy.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/5649d210.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/48438cb1.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/55649fdc.png" alt="Lattelier Artifact">
+    <img class="gallery-img" src="assets/39d96f20 copy.png" alt="Lattelier Artifact">
   </div>
 </div>
