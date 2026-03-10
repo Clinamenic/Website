@@ -346,16 +346,20 @@
 }
 
 // GALLERY IMAGE STYLES
-.gallery-row {
+// Set --gallery-cols on .gallery for 2, 3, 4, etc. (default: 2)
+.gallery {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  --gallery-cols: 2;
+  &.cols-3 { --gallery-cols: 3; }
+  &.cols-4 { --gallery-cols: 4; }
 }
 .gallery-column {
   box-sizing: border-box;
-  flex: 50%;
-  max-width: calc(50% - 0.5rem);
+  flex: 0 0 calc((100% - (var(--gallery-cols) - 1) * 1rem) / var(--gallery-cols));
+  max-width: calc((100% - (var(--gallery-cols) - 1) * 1rem) / var(--gallery-cols));
   > .img-wrapper {
     margin: 1rem 0rem;
   }
@@ -533,7 +537,7 @@
 }
 
 // Ensure img-wrapper works in different column layouts
-.gallery-row .img-wrapper,
+.gallery .img-wrapper,
 .gallery-column .img-wrapper {
   margin: 1rem 0rem;
   display: block;

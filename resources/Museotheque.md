@@ -28,7 +28,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1720 - 1778</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/MALjimE4g6_dO_DOWwbA_LOPOCNQkjI2v2aL3oYuG3w" class="gallery-img" alt="The Baths of Caracalla: Interior of the Central Hall, from The Views of Rome"/>
     <img src="https://arweave.net/vBh_-rAAkUmfGUU-SvlHJ-LY0ay7pgPStNK1cH6hQ5w" class="gallery-img" alt="Architectural fantasy with a Colossal Facade"/>
@@ -50,7 +50,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1728 - 1799</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">   
     <img src="https://arweave.net/pK2TLr4rQ1RS9n_VtTEbwKqpMtU6T0NVtYBaYSDx-cA" class="gallery-img" alt="Cénotaphe à Newton (1784) (Three cross sections)"/>
     <img src="https://arweave.net/RmLuXuYyBPjLm9TR4JBIOElUWg64KKwkx7hOWFMUfEk" class="gallery-img" alt="Cénotaphe à Newton (1784) (Three cross sections)"/>
@@ -76,7 +76,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1852 - 1934</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://history.nih.gov/download/attachments/1016727/3671.jpg?version=1&modificationDate=1677779810270&api=v2" class="gallery-img" alt="Acoustic nucleus"/>
     <img src="https://history.nih.gov/download/attachments/1016727/3706.jpg?version=1&modificationDate=1552363288348&api=v2" class="gallery-img" alt="Olfactory Bulb"/>
@@ -95,7 +95,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1868 - 1944</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://uploads0.wikiart.org/00506/images/hilma-af-klint/hilma-af-klint-altarpiece-no-2-13916.jpg!Large.jpg" class="gallery-img" alt="Altarpiece No. 2"/>
   </div>
@@ -110,7 +110,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1898 - 1972</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://uploads0.wikiart.org/images/m-c-escher/not_detected_204646.jpg" class="gallery-img" alt="Blocks of Balsalt Along the Sea (1917)"/>
     <img src="https://arweave.net/pVYZtd2Dkp7BdQLFWb1B7AwEq4QAr7jyWX9z3K63wMs" class="gallery-img" alt="Balcony (1945)"/>
@@ -130,7 +130,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <img src="https://arweave.net/Fs5YxVTSy2c0110RW-VF6owiG42G4nJ4fejFQo9R4s0" class="gallery-img" alt="Three Heads (II) (1938)"/>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/YvTx6c5YaEQFZOVxPi5eiBr8tlrdZmN0CIBadf7QdAQ" class="gallery-img" alt="Gigantomachy V"/>
   </div>
@@ -145,7 +145,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1923 - 2020</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/S0VlKvYLL19oWpWrz_aRIsMz-2pZFm1dJebUPf88Fto" class="gallery-img" alt="Centre Pompidou, Paris"/>
     <img src="https://arweave.net/Z0vWFtpuUmMjsgJ_YPb1q0beuLFSi5lKyyapV92vBmg" class="gallery-img" alt="Ville Spatiale"/>
@@ -166,7 +166,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <img src="https://artmuseum.princeton.edu/files/non-collections/56_bontecou_untitled_1982_web.gif" class="gallery-img" alt="Untitled, 1982"/>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/aDVSuRwR95QOziCn25ZHFZNU5Zm8AwkbgzMYQ95SVfU" class="gallery-img" alt="Untitled, 1963"/>
     <img src="https://arweave.net/xaUB1knqusFiDVwzg1N2PwwhmrhB61bwEcu9PHdwhS8" class="gallery-img" alt="Untitled, 1997"/>
@@ -183,7 +183,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1940 - 2012</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/FLp8JdHBM9N8su0BxdY_v2Yqw5h5oupwM7nT03_HTuw" class="gallery-img" alt="?"/>
     <img src="https://arweave.net/4Xo2ygMQ2Vne6CGngqBHGk-iS0YGOCsC6CHHzLwVLZs" class="gallery-img" alt="Plaza with Geodynamic Towers"/>
@@ -202,7 +202,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <img src="https://arweave.net/wjWE_PEcO3NzmdsDre56thSNM7ErPgv8au4rNyVN31c" class="gallery-img" alt="Lito I, 1981"/>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/px3OLAJGkco5ksQaI5phwbLSgMBbYgVzhc0FseloykI" class="gallery-img" alt="Capitulo II, 1976"/>
     <img src="https://arweave.net/wSnj8j5rkis0sFSUjwNS6wYXhW8tNdin4KySil6uY4g" class="gallery-img" alt="Lito II, 1982"/>
@@ -219,7 +219,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1947 - 2017</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://ideonomy.mit.edu/scanned-charts/pic028.jpg" class="gallery-img" alt="Untitled Chart"/>
     <img src="https://ideonomy.mit.edu/scanned-charts/pic003.jpg" class="gallery-img" alt="Species of the Form-Genus 'Radiation'"/>
@@ -236,7 +236,7 @@ Listed below in chronological order are various artists and designers who have i
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1901–1980</p>
 
-<div class="gallery-row">
+<div class="gallery">
   <div class="gallery-column">
     <img src="https://arweave.net/wjito7v6o6_Hkg9VVE0I9E1UNpZinyY47H4Anh2reLg" class="gallery-img" alt=""/>
   </div>
