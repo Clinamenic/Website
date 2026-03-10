@@ -50,7 +50,7 @@ EmbassyOS is guided by two principles. **Local resilience**: the system minimize
 
 ## Who it’s for and current use
 
-The target users are community houses and similar shared-living or civic organizations that need local control over data, communication, and house operations. The system addresses the need for infrastructure that stays under community control—governance, knowledge, and decision-making visible and queryable locally—without handing data to third-party SaaS. One community house currently runs the stack in production; the roadmap includes templating and distribution so other houses can deploy it with minimal specialist help.
+The target users are community houses and similar shared-living or civic organizations that need local control over data, communication, and house operations. The system addresses the need for infrastructure that stays under community control (governance, knowledge, and decision-making visible and queryable locally) without handing data to third-party SaaS. One community house currently runs the stack in production; the roadmap includes templating and distribution so other houses can deploy it with minimal specialist help.
 
 ---
 
