@@ -100,7 +100,7 @@ uuid: e7b6f568-23a0-4f0e-8a3f-308bc03ccb50
 
 Clinamenic LLC is the consultancy of Spencer Saar Cavanaugh, offering a suite of organizational services broadly grouped into categories of governance, branding, and knowledge. These services can be provided as discrete packages, or via rolling retainers.
 
-See [[About]] for more information, including previous talks and [[Presentations]]. See [[Writings]] for various industry publications.
+See [[About]] for more information, including previous talks and presentations. See [[Writing]] for various industry publications.
 
 ---
 

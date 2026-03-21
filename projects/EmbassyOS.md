@@ -162,8 +162,8 @@ AI is not an add-on: natural-language querying and orchestration are how residen
 - **LangGraph**: Orchestration layer for natural-language interaction with server services; API operational; Open WebUI integration in progress; current agents: Knowledge Base, Home Assistant.
 - **MCP (Model Context Protocol)**: Deployed; MCPO proxy routes to multiple MCP servers (e.g. Home Assistant) with many tools; additional MCP servers (e.g. Music, health, RAG, Knowledge Base) planned.
 - **MCPO Proxy**: MCP-to-OpenAPI gateway; operational; additional server integrations planned.
-- **Cal.com**: Appointment scheduling; deployed but auth callback and URL configuration (e.g. NEXTAUTH_URL, WEBAPP_URL) still being stabilized for reliable use behind VPN/local access. See [Cal.com Docker docs](.workspace/ref/cal-com-docker-docs.md).
-- **Matrix (Synapse, Element, LangGraph bot)**: Self-hosted messaging and LLM-from-Matrix room; Synapse and Element Web run and the bot can reply in a dedicated room. Mobile setup (VPN, self-signed cert, homeserver URL) and bot/room configuration are manual and still in progress; federation is disabled (VPN-only access). See [Matrix overview](.workspace/docs/component-matrix-overview.md) and [Matrix LLM addendum](.workspace/docs/plan-matrix-llm-addendum.md).
+- **Cal.com**: Appointment scheduling; deployed but auth callback and URL configuration (e.g. NEXTAUTH_URL, WEBAPP_URL) still being stabilized for reliable use behind VPN/local access.
+- **Matrix (Synapse, Element, LangGraph bot)**: Self-hosted messaging and LLM-from-Matrix room; Synapse and Element Web run and the bot can reply in a dedicated room. Mobile setup (VPN, self-signed cert, homeserver URL) and bot/room configuration are manual and still in progress; federation is disabled (VPN-only access).
 
 ---
 
@@ -179,8 +179,8 @@ Not yet implemented on this instance:
 
 **Dependency pruning (planned):** Two examples of reducing institutional dependence:
 
-- **Tesla solar API → IoTaWatt**: Replace Tesla cloud API-based solar monitoring with IoTaWatt, a fully local open-source energy monitor at the electrical panel. Eliminates third-party API dependency, adds consumption monitoring, and keeps all energy data on-site. See [IoTaWatt migration plan](.workspace/to-do/2026-01-04-iotawatt-migration-plan.md).
-- **ngrok → Octelium**: Replace the commercial tunnel used for remote VPN access with Octelium, a self-hosted zero-trust secure access platform that can operate as an ngrok/Cloudflare Tunnel alternative and VPN. Removes dependence on a paid tunnel provider while keeping remote access. See [Octelium docs](.workspace/ref/octelium-docs.md).
+- **Tesla solar API → IoTaWatt**: Replace Tesla cloud API-based solar monitoring with IoTaWatt, a fully local open-source energy monitor at the electrical panel. Eliminates third-party API dependency, adds consumption monitoring, and keeps all energy data on-site.
+- **ngrok → Octelium**: Replace the commercial tunnel used for remote VPN access with Octelium, a self-hosted zero-trust secure access platform that can operate as an ngrok/Cloudflare Tunnel alternative and VPN. Removes dependence on a paid tunnel provider while keeping remote access.
 
 ---
 

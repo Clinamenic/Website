@@ -33,26 +33,6 @@ type: site-page
 uuid: bf82f849-e253-426f-8c18-a69446f10b32
 ---
 
-<style>
-
-.center > article.popover-hint > h1,
-.center > article.popover-hint > h2,
-.center > article.popover-hint > h3,
-.center > article.popover-hint > h4,
-.center > article.popover-hint > h5,
-.center > article.popover-hint > h6,
-.center > .popover-hint > article > h1,
-.center > .popover-hint > article > h2,
-.center > .popover-hint > article > h3,
-.center > .popover-hint > article > h4,
-.center > .popover-hint > article > h5,
-.center > .popover-hint > article > h6 {
-  background: var(--highlight);
-  border: 1px solid var(--gray);
-}
-
-</style>
-
 ---
 
 ## Graphic Design
@@ -63,18 +43,13 @@ See [[Museotheque]] for some examples of artists who have influenced me.
 
 <div class="gallery cols-3">
   <div class="gallery-column">
-    <img src="https://i.pinimg.com/originals/24/7f/45/247f45070cb1ef7163052703f80e5e5d.png" class="gallery-img" style="border: 0px;" alt="SoloSalonBadge" />
-    <img src="https://arweave.net/OIwKrWqQCIPULVOlc9RIwHaQBbG2Z2XA0ZXSar1KWns" class="gallery-img" style="border: 0px;" alt="ClinamenicGreenCube" />
     <img src="https://arweave.net/_viyJRmVmCLAcG4CV3k8mt3_A9J1kwl0xcYyxsCb05Y" class="gallery-img" alt="Lobby3Summit" />
   </div>
   <div class="gallery-column">
-    <img src="https://arweave.net/UtrtvMCDKQXUkOsVopzDKKJDKE8pACPnkDCuWSVtHVo" class="gallery-img" style="border: 0px;" alt="DAOCoalitionLogo" />
-    <img src="https://arweave.net/QdjXOvmwj_JevlF53JDj5v0tMKRQz5gvPzgsh7ulKyc" class="gallery-img" alt="SSCBlackSquare" />
     <img src="https://i.pinimg.com/originals/54/82/24/5482241c344c134a0e83d9a32b780d8b.png" class="gallery-img" alt="AESOP_Insignia" />
   </div>
   <div class="gallery-column">
     <img src="https://arweave.net/-Fw0x-Uz3YSDD2R781KtGxWbh3S8SJTI28sJGCzwKpo" class="gallery-img" alt="Lobby3_CA" />
-    <img src="https://arweave.net/sQBKqlNlXf3hYPLPtk_I_tBuXxhZtkstmvGcKiNC5Fs" class="gallery-img" alt="Clinamenic Fractile" />
   </div>
 </div>
 
@@ -131,6 +106,7 @@ Below are some examples of the logos I have designed, both for clients and for o
     <img src="https://arweave.net/yLPZGK3KHwEjMEOKXtjzW9ORWTLhGWlA5JbOtUn-3IQ" class="gallery-img" alt="PubDAO Logo" />
     <img src="https://arweave.net/3TAVprqLnvqjGYYg8nAP_g3McwdWK9DMxk0UW2ZQwsk" class="gallery-img" alt="Lobby3 Logo" />
     <img src="https://arweave.net/Hxdks3FGsej1el1_kmPLNaMfQOUMiv30z47PfeCj4IM" class="gallery-img" alt="JournoDAO Logo" />
+    <img src="https://arweave.net/qjaz9TQUWi3qqZxT1fFBzZSJ2EOBfOCLCUdSiHzgFDg" class="gallery-img" alt="Solo Salon Logo" />
   </div>
   <div class="gallery-column">
     <img src="https://arweave.net/-ccfrMYluDqy0chV6f_Uq3BRmDK1CYuqLviNE1IXNAw" class="gallery-img" alt="DAO Coalition Logo" />
@@ -167,16 +143,33 @@ For new or established brands, I can provide a kit of graphic assets geared arou
 
 <div class="gallery cols-3">
   <div class="gallery-column">
-    <img class="gallery-img" src="assets/dao-coalition/5ac9c750fc400b12c627d51e80454cec.jpg" alt="dao-coalition-logo-bg-1">
-    <img class="gallery-img" src="assets/dao-coalition/a893a59035e772058c35c464ecb2f082.jpg" alt="dao-coalition-insignia-1">
+    <img class="gallery-img" src="https://arweave.net/tXPObHNcR3SOZrrXMl38PSxItRbTKXhCyfHRw2w3pu8" alt="dao-coalition-logo-bg-1">
+    <img class="gallery-img" src="https://arweave.net/UtrtvMCDKQXUkOsVopzDKKJDKE8pACPnkDCuWSVtHVo" alt="dao-coalition-insignia" style="border: 0px;">
   </div>
   <div class="gallery-column">
-    <img class="gallery-img" src="assets/dao-coalition/4009d7e88d295ed3b04e89a49b82288a.jpg" alt="dao-coalition-logo-bg-2">
-    <img class="gallery-img" src="assets/dao-coalition/39b252c9e01d3c79d5f13ef0076a0c11.jpg" alt="dao-coalition-wallpaper">
+    <img class="gallery-img" src="https://arweave.net/FvZhpp4gl0XTAhPYr_nNhWkrdkfYOEJCeo2U0OQhgBA" alt="dao-coalition-logo-bg-2">
+    <img class="gallery-img" src="https://arweave.net/hI6jUQrN0OEPCrLVHOMDT-V38apOczoszJiHEWRkQyc" alt="dao-coalition-wallpaper">
   </div>
   <div class="gallery-column">
-    <img class="gallery-img" src="assets/dao-coalition/b8bb859616cf4235a20032f252817f68.jpg" alt="dao-coalition-member-badge">
-    <img class="gallery-img" src="assets/dao-coalition/ba8d60ed927336c2c17e076a1615a795.jpg" alt="dao-coalition-insignia-2">
+    <img class="gallery-img" src="https://arweave.net/D1sKHEyITWCtzuKo_kD4bqkx53uL63gWbCdJwRFDCMU" alt="dao-coalition-member-badge">
+    <img class="gallery-img" src="https://arweave.net/d_6TLNhChLCMp1eagkg3rb2DIjrmPo8VkkjNKmo0a7A" alt="dao-coalition-insignia-1">
+  </div>
+</div>
+
+---
+
+### Clinamenic
+
+<div class="gallery cols-3" style="background-image: ">
+  <div class="gallery-column">
+  <img src="https://arweave.net/igsRALQLTs_G6ZsmKjgV5b8gEBttEu41ixkvt5T-4_E" class="gallery-img" style="border: 0px;" alt="SoloSalonBadge" />
+  <img src="https://arweave.net/QdjXOvmwj_JevlF53JDj5v0tMKRQz5gvPzgsh7ulKyc" class="gallery-img" alt="SSCBlackSquare" />
+  </div>
+  <div class="gallery-column">
+  <img src="https://arweave.net/OIwKrWqQCIPULVOlc9RIwHaQBbG2Z2XA0ZXSar1KWns" class="gallery-img" style="border: 0px;" alt="ClinamenicGreenCube" />
+  </div>
+  <div class="gallery-column">
+  <img src="https://arweave.net/sQBKqlNlXf3hYPLPtk_I_tBuXxhZtkstmvGcKiNC5Fs" class="gallery-img" alt="Clinamenic Fractile" />
   </div>
 </div>
 
@@ -216,19 +209,19 @@ Below are selected output from [Lattelier](https://lattelier.clinamenic.com), a 
 
 <div class="gallery cols-3">
   <div class="gallery-column">
-    <img class="gallery-img" src="assets/63005dcc.png" alt="Lattelier Artifact 63005dcc">
-    <img class="gallery-img" src="assets/42dfd77f.png" alt="Lattelier Artifact 42dfd77f">
-    <img class="gallery-img" src="assets/55649fdc.png" alt="Lattelier Artifact 55649fdc">
-    <img class="gallery-img" src="assets/566e9395.png" alt="Lattelier Artifact 566e9395">
+    <img class="gallery-img" src="https://arweave.net/0k2IkunwnNkKW28ZFUEiqEa968w37mMpLDO_MtHMijE" alt="Lattelier Artifact 63005dcc">
+    <img class="gallery-img" src="https://arweave.net/5RwXQMjvwD3vydgz6vBOzJSY-MFZDMbNJ1R2G6Ek-Io" alt="Lattelier Artifact 42dfd77f">
+    <img class="gallery-img" src="https://arweave.net/bXpTixic2DcY2CPuF9g17LAkJDNK3ifrGo2jc-NzOyQ" alt="Lattelier Artifact 55649fdc">
+    <img class="gallery-img" src="https://arweave.net/nrqVvnaM8pecXfAIntx1PSJwhULwfiyefFtlX7KBBTM" alt="Lattelier Artifact 566e9395">
   </div>
   <div class="gallery-column">
-    <img class="gallery-img" src="assets/580b85dd.png" alt="Lattelier Artifact 580b85dd">
-    <img class="gallery-img" src="assets/5649d210.png" alt="Lattelier Artifact 5649d210">
-    <img class="gallery-img" src="assets/48438cb1.png" alt="Lattelier Artifact 48438cb1">
+    <img class="gallery-img" src="https://arweave.net/SL8mEjiACe17HGcENjQkc3zsFRj0WnNKZavct-B1z3Q" alt="Lattelier Artifact 580b85dd">
+    <img class="gallery-img" src="https://arweave.net/RtUuekTEmV4EBHtCPIzZ9yEBJDWU40RdDf3YzTm5nB0" alt="Lattelier Artifact 5649d210">
+    <img class="gallery-img" src="https://arweave.net/IYPhlqFRoRMaNmBxps7Ve8z7JFiIkzzy7-TEAdEfBIk" alt="Lattelier Artifact 48438cb1">
   </div>
     <div class="gallery-column">
-    <img class="gallery-img" src="assets/516c6f99.png" alt="Lattelier Artifact 516c6f99">
-    <img class="gallery-img" src="assets/39d96f20.png" alt="Lattelier Artifact 39d96f20">
-    <img class="gallery-img" src="assets/6f62982f.png" alt="Lattelier Artifact 6f62982f">
+    <img class="gallery-img" src="https://arweave.net/Q1FcxMjKwUWndOI3POTvR0DjHys4HOryEpiWAH_8LMA" alt="Lattelier Artifact 516c6f99">
+    <img class="gallery-img" src="https://arweave.net/F62nuA9yuuO7L56cMjhNqHKEtZwEy_hXtcb9gk-wKYk" alt="Lattelier Artifact 39d96f20">
+    <img class="gallery-img" src="https://arweave.net/MWAcRMqw5G9LZm1uyXLbjjpUK6sNUYhZvOdgrca2AY8" alt="Lattelier Artifact 6f62982f">
   </div>
 </div>
