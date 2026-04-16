@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 availability:
-bannerURI: https://arweave.net/adMJyqREd1b7sFF_EWbcUWGN54A84doFU-fFEB-gX1Q
+bannerURI: https://i.ibb.co/8gbwdxgm/second-brain.png
 billing-type: fixed
 child-services:
 cost: variable
@@ -18,7 +18,7 @@ quartzShowExplorer: true
 quartzShowFlex: true
 quartzShowGraph: true
 quartzSearch: true
-quartzShowSubtitle: true
+quartzShowSubtitle: false
 quartzShowTitle: true
 quartzShowTOC: true
 service-category:
