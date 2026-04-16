@@ -10,6 +10,7 @@ billing-type: fixed
 child-services:
 parent-service:
 publish: true
+bannerURI: https://i.ibb.co/8gbwdxgm/second-brain.png
 ---
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
