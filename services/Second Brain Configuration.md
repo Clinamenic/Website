@@ -1,8 +1,6 @@
 ---
 author:
-  - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
 availability:
 bannerURI: http://i.ibb.co/pjV24YTb/second-brain.png
 billing-type: fixed
@@ -13,7 +11,7 @@ ogSiteName: Clinamenic LLC
 parent-service:
 publish: true
 quartzShowBacklinks: true
-quartzShowCitation: true
+quartzShowCitation: false
 quartzShowExplorer: true
 quartzShowFlex: true
 quartzShowGraph: true
@@ -30,7 +28,6 @@ type: service
 uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
 subtitle: Bespoke personal knowledge base as a service
 ---
-
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
 Drawing from the ethos of [local-first](https://www.inkandswitch.com/essay/local-first/), [malleable](https://www.inkandswitch.com/malleable-software/), and [home-cooked](https://maggieappleton.com/home-cooked-software) software, I can help you configure a bespoke knowledge base to function in a variety of capacities.
