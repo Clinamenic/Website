@@ -1,16 +1,24 @@
 ---
-type: service
-uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
-title:
-service-category:
-  - Knowledge Management
+author:
+  - Spencer Saar Cavanaugh
+authorURL:
+  - https://www.clinamenic.com
 availability:
-cost: variable
+bannerURI: https://i.ibb.co/8gbwdxgm/second-brain.png
 billing-type: fixed
 child-services:
+cost: variable
+ogType: website
+ogSiteName: Clinamenic LLC
 parent-service:
 publish: true
-bannerURI: https://i.ibb.co/8gbwdxgm/second-brain.png
+service-category:
+  - Knowledge Management
+twitterCreator: "@clinamenic"
+title: Second Brain Configuration
+twitterCard: summary_large_image
+type: service
+uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
 ---
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
@@ -18,7 +26,7 @@ Drawing from the ethos of [local-first](https://www.inkandswitch.com/essay/local
 
 For example, my second brain has various private components (journal, rolodex, media archive) and various public components, through this website (blog, design portfolio, zettelkasten, typography showcase, service catalog). 
 
-The components listed below are modular and compatible in often unforeseeable and exciting ways, and they can all operated within a single integrated system, using Obsidian as the unified interface.
+The components listed below are modular and compatible in often unforeseeable and exciting ways, and they can all operated within a single integrated system, using Obsidian as the unified interface. This file-based configuration also enables integration with Claude and other models, allowing users to query their second brain in natural language.
 
 ---
 ## Journal
