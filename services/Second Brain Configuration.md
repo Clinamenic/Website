@@ -66,18 +66,4 @@ By self-hosting Umami, you can track web activity per-page, and analyze web traf
 
 Use this calendar to request a time slot to chat with me about your second brain aspirations.
 
-<!-- Cal inline embed code begins -->
-<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-second-brain"></div>
-<script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "second-brain", {origin:"https://app.cal.com"});
-
-  Cal.ns["second-brain"]("inline", {
-    elementOrSelector:"#my-cal-inline-second-brain",
-    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-    calLink: "clinamenic/second-brain",
-  });
-
-  Cal.ns["second-brain"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
-  </script>
-  <!-- Cal inline embed code ends -->
+<iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/second-brain" width="100%"></iframe>
