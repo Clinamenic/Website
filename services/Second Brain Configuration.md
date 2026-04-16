@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 availability:
-bannerURI: https://i.ibb.co/8gbwdxgm/second-brain.png
+bannerURI: http://i.ibb.co/pjV24YTb/second-brain.png
 billing-type: fixed
 child-services:
 cost: variable
