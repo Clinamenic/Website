@@ -9,6 +9,7 @@ cost: variable
 billing-type: fixed
 child-services:
 parent-service:
+publish: true
 ---
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
@@ -34,7 +35,6 @@ Save and organize your photos, videos, and personal media in a local-first manne
 In addition to a journaling system, you may also want an integrated way to manage contact information and reflect on your relationships. With contacts and journal entries each being their own document type, they can easily reference each other, allowing you to integrate your journal history with your social graph.
 
 ---
-
 ## Zettelkasten
 
 Take notes and organize them according to orthodox or bespoke zettelkasten schemas, to support studying writing efforts, and reveal complex connections between reference materials. (See my example here) 
@@ -60,13 +60,11 @@ Communicate your service offerings in a structured and concise manner, like this
 
 By self-hosting Umami, you can track web activity per-page, and analyze web traffic patterns.
 
-
-Given the integrated nature of these components, your knowledge base can grow to fulfill multiple distinct functions
-
-
 ---
 
 ## Book a Discovery Call
+
+Use this calendar to request a time slot to chat with me about your second brain aspirations.
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-second-brain"></div>
