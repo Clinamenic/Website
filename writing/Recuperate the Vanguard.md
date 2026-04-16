@@ -27,7 +27,7 @@ quartzShowTOC: true
 subtitle: Free-market collectivism via self-regulation in emerging technology sectors.
 tags:
   - personal-discourse
-  - misc/postcapitalism
+  - reading-note/postcapitalism
   - text
 title: Recuperate the Vanguard
 twitterCard: summary_large_image

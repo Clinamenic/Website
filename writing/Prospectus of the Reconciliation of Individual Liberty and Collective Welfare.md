@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 date: 2024-05-23
-headDescription: Considerations to inform a more cogent economic philosophy.
+headDescription: Considerations to inform a more cogent economic philosophy
 headIcon:
 keywords:
 language: en
@@ -26,7 +26,7 @@ subtitle: Considerations to inform a more cogent economic philosophy.
 tags:
   - personal-discourse
   - text
-  - misc/postcapitalism
+  - reading-note/postcapitalism
 title: Prospectus of the Reconciliation of Individual Liberty and Collective Welfare
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

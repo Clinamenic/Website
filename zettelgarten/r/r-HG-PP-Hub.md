@@ -1,6 +1,6 @@
 ---
 title: Note Hub on George's Progress and Poverty
-reference: "[[Progress and Poverty]]"
+references: "[[Progress and Poverty]]"
 author: Spencer Saar Cavanaugh
 publish: true
 tags:

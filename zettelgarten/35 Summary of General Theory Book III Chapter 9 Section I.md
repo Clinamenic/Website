@@ -1,0 +1,20 @@
+---
+author: Spencer Saar Cavanaugh
+date: 2024-08-27
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book III Chapter 9 Section I
+type: zettel
+zettel-id-old: z-35
+zettel-legacy-id: r-JK-GT-35
+license: CC BY-NC-SA 4.0
+zettel-id: "35"
+uuid: 60a69094-5252-4b4f-ae13-25db692b8c2e
+---
+
+Re: [[The General Theory of Employment, Interest and Money#Chapter 9, Section I]]
+
+In section 9.1, Keynes lists out what he considers the major categories of motivation for individuals to save some portion of their income beyond what they spend on present consumption. He also lists out individual motivations to spend on consumption, and he draws analogies between how institutions and governments have similar motivations to save and consume. He presents all of these as the "subjective factors" inhibiting or driving the real propensity to consume.

@@ -1,9 +1,9 @@
 ---
 title: Note Hub on Machiavelli's The Prince
-reference: "[[The Prince]]"
+references: "[[The Prince]]"
 author: Spencer Saar Cavanaugh
 publish: true
-tags: 
+tags:
 ---
 
 ---

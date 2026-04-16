@@ -5,7 +5,7 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI:
 date: 2024-04-05
-headDescription: Publicly tracking impact progress, and balancing between proactive and retroactive funding models.
+headDescription: Publicly tracking impact progress, and balancing between proactive and retroactive funding models
 headIcon:
 keywords:
 language: en
@@ -26,8 +26,8 @@ quartzShowTOC: true
 subtitle: Publicly tracking impact progress, and balancing between proactive and retroactive funding models.
 tags:
   - personal-discourse
-  - misc/onchain-philanthropy
   - text
+  - onchain
 title: Progressive Public Goods Funding
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

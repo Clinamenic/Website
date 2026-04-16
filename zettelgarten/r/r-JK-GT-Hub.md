@@ -1,7 +1,7 @@
 ---
 title: Note Hub on Keynes' General Theory
 author: Spencer Saar Cavanaugh
-reference: "[[The General Theory of Employment, Interest and Money]]"
+references: "[[The General Theory of Employment, Interest and Money]]"
 publish: true
 quartzShowTitle: true
 quartzShowSubtitle: false
@@ -182,95 +182,95 @@ tags:
 
 ## Full List of Notes
 
-| File             | Date               | Title                                                    |
-| ---------------- | ------------------ | -------------------------------------------------------- |
-| [[zettelgarten/r/z-1]]          | August 16, 2024    | -                                                        |
-| [[z-2]]    | August 16, 2024    | -                                                        |
-| [[z-3]]    | August 16, 2024    | -                                                        |
-| [[z-4]]    | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section I     |
-| [[z-5]]    | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section II    |
-| [[z-6]]    | August 17, 2024    | -                                                        |
-| [[z-7]]    | August 17, 2024    | -                                                        |
-| [[z-8]]    | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section III   |
-| [[z-9]]    | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section IV    |
-| [[z-10]]   | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section V     |
-| [[z-11]]   | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section VI    |
-| [[z-12]]   | August 18, 2024    | Summary of General Theory Book I Chapter 2 Section VII   |
-| [[z-13]]   | August 18, 2024    | -                                                        |
-| [[z-14]]   | August 18, 2024    | -                                                        |
-| [[z-15]]   | August 18, 2024    | Summary of General Theory Book I Chapter 3 Section I     |
-| [[z-16]]   | August 18, 2024    | Summary of General Theory Book I Chapter 3 Section II    |
-| [[z-17]]   | August 19, 2024    | -                                                        |
-| [[z-18]]   | August 19, 2024    | Summary of General Theory Book I Chapter 3 Section III   |
-| [[z-19]]   | August 19, 2024    | Summary of General Theory Book I                         |
-| [[z-20]]   | August 20, 2024    | Summary of General Theory Book II Chapter 4              |
-| [[z-21]]   | August 20, 2024    | -                                                        |
-| [[z-22]]   | August 20, 2024    | -                                                        |
-| [[z-23]]   | August 20, 2024    | Summary of General Theory Book II Chapter 5              |
-| [[z-24]]   | August 21, 2024    | -                                                        |
-| [[z-25]]   | August 21, 2024    | Summary of General Theory Book II Chapter 6              |
-| [[z-25a]] | August 21, 2024    | -                                                        |
-| [[z-26]]   | August 21, 2024    | -                                                        |
-| [[z-26a]] | August 21, 2024    | -                                                        |
-| [[z-27]]   | August 21, 2024    | -                                                        |
-| [[z-28]]   | August 21, 2024    | -                                                        |
-| [[z-29]]   | August 26, 2024    | Summary of General Theory Book II Chapter 8 Section I    |
-| [[z-30]]   | August 26, 2024    | -                                                        |
-| [[z-31]]   | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section II  |
-| [[z-32]]   | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section III |
-| [[z-33]]   | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section IV  |
-| [[z-34]]   | August 27, 2024    | Summary of General Theory Book III Chapter 8             |
-| [[z-35]]   | August 27, 2024    | Summary of General Theory Book III Chapter 9 Section I   |
-| [[z-36]]   | August 27, 2024    | Summary of General Theory Book III Chapter 9 Section II  |
-| [[z-37]]   | August 27, 2024    | Summary of General Theory Book III Chapter 9             |
-| [[z-38]]   | August 28, 2024    | Summary of General Theory Book IV Chapter 11 Section II  |
-| [[z-39]]   | August 28, 2024    | Summary of General Theory Book IV Chapter 11 Section IV  |
-| [[z-40]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section I   |
-| [[z-41]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section II  |
-| [[z-42]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section III |
-| [[z-43]]   | August 30, 2024    | -                                                        |
-| [[z-44]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section IV  |
-| [[z-45]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section V   |
-| [[z-46]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section VI  |
-| [[z-47]]   | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section VII |
-| [[z-48]]   | September 01, 2024 | Summary of General Theory Book IV Chapter 12             |
-| [[z-49]]   | September 02, 2024 | -                                                        |
-| [[z-50]]   | September 02, 2024 | Summary of General Theory Book IV Chapter 13 Section I   |
-| [[z-51]]   | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section II  |
-| [[z-52]]   | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section III |
-| [[z-53]]   | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section IV  |
-| [[z-54]]   | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section V   |
-| [[z-55]]   | September 04, 2024 | Summary of General Theory Book IV Chapter 13             |
-| [[z-56]]   | September 08, 2024 | Summary of General Theory Book IV Chapter 14A            |
-| [[z-57]]   | September 08, 2024 | Summary of General Theory Book IV Chapter 15 Section I   |
-| [[z-58]]   | September 09, 2024 | Summary of General Theory Book IV Chapter 15 Section II  |
-| [[z-59]]   | September 09, 2024 | Summary of General Theory Book IV Chapter 15 Section III |
-| [[z-60]]   | September 11, 2024 | Summary of General Theory Book IV Chapter 15 Section IV  |
-| [[z-61]]   | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section I   |
-| [[z-62]]   | September 11, 2024 | -                                                        |
-| [[z-63]]   | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section II  |
-| [[z-64]]   | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section III |
-| [[z-65]]   | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section IV  |
-| [[z-66]]   | September 12, 2024 | Summary of General Theory Book IV Chapter 17 Section I   |
-| [[z-67]]   | September 24, 2024 | Summary of General Theory Book IV Chapter 17 Section II  |
-| [[z-68]]   | September 29, 2024 | Summary of General Theory Book IV Chapter 17 Section III |
-| [[z-69]]   | October 02, 2024   | Summary of General Theory Book IV Chapter 17 Section IV  |
-| [[z-70]]   | October 02, 2024   | Summary of General Theory Book IV Chapter 17 Section V   |
-| [[z-71]]   | October 04, 2024   | Summary of General Theory Book IV Chapter 18 Section I   |
-| [[z-72]]   | October 06, 2024   | Summary of General Theory Book IV Chapter 18 Section II  |
-| [[z-73]]   | October 06, 2024   | -                                                        |
-| [[z-74]]   | October 06, 2024   | Summary of General Theory Book IV Chapter 18 Section III |
-| [[z-75]]   | October 08, 2024   | -                                                        |
-| [[z-76]]   | October 11, 2024   | -                                                        |
-| [[z-77]]   | October 11, 2024   | -                                                        |
-| [[z-78]]   | October 12, 2024   | Summary of General Theory Book V Chapter 20 Section I    |
-| [[z-79]]   | October 12, 2024   | Summary of General Theory Book V Chapter 21 Section II   |
-| [[z-80]]   | October 12, 2024   | Summary of General Theory Book V Chapter 20 Section III  |
-| [[z-81]]   | October 13, 2024   | -                                                        |
-| [[z-82]]   | October 14, 2024   | Summary of General Theory Book V Chapter 22 Section I    |
-| [[z-83]]   | October 14, 2024   | Summary of General Theory Book V Chapter 22 Section II   |
-| [[z-84]]   | October 14, 2024   | -                                                        |
-| [[z-85]]   | October 17, 2024   | Summary of General Theory Book V Chapter 23 Section VII  |
+| File                   | Date               | Title                                                    |
+| ---------------------- | ------------------ | -------------------------------------------------------- |
+| [[zettelgarten/r/z-1]] | August 16, 2024    | -                                                        |
+| [[z-2]]                | August 16, 2024    | -                                                        |
+| [[z-3]]                | August 16, 2024    | -                                                        |
+| [[z-4]]                | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section I     |
+| [[z-5]]                | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section II    |
+| [[z-6]]                | August 17, 2024    | -                                                        |
+| [[z-7]]                | August 17, 2024    | -                                                        |
+| [[z-8]]                | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section III   |
+| [[z-9]]                | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section IV    |
+| [[z-10]]               | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section V     |
+| [[z-11]]               | August 17, 2024    | Summary of General Theory Book I Chapter 2 Section VI    |
+| [[z-12]]               | August 18, 2024    | Summary of General Theory Book I Chapter 2 Section VII   |
+| [[z-13]]               | August 18, 2024    | -                                                        |
+| [[z-14]]               | August 18, 2024    | -                                                        |
+| [[z-15]]               | August 18, 2024    | Summary of General Theory Book I Chapter 3 Section I     |
+| [[z-16]]               | August 18, 2024    | Summary of General Theory Book I Chapter 3 Section II    |
+| [[z-17]]               | August 19, 2024    | -                                                        |
+| [[z-18]]               | August 19, 2024    | Summary of General Theory Book I Chapter 3 Section III   |
+| [[z-19]]               | August 19, 2024    | Summary of General Theory Book I                         |
+| [[z-20]]               | August 20, 2024    | Summary of General Theory Book II Chapter 4              |
+| [[z-21]]               | August 20, 2024    | -                                                        |
+| [[z-22]]               | August 20, 2024    | -                                                        |
+| [[z-23]]               | August 20, 2024    | Summary of General Theory Book II Chapter 5              |
+| [[z-24]]               | August 21, 2024    | -                                                        |
+| [[z-25]]               | August 21, 2024    | Summary of General Theory Book II Chapter 6              |
+| [[z-25a]]              | August 21, 2024    | -                                                        |
+| [[z-26]]               | August 21, 2024    | -                                                        |
+| [[z-26a]]              | August 21, 2024    | -                                                        |
+| [[z-27]]               | August 21, 2024    | -                                                        |
+| [[z-28]]               | August 21, 2024    | -                                                        |
+| [[z-29]]               | August 26, 2024    | Summary of General Theory Book II Chapter 8 Section I    |
+| [[z-30]]               | August 26, 2024    | -                                                        |
+| [[z-31]]               | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section II  |
+| [[z-32]]               | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section III |
+| [[z-33]]               | August 26, 2024    | Summary of General Theory Book III Chapter 8 Section IV  |
+| [[z-34]]               | August 27, 2024    | Summary of General Theory Book III Chapter 8             |
+| [[z-35]]               | August 27, 2024    | Summary of General Theory Book III Chapter 9 Section I   |
+| [[z-36]]               | August 27, 2024    | Summary of General Theory Book III Chapter 9 Section II  |
+| [[z-37]]               | August 27, 2024    | Summary of General Theory Book III Chapter 9             |
+| [[z-38]]               | August 28, 2024    | Summary of General Theory Book IV Chapter 11 Section II  |
+| [[z-39]]               | August 28, 2024    | Summary of General Theory Book IV Chapter 11 Section IV  |
+| [[z-40]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section I   |
+| [[z-41]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section II  |
+| [[z-42]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section III |
+| [[z-43]]               | August 30, 2024    | -                                                        |
+| [[z-44]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section IV  |
+| [[z-45]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section V   |
+| [[z-46]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section VI  |
+| [[z-47]]               | August 30, 2024    | Summary of General Theory Book IV Chapter 12 Section VII |
+| [[z-48]]               | September 01, 2024 | Summary of General Theory Book IV Chapter 12             |
+| [[z-49]]               | September 02, 2024 | -                                                        |
+| [[z-50]]               | September 02, 2024 | Summary of General Theory Book IV Chapter 13 Section I   |
+| [[z-51]]               | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section II  |
+| [[z-52]]               | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section III |
+| [[z-53]]               | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section IV  |
+| [[z-54]]               | September 04, 2024 | Summary of General Theory Book IV Chapter 13 Section V   |
+| [[z-55]]               | September 04, 2024 | Summary of General Theory Book IV Chapter 13             |
+| [[z-56]]               | September 08, 2024 | Summary of General Theory Book IV Chapter 14A            |
+| [[z-57]]               | September 08, 2024 | Summary of General Theory Book IV Chapter 15 Section I   |
+| [[z-58]]               | September 09, 2024 | Summary of General Theory Book IV Chapter 15 Section II  |
+| [[z-59]]               | September 09, 2024 | Summary of General Theory Book IV Chapter 15 Section III |
+| [[z-60]]               | September 11, 2024 | Summary of General Theory Book IV Chapter 15 Section IV  |
+| [[z-61]]               | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section I   |
+| [[z-62]]               | September 11, 2024 | -                                                        |
+| [[z-63]]               | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section II  |
+| [[z-64]]               | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section III |
+| [[z-65]]               | September 11, 2024 | Summary of General Theory Book IV Chapter 16 Section IV  |
+| [[z-66]]               | September 12, 2024 | Summary of General Theory Book IV Chapter 17 Section I   |
+| [[z-67]]               | September 24, 2024 | Summary of General Theory Book IV Chapter 17 Section II  |
+| [[z-68]]               | September 29, 2024 | Summary of General Theory Book IV Chapter 17 Section III |
+| [[z-69]]               | October 02, 2024   | Summary of General Theory Book IV Chapter 17 Section IV  |
+| [[z-70]]               | October 02, 2024   | Summary of General Theory Book IV Chapter 17 Section V   |
+| [[z-71]]               | October 04, 2024   | Summary of General Theory Book IV Chapter 18 Section I   |
+| [[z-72]]               | October 06, 2024   | Summary of General Theory Book IV Chapter 18 Section II  |
+| [[z-73]]               | October 06, 2024   | -                                                        |
+| [[z-74]]               | October 06, 2024   | Summary of General Theory Book IV Chapter 18 Section III |
+| [[z-75]]               | October 08, 2024   | -                                                        |
+| [[z-76]]               | October 11, 2024   | -                                                        |
+| [[z-77]]               | October 11, 2024   | -                                                        |
+| [[z-78]]               | October 12, 2024   | Summary of General Theory Book V Chapter 20 Section I    |
+| [[z-79]]               | October 12, 2024   | Summary of General Theory Book V Chapter 21 Section II   |
+| [[z-80]]               | October 12, 2024   | Summary of General Theory Book V Chapter 20 Section III  |
+| [[z-81]]               | October 13, 2024   | -                                                        |
+| [[z-82]]               | October 14, 2024   | Summary of General Theory Book V Chapter 22 Section I    |
+| [[z-83]]               | October 14, 2024   | Summary of General Theory Book V Chapter 22 Section II   |
+| [[z-84]]               | October 14, 2024   | -                                                        |
+| [[z-85]]               | October 17, 2024   | Summary of General Theory Book V Chapter 23 Section VII  |
 
 ---
 
@@ -588,7 +588,6 @@ $$'User Cost' = U = (G' - B') - (G - A_1)$$
 - $A - U$ (_Income of Entrepreneur_)
   - Proceeds minus User Cost
 - Net Income of Entrepreneur: $$A - U - V$$
-
   - Proceeds minus User Cost, minus Supplementary Cost
   - References
     - [[The General Theory of Employment, Interest and Money#^96c69b]]

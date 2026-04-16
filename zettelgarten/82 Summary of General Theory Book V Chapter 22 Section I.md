@@ -1,0 +1,19 @@
+---
+author:
+  - Spencer Saar Cavanaugh
+date: 2024-10-14
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book V Chapter 22 Section I
+type: zettel
+zettel-id-old: z-82
+zettel-legacy-id: r-JK-GT-82
+license: CC BY-NC-SA 4.0
+zettel-id: "82"
+uuid: 1a8e3e38-6ce0-4ed1-8a00-5b4752223e42
+---
+
+In section 22.1, Keynes introduces the need for the general theory to account for the phenomenon of the trade cycle, in order for the general theory to be considered complete. He frames the trade cycle as primarily based on fluctuations in the marginal efficiency of capital, as well as a couple other variables such as the propensity to consume and the aggregate state of liquidity-preference.

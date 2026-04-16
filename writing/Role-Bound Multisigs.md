@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 date: 2023-08-08
-headDescription: No longer must multisigs be statically assigned to wallet addresses.
+headDescription: Electable multisig signers for democratic onchain organizations
 headIcon:
 keywords:
 language: en
@@ -24,7 +24,7 @@ quartzShowTOC: true
 quartzShowTitle: true
 subtitle: No longer must multisigs be statically assigned to wallet addresses.
 tags:
-  - misc/bureaumancy
+  - reading-note/bureaumancy
   - personal-discourse
   - text
 title: Role-Bound Multisigs

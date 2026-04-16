@@ -1,0 +1,20 @@
+---
+author: Spencer Saar Cavanaugh
+date: 2024-08-30
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book IV Chapter 12 Section III
+type: zettel
+zettel-id-old: z-42
+zettel-legacy-id: r-JK-GT-42
+license: CC BY-NC-SA 4.0
+zettel-id: "42"
+uuid: f6b81f04-9881-4312-99fd-4c10192bcaee
+---
+
+In section 12.3, Keynes points out that, in the earlier days of private enterprise, the enterprise was often carried out by the person(s) providing the capital, whereas now the investor(s) are usually distinct from the operator(s). He says this occasions more frequent re-evaluation.
+
+#r/JK/GT/Q/unresolved Does this have an effect of greater liquidity in capital markets?

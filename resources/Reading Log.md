@@ -27,7 +27,7 @@ This log documents the books and other written materials I have read, along with
 | 2022-06-?? | 2022-06-?? | Hamlet                                                   |                 | William Shakespeare                         |
 | 2022-09-?? | 2022-09-?? | Discourse on the Sciences and Arts                       |                 | Jean-Jacques Rousseau                       |
 | 2022-10-?? | 2022-10-?? | Discourse on the Origin and Foundations of Inequality    |                 | Jean-Jacques Rousseau                       |
-| 2023-??-?? | 2023-??-?? | [[UnformattedProgress and Poverty]]                                 | [[r-HG-PP-Hub]] | Henry George                                |
+| 2023-??-?? | 2023-??-?? | [[UnformattedProgress and Poverty]]                      | [[r-HG-PP-Hub]] | Henry George                                |
 | 2023-??-?? | 2023-??-?? | [[The Prince]]                                           | [[r-NM-TP-Hub]] | Niccolò Machiavelli                         |
 | 2023-??-?? | 2023-??-?? | The Art of War                                           | [[r-NM-AW-Hub]] | Niccolò Machiavelli                         |
 | 2023-??-?? | 2023-??-?? | The Crying of Lot 49                                     |                 | Thomas Pynchon                              |
@@ -46,6 +46,11 @@ This log documents the books and other written materials I have read, along with
 | 2025-01-02 | 2025-01-23 | Don Quixote volume I                                     |                 | Miguel de Cervantes                         |
 | 2025-04-02 | 2025-05-19 | Don Quixote volume II                                    |                 | Miguel de Cervantes                         |
 | 2025-05-24 | 2025-05-28 | Tractatus Logico-Philosophicus                           |                 | Ludwig Wittgenstein                         |
+| 2026-03-20 | 2026-03-23 | Ace                                                      |                 | Angela Chen                                 |
+| 2026-03-31 |            | Relationality                                            |                 | David Jay                                   |
+|            |            |                                                          |                 |                                             |
+|            |            |                                                          |                 |                                             |
+|            |            |                                                          |                 |                                             |
 
 ### Papers/Articles
 

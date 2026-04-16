@@ -1,0 +1,19 @@
+---
+author:
+  - Spencer Saar Cavanaugh
+date: 2024-09-24
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book IV Chapter 17 Section II
+type: zettel
+zettel-id-old: z-67
+zettel-legacy-id: r-JK-GT-67
+license: CC BY-NC-SA 4.0
+zettel-id: "67"
+uuid: 6ed81d1e-d747-4e1c-b569-498897b34f62
+---
+
+#r/JK/GT/Q/unresolved In section 17.2, Keynes elaborates on how we can understand the appreciation/depreciation of assets in terms of interest rates expressed in units of that asset, but I did not meaningfully follow.

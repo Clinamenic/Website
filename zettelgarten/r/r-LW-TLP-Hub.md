@@ -2,7 +2,7 @@
 title: Note Hub on Wittgenstein's Tractatus
 author:
   - Spencer Saar Cavanaugh
-reference: 
+references:
 publish: true
 quartzShowTitle: true
 quartzShowSubtitle: false
@@ -17,13 +17,11 @@ tags:
   - r/LW/TL
 ---
 
-
 ### Asking the Right Questions
 
 - [[Tractatus Logico-Philosophicus#3.325]]
 - [[Tractatus Logico-Philosophicus#4.003]]
 - [[Tractatus Logico-Philosophicus#4.1274]]
-
 
 ### Limits of Language
 
@@ -32,16 +30,13 @@ tags:
 - [[Tractatus Logico-Philosophicus#4.1274]]
 - [[Tractatus Logico-Philosophicus#5.61]]
 
-
 ### Affordances for Emergence
 
 - [[Tractatus Logico-Philosophicus#3.4]]
 
-
 ### Logical Atomism
 
 - [[Tractatus Logico-Philosophicus#5.32]]
-
 
 ### Unclear
 
@@ -52,7 +47,6 @@ tags:
 - [[Tractatus Logico-Philosophicus#5.525]]
 - [[Tractatus Logico-Philosophicus#5.5542]]
 - [[Tractatus Logico-Philosophicus#6.51]]
-
 
 ### Key Excerpts
 

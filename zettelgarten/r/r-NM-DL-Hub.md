@@ -1,6 +1,6 @@
 ---
 title: Note Hub on Machiavelli's Discourses on Livy
-reference: "[[Discourses on Livy]]"
+references: "[[Discourses on Livy]]"
 author: Spencer Saar Cavanaugh
 publish: true
 tags:
@@ -234,7 +234,7 @@ A scanned copy of my handwritten notes on Discourses on Livy, by Niccolo Machiav
 ### Adapting to the Times
 
 - 3.09 [[Discourses on Livy#^dfa206]]
-	- See also 'versatility of mind' mentioned in [[The Prince]]
+  - See also 'versatility of mind' mentioned in [[The Prince]]
 
 #### Interpretation
 
@@ -247,10 +247,11 @@ A scanned copy of my handwritten notes on Discourses on Livy, by Niccolo Machiav
 ### Traditions & Customs & Religion
 
 1.11 [[Discourses on Livy#^b38564]]
+
 - 1.18 [[Discourses on Livy#^37dfb0]]
-	- Rechtsstaat vs political realism ()
+  - Rechtsstaat vs political realism ()
 - 1.25 [[Discourses on Livy#^4b9088]] Generalizable?
-	- Micropolitical equivalent: framing a new suggestion as a deferral to more senior members.
+  - Micropolitical equivalent: framing a new suggestion as a deferral to more senior members.
 - 1.55 [[Discourses on Livy#^fa3d86]]
 
 #### Christianity
@@ -284,12 +285,12 @@ A scanned copy of my handwritten notes on Discourses on Livy, by Niccolo Machiav
 - 1.11 [[Discourses on Livy#^3a4bfb]]
 - 1.55 [[Discourses on Livy#^197d7e]]
 - [[Discourses on Livy#Book One, Discourse 58. The Masses are more Knowing and more Constant than is a Prince]]
-	- 1.58 [[Discourses on Livy#^7ee30e]] \*
-	- 1.58 [[Discourses on Livy#^3d33f3]]
-	- 1.58 [[Discourses on Livy#^82a479]] Wisdom of the crowd
-	- 1.58 [[Discourses on Livy#^c4cc6e]] \*
-	- 1.58 [[Discourses on Livy#^facd6d]]
-	- 1.58 [[Discourses on Livy#^f30f74]]
+  - 1.58 [[Discourses on Livy#^7ee30e]] \*
+  - 1.58 [[Discourses on Livy#^3d33f3]]
+  - 1.58 [[Discourses on Livy#^82a479]] Wisdom of the crowd
+  - 1.58 [[Discourses on Livy#^c4cc6e]] \*
+  - 1.58 [[Discourses on Livy#^facd6d]]
+  - 1.58 [[Discourses on Livy#^f30f74]]
 - 1.59 [[Discourses on Livy#^484068]]
 - 2.02 [[Discourses on Livy#^f930b5]] Common good
 
@@ -335,7 +336,7 @@ A scanned copy of my handwritten notes on Discourses on Livy, by Niccolo Machiav
 - 1.09 [[Discourses on Livy#^62f3f1]]
 - 1.18 [[Discourses on Livy#^d19433]]
 - 1.27 [[Discourses on Livy#^62776a]] \*
-	- See [[Intimations of a Post-Machiavellian Moral-Tactical Calculus]] and [[Intimations of a Post-Machiavellian Moral-Tactical Calculus, Part 2]]
+  - See [[Intimations of a Post-Machiavellian Moral-Tactical Calculus]] and [[Intimations of a Post-Machiavellian Moral-Tactical Calculus, Part 2]]
 - 1.41 [[Discourses on Livy#^bb9d17]]
 - 1.42 [[Discourses on Livy#^7d08c2]]
 
@@ -421,18 +422,16 @@ A scanned copy of my handwritten notes on Discourses on Livy, by Niccolo Machiav
 - 1.48 [[Discourses on Livy#^94235c]]
 - 3.38 [[Discourses on Livy#^772768]]
 
-
 ---
 
 ## Dubious Assertions
 
 - 1.05 [[Discourses on Livy#^99feb4]]
 
-
 ## Reference
 
 - The English Face of Machiavelli
-	- https://www.routledge.com/The-English-Face-of-Machiavelli-Routledge-Library-Editions-Political-Science-Volume-32/Hempton/p/book/9780415851091
+  - https://www.routledge.com/The-English-Face-of-Machiavelli-Routledge-Library-Editions-Political-Science-Volume-32/Hempton/p/book/9780415851091
 - [[The Prince]]
 - The Art of War
-	- https://www.marxists.org/reference/archive/machiavelli/works/art-war/index.htm
+  - https://www.marxists.org/reference/archive/machiavelli/works/art-war/index.htm

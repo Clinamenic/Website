@@ -1,6 +1,6 @@
 ---
 title: Note Hub on Lucretius' On the Nature of Things
-reference: TBD
+references: TBD
 author: Spencer Saar Cavanaugh
 publish: true
 tags:

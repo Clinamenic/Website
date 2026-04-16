@@ -5,7 +5,7 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI:
 date: 2024-05-03
-headDescription: Introductory remarks on an experimental mode of transparent discourse.
+headDescription: Introductory remarks on an experimental mode of transparent discourse
 headIcon:
 keywords:
 language: en
@@ -26,7 +26,7 @@ quartzShowTOC: true
 subtitle: Introductory remarks on an experimental mode of transparent discourse.
 tags:
   - personal-discourse
-  - misc/auto-discourse
+  - reading-note/auto-discourse
 title: A Primer on Auto-Discourse
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

@@ -5,7 +5,7 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI: https://arweave.net/IDVBPcLEntrZ09zDqjzjk1ETPnHNeWKuMlQdTIELnTg
 date: 2023-11-01
-headDescription: A potential solution to the content moderation problem.
+headDescription: A potential solution to the content moderation problem
 headIcon:
 keywords:
 language: en

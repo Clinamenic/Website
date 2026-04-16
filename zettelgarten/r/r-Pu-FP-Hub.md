@@ -1,9 +1,9 @@
 ---
 title: Note Hub on The Federalist Papers
-reference: "[[The Federalist Papers]]"
+references: "[[The Federalist Papers]]"
 author: Spencer Saar Cavanaugh
 publish: true
-tags: 
+tags:
 ---
 
 ---

@@ -24,7 +24,7 @@ quartzShowTOC: true
 quartzShowTitle: true
 subtitle: A hedge to better enable a "Code is Law" organizational policy.
 tags:
-  - misc/bureaumancy
+  - reading-note/bureaumancy
   - personal-discourse
   - text
 title: The Failsafe Committee

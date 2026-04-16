@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 date: 2023-12-10
-headDescription: Using smart contracts to design organizations and facilitate governance processes.
+headDescription: Using smart contracts to design organizations and facilitate governance processes
 headIcon:
 keywords:
 language: en
@@ -25,7 +25,7 @@ quartzShowTitle: true
 subtitle: Using smart contracts to design organizations and facilitate governance processes.
 tags:
   - personal-discourse
-  - misc/bureaumancy
+  - reading-note/bureaumancy
   - text
 title: What Are Onchain Organizations?
 twitterCard: summary_large_image

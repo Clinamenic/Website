@@ -1,6 +1,6 @@
 ---
 title: Note Hub on Machiavelli's The Art of War
-reference: TBD
+references: TBD
 author: Spencer Saar Cavanaugh
 publish: true
 tags:

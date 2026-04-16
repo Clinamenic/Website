@@ -1,0 +1,18 @@
+---
+author: Spencer Saar Cavanaugh
+date: 2024-08-27
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book III Chapter 9
+type: zettel
+zettel-id-old: z-37
+zettel-legacy-id: r-JK-GT-37
+license: CC BY-NC-SA 4.0
+zettel-id: "37"
+uuid: f17426fa-ca19-4e3a-858b-861f53ba78fb
+---
+
+In chapter 9, Keynes argues that the subjective factors driving the actual propensity to consume exert less of an influence than certain objective factors such as income level and interest rates. He also says that most of these subjective factors are baked into our social fabric, which changes only slowly.

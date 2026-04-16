@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 date: 2023-11-24
-headDescription: A template and methodology for initializing your organization's governance.
+headDescription: A template and methodology for initializing your organization's governance
 headIcon:
 keywords:
 language: en

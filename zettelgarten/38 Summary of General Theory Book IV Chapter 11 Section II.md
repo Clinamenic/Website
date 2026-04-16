@@ -1,0 +1,18 @@
+---
+author: Spencer Saar Cavanaugh
+date: 2024-08-28
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book IV Chapter 11 Section II
+type: zettel
+zettel-id-old: z-38
+zettel-legacy-id: r-JK-GT-38
+license: CC BY-NC-SA 4.0
+zettel-id: "38"
+uuid: 96bfe089-7c0c-424a-9e61-cdb100b74098
+---
+
+In section 11.2, Keynes seems to be arguing that, in order to induce investment, the marginal efficiency of capital needs to exceed the given interest rate. Here, he defines the marginal efficiency of capital as the relation between the prospective yield of a capital asset and its supply price.

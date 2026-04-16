@@ -1,9 +1,9 @@
 ---
 title: Note Hub on Paine's Common Sense
-reference: "[[Common Sense]]"
+references: "[[Common Sense]]"
 author: Spencer Saar Cavanaugh
 publish: true
-tags: 
+tags:
 ---
 
 ---

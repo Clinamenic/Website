@@ -1,0 +1,19 @@
+---
+author:
+  - Spencer Saar Cavanaugh
+date: 2024-10-02
+publish: true
+references:
+  - "[[The General Theory of Employment, Interest and Money]]"
+tags:
+  - r/JK/GT
+title: Summary of General Theory Book IV Chapter 17 Section V
+type: zettel
+zettel-id-old: z-70
+zettel-legacy-id: r-JK-GT-70
+license: CC BY-NC-SA 4.0
+zettel-id: "70"
+uuid: a8b7a843-9c1d-45e3-aa69-1cff81c67809
+---
+
+In section 17.5, Keynes frames money as the only commodity with a liquidity premium in constant excess of its carrying cost.

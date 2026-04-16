@@ -21,7 +21,7 @@ subtitle: Some coverage of the various challenges faced in the construction of a
   multi-purpose zettelkasten.
 tags:
 - personal-discourse/log
-- misc/zettelkasten
+- reading-note/zettelkasten
 title: Notes on Experimental Zettelkasten Methodology
 type: notes
 uuid: f287fa9c-c615-4f2c-97db-5103b6df1b07

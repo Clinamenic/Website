@@ -24,7 +24,7 @@ quartzShowTOC: true
 quartzShowTitle: true
 subtitle: How should consultants approach on-chain engagements with clients?
 tags:
-  - misc/bureaumancy
+  - reading-note/bureaumancy
   - personal-discourse
   - text
 title: Containers for Consultants

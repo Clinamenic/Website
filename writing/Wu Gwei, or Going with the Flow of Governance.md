@@ -5,7 +5,7 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI: https://arweave.net/Fz2ozgyIb_O7nkketDN9LbdeQ3JknF07Ywi1DI8Jy-0
 date: 2024-08-04
-headDescription: Applying daoist and sociocratic principles to sensemaking and governance.
+headDescription: Applying daoist and sociocratic principles to sensemaking and governance
 headIcon:
 keywords:
 language: en

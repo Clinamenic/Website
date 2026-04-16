@@ -1,6 +1,6 @@
 ---
 title: Note Hub on Rousseau's Discourse on the Origin and Basis of Inequality Among Men
-reference: TBD
+references: TBD
 author: Spencer Saar Cavanaugh
 publish: true
 tags:

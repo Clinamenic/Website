@@ -5,7 +5,7 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI: https://arweave.net/q2Iv0vm7Fi5JCcbPFdx3CAweppk8SwUXT2mA8HU2DNA
 date: 2023-11-13
-headDescription: This expose highlights a number of fonts which encapsulate the solarpunk ethos.
+headDescription: This expose highlights a number of fonts which encapsulate the solarpunk ethos
 headIcon:
 keywords:
 language: en
@@ -26,7 +26,7 @@ quartzShowTitle: true
 subtitle: This expose highlights a number of fonts which encapsulate the solarpunk ethos.
 tags:
   - personal-discourse
-  - misc/design
+  - reading-note/design
   - text
 title: A Solarpunk Typography Expose
 twitterCard: summary_large_image

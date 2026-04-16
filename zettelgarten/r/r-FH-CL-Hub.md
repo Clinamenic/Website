@@ -1,6 +1,6 @@
 ---
 title: Note Hub on Hayek's The Constitution of Liberty
-reference: TBD
+references: TBD
 author: Spencer Saar Cavanaugh
 publish: true
 tags:
