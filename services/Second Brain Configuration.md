@@ -70,7 +70,7 @@ In addition to a journaling system, you may also want an integrated way to manag
 
 ## Zettelkasten
 
-Take notes and organize them according to orthodox or bespoke zettelkasten schemas, to support studying writing efforts, and reveal complex connections between reference materials. (See my example here)
+Take notes and organize them according to orthodox or bespoke zettelkasten schemas, to support studying writing efforts, and reveal complex connections between reference materials. (See my example here: [[zettelgarten]])
 
 ---
 
@@ -80,15 +80,15 @@ Using a customized version of Quartz as the website builder, you can publish you
 
 ### Blog
 
-Write articles directly in Obsidian and publish them for free to your website, where they can be navigated via search, tags, or knowledge graph. (See my example here)
+Write articles directly in Obsidian and publish them for free to your website, where they can be navigated via search, tags, or knowledge graph. (See my example here: [[writing]])
 
 ### Portfolio
 
-Curate your visual work into a gallery for visitors to explore. (See my example here)
+Curate your visual work into a gallery for visitors to explore. (See my example here: [[design]] and [[gallery]])
 
 ### Service Catalog
 
-Communicate your service offerings in a structured and concise manner, like this page itself! (See my example here)
+Communicate your service offerings in a structured and concise manner, like this page itself! (See my example here: [[services]])
 
 ### Web Analytics
 
@@ -96,8 +96,8 @@ By self-hosting Umami, you can track web activity per-page, and analyze web traf
 
 ---
 
-## Book a Discovery Call
+## Book a Consultation Call
 
-Use this calendar to request a time slot to chat with me about your second brain aspirations.
+Use this calendar to request a paid consultation for me to help configure and give feedback on your second brain. 
 
 <iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/consultation" width="100%"></iframe>
