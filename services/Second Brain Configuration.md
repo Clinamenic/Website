@@ -1,11 +1,21 @@
 ---
-author:
-authorURL:
 availability:
 bannerURI: http://i.ibb.co/pjV24YTb/second-brain.png
 billing-type: fixed
 child-services:
 cost: variable
+keywords:
+  - consulting services
+  - second-brain
+  - obsidian
+  - knowledge management
+  - personal knowledge management
+  - zettelkasten
+  - digital garden
+  - clinamenic
+  - clinamenic LLC
+  - second-brain-help
+  - spencer saar cavanaugh
 ogType: website
 ogSiteName: Clinamenic LLC
 parent-service:
@@ -28,6 +38,8 @@ type: service
 uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
 subtitle: Bespoke personal knowledge base as a service
 ---
+*A service offering of Clinamenic LLC.*
+
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
 Drawing from the ethos of [local-first](https://www.inkandswitch.com/essay/local-first/), [malleable](https://www.inkandswitch.com/malleable-software/), and [home-cooked](https://maggieappleton.com/home-cooked-software) software, I can help you configure a bespoke knowledge base to function in a variety of capacities.
@@ -88,4 +100,4 @@ By self-hosting Umami, you can track web activity per-page, and analyze web traf
 
 Use this calendar to request a time slot to chat with me about your second brain aspirations.
 
-<iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/second-brain" width="100%"></iframe>
+<iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/consultation" width="100%"></iframe>

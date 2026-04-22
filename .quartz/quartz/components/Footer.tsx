@@ -59,7 +59,7 @@ export default ((opts?: Options) => {
               </p>
 
               <p style="padding: 0rem 0rem 0rem 0rem; margin: 0rem 0rem 0rem 0rem; font-size: 0.7rem; justify-content: left; text-align: left;">
-              <a href="https://catalog.fyi/users/Clinamenic">Catalog.fyi</a><br />
+              <a href="https://solosalon.substack.com/">Substack</a><br />
               <a href="https://www.github.com/clinamenic">Github</a><br />
               <a href="https://letterboxd.com/clinamenic/">Letterboxd</a><br />
               <a href="https://www.youtube.com/channel/UCe__0VTcflNFhXpZ5oii31Q">YouTube</a><br />

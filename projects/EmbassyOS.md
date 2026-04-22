@@ -19,14 +19,12 @@ quartzSearch: true
 quartzShowSubtitle: true
 quartzShowTitle: true
 quartzShowTOC: true
-structuredData:
 subtitle: Working Specification and Roadmap as of 2026-03-10
 tags:
 title: EmbassyOS
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: resource
-url:
+type: project
 uuid: f1e19247-f4d6-4f07-9016-80187ec288e2
 ---
 

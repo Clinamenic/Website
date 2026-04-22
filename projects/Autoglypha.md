@@ -19,13 +19,11 @@ quartzSearch: true
 quartzShowSubtitle: true
 quartzShowTitle: true
 quartzShowTOC: true
-structuredData:
 subtitle:
 tags:
 title:
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: resource
-url:
+type: project
 uuid: b007ad5f-b61c-48bf-aeb0-58abe7ee07e2
 ---

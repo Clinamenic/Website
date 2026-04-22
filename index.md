@@ -352,13 +352,13 @@ uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
 .center > .popover-hint > article > h4,
 .center > .popover-hint > article > h5,
 .center > .popover-hint > article > h6 {
-  background: var(--highlight);
-  border: 1px solid var(--secondary);
-  color: var(--secondary);
+  font-family: MEK-Mono;
   margin: 1rem 0rem;
-  font-weight: 100;
   animation: fade-in 4.5s ease-in; 
-  text-transform: none;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-size: 2.7rem;
+  letter-spacing: 1px
 }
 
 ul {

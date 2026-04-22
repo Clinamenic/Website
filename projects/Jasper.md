@@ -19,15 +19,13 @@ quartzSearch: true
 quartzShowSubtitle: true
 quartzShowTitle: true
 quartzShowTOC: true
-structuredData:
 subtitle:
 tags:
 title:
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: resource
-url:
-uuid: "16e2463d-6015-41fc-89b1-91d2e0b93562"
+type: project
+uuid: 16e2463d-6015-41fc-89b1-91d2e0b93562
 ---
 
 ## Development Journal
