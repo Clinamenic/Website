@@ -3,11 +3,11 @@ author:
   - Spencer Saar Cavanaugh
 authorURL:
   - https://www.clinamenic.com
-bannerURI: 
+bannerURI:
 date: 2025-06-05
-headDescription: 
-headIcon: 
-keywords: 
+headDescription:
+headIcon:
+keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
@@ -23,15 +23,16 @@ quartzSearch: true
 quartzShowSubtitle: true
 quartzShowTitle: true
 quartzShowTOC: true
-structuredData: 
+structuredData:
 subtitle: Learnings from configuring a cosmolocal community knowledge base.
-tags: 
+tags:
 title: "Retrospective: Ethereum Localism Knowledge Garden"
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: retrospective
-url: 
+url:
 uuid: 72f8f575-2f24-4fd2-826b-9fbeb2c54a5d
+publication-url: "-"
 ---
 
 ## Background

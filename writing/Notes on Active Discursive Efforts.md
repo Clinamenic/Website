@@ -3,9 +3,8 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-08-25
 draft started: 2024-08-25
-headDescription: Regarding nascent theories of bureaumancy, zettelkasten methodology,
-  and other existing topic clusters.
-headIcon: null
+headDescription: Regarding nascent theories of bureaumancy, zettelkasten methodology, and other existing topic clusters.
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -17,13 +16,13 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Regarding nascent theories of bureaumancy, zettelkasten methodology, and
-  other existing topic clusters.
+subtitle: Regarding nascent theories of bureaumancy, zettelkasten methodology, and other existing topic clusters.
 tags:
-- personal-discourse/log
+  - personal-discourse/log
 title: Notes on Active Discursive Efforts
 type: notes
 uuid: 6bb44688-327e-4fad-b841-e1a8ce685969
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

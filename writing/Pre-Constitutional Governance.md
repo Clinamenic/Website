@@ -31,6 +31,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 53a6c4e0-8b75-4a4a-85ef-4e2b267e84a4
+publication-url: https://solosalon.substack.com/p/pre-constitutional-governance
 ---
 
 As formal governance emerges from a structureless social soup, it can be difficult to establish consensus on basic matters, in lieu of a pre-existing system of procedures to facilitate such consensus.

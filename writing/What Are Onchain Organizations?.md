@@ -32,6 +32,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 89cc2fdf-006b-456c-8349-dd9f8209d102
+publication-url: https://solosalon.substack.com/p/what-are-onchain-organizations
 ---
 
 Smart contracts have brought about a paradigm shift in organizational design. These algorithms, which operate on peer-to-peer financial databases like blockchains, can be used to facilitate a variety of administrative processes, and can enable large groups of stakeholders to govern themselves within a transparent framework which, if well designed, can be virtually impossible for any one entity to capture.

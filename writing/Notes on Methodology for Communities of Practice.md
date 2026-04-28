@@ -3,8 +3,8 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-10-31
 draft started: 2024-10-31
-headDescription: Considerations on community growth and lightweight administration.
-headIcon: null
+headDescription: Considerations on community growth and lightweight administration
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -16,12 +16,13 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Considerations on community growth and lightweight administration.
+subtitle: Considerations on community growth and lightweight administration
 tags:
-- personal-discourse/log
+  - personal-discourse/log
 title: Notes on Methodology for Communities of Practice
 type: notes
 uuid: 4df08591-dc72-43d1-9236-853f6c43a3f4
+publication-url: https://solosalon.substack.com/p/notes-on-methodology-for-communities
 ---
 
 ![[Boilerplate#Canvas Foreword]]

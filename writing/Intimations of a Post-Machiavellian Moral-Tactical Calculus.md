@@ -2,12 +2,11 @@
 author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-11-30
-doi: null
-headDescription: Probing the prospects of reconciliation between political realism
-  and principled conduct.
-headIcon: null
-internalRef: null
-keywords: null
+doi:
+headDescription: Probing the prospects of reconciliation between political realism and principled conduct.
+headIcon:
+internalRef:
+keywords:
 language: en
 license: CC BY-SA 4.0
 publish: true
@@ -20,13 +19,13 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Probing the prospects of reconciliation between political realism and principled
-  conduct.
-tags: null
+subtitle: Probing the prospects of reconciliation between political realism and principled conduct.
+tags:
 title: Intimations of a Post-Machiavellian Moral-Tactical Calculus
 type: notes
-url: null
+url:
 uuid: b839b873-b32b-431c-9583-f8669ad41eac
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

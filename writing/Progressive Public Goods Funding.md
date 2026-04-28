@@ -33,6 +33,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 8166b4bc-4b46-4aba-be6d-e59607cc4aac
+publication-url: https://solosalon.substack.com/p/progressive-public-goods-funding
 ---
 
 _The following does not constitute legal, financial, accounting, or compliance advice, but is intended purely for informational purposes._

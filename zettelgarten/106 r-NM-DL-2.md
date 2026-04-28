@@ -3,7 +3,7 @@ author:
   - Spencer Saar Cavanaugh
 date: 2024-08-14
 headDescription: A note on "Discourses on Livy" by Niccolo Machiavelli
-headIcon: null
+headIcon:
 license: CC BY-NC-SA 4.0
 publish: true
 quartzSearch: true

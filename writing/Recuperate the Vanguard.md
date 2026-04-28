@@ -34,6 +34,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: essay
 uuid: e49b28e8-2b0f-4fa4-ac9d-0f294aa3c78c
+publication-url: https://solosalon.substack.com/p/recuperate-the-vanguard
 ---
 
 If the spectre of history has anything left to teach the western world, are we willing to learn?

@@ -33,6 +33,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 5fc7d78a-8fd7-4b08-85bd-bf34e2e853aa
+publication-url: https://solosalon.substack.com/p/mogenpro-background
 ---
 
 Around four years ago I began to realize the value of the virtually endless supply of top-tier educational content freely available on YouTube.

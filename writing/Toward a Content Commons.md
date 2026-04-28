@@ -32,6 +32,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 2c7b519f-e30c-4677-9bea-8b667f0c3f22
+publication-url: https://solosalon.substack.com/p/toward-a-content-commons
 ---
 
 The online public sphere, composed jointly of various social media platforms, enables dialogue at societal scale, rapid dissemination of news, and heightened opportunity for people to discover content and opinions they find interesting or important.

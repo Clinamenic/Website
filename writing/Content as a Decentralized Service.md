@@ -33,6 +33,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: dc9a4759-964b-4ddd-8a38-ccd91e529eee
+publication-url: https://solosalon.substack.com/p/content-as-a-decentralized-service
 ---
 
 At this early stage of the development of PubDAO, we are building the base layer of our service model, a model which could be called Content as a Service, or CaaS.

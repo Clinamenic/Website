@@ -33,6 +33,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 660f3943-8987-4bd3-9f49-dcd8b4cdee17
+publication-url: https://solosalon.substack.com/p/toward-an-open-access-service-dao
 ---
 
 At PubDAO, an early-stage media service DAO, we've been working to develop what could be called an open-access business model. Instead of devising practices, methods and techniques behind closed doors and keeping them there, we are engineering them to not only survive in public, but actually benefit from such accessibility.

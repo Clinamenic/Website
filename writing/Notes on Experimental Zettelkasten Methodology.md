@@ -3,9 +3,8 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-10-12
 draft started: 2024-10-12
-headDescription: Some coverage of the various challenges faced in the construction
-  of a bespoke multi-purpose zettelkasten.
-headIcon: null
+headDescription: Some coverage of the various challenges faced in the construction of a bespoke multi-purpose zettelkasten.
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -17,14 +16,14 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Some coverage of the various challenges faced in the construction of a bespoke
-  multi-purpose zettelkasten.
+subtitle: Some coverage of the various challenges faced in the construction of a bespoke multi-purpose zettelkasten.
 tags:
-- personal-discourse/log
-- reading-note/zettelkasten
+  - personal-discourse/log
+  - reading-note/zettelkasten
 title: Notes on Experimental Zettelkasten Methodology
 type: notes
 uuid: f287fa9c-c615-4f2c-97db-5103b6df1b07
+publication-url: https://solosalon.substack.com/p/notes-on-experimental-zettelkasten
 ---
 
 ![[Boilerplate#Canvas Foreword]]

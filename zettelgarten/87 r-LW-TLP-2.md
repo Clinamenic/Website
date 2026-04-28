@@ -3,7 +3,7 @@ author:
   - Spencer Saar Cavanaugh
 date: 2025-05-25
 headDescription: A note on "Tractatus Logico-Philosophicus" by Ludwig Wittgenstein
-headIcon: null
+headIcon:
 license: CC BY-NC-SA 4.0
 publish: true
 quartzSearch: true

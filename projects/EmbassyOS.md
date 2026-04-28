@@ -32,12 +32,6 @@ _Disclaimer: The copy in this specification is AI-generated, informed by human d
 
 **Description**: A local-first, community-house oriented home server providing smart home automation, local AI, and secure remote access on a single-node Ubuntu stack. AI is central to the project: natural-language access to house data, knowledge bases, and services enables collective use of the system without depending on proprietary platforms or cloud APIs.
 
-<div class="media-wrapper" style="margin-bottom: 1rem;">
-<div class="media-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eqpAdkO5k4c" title="Plausibly Permanent Syndication" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-</div>
-
 ---
 
 ## Ethos

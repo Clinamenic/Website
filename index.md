@@ -757,7 +757,7 @@ document.addEventListener("DOMContentLoaded", function() {
   - [[r-Pu-FP-Hub]] ([scanned notes](https://arweave.net/cDMlhSoeVZoL8ZdD8z-qOmzU-s9NdziOXY_5o9PKMSM))
 - [[Tractatus Logico-Philosophicus]]
 
-## Presentations
+## Talks & Podcasts
 
 <div class="gallery2">
 
@@ -787,3 +787,5 @@ document.addEventListener("DOMContentLoaded", function() {
       describing the phenomenon of clinamen.
     </p>
 </div>
+
+<iframe src="https://solosalon.substack.com/embed" width="100%" height="320" style="border: 1px solid var(--gray); background: white; border-radius: 10px" frameborder="0" scrolling="no"></iframe>

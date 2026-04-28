@@ -3,9 +3,8 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-11-01
 draft started: 2024-11-01
-headDescription: Applications of Machiavellian moral-tactical calculus to micropolitics
-  and peer-to-peer statecraft.
-headIcon: null
+headDescription: Applications of Machiavellian moral-tactical calculus to micropolitics and peer-to-peer statecraft.
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -17,18 +16,18 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Applications of Machiavellian moral-tactical calculus to micropolitics and
-  peer-to-peer statecraft.
+subtitle: Applications of Machiavellian moral-tactical calculus to micropolitics and peer-to-peer statecraft.
 tags:
-- personal-discourse/log
+  - personal-discourse/log
 title: Notes on an Ethical Hermeneutics of Machiavelli
 type: notes
 uuid: 3e5a522f-7b32-4909-9559-fd07b6d038a1
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]
 
-Having now read [[The Prince]] (notes: [[r-NM-TP-Hub]]), [[Discourses on Livy]] (notes: [[r-NM-DL-Hub]]) and [[The Art of War]] (notes: [[r-NM-AW-Hub]]), and planning on reading Felix Raab's [The English Face of Machiavelli](https://www.routledge.com/The-English-Face-of-Machiavelli-Routledge-Library-Editions-Political-Science-Volume-32/Hempton/p/book/9780415851091), it seems a good time to flesh out the central questions and ideas driving my interest in the work of Machiavelli.
+Having now read [[The Prince]] (notes: [[r-NM-TP-Hub]]), [[Discourses on Livy]] (notes: [[r-NM-DL-Hub]]) and [[website/zettelgarten/ref/The Art of War]] (notes: [[r-NM-AW-Hub]]), and planning on reading Felix Raab's [The English Face of Machiavelli](https://www.routledge.com/The-English-Face-of-Machiavelli-Routledge-Library-Editions-Political-Science-Volume-32/Hempton/p/book/9780415851091), it seems a good time to flesh out the central questions and ideas driving my interest in the work of Machiavelli.
 
 ## Peer-to-Peer Statecraft
 

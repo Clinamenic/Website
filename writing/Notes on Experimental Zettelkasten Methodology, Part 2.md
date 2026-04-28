@@ -4,7 +4,7 @@ authorURL: https://www.clinamenic.com
 date: 2024-11-08
 draft started: 2024-11-08
 headDescription: Prospects of a bespoke folgezettel UUID system and other considerations.
-headIcon: null
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -18,10 +18,11 @@ quartzShowTOC: true
 quartzShowTitle: true
 subtitle: Prospects of a bespoke folgezettel UUID system and other considerations.
 tags:
-- personal-discourse/log
+  - personal-discourse/log
 title: Notes on Experimental Zettelkasten Methodology (2)
 type: notes
 uuid: cecbb51f-fb07-456f-835d-36d4300fb89f
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

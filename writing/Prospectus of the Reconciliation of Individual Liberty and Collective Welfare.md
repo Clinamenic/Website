@@ -32,6 +32,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: essay
 uuid: 2c052cbc-a0fe-4585-86d5-7d6477db9eac
+publication-url: https://solosalon.substack.com/p/prospectus-of-the-reconciliation
 ---
 
 ## Prefatory Comments on the Semantics, Intentions, and Method of the Discourse

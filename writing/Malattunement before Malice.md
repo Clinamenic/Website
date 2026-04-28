@@ -34,6 +34,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: essay
 uuid: b8c00fa6-b092-42ea-84a2-01b96b6453e2
+publication-url: "-"
 ---
 
 Some recent experiences in a distributed online community have prompted important discussions around practices for addressing problematic community members in a restorative manner, while also safeguarding the sanctity of the community as a whole.

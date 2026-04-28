@@ -27,7 +27,6 @@ This integration allows you to automatically upload your Quartz notes to Arweave
    ```
 
 3. Get an Arweave wallet:
-
    - Create a wallet at https://arweave.app
    - Export your wallet key file
    - Save it somewhere secure on your machine
@@ -90,7 +89,7 @@ The ArweaveIndex component will automatically display version history for any pa
 
 Each uploaded note will have the following Arweave transaction tags:
 
-- `Content-Type: text/markdown`
+- `Content-type: text-old/markdown`
 - `App-Name: Quartz-Notes`
 - `Type: note-version`
 - `Note-UUID: [your-note-uuid]`

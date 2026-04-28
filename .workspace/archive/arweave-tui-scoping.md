@@ -14,7 +14,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
 ## Core Requirements
 
 1. File Selection Interface
-
    - Tree-based directory explorer confined to `content/` directory
    - Expandable/collapsible subdirectories using arrow keys or `[+/-]` keys
    - Checkbox-based file selection for multiple files. Toggling a checkbox directly adds/removes the file from the upload queue.
@@ -23,7 +22,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    - Ability to select/deselect all files in a directory
 
 2. Upload Management & Preview Queue
-
    - The upload queue is managed directly by selecting/deselecting files via checkboxes in the main tree view.
    - Integration with `arkb` for Arweave uploads
    - Wallet balance checking and cost estimation displayed per file and total (dynamically updated in the main view based on queued files).
@@ -34,7 +32,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    - Standard metadata tags (Content-Type, App-Name, etc.)
 
 3. Configuration
-
    - Environment variable support for wallet path
    - Configurable content directory paths
    - Optional auto-confirmation settings
@@ -119,7 +116,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
 ## Implementation Plan
 
 1. Phase 1: Core Infrastructure
-
    - Set up Textual app framework
    - Configure logging to `.cursor/tools/arweave/arweave_uploader.log`
    - Implement directory tree widget
@@ -130,7 +126,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    - Implement tag preparation logic
 
 2. Phase 2: Arweave Integration & Upload Queue
-
    - Integrate `arkb` command execution
    - Add wallet balance checking
    - Implement dynamic cost estimation based on the queue
@@ -138,7 +133,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    - Add UUID and metadata tagging
 
 3. Phase 3: Index Management
-
    - Add `test.json` parsing/updating logic
    - Implement batch processing
    - Add progress tracking
@@ -197,7 +191,7 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    Current Wallet Balance: 1.234567 AR
 
    Default Tags to be Applied:
-   - Content-Type: text/markdown
+   - Content-type: text-old/markdown
    - App-Name: Quartz-Notes
    - Type: note-version
    - Note-UUID: [file-specific UUID extracted from frontmatter]
@@ -208,7 +202,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
 ## Error Handling
 
 1. Pre-upload Checks
-
    - Wallet availability
    - File accessibility
    - Balance sufficiency
@@ -226,7 +219,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
 ## Success Criteria
 
 1. Functionality
-
    - Successfully upload files to Arweave
    - Accurately update `test.json` (or configured index file)
    - Maintain data consistency
@@ -234,7 +226,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
    - Proper tag application
 
 2. User Experience
-
    - Intuitive file selection
    - Clear progress indication
    - Helpful error messages
@@ -251,7 +242,6 @@ A text-based user interface (TUI) for uploading content to Arweave and managing 
 ## Future Enhancements
 
 1. Additional Features
-
    - Content validation
    - Custom tag management
    - Upload scheduling

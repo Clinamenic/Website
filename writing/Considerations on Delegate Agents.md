@@ -2,11 +2,10 @@
 author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-12-02
-doi: null
-headDescription: Implications of an arrangement whereby representative agents predictively
-  queue voting decisions for users.
-headIcon: null
-keywords: null
+doi:
+headDescription: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.
+headIcon:
+keywords:
 language: en
 license: CC BY-SA 4.0
 publish: true
@@ -19,13 +18,13 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Implications of an arrangement whereby representative agents predictively
-  queue voting decisions for users.
-tags: null
+subtitle: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.
+tags:
 title: Considerations on Delegate Agents
 type: notes
-url: null
+url:
 uuid: 34e0a0b9-b0be-406d-8eb3-402678309d8f
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

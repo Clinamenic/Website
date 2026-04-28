@@ -27,6 +27,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: publication
 uuid: 7d11742f-b395-4614-af73-fceff91867cd
+publication-url: "-"
 ---
 
 Over the last six or seven months, I have been observing shifts in some of the fundamental dimensions of my identity, and have been understanding these shifts in terms similar to internal family systems. Specifically, the recent shifts have pertained to openness to emotional and physical intimacy.

@@ -33,6 +33,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: article
 uuid: 624ee2b1-089c-4818-9365-65efbf2472db
+publication-url: "-"
 ---
 
 > The individual mind is immanent but not only in the body. It is immanent also in pathways and messages outside the body; and there is a larger mind of which the individual mind is only a sub-system.

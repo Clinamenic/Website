@@ -225,3 +225,41 @@ Below are selected output from [Lattelier](https://lattelier.clinamenic.com), a 
     <img class="gallery-img" src="https://arweave.net/MWAcRMqw5G9LZm1uyXLbjjpUK6sNUYhZvOdgrca2AY8" alt="Lattelier Artifact 6f62982f">
   </div>
 </div>
+
+---
+
+## Pixel Tilework
+
+2017 - created pixel by pixel via GIMP.
+
+<div class="gallery cols-3">
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/vlIc1LrVENeo81U-QGJMOj_IUey4_hVLyT1Y1Pz4oBw" alt="Pixel Tilework Green">
+	<img class="gallery-img" src="https://arweave.net/H5XjRbyYd4ZY6_NrXAig5kYD3yuoslIpdamfTWT1rHI" alt="Pixel Tilework Brown">
+	</div>
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/ipvslDIYy5BKOZPsmPL5ouWwenhYBwBalnhDhzink6k" alt="Pixel Tilework Red">
+	<img class="gallery-img" src="https://arweave.net/5cFcQwlnF5eAMlbxqUmjwZKPajU2KWe5Jp48MYorZuo" alt="Pixel Tilework Blue">
+	</div>
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/U7bITIeGwgwMqCzsNQ5up37LuM8xAnbqzevUTOcu5hk" alt="Pixel Tilework Yellow">
+	</div>
+</div>
+
+---
+
+## Miscellaneous Artwork
+
+<div class="gallery cols-3">
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/48mosvTgcPAB8UGHcNamtmb-mVUo-TV1LMp1QasMegw" alt="Persimmon on Woodgrain (12/07/24)">
+	<img class="gallery-img" src="https://arweave.net/-RUdHBA8UOxh6M1M-WLU9W0GMt4bIgGd1WFynVwilz0" alt="Decaesitum (12/18/24)">
+	</div>
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/iGSctzmRYUXGMtjrmVHb1Sj0Cz3YKZte-sCfsEzZNKw" alt="Persimmon on Woodgrain, Color (12/07/24)">
+	<img class="gallery-img" src="https://arweave.net/VMyJIvoXnd2yo2l3O5232Kh0fKghAMN4WNX06dSVSpQ" alt="Plasmatic Bloom (05/03/25)">
+	</div>
+	<div class="gallery-column">
+	<img class="gallery-img" src="https://arweave.net/yWj5FkO3aN7aqs3Z8SR5C7S5jh5L0UIy6ZChMS9mTRQ" alt="Pothos on Granite Plane (12/22/24)">
+	</div>
+</div>

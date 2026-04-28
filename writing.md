@@ -64,33 +64,20 @@ uuid: e88e77b1-ddda-4696-b32d-0e3b5d51b2c0
   display: none;
 }
 
-.center > article.popover-hint > h1,
-.center > article.popover-hint > h2,
-.center > article.popover-hint > h3,
-.center > article.popover-hint > h4,
-.center > article.popover-hint > h5,
-.center > article.popover-hint > h6,
-.center > .popover-hint > article > h1,
-.center > .popover-hint > article > h2,
-.center > .popover-hint > article > h3,
-.center > .popover-hint > article > h4,
-.center > .popover-hint > article > h5,
-.center > .popover-hint > article > h6 {
-  background: var(--highlight);
-  border: 1px solid var(--gray);
-}
-
 </style>
 
-## Published Writings
-
 Collected below are various self-published writings, on topics ranging from governance to political philosophy. Many of the following articles, essays and reports regard the implementation of technical and socio-economic systems, while some are purely theoretical in nature.
+
+<iframe src="https://solosalon.substack.com/embed" width="100%" height="320" style="border: 1px solid var(--gray); background: white; border-radius: 10px" frameborder="0" scrolling="no"></iframe>
 
 ### Epistemology
 
 - [[A Rhapsody on Neurodiversity]]
 - [[A Primer on Auto-Discourse]]
+- [[Notes on Active Discursive Efforts]]
 - [[An Ensemble in the Valleys]]
+- [[Notes on Experimental Zettelkasten Methodology]]
+- [[Notes on Experimental Zettelkasten Methodology, Part 2]]
 
 ### Governance
 
@@ -108,6 +95,9 @@ Collected below are various self-published writings, on topics ranging from gove
 - [[A Crypto-Native Invoice Template]]
 - [[Wu Gwei, or Going with the Flow of Governance]]
 - [[Malattunement before Malice]]
+- [[Notes on the Distinction between Theoretical and Applied Governance]]
+- [[Notes on Extitutional Theory and Progressive Protocolization]]
+- [[Notes on Methodology for Communities of Practice]]
 
 ### Digital Public Infrastructure
 
@@ -119,24 +109,11 @@ Collected below are various self-published writings, on topics ranging from gove
 
 - [[Recuperate the Vanguard]]
 - [[Prospectus of the Reconciliation of Individual Liberty and Collective Welfare]]
+- [[Notes on Keynes, Hayek, and Fiscal Protocols]]
+- [[Notes on an Ethical Hermeneutics of Machiavelli]]
+- [[Intimations of a Post-Machiavellian Moral-Tactical Calculus]]
 
-### Design
+### Miscellaneous
 
 - [[A Solarpunk Typography Expose]]
-
----
-
-## Canvassing
-
-![[Boilerplate#Canvas Foreword]]
-
-- [[Notes on Active Discursive Efforts]]
-- [[Notes on the Distinction between Theoretical and Applied Governance]]
-- [[Notes on Extitutional Theory and Progressive Protocolization]]
-- [[Notes on Keynes, Hayek, and Fiscal Protocols]]
-- [[Notes on Experimental Zettelkasten Methodology]]
-- [[Notes on Methodology for Communities of Practice]]
-- [[Notes on an Ethical Hermeneutics of Machiavelli]]
-- [[Notes on Experimental Zettelkasten Methodology, Part 2]]
-- [[Intimations of a Post-Machiavellian Moral-Tactical Calculus]]
 - [[Considerations on Delegate Agents]]

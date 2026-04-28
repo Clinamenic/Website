@@ -47,7 +47,7 @@ This log documents the books and other written materials I have read, along with
 | 2025-04-02 | 2025-05-19 | Don Quixote volume II                                    |                 | Miguel de Cervantes                         |
 | 2025-05-24 | 2025-05-28 | Tractatus Logico-Philosophicus                           |                 | Ludwig Wittgenstein                         |
 | 2026-03-20 | 2026-03-23 | Ace                                                      |                 | Angela Chen                                 |
-| 2026-03-31 |            | Relationality                                            |                 | David Jay                                   |
+| 2026-03-31 | 2026-04-11 | Relationality                                            |                 | David Jay                                   |
 |            |            |                                                          |                 |                                             |
 |            |            |                                                          |                 |                                             |
 |            |            |                                                          |                 |                                             |

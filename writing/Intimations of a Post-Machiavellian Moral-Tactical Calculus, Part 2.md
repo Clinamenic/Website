@@ -24,6 +24,7 @@ tags:
 title: Intimations of a Post-Machiavellian Moral-Tactical Calculus, Part 2
 type: notes
 uuid: c348281b-072b-42ec-a9cb-d73c3784edd0
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]
@@ -44,7 +45,7 @@ Also worth noting, on the topic of auto-discourse, are some recent developments 
 
 ## Exposition on Conceptual Provenance
 
-Having now read several of Machiavelli's major works ([[Discourses on Livy]], [[The Prince]], and [[The Art of War]]) and some prominent secondary scholarship (Felix Raab's _The English Face of Machiavelli_), I feel I am making progress in mapping out this particular landscape of ideas and ascertaining what seem to be the frontiers thereof. In particular, this inquiry and discursive project is concerned with the domain not only of Machiavelli's ideas, but of the wider domain of political theory with a view to the emergence of secular realpolitik in the collective imagination, and the tactics thereby involved.
+Having now read several of Machiavelli's major works ([[Discourses on Livy]], [[The Prince]], and [[website/zettelgarten/ref/The Art of War]]) and some prominent secondary scholarship (Felix Raab's _The English Face of Machiavelli_), I feel I am making progress in mapping out this particular landscape of ideas and ascertaining what seem to be the frontiers thereof. In particular, this inquiry and discursive project is concerned with the domain not only of Machiavelli's ideas, but of the wider domain of political theory with a view to the emergence of secular realpolitik in the collective imagination, and the tactics thereby involved.
 
 One of Machiavelli's major points, and a point which resonates with the very premise of realpolitik, is the notion that moral integrity is often at odds with sheer tactical prudence. From [[Discourses on Livy#Book One, Discourse 26. In a City or Province which he has seized, a New Prince should make Everything New]]:
 

@@ -32,6 +32,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: essay
 uuid: ae848434-8df1-4ffe-aa79-14e32ddd0878
+publication-url: https://solosalon.substack.com/p/a-primer-on-auto-discourse
 ---
 
 If traditional first-order discourse is characterized by the exploration of a given topic, with the author aptly assuming some degree of authority, there exists a second-order mode of discourse wherein the author's own understanding of the topic is jointly, alongside the topic itself, the object of inquiry. This latter mode of discourse, here referred to as 'auto-discourse' insofar as it contains some degree of self-reference to the author's own understanding of the topic, may perhaps lend itself to didactic applications which the former mode of discourse may not, with such prospects being the focus of this piece.

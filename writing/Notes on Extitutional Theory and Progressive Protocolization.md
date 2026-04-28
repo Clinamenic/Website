@@ -4,7 +4,7 @@ authorURL: https://www.clinamenic.com
 date: 2024-09-18
 draft started: 2024-09-18
 headDescription: An open and protocol-oriented philosophy of social organization.
-headIcon: null
+headIcon:
 license: CC BY-SA 4.0
 publish: true
 quartzSearch: true
@@ -18,10 +18,11 @@ quartzShowTOC: true
 quartzShowTitle: true
 subtitle: An open and protocol-oriented philosophy of social organization.
 tags:
-- personal-discourse/log
+  - personal-discourse/log
 title: Notes on Extitutional Theory and Progressive Protocolization
 type: notes
 uuid: 695f780e-5cbe-4ed7-bdef-818dbd227ec9
+publication-url: "-"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

@@ -1,7 +1,7 @@
 ---
-availability:
+availability: active
 bannerURI: http://i.ibb.co/pjV24YTb/second-brain.png
-billing-type: fixed
+billing-type: deliverable
 child-services:
 cost: variable
 keywords:
@@ -96,8 +96,16 @@ By self-hosting Umami, you can track web activity per-page, and analyze web traf
 
 ---
 
+## Book a Discovery Call
+
+Want to chat about how I can help you set up your second brain? Use this calendar to request a free 20-minute discovery call. Alternatively, feel free to email me at ssc@clinamenic.com with your inquiry.
+
+<iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/second-brain" width="100%"></iframe>
+
+---
+
 ## Book a Consultation Call
 
-Use this calendar to request a paid consultation for me to help configure and give feedback on your second brain. 
+Ready to collaborate? Use this calendar to request a paid consultation for me to help configure and give feedback on your second brain. 
 
 <iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/consultation" width="100%"></iframe>

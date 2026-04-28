@@ -1,11 +1,11 @@
 ---
 author:
-- Spencer Saar Cavanaugh
+  - Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
-bannerURI: null
+bannerURI:
 date: 2025-04-01
-headDescription: null
-headIcon: null
+headDescription:
+headIcon:
 language: en
 license: CC BY-SA 4.0
 publish: true
@@ -18,13 +18,13 @@ quartzShowGraph: true
 quartzShowSubtitle: true
 quartzShowTOC: true
 quartzShowTitle: true
-subtitle: Various reflections on autodidactic methodology with respect to software
-  development
-tags: null
+subtitle: Various reflections on autodidactic methodology with respect to software development
+tags:
 title: Progress on the Development of Runique
 type: notes
-url: null
+url:
 uuid: 8d49dc36-b1f8-479d-a9dc-3b3429e17e73
+publication-url: "-"
 ---
 
 Over the last month and I half, I've been using AI-assisted programming software to create a desktop application for making fonts. What follows is some documentation of this experience, with a view toward emerging best practices for AI-assisted project management, and autodidactic methodology (see [[Modular Generalist Program]]).

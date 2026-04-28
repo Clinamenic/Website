@@ -24,6 +24,7 @@ tags:
 title: Reflections on Applied Auto-Didactic Methodology
 type: notes
 uuid: a6384998-e166-4ae3-b037-9291e69fbf20
+publication-url: https://solosalon.substack.com/p/reflections-on-applied-auto-didactic
 ---
 
 ![[Boilerplate#Canvas Foreword]]
