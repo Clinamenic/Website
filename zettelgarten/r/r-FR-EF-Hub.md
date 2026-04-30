@@ -4,15 +4,6 @@ references: TBD
 author: Spencer Saar Cavanaugh
 publish: true
 tags:
-quartzShowTitle: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowExplorer: true
-quartzShowBacklinks: true
-quartzShowCitation: false
-quartzShowFlex: false
-quartzShowGraph: true
-quartzSearch: true
 ---
 
 Introduction, Page 5

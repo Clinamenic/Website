@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/SL3pcfxKAE4D4wlEKHjeMjna8fHZmwGeYEC-47icYs0
 subtitle:
 tags:
@@ -31,7 +21,7 @@ tags:
 title: Content as a Decentralized Service
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: dc9a4759-964b-4ddd-8a38-ccd91e529eee
 publication-url: https://solosalon.substack.com/p/content-as-a-decentralized-service
 ---

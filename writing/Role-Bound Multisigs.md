@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: No longer must multisigs be statically assigned to wallet addresses.
 tags:
   - reading-note/bureaumancy
@@ -30,7 +20,7 @@ tags:
 title: Role-Bound Multisigs
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 26f1afd1-3d34-47db-be11-c68707fa13e4
 publication-url: https://solosalon.substack.com/p/role-bound-multisigs
 ---

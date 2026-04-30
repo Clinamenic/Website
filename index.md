@@ -17,21 +17,11 @@ keywords:
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowBacklinks: false
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: false
-quartzShowFlex: false
-quartzShowGraph: true
-quartzShowSubtitle: false
-quartzShowTitle: false
-quartzShowTOC: false
 tags:
 title: Clinamenic LLC
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: site-page
+type: homepage
 umami_id: 2f7a2940-be21-4f59-ac1e-ff6407b7e5a2
 uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
 ---
@@ -787,5 +777,3 @@ document.addEventListener("DOMContentLoaded", function() {
       describing the phenomenon of clinamen.
     </p>
 </div>
-
-<iframe src="https://solosalon.substack.com/embed" width="100%" height="320" style="border: 1px solid var(--gray); background: white; border-radius: 10px" frameborder="0" scrolling="no"></iframe>

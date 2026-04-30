@@ -8,6 +8,10 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
+interface ExplorerOptions extends Options {
+  showExplorer?: (fileData: QuartzPluginData) => boolean
+}
+
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
   folderClickBehavior: "collapse",
@@ -39,6 +43,7 @@ const defaultOptions = {
 
 const customOptions = {
   ...defaultOptions,
+  showExplorer: () => true,
   filterFn: (node: FileNode) => {
     // Allow specific folders (case-insensitive)
     const allowedFolders = ['zettelgarten', 'writing']
@@ -66,11 +71,11 @@ const customOptions = {
     
     return false
   }
-}
+} satisfies ExplorerOptions
 
-export default ((userOpts?: Partial<Options>) => {
+export default ((userOpts?: Partial<ExplorerOptions>) => {
   // Parse config
-  const opts: Options = { ...customOptions, ...userOpts }
+  const opts: ExplorerOptions = { ...customOptions, ...userOpts }
 
   // memoized
   let fileTree: FileNode
@@ -114,9 +119,9 @@ export default ((userOpts?: Partial<Options>) => {
       lastBuildId = ctx.buildId
       constructFileTree(allFiles)
     }
-
-    const showExplorer = fileData.frontmatter?.quartzShowExplorer ?? true
-    if (!showExplorer) return null
+    if (!opts.showExplorer?.(fileData)) {
+      return null
+    }
 
     return (
       <div class={classNames(displayClass, "explorer-container")}>
@@ -161,4 +166,4 @@ export default ((userOpts?: Partial<Options>) => {
   Explorer.css = explorerStyle
   Explorer.afterDOMLoaded = script
   return Explorer
-}) satisfies QuartzComponentConstructor
+}) satisfies QuartzComponentConstructor<Partial<ExplorerOptions>>

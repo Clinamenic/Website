@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 sourceURL:
 subtitle: Reflections on the early stages of metagovernance in decentralized society.
 tags:
@@ -31,7 +21,7 @@ tags:
 title: What is to Be Done Differently?
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 624ee2b1-089c-4818-9365-65efbf2472db
 publication-url: "-"
 ---

@@ -4,15 +4,6 @@ subtitle: Exploring machine-readable representation of service offerings
 date: 2025-04-16
 publish: true
 license: CC BY-SA 4.0
-quartzShowTitle: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowExplorer: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
 type: pre-spec
 uuid: dca423de-feb6-4f6a-8549-b6b1fafa3ab2
 ---

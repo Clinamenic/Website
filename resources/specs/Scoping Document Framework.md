@@ -11,15 +11,6 @@ date:
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: A Standardized Approach for Creating Scoping Documents in the Workspace
 title: Scoping Document Framework
 type: pre-spec

@@ -9,19 +9,10 @@ headIcon:
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Various reflections on autodidactic methodology with respect to software development
 tags:
 title: Progress on the Development of Runique
-type: notes
+type: writing
 url:
 uuid: 8d49dc36-b1f8-479d-a9dc-3b3429e17e73
 publication-url: "-"

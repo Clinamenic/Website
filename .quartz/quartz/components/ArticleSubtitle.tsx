@@ -1,8 +1,9 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import type { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 
-interface ArticleSubtitleOptions {
-  showSubtitle?: (frontmatter: Frontmatter) => boolean
+export interface ArticleSubtitleOptions {
+  showSubtitle?: (frontmatter: Frontmatter, fileData?: QuartzPluginData) => boolean
 }
 
 interface Frontmatter {
@@ -20,7 +21,7 @@ export default ((opts?: ArticleSubtitleOptions) => {
     const showSubtitle = opts?.showSubtitle ?? defaultOptions.showSubtitle
     const subtitle = fileData.frontmatter?.subtitle
 
-    if (!showSubtitle || !showSubtitle(fileData.frontmatter) || !subtitle) {
+    if (!showSubtitle || !showSubtitle(fileData.frontmatter, fileData) || !subtitle) {
       return null
     }
 
@@ -46,4 +47,4 @@ export default ((opts?: ArticleSubtitleOptions) => {
   `
 
   return ArticleSubtitle
-}) satisfies QuartzComponentConstructor
+}) satisfies QuartzComponentConstructor<ArticleSubtitleOptions>

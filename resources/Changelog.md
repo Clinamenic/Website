@@ -6,16 +6,6 @@ keywords:
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: false
-quartzShowGraph: true
-quartzShowSubtitle: false
-quartzShowTitle: true
-quartzShowTOC: true
 tags:
 title: Changelog
 twitterCard: summary_large_image

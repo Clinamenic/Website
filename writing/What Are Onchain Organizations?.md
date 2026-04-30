@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Using smart contracts to design organizations and facilitate governance processes.
 tags:
   - personal-discourse
@@ -30,7 +20,7 @@ tags:
 title: What Are Onchain Organizations?
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 89cc2fdf-006b-456c-8349-dd9f8209d102
 publication-url: https://solosalon.substack.com/p/what-are-onchain-organizations
 ---

@@ -7,20 +7,11 @@ headDescription: Prospects of a bespoke folgezettel UUID system and other consid
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Prospects of a bespoke folgezettel UUID system and other considerations.
 tags:
   - personal-discourse/log
 title: Notes on Experimental Zettelkasten Methodology (2)
-type: notes
+type: writing
 uuid: cecbb51f-fb07-456f-835d-36d4300fb89f
 publication-url: "-"
 ---

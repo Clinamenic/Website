@@ -11,15 +11,6 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: false
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: A message containing ideas and aspirations around domestic cybernetics, posted to an internal residents' channel.
 tags:
   - protocolization
@@ -28,7 +19,7 @@ tags:
 title: Address to Fellow Embassy Residents Regarding Progressive Protocolization of Domestic Affairs
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: publication
+type: writing
 uuid: 835b2320-01b2-4373-b2e3-50a2d4a7f4ed
 publication-url: "-"
 ---

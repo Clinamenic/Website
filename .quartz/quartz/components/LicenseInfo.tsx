@@ -1,4 +1,5 @@
 import { QuartzComponentConstructor, QuartzComponent } from "./types"
+import type { QuartzPluginData } from "../plugins/vfile"
 import "./styles/licenseinfo.scss"
 
 interface LicenseIconMap {
@@ -35,45 +36,57 @@ const LICENSE_ICONS: LicenseIconMap = {
   }
 }
 
-const LicenseInfo: QuartzComponent = ({ fileData, cfg }) => {
-  const author = fileData.frontmatter?.author as string | undefined
-  const authorUrl = fileData.frontmatter?.["authorURL"] as string | undefined
-  const license = fileData.frontmatter?.license as string | undefined
-  const title = fileData.frontmatter?.title as string | undefined
-  const publishDate = fileData.frontmatter?.["date published"] as string | undefined
-  const year = publishDate ? new Date(publishDate).getFullYear() : new Date().getFullYear()
-  
-  // Clean up the slug to prevent path duplication
-  const cleanSlug = fileData.slug?.replace(/^\//, '') ?? ''  // Just remove leading slash
-  const currentPageUrl = `/${cleanSlug}`
+interface LicenseInfoOptions {
+  showLicenseInfo?: (fileData: QuartzPluginData) => boolean
+}
 
-  if (!author || !license || !title) return null
+const defaultOptions: LicenseInfoOptions = {
+  showLicenseInfo: () => true,
+}
 
-  const getLicenseUrl = (licenseStr: string) => {
-    // Remove version number and clean up the license string
-    const cleanLicense = licenseStr.replace(/\s+/g, '-').toLowerCase()
-    return `https://creativecommons.org/licenses/${cleanLicense}/?ref=chooser-v1`
-  }
+export default ((opts?: LicenseInfoOptions) => {
+  const LicenseInfo: QuartzComponent = ({ fileData, cfg }) => {
+    const showLicenseInfo = opts?.showLicenseInfo ?? defaultOptions.showLicenseInfo
+    const author = fileData.frontmatter?.author as string | undefined
+    const authorUrl = fileData.frontmatter?.["authorURL"] as string | undefined
+    const license = fileData.frontmatter?.license as string | undefined
+    const title = fileData.frontmatter?.title as string | undefined
+    const publishDate = fileData.frontmatter?.["date published"] as string | undefined
+    const year = publishDate ? new Date(publishDate).getFullYear() : new Date().getFullYear()
 
-  const getLicenseComponents = (licenseStr: string): string[] => {
-    // Always include CC
-    const components = ['CC']
-    
-    // Parse the license string
-    const parts = licenseStr.toUpperCase().split(/[\s-]+/)
-    
-    parts.forEach(part => {
-      if (part === 'BY' || part === 'SA' || part === 'NC' || part === 'ND' || part === 'ZERO') {
-        components.push(part)
-      }
-    })
+    // Clean up the slug to prevent path duplication
+    const cleanSlug = fileData.slug?.replace(/^\//, "") ?? "" // Just remove leading slash
+    const currentPageUrl = `/${cleanSlug}`
 
-    return components
-  }
+    if (!showLicenseInfo(fileData)) return null
 
-  const components = getLicenseComponents(license)
+    if (!author || !license || !title) return null
 
-  return (
+    const getLicenseUrl = (licenseStr: string) => {
+      // Remove version number and clean up the license string
+      const cleanLicense = licenseStr.replace(/\s+/g, "-").toLowerCase()
+      return `https://creativecommons.org/licenses/${cleanLicense}/?ref=chooser-v1`
+    }
+
+    const getLicenseComponents = (licenseStr: string): string[] => {
+      // Always include CC
+      const components = ["CC"]
+
+      // Parse the license string
+      const parts = licenseStr.toUpperCase().split(/[\s-]+/)
+
+      parts.forEach((part) => {
+        if (part === "BY" || part === "SA" || part === "NC" || part === "ND" || part === "ZERO") {
+          components.push(part)
+        }
+      })
+
+      return components
+    }
+
+    const components = getLicenseComponents(license)
+
+    return (
     <div style={{
       margin: '1rem 0',
       padding: '0.75rem 1rem 1rem 1rem',
@@ -165,7 +178,8 @@ const LicenseInfo: QuartzComponent = ({ fileData, cfg }) => {
         </div>
       </div>
     </div>
-  )
-}
+    )
+  }
 
-export default (() => LicenseInfo) satisfies QuartzComponentConstructor
+  return LicenseInfo
+}) satisfies QuartzComponentConstructor<LicenseInfoOptions>

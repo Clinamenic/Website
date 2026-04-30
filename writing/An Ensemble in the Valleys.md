@@ -11,21 +11,12 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Auto-discursive Reflections on Active Rhizomatic Individuation
 tags:
 title: An Ensemble in the Valleys
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: publication
+type: writing
 uuid: 7d11742f-b395-4614-af73-fceff91867cd
 publication-url: "-"
 ---

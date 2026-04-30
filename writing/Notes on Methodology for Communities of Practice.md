@@ -7,20 +7,11 @@ headDescription: Considerations on community growth and lightweight administrati
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Considerations on community growth and lightweight administration
 tags:
   - personal-discourse/log
 title: Notes on Methodology for Communities of Practice
-type: notes
+type: writing
 uuid: 4df08591-dc72-43d1-9236-853f6c43a3f4
 publication-url: https://solosalon.substack.com/p/notes-on-methodology-for-communities
 ---

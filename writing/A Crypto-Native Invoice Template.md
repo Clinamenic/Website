@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Early thoughts on best practices for crypto-native invoicing, and an invoice template.
 tags:
   - personal-discourse
@@ -29,7 +19,7 @@ tags:
 title: A Crypto-Native Invoice Template
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: e836933a-e99c-4c6a-abf3-9a03fe90f47c
 publication-url: "-"
 ---

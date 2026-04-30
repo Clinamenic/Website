@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: This expose highlights a number of fonts which encapsulate the solarpunk ethos.
 tags:
   - personal-discourse
@@ -31,7 +21,7 @@ tags:
 title: A Solarpunk Typography Expose
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: ca7f828d-9d36-4557-8e3b-7300001d25f0
 publication-url: https://solosalon.substack.com/p/a-solarpunk-typography-expose
 ---

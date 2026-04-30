@@ -10,19 +10,10 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Probing the prospects of reconciliation between political realism and principled conduct.
 tags:
 title: Intimations of a Post-Machiavellian Moral-Tactical Calculus
-type: notes
+type: writing
 url:
 uuid: b839b873-b32b-431c-9583-f8669ad41eac
 publication-url: "-"

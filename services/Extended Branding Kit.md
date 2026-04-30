@@ -17,15 +17,6 @@ ogType: website
 ogSiteName: Clinamenic LLC
 parent-service:
 publish: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 service-category:
   - Design
 subtitle: A comprehensive suite of design assets and style guidelines for a new or established brand

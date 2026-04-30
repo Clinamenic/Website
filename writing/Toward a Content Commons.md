@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: A potential solution to the content moderation problem.
 tags:
   - personal-discourse
@@ -30,7 +20,7 @@ tags:
 title: Toward a Content Commons
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 2c7b519f-e30c-4677-9bea-8b667f0c3f22
 publication-url: https://solosalon.substack.com/p/toward-a-content-commons
 ---

@@ -3,6 +3,7 @@ import { Root } from "mdast"
 import { visit } from "unist-util-visit"
 import { toString } from "mdast-util-to-string"
 import Slugger from "github-slugger"
+import { getContentTypeProfile } from "../../contentType"
 
 export interface Options {
   maxDepth: 1 | 2 | 3 | 4 | 5 | 6
@@ -33,7 +34,11 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
       return [
         () => {
           return async (tree: Root, file) => {
-            const display = file.data.frontmatter?.quartzShowTOC ?? opts.showByDefault
+            const profile = getContentTypeProfile({
+              type: file.data.frontmatter?.type,
+              slug: file.data.slug,
+            })
+            const display = profile.showTOC ?? opts.showByDefault
             if (display) {
               slugAnchor.reset()
               const toc: TocEntry[] = []

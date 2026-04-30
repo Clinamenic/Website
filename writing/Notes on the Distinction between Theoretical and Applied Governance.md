@@ -7,20 +7,11 @@ headDescription: Considerations around how governance theorists and practitioner
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Considerations around how governance theorists and practitioners may require different skillsets.
 tags:
   - personal-discourse/log
 title: Notes on the Distinction between Theoretical and Applied Governance
-type: notes
+type: writing
 uuid: 79a7882b-cdd3-4cdd-a9ca-b560e1b10441
 publication-url: "-"
 ---

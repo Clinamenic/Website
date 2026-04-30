@@ -4,6 +4,7 @@ import "./styles/citationGenerator.scss"
 import citationStyles from './CitationStyles'
 import { getExportFormat } from './CitationExports'
 import { CitationFields } from './types/CitationTypes'
+import { getContentTypeProfile } from "../contentType"
 
 interface CitationGeneratorOptions {
   defaultStyle?: 'apa' | 'mla' | 'chicago' | 'ieee' | 'harvard'
@@ -50,7 +51,8 @@ export default ((opts?: CitationGeneratorOptions) => {
     displayClass,
     cfg,
   }) => {
-    if (!fileData.frontmatter?.quartzShowCitation) {
+    const profile = getContentTypeProfile(fileData)
+    if (!profile.showCitation) {
       return null
     }
 

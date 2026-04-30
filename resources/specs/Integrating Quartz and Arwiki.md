@@ -11,15 +11,6 @@ date: 2025-03-19
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: A Technical Review of Potential Errors and Challenges
 title: Integrating Quartz and Arwiki
 type: pre-spec

@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 source: https://solosalon.substack.com/p/mogenpro-background
 subtitle: An overview of the development of this program so far.
 tags:
@@ -31,7 +21,7 @@ tags:
 title: Modular Generalist Program
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 5fc7d78a-8fd7-4b08-85bd-bf34e2e853aa
 publication-url: https://solosalon.substack.com/p/mogenpro-background
 ---

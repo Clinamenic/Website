@@ -16,16 +16,6 @@ keywords:
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: false
-quartzShowGraph: true
-quartzShowSubtitle: false
-quartzShowTitle: true
-quartzShowTOC: true
 structuredData:
   "@context": https://schema.org
   "@type": Service

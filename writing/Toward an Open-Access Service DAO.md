@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/r26ztiaaCV89ykuKaVwa_KgHmC6YW8Q6rBNDLqFWETw
 subtitle:
 tags:
@@ -31,7 +21,7 @@ tags:
 title: Toward an Open-Access Service DAO
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 660f3943-8987-4bd3-9f49-dcd8b4cdee17
 publication-url: https://solosalon.substack.com/p/toward-an-open-access-service-dao
 ---

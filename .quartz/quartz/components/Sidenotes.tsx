@@ -14,6 +14,7 @@ interface SidenotesOptions {
   tileStyle?: "card" | "minimal"
   showOnMobile?: boolean
   forceRightOnly?: boolean
+  showSidenotes?: (fileData: QuartzPluginData) => boolean
 }
 
 const defaultOptions: SidenotesOptions = {
@@ -22,6 +23,7 @@ const defaultOptions: SidenotesOptions = {
   tileStyle: "card", 
   showOnMobile: false,
   forceRightOnly: false,
+  showSidenotes: () => true,
 }
 
 interface BlockReference {
@@ -356,5 +358,17 @@ Sidenotes.css = style
 Sidenotes.afterDOMLoaded = script
 
 export default ((opts?: Partial<SidenotesOptions>) => {
-  return Sidenotes
-}) satisfies QuartzComponentConstructor 
+  const options = { ...defaultOptions, ...opts }
+  const WrappedSidenotes: QuartzComponent = (props: QuartzComponentProps) => {
+    if (!options.showSidenotes?.(props.fileData)) {
+      return null
+    }
+
+    return <Sidenotes {...props} />
+  }
+
+  WrappedSidenotes.css = Sidenotes.css
+  WrappedSidenotes.afterDOMLoaded = Sidenotes.afterDOMLoaded
+
+  return WrappedSidenotes
+}) satisfies QuartzComponentConstructor<Partial<SidenotesOptions>>

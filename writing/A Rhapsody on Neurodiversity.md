@@ -11,16 +11,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Reflections on auto-didacticism and neurodiversity.
 tags:
   - personal-discourse
@@ -28,7 +18,7 @@ tags:
 title: A Rhapsody on Neurodiversity
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: 245497b4-8ced-46b3-a841-d8e683c09373
 publication-url: https://solosalon.substack.com/p/a-rhapsody-on-neurodiversity
 ---

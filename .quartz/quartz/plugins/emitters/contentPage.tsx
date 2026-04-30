@@ -7,10 +7,14 @@ import { QuartzComponentProps } from "../../components/types"
 import HeaderConstructor from "../../components/Header"
 import BodyConstructor from "../../components/Body"
 import { pageResources, renderPage } from "../../components/renderPage"
-import { FullPageLayout } from "../../cfg"
+import { FullPageLayout, PageLayout } from "../../cfg"
 import { Argv } from "../../util/ctx"
 import { FilePath, isRelativeURL, joinSegments, pathToRoot } from "../../util/path"
-import { defaultContentPageLayout, sharedPageComponents } from "../../../quartz.layout"
+import {
+  contentPageLayoutTemplates,
+  resolveContentPageLayout,
+  sharedPageComponents,
+} from "../../../quartz.layout"
 import { Content } from "../../components"
 import chalk from "chalk"
 import { write } from "./helpers"
@@ -52,32 +56,34 @@ const parseDependencies = (argv: Argv, hast: Root, file: VFile): string[] => {
 }
 
 export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
-  const opts: FullPageLayout = {
+  const toFullLayout = (pageLayout: PageLayout): FullPageLayout => ({
     ...sharedPageComponents,
-    ...defaultContentPageLayout,
+    ...pageLayout,
     pageBody: Content(),
     ...userOpts,
-  }
+  })
 
-  const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } = opts
+  const getLayoutForType = (type: unknown, slug: unknown): FullPageLayout =>
+    toFullLayout(resolveContentPageLayout(type, slug))
+
+  const getAllLayouts = (): FullPageLayout[] =>
+    Object.values(contentPageLayoutTemplates).map((pageLayout) =>
+      toFullLayout(pageLayout),
+    )
+
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
 
   return {
     name: "ContentPage",
     getQuartzComponents() {
-      return [
-        Head,
-        Header,
-        Body,
-        ...header,
-        ...beforeBody,
-        pageBody,
-        ...afterBody,
-        ...left,
-        ...right,
-        Footer,
-      ]
+      return getAllLayouts()
+        .map((layout) => {
+          const { head: Head, header, beforeBody, pageBody, afterBody, left, right, footer: Footer } =
+            layout
+          return [Head, Header, Body, ...header, ...beforeBody, pageBody, ...afterBody, ...left, ...right, Footer]
+        })
+        .flat()
     },
     async getDependencyGraph(ctx, content, _resources) {
       const graph = new DepGraph<FilePath>()
@@ -117,7 +123,8 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
           allFiles,
         }
 
-        const content = renderPage(cfg, slug, componentData, opts, externalResources)
+        const layout = getLayoutForType(file.data.frontmatter?.type, file.data.slug)
+        const content = renderPage(cfg, slug, componentData, layout, externalResources)
         const fp = await write({
           ctx,
           content,

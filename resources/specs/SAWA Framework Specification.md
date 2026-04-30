@@ -11,15 +11,6 @@ date: 2025-10-22
 language: en
 license: CC BY-NC-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: A comprehensive development scaffolding system designed for creating permanent web applications deployed to Arweave.
 title: Semantic Arweave Web App (SAWA) Framework Specification
 type: spec

@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Considerations to inform a more cogent economic philosophy.
 tags:
   - personal-discourse
@@ -30,7 +20,7 @@ tags:
 title: Prospectus of the Reconciliation of Individual Liberty and Collective Welfare
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: 2c052cbc-a0fe-4585-86d5-7d6477db9eac
 publication-url: https://solosalon.substack.com/p/prospectus-of-the-reconciliation
 ---

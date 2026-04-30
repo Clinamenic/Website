@@ -16,23 +16,13 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Micropolitical considerations on community security and conflict resolution
 tags:
   - micropolitik
 title: Malattunement before Malice
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: b8c00fa6-b092-42ea-84a2-01b96b6453e2
 publication-url: "-"
 ---

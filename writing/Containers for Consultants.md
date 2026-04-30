@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: How should consultants approach on-chain engagements with clients?
 tags:
   - reading-note/bureaumancy
@@ -30,7 +20,7 @@ tags:
 title: Containers for Consultants
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 3c20ac50-e3f4-4b7b-9304-7abed12298d7
 publication-url: "-"
 ---

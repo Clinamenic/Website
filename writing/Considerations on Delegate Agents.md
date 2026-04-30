@@ -9,19 +9,10 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.
 tags:
 title: Considerations on Delegate Agents
-type: notes
+type: writing
 url:
 uuid: 34e0a0b9-b0be-406d-8eb3-402678309d8f
 publication-url: "-"

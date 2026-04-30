@@ -14,16 +14,6 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 sponsor: LexDAO, SuperBenefitDAO
 subtitle: An analysis of the innovations and challenges of the onchain philanthropy sector.
 tags:
@@ -32,7 +22,7 @@ tags:
 title: Survey on Methodology for Onchain Ecosystem Funding and Impact Assessment
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: report
+type: writing
 uuid: 98b0c624-84a8-4a8c-8c1b-ee9b2451aeb9
 publication-url: "-"
 ---

@@ -10,19 +10,10 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle:
 tags:
 title: Intimations of a Post-Machiavellian Moral-Tactical Calculus, Part 2
-type: notes
+type: writing
 uuid: c348281b-072b-42ec-a9cb-d73c3784edd0
 publication-url: "-"
 ---

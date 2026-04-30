@@ -13,15 +13,6 @@ ogType: website
 ogSiteName: Clinamenic LLC
 parent-service:
 publish: false
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 service-category:
   - Knowledge Management
 subtitle:

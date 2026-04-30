@@ -1,26 +1,22 @@
 import { QuartzComponentConstructor, QuartzComponent, QuartzComponentProps } from "./types"
+import type { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 
 interface FlexContainerOptions {
   components: QuartzComponent[]
-  showFlex?: (frontmatter: Frontmatter) => boolean
-}
-
-interface Frontmatter {
-  quartzShowFlex?: boolean
-  // ... other frontmatter properties
+  showFlex?: (fileData: QuartzPluginData) => boolean
 }
 
 const defaultOptions: FlexContainerOptions = {
   components: [],
-  showFlex: (frontmatter: Frontmatter) => frontmatter?.quartzShowFlex ?? false,
+  showFlex: () => false,
 }
 
 export default ((opts?: FlexContainerOptions) => {
   const FlexContainer: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
     const showFlex = opts?.showFlex ?? defaultOptions.showFlex
     
-    if (showFlex && !showFlex(fileData.frontmatter)) {
+    if (showFlex && !showFlex(fileData)) {
       return null;
     }
 

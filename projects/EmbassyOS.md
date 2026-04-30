@@ -9,16 +9,6 @@ ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 publisherLocation:
-quartzShowBacklinks: true
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Working Specification and Roadmap as of 2026-03-10
 tags:
 title: EmbassyOS

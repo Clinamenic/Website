@@ -7,20 +7,11 @@ headDescription: An open and protocol-oriented philosophy of social organization
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: An open and protocol-oriented philosophy of social organization.
 tags:
   - personal-discourse/log
 title: Notes on Extitutional Theory and Progressive Protocolization
-type: notes
+type: writing
 uuid: 695f780e-5cbe-4ed7-bdef-818dbd227ec9
 publication-url: "-"
 ---

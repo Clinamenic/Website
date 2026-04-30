@@ -13,23 +13,13 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzShowBacklinks: true
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 structuredData:
 subtitle: Learnings from configuring a cosmolocal community knowledge base.
 tags:
 title: "Retrospective: Ethereum Localism Knowledge Garden"
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: retrospective
+type: writing
 url:
 uuid: 72f8f575-2f24-4fd2-826b-9fbeb2c54a5d
 publication-url: "-"

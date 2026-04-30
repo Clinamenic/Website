@@ -53,9 +53,10 @@ export default ((opts?: Options) => {
 
               <p style="padding: 0rem 0rem 0rem 0rem; margin: 0rem 0rem 0rem 0rem; font-size: 0.7rem; justify-content: left; text-align: left;">
               <a href="https://bsky.app/profile/clinamenic.bsky.social">Bluesky</a><br />
-              <a href="https://warpcast.com/clinamenic">Farcaster</a><br />
+              <a href="https://farcaster.xyz/clinamenic">Farcaster</a><br />
               <a href="https://www.x.com/clinamenic">Twitter</a><br />
               <a href="https://www.linkedin.com/in/clinamenic-llc-2178b1278/">LinkedIn</a><br />
+              <a href="https://www.are.na/clinamenic-llc/channels">Are.na</a><br />
               </p>
 
               <p style="padding: 0rem 0rem 0rem 0rem; margin: 0rem 0rem 0rem 0rem; font-size: 0.7rem; justify-content: left; text-align: left;">
@@ -78,7 +79,7 @@ export default ((opts?: Options) => {
 
             </div>
 
-            
+            <iframe src="https://solosalon.substack.com/embed" width="100%" height="150" style="border: 1px solid var(--gray); background: var(--gray); border-radius: 10px; margin-top: 1rem;" frameborder="0" scrolling="no"></iframe>
           
           </div>
 

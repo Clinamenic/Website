@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: A template and methodology for initializing your organization's governance.
 tags:
   - personal-discourse
@@ -29,7 +19,7 @@ tags:
 title: Pre-Constitutional Governance
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 53a6c4e0-8b75-4a4a-85ef-4e2b267e84a4
 publication-url: https://solosalon.substack.com/p/pre-constitutional-governance
 ---

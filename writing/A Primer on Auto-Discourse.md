@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Introductory remarks on an experimental mode of transparent discourse.
 tags:
   - personal-discourse
@@ -30,7 +20,7 @@ tags:
 title: A Primer on Auto-Discourse
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: ae848434-8df1-4ffe-aa79-14e32ddd0878
 publication-url: https://solosalon.substack.com/p/a-primer-on-auto-discourse
 ---

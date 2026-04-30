@@ -4,15 +4,6 @@ author:
   - Spencer Saar Cavanaugh
 references:
 publish: true
-quartzShowTitle: true
-quartzShowSubtitle: false
-quartzShowTOC: true
-quartzShowExplorer: true
-quartzShowBacklinks: true
-quartzShowCitation: false
-quartzShowFlex: false
-quartzShowGraph: true
-quartzSearch: true
 tags:
   - r/LW/TL
 ---

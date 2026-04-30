@@ -1,8 +1,9 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import type { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 
-interface ArticleTitleOptions {
-  showTitle?: (frontmatter: Frontmatter) => boolean
+export interface ArticleTitleOptions {
+  showTitle?: (frontmatter: Frontmatter, fileData?: QuartzPluginData) => boolean
 }
 
 interface Frontmatter {
@@ -20,7 +21,7 @@ export default ((opts?: ArticleTitleOptions) => {
     const showTitle = opts?.showTitle ?? defaultOptions.showTitle
     const title = fileData.frontmatter?.title
 
-    if (!showTitle || !showTitle(fileData.frontmatter) || !title) {
+    if (!showTitle || !showTitle(fileData.frontmatter, fileData) || !title) {
       return null
     }
 
@@ -44,4 +45,4 @@ export default ((opts?: ArticleTitleOptions) => {
   `
 
   return ArticleTitle
-}) satisfies QuartzComponentConstructor
+}) satisfies QuartzComponentConstructor<ArticleTitleOptions>

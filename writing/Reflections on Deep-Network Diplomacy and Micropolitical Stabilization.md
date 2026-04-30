@@ -11,22 +11,13 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Practical considerations around political stability within a given social milieu.
 tags:
   - micropolitik
 title: Reflections on Deep-Network Diplomacy and Micropolitical Stabilization
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: notes
+type: writing
 uuid: 22647dd6-7c7b-438b-9da9-20773f493e50
 publication-url: "-"
 ---

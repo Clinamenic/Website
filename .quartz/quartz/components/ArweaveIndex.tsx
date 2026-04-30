@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import style from "./styles/arweaveindex.scss"
 import { JSX } from "preact"
+import { getContentTypeProfile } from "../contentType"
 
 interface ArweaveHash {
   hash: string
@@ -23,7 +24,7 @@ function ArweaveIndex(): QuartzComponent {
   const Component: QuartzComponent = (props: QuartzComponentProps) => {
     const { fileData } = props
     const uuid = fileData?.frontmatter?.uuid
-    const showArchive = fileData?.frontmatter?.quartzShowArchive === true
+    const showArchive = getContentTypeProfile(fileData).showArchive
     
     if (!uuid || !showArchive) {
       return null

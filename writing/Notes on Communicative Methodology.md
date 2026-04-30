@@ -12,19 +12,10 @@ internalRef:
 keywords:
 language: en
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Looking to scientific research and publishing conventions to inform the communication strategy of self-published work.
 tags:
 title: Notes on Communicative Methodology
-type: notes
+type: writing
 url:
 uuid: c38e1786-fc81-4ac9-8f4c-75743205ee50
 license: CC BY-SA 4.0

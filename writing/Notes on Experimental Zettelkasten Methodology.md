@@ -7,21 +7,12 @@ headDescription: Some coverage of the various challenges faced in the constructi
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Some coverage of the various challenges faced in the construction of a bespoke multi-purpose zettelkasten.
 tags:
   - personal-discourse/log
   - reading-note/zettelkasten
 title: Notes on Experimental Zettelkasten Methodology
-type: notes
+type: writing
 uuid: f287fa9c-c615-4f2c-97db-5103b6df1b07
 publication-url: https://solosalon.substack.com/p/notes-on-experimental-zettelkasten
 ---

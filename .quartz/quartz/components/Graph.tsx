@@ -1,4 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import type { QuartzPluginData } from "../plugins/vfile"
 // @ts-ignore
 import script from "./scripts/graph.inline"
 import style from "./styles/graph.scss"
@@ -46,12 +47,7 @@ export interface D3Config {
 interface GraphOptions {
   localGraph: Partial<D3Config> | undefined
   globalGraph: Partial<D3Config> | undefined
-  showGraph?: (frontmatter: Frontmatter) => boolean
-}
-
-interface Frontmatter {
-  quartzShowGraph?: boolean
-  // ... other frontmatter properties
+  showGraph?: (fileData: QuartzPluginData) => boolean
 }
 
 const defaultOptions: GraphOptions = {
@@ -111,7 +107,7 @@ const defaultOptions: GraphOptions = {
       }
     }
   },
-  showGraph: (frontmatter: any) => frontmatter?.quartzShowGraph ?? false,
+  showGraph: () => false,
 }
 
 export default ((opts?: GraphOptions) => {
@@ -120,7 +116,7 @@ export default ((opts?: GraphOptions) => {
     const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
     const showGraph = opts?.showGraph ?? defaultOptions.showGraph
 
-    if (showGraph && fileData.frontmatter && !showGraph(fileData.frontmatter)) {
+    if (showGraph && fileData.frontmatter && !showGraph(fileData)) {
       return null
     }
     return (

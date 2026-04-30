@@ -14,16 +14,6 @@ keywords:
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowBanner: false
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: false
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Professional graphic design, branding, and visual identity services by Clinamenic LLC. Specializing in logo design, brand strategy, and diagrammatic design for modern businesses and organizations.
 tags: []
 title: Design Portfolio

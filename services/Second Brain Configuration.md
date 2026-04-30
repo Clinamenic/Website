@@ -20,15 +20,6 @@ ogType: website
 ogSiteName: Clinamenic LLC
 parent-service:
 publish: true
-quartzShowBacklinks: true
-quartzShowCitation: false
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzSearch: true
-quartzShowSubtitle: false
-quartzShowTitle: true
-quartzShowTOC: true
 service-category:
   - Knowledge Management
 twitterCreator: "@clinamenic"
@@ -38,11 +29,12 @@ type: service
 uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
 subtitle: Bespoke personal knowledge base as a service
 ---
-*A service offering of Clinamenic LLC.*
+
+_A service offering of Clinamenic LLC._
 
 Are you hoping to create a [second brain](https://medium.com/daniel-pours-blog/what-is-a-second-brain-9d2aa5faa856), [digital garden](https://maggieappleton.com/garden-history), [zettelkasten](https://zettelkasten.de/overview/), or some other form of personal knowledge base, but don't know how to start? Have you been curious about tools like Obsidian for a while, but have found them overwhelming or complicated to get started with?
 
-Drawing from the ethos of [local-first](https://www.inkandswitch.com/essay/local-first/), [malleable](https://www.inkandswitch.com/malleable-software/), and [home-cooked](https://maggieappleton.com/home-cooked-software) software, I can help you configure a bespoke knowledge base to function in a variety of capacities.
+Drawing from the ethos of [local-first](https://www.inkandswitch.com/essay/local-first/), [malleable](https://www.inkandswitch.com/malleable-software/), and [home-cooked](https://maggieappleton.com/home-cooked-software) software, I can help you configure a bespoke knowledge base to function as a "second brain" in a variety of capacities.
 
 For example, my second brain has various private components (journal, rolodex, media archive) and various public components, through this website (blog, design portfolio, zettelkasten, typography showcase, service catalog).
 
@@ -106,6 +98,21 @@ Want to chat about how I can help you set up your second brain? Use this calenda
 
 ## Book a Consultation Call
 
-Ready to collaborate? Use this calendar to request a paid consultation for me to help configure and give feedback on your second brain. 
+Ready to collaborate? Use this calendar to request a paid consultation for me to help configure and give feedback on your second brain.
 
 <iframe style="border: 1px solid var(--gray); border-radius: 15px; padding: 0px; aspect-ratio: 3 / 2; box-sizing: borderbox;" src="https://cal.com/clinamenic/consultation" width="100%"></iframe>
+
+---
+
+## Previous Work
+
+- [Ethereum Localism knowledge garden](https://www.ethereumlocalism.xyz/knowledge-garden)
+- [SuperBenefitDAO knowledge garden](https://knowledge.superbenefit.org/)
+- [Metagov gov/acc knowledge garden](https://gov-acc.metagov.org/)
+
+---
+## See Also
+
+- [Jerry's Brain](https://www.jerrysbrain.com/), perhaps the web's most prominent example of a second brain.
+- [Simon Grant's personal wiki](https://wiki.simongrant.org/doku.php/here), and his [explanation of a knowledge commons](https://wiki.simongrant.org/doku.php/d:2023-09-09).
+- [Maggie Appleton's history of digital gardens](https://maggieappleton.com/garden-history), and her [collection of noteworthy examples](https://x.com/Mappletons/status/1250532315459194880).

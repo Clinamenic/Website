@@ -12,16 +12,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: A hedge to better enable a "Code is Law" organizational policy.
 tags:
   - reading-note/bureaumancy
@@ -30,7 +20,7 @@ tags:
 title: The Failsafe Committee
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 707bafc0-4074-4ea1-98cd-ce7dd8e16961
 publication-url: https://solosalon.substack.com/p/the-failsafe-committee
 ---

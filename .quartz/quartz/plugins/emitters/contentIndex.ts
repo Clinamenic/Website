@@ -8,6 +8,7 @@ import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
 import DepGraph from "../../depgraph"
+import { getContentTypeProfile } from "../../contentType"
 
 export type ContentIndex = Map<FullSlug, ContentDetails>
 export type ContentDetails = {
@@ -106,8 +107,12 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
           joinSegments(ctx.argv.output, "static/contentIndex.json") as FilePath,
         )
 
-        // Only add to search-related outputs if quartzSearch is true
-        if (file.data.frontmatter?.quartzSearch) {
+        const profile = getContentTypeProfile({
+          type: file.data.frontmatter?.type,
+          slug: file.data.slug,
+        })
+        // Only add to search-related outputs when enabled for this content type
+        if (profile.searchable) {
           if (opts?.enableSiteMap) {
             graph.addEdge(sourcePath, joinSegments(ctx.argv.output, "sitemap.xml") as FilePath)
           }
@@ -145,8 +150,12 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
           })
         }
 
-        // Only add to searchIndex if quartzSearch is true
-        if (file.data.frontmatter?.quartzSearch && 
+        const profile = getContentTypeProfile({
+          type: file.data.frontmatter?.type,
+          slug: file.data.slug,
+        })
+        // Only add to searchIndex when enabled for this content type
+        if (profile.searchable &&
             (opts?.includeEmptyFiles || (file.data.text && file.data.text !== ""))) {
           searchIndex.set(slug, linkIndex.get(slug)!)
         }

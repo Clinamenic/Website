@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/CMWteFrY7Xyapf4R9fsnyZYm4Q81VUyWyeBkeo0zzDM
 subtitle:
 tags:
@@ -31,7 +21,7 @@ tags:
 title: Trust and Trustlessness
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: b537813f-7859-4bb0-929c-f7090375820e
 publication-url: https://solosalon.substack.com/p/trust-and-trustlessness
 ---

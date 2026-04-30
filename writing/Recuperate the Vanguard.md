@@ -14,16 +14,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Free-market collectivism via self-regulation in emerging technology sectors.
 tags:
   - personal-discourse
@@ -32,7 +22,7 @@ tags:
 title: Recuperate the Vanguard
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: e49b28e8-2b0f-4fa4-ac9d-0f294aa3c78c
 publication-url: https://solosalon.substack.com/p/recuperate-the-vanguard
 ---

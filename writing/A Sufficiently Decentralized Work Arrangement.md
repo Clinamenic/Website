@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/58IFNhSUmneWrH8Cr_zg5U09U2muI2FxQ-HtuCCv9Fw
 subtitle: One indicator that DAOs are still young in their development, is the fact that they are still searching for business models which fit the web3 ethos of decentralized power and transparency.
 tags:
@@ -31,7 +21,7 @@ tags:
 title: A Sufficiently Decentralized Work Arrangement
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 6a9687f8-9470-4497-ac00-813b164517bf
 publication-url: https://solosalon.substack.com/p/a-sufficiently-decentralized-work
 ---

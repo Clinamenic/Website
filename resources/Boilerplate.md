@@ -1,6 +1,5 @@
 ---
 publish: true
-quartzSearch: false
 type: resource
 ---
 

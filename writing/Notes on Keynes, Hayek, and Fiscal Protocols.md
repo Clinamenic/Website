@@ -7,22 +7,13 @@ headDescription: Peer-to-peer economic infrastructure to address foundational di
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 subtitle: Peer-to-peer economic infrastructure to address foundational disagreements in the discourse.
 tags:
   - personal-discourse/log
   - parafiscal
   - protocolization
 title: Notes on Keynes, Hayek, and Fiscal Protocols
-type: notes
+type: writing
 uuid: 02cdabc6-8467-4962-96bd-8b68b38dbf8b
 publication-url: https://solosalon.substack.com/p/notes-on-keynes-hayek-and-fiscal
 ---

@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Publicly tracking impact progress, and balancing between proactive and retroactive funding models.
 tags:
   - personal-discourse
@@ -31,7 +21,7 @@ tags:
 title: Progressive Public Goods Funding
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: article
+type: writing
 uuid: 8166b4bc-4b46-4aba-be6d-e59607cc4aac
 publication-url: https://solosalon.substack.com/p/progressive-public-goods-funding
 ---

@@ -5,16 +5,6 @@ headDescription: A note on "Tractatus Logico-Philosophicus" by Ludwig Wittgenste
 headIcon:
 license: CC BY-NC-SA 4.0
 publish: true
-quartzSearch: true
-quartzShowBacklinks: true
-quartzShowBanner: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTOC: true
-quartzShowTitle: true
 references:
   - "[[Tractatus Logico-Philosophicus]]"
 tags:

@@ -13,16 +13,6 @@ license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-quartzSearch: true
-quartzShowArchive: true
-quartzShowBacklinks: true
-quartzShowCitation: true
-quartzShowExplorer: true
-quartzShowFlex: true
-quartzShowGraph: true
-quartzShowSubtitle: true
-quartzShowTitle: true
-quartzShowTOC: true
 subtitle: Applying daoist and sociocratic principles to sensemaking and governance.
 tags:
   - personal-discourse
@@ -30,7 +20,7 @@ tags:
 title: Wu Wei, or Going with the Flow of Governance
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
-type: essay
+type: writing
 uuid: 37c66fd7-dc8a-4baa-a266-ec28b3a23983
 publication-url: https://solosalon.substack.com/p/wu-gwei-or-going-with-the-flow-of
 ---

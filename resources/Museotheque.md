@@ -4,11 +4,6 @@ publish: true
 bannerURI: https://arweave.net/MALjimE4g6_dO_DOWwbA_LOPOCNQkjI2v2aL3oYuG3w
 headDescription: Some examples of aesthetic works which have inspired me.
 headIcon:
-quartzShowTitle: true
-quartzShowCitation: false
-quartzShowFlex: false
-quartzShowGraph: true
-quartzSearch: true
 type: site-page
 ---
 
