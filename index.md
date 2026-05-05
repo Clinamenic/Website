@@ -765,19 +765,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </div>
 
----
-
-<div class="text-box" style="text-align: justify; position: relative; padding: 1.5rem; hyphens: none; animation: fade-in 3s ease-in; background-color: var(--light); border: 0px; animation: fade-in 6s ease-in-out;">
-    <p style="text-align: justify; font-size: 0.75rem; line-height: 1.6; justify-content: center; hyphens: none; font-family: GeistMono; letter-spacing: 1px; font-weight: 200;">
-      <em>The atoms, as their own weight bears them down plumb through the void, at scarce determined times, in scarce determined places, from their course decline a little -- call it, so to speak, mere changed trend. For were it not their wont thuswise to swerve, down would they fall, each one, like drops of rain, through the unbottomed void; and then collisions ne'er could be nor blows among the primal elements; and thus nature would never have created aught.</em>
-    </p>
-    <p></p>
-    <p style="text-align: center; font-size: 0.75rem; line-height: 1.6; hyphens: none; font-family: GeistMono; letter-spacing: 1px; font-weight: 300;">
-      Lucretius, <em>On the Nature of Things</em>,
-      describing the phenomenon of clinamen.
-    </p>
-</div>
-
 <div class="gallery2">
     <div class="text-box" style="padding: 0px; border: 0px; width: 100%;">
         <iframe style="border-radius:15px; padding: 0px; " src="https://open.spotify.com/embed/episode/2YjuOy6VzhPwzseAy5KdI8?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -792,4 +779,17 @@ document.addEventListener("DOMContentLoaded", function() {
         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4W1EDLB7tRMzV2JFx2xRMX?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
     
+</div>
+
+---
+
+<div class="text-box" style="text-align: justify; position: relative; padding: 1.5rem; hyphens: none; animation: fade-in 3s ease-in; background-color: var(--light); border: 0px; animation: fade-in 6s ease-in-out;">
+    <p style="text-align: justify; font-size: 0.75rem; line-height: 1.6; justify-content: center; hyphens: none; font-family: GeistMono; letter-spacing: 1px; font-weight: 200;">
+      <em>The atoms, as their own weight bears them down plumb through the void, at scarce determined times, in scarce determined places, from their course decline a little -- call it, so to speak, mere changed trend. For were it not their wont thuswise to swerve, down would they fall, each one, like drops of rain, through the unbottomed void; and then collisions ne'er could be nor blows among the primal elements; and thus nature would never have created aught.</em>
+    </p>
+    <p></p>
+    <p style="text-align: center; font-size: 0.75rem; line-height: 1.6; hyphens: none; font-family: GeistMono; letter-spacing: 1px; font-weight: 300;">
+      Lucretius, <em>On the Nature of Things</em>,
+      describing the phenomenon of clinamen.
+    </p>
 </div>
