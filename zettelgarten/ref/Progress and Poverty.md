@@ -12,6 +12,7 @@ finished-reading:
 purchase-url:
 source-url:
 year-read: "2023"
+has-read: true
 ---
 
 To those who,

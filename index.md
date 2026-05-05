@@ -777,3 +777,19 @@ document.addEventListener("DOMContentLoaded", function() {
       describing the phenomenon of clinamen.
     </p>
 </div>
+
+<div class="gallery2">
+    <div class="text-box" style="padding: 0px; border: 0px; width: 100%;">
+        <iframe style="border-radius:15px; padding: 0px; " src="https://open.spotify.com/embed/episode/2YjuOy6VzhPwzseAy5KdI8?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="text-box" style="padding: 0px; border: 0px;">
+        <iframe style="border-radius:15px; padding: 0px;" src="https://open.spotify.com/embed/episode/5yOjrE3rFrsqi5WJR0pMBn?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="text-box" style="padding: 0px; border: 0px;">
+        <iframe style="border-radius:15px; padding: 0px;" src="https://open.spotify.com/embed/episode/1dr1bZ3e8wc5xyMtFYkKG5?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="text-box" style="padding: 0px; border: 0px;">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4W1EDLB7tRMzV2JFx2xRMX?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    
+</div>

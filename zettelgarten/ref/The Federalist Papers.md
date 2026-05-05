@@ -11,6 +11,7 @@ finished-reading: 2024-04-15
 purchase-url:
 source-url:
 year-read: "2024"
+has-read: true
 ---
 
 ## Federalist No. 1. General Introduction

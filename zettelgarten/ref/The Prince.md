@@ -11,6 +11,7 @@ finished-reading:
 purchase-url:
 source-url:
 year-read: "2023"
+has-read: true
 ---
 
 ## CHAPTER I -- HOW MANY KINDS OF PRINCIPALITIES THERE ARE, AND BY WHAT MEANS THEY ARE ACQUIRED

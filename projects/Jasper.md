@@ -1,21 +1,24 @@
 ---
 bannerURI:
-headDescription:
-headIcon:
 keywords:
-language: en
 license:
 ogSiteName: Clinamenic LLC
 ogType: website
-publish: true
-publisherLocation:
-subtitle:
+publish: false
+subtitle: TUI for filesystem uploads to Arweave
 tags:
-title:
+title: Jasper
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: project
 uuid: 16e2463d-6015-41fc-89b1-91d2e0b93562
+project-status: liquidated
+source-url:
+project-type: software
+repo: https://github.com/Clinamenic/jasper
+active: false
+successor-projects:
+  - "[[Meridian]]"
 ---
 
 ## Development Journal

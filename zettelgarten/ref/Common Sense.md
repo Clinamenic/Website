@@ -8,10 +8,11 @@ tags:
 type: text
 uuid: c9da986b-2997-4b73-90af-34ba676dadbe
 started-reading: 2024-07-31
-finished-reading: 2026-08-01
+finished-reading: 2024-08-01
 purchase-url:
 source-url:
 year-read: "2024"
+has-read: true
 ---
 
 ## INTRODUCTION.

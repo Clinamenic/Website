@@ -11,6 +11,7 @@ finished-reading:
 purchase-url:
 source-url: https://en.wikisource.org/wiki/The_Works_of_Nicholas_Machiavel/Volume_4/The_Art_of_War
 year-read: "2023"
+has-read: true
 ---
 
 # The Art of War

@@ -62,7 +62,7 @@ In addition to a journaling system, you may also want an integrated way to manag
 
 ## Zettelkasten
 
-Take notes and organize them according to orthodox or bespoke zettelkasten schemas, to support studying writing efforts, and reveal complex connections between reference materials. (See my example here: [[zettelgarten]])
+Take notes and organize them according to orthodox or bespoke zettelkasten schemas, to support studying writing efforts, and reveal complex connections between reference materials. (See my example here: [[website/zettelgarten]])
 
 ---
 

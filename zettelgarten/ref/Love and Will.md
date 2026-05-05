@@ -11,4 +11,5 @@ type: text
 uuid: e902d84e-eda1-48ad-88de-e5c178263931
 purchase-url:
 source-url:
+has-read: true
 ---

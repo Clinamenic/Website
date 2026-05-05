@@ -11,6 +11,7 @@ started-reading:
 finished-reading:
 purchase-url:
 source-url:
+has-read: false
 ---
 
 ## BOOK I

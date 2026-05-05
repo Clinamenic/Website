@@ -13,6 +13,7 @@ finished-reading: 2023-12-16
 purchase-url:
 source-url:
 year-read: "2023"
+has-read: true
 ---
 
 OF THE NATURE OF THINGS

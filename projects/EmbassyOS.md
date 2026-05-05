@@ -1,14 +1,10 @@
 ---
 bannerURI:
-headDescription:
-headIcon:
 keywords:
-language: en
 license:
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-publisherLocation:
 subtitle: Working Specification and Roadmap as of 2026-03-10
 tags:
 title: EmbassyOS
@@ -16,6 +12,10 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: project
 uuid: f1e19247-f4d6-4f07-9016-80187ec288e2
+project-status: prototype
+source-url:
+project-type: community
+active: true
 ---
 
 _Disclaimer: The copy in this specification is AI-generated, informed by human direction and a variety of reference documents._

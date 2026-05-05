@@ -11,6 +11,7 @@ uuid: 1f430886-4357-43cf-a54a-065e9b1a57aa
 purchase-url:
 source-url:
 year-read: "2019"
+has-read: true
 ---
 
 ### PREFATORY NOTE BY THE AUTHOR

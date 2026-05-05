@@ -11,4 +11,5 @@ uuid: f095cbe9-c2dc-482b-a214-01ada7336a78
 purchase-url:
 source-url:
 year-read: "2024"
+has-read: true
 ---
