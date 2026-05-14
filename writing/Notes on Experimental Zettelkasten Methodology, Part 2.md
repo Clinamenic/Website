@@ -66,7 +66,7 @@ Regardless of querying practices, the reliance on Arweave is in the interest of 
 
 As of now, I am currently using a variation of the folgezettel file naming convention, consisting of a prefix denoted the category of reference note (r-), followed by the initials of the author (e.g. 'JK'), followed by the initials of the document (e.g. 'GT'), followed by the number of the note referencing that specific document (e.g. '25'), followed by the derivative number if there is one (e.g. '.1'). This example would amount to 'r-JK-GT-25.1' to refer to the direct derivative of the 25th note I made in explicit reference to [[The General Theory of Employment, Interest and Money]] by John Maynard Keynes.
 
-Here is the note itself: [[z-25a]]. If the name differs from 'r-JK-GT-25.1' that means the naming convention has been changed.
+Here is the note itself: [[25 Summary of General Theory Book II Chapter 6]]. If the name differs from 'r-JK-GT-25.1' that means the naming convention has been changed.
 
 So far, this naming convention has not had any serious problem, aside from the minor inconvenience of not being able to infer anything about the contents of the note based on its name, aside from the fact that it references a particular text. As I understand, this is considered a feature, rather than a bug, in certain zettelkasten designs, intended to facilitate spontaneous or unpredicted rediscovery of notes, wherein the user is not able to infer the exact content based on the file name alone.
 
@@ -148,4 +148,4 @@ Some of these considerations lead me to ponder the prospects of a bespoke UUID s
 
 ## A Capacity for Flux
 
-Ultimately, in this case, I think work in the system beats working the system. That is, the system will remain in ontological flux until experience justifies a more permanent adoption of certain ontological facets of the system.
+Ultimately, in this case, I think *work in the system* beats *working the system*. That is, the system will remain in ontological flux until experience justifies a more permanent adoption of certain ontological facets of the system.

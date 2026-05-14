@@ -3,17 +3,17 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-09-18
 draft started: 2024-09-18
-headDescription: An open and protocol-oriented philosophy of social organization.
+headDescription: An open and protocol-oriented philosophy of social organization
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-subtitle: An open and protocol-oriented philosophy of social organization.
+subtitle: An open and protocol-oriented philosophy of social organization
 tags:
   - personal-discourse/log
 title: Notes on Extitutional Theory and Progressive Protocolization
 type: writing
 uuid: 695f780e-5cbe-4ed7-bdef-818dbd227ec9
-publication-url: "-"
+publication-url: https://solosalon.substack.com/p/notes-on-extitutional-theory-and
 ---
 
 ![[Boilerplate#Canvas Foreword]]
