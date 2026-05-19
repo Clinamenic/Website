@@ -8,12 +8,14 @@ date: 2024-08-04
 headDescription: Applying daoist and sociocratic principles to sensemaking and governance
 headIcon:
 keywords:
+  - community of practice
+  - governance
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Applying daoist and sociocratic principles to sensemaking and governance.
+subtitle: Applying daoist and sociocratic principles to sensemaking and governance
 tags:
   - personal-discourse
   - text

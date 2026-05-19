@@ -6,6 +6,9 @@ authorURL:
 bannerURI:
 date: 2025-12-09
 keywords:
+  - autodidacticism
+  - neuroplasticity
+  - schizoanalysis
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC

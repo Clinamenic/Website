@@ -7,13 +7,15 @@ headDescription: Applications of Machiavellian moral-tactical calculus to microp
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-subtitle: Applications of Machiavellian moral-tactical calculus to micropolitics and peer-to-peer statecraft.
+subtitle: Applications of Machiavellian moral-tactical calculus to micropolitics and peer-to-peer statecraft
 tags:
   - personal-discourse/log
 title: Notes on an Ethical Hermeneutics of Machiavelli
 type: writing
 uuid: 3e5a522f-7b32-4909-9559-fd07b6d038a1
 publication-url: https://solosalon.substack.com/p/notes-on-an-ethical-hermeneutics
+keywords:
+  - post-machiavellianism
 ---
 
 ![[Boilerplate#Canvas Foreword]]

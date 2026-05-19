@@ -8,13 +8,17 @@ date: 2023-01-21
 headDescription:
 headIcon:
 keywords:
+  - dao
+  - dao governance
+  - organization design
+  - automatos
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/r26ztiaaCV89ykuKaVwa_KgHmC6YW8Q6rBNDLqFWETw
-subtitle:
+subtitle: Experimental methodology for organizational transparency, accessibility, and individual empowerment
 tags:
   - personal-discourse
   - text

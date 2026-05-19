@@ -6,12 +6,13 @@ authorURL:
 bannerURI:
 date: 2025-08-16
 keywords:
+  - post-machiavellianism
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Practical considerations around political stability within a given social milieu.
+subtitle: Practical considerations around political stability within a given social milieu
 tags:
   - micropolitik
 title: Reflections on Deep-Network Diplomacy and Micropolitical Stabilization

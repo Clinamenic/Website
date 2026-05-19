@@ -15,6 +15,8 @@ title: Notes on Experimental Zettelkasten Methodology
 type: writing
 uuid: f287fa9c-c615-4f2c-97db-5103b6df1b07
 publication-url: https://solosalon.substack.com/p/notes-on-experimental-zettelkasten
+keywords:
+  - zettelkasten
 ---
 
 ![[Boilerplate#Canvas Foreword]]

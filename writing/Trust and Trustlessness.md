@@ -8,13 +8,17 @@ date: 2023-01-21
 headDescription:
 headIcon:
 keywords:
+  - dao
+  - dao governance
+  - organization design
+  - automatos
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/CMWteFrY7Xyapf4R9fsnyZYm4Q81VUyWyeBkeo0zzDM
-subtitle:
+subtitle: Advents in censorship-resistant technology enable novel forms of economic cooperation, but at what cost?
 tags:
   - personal-discourse
   - text

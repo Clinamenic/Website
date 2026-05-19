@@ -8,12 +8,13 @@ date: 2024-05-03
 headDescription: Introductory remarks on an experimental mode of transparent discourse
 headIcon:
 keywords:
+  - auto-discourse
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Introductory remarks on an experimental mode of transparent discourse.
+subtitle: Introductory remarks on an experimental mode of transparent discourse
 tags:
   - personal-discourse
   - reading-note/auto-discourse

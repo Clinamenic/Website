@@ -14,6 +14,11 @@ title: Notes on Extitutional Theory and Progressive Protocolization
 type: writing
 uuid: 695f780e-5cbe-4ed7-bdef-818dbd227ec9
 publication-url: https://solosalon.substack.com/p/notes-on-extitutional-theory-and
+keywords:
+  - extitutional theory
+  - progressive protocolization
+  - protocolization
+  - protocolism
 ---
 
 ![[Boilerplate#Canvas Foreword]]

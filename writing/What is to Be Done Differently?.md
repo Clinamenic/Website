@@ -8,13 +8,14 @@ date: 2022-06-15
 headDescription: Reflections on the early stages of metagovernance in decentralized society.
 headIcon:
 keywords:
+  - metagovernance
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sourceURL:
-subtitle: Reflections on the early stages of metagovernance in decentralized society.
+subtitle: Reflections on the early stages of metagovernance in decentralized society
 tags:
   - personal-discourse
   - text

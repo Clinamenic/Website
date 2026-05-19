@@ -8,13 +8,17 @@ date: 2023-01-21
 headDescription: One indicator that DAOs are still young in their development, is the fact that they are still searching for business models which fit the web3 ethos of decentralized power and transparency.
 headIcon:
 keywords:
+  - dao
+  - dao governance
+  - organization design
+  - automatos
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/58IFNhSUmneWrH8Cr_zg5U09U2muI2FxQ-HtuCCv9Fw
-subtitle: One indicator that DAOs are still young in their development, is the fact that they are still searching for business models which fit the web3 ethos of decentralized power and transparency.
+subtitle: Technological experiments around a peer-based economic model for business and governance
 tags:
   - personal-discourse
   - text

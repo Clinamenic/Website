@@ -7,15 +7,16 @@ date: 2025-01-23
 headDescription:
 headIcon:
 keywords:
+  - post-machiavellianism
 language: en
 license: CC BY-SA 4.0
 publish: true
-subtitle:
+subtitle: Grounding a logic of moral pragmatism in the work and reception of Machiavelli
 tags:
 title: Intimations of a Post-Machiavellian Moral-Tactical Calculus, Part 2
 type: writing
 uuid: c348281b-072b-42ec-a9cb-d73c3784edd0
-publication-url: "-"
+publication-url: https://solosalon.substack.com/p/intimations-of-a-post-machiavellian-397
 ---
 
 ![[Boilerplate#Canvas Foreword]]

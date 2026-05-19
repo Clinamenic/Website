@@ -10,9 +10,10 @@ headIcon:
 internalRef:
   - "[[Writing a Scientific Article]]"
 keywords:
+  - zettelkasten
 language: en
 publish: true
-subtitle: Looking to scientific research and publishing conventions to inform the communication strategy of self-published work.
+subtitle: Looking to scientific research and publishing conventions to inform the communication strategy of self-published work
 tags:
 title: Notes on Communicative Methodology
 type: writing

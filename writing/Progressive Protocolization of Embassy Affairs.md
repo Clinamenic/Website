@@ -11,7 +11,7 @@ license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: false
-subtitle: A message containing ideas and aspirations around domestic cybernetics, posted to an internal residents' channel.
+subtitle: A message containing ideas and aspirations around domestic cybernetics, posted to an internal residents' channel
 tags:
   - protocolization
   - governance

@@ -6,12 +6,15 @@ authorURL:
 bannerURI: https://arweave.net/xyErVkoWdB0uDWV5a5onev40x8gZBSd8yINxgzKKOrE
 date: 2023-01-17
 keywords:
+  - autodidacticism
+  - neurodiversity
+  - neuroplasticity
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Reflections on auto-didacticism and neurodiversity.
+subtitle: Reflections on auto-didacticism and neurodiversity
 tags:
   - personal-discourse
   - text

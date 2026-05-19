@@ -8,12 +8,15 @@ date: 2023-03-26
 headDescription:
 headIcon:
 keywords:
+  - dao
+  - dao governance
+  - organization design
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle:
+subtitle: Three case studies of experimental token-based community governance models
 tags:
   - personal-discourse
   - text

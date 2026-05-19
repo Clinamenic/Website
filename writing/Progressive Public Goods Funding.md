@@ -8,12 +8,15 @@ date: 2024-04-05
 headDescription: Publicly tracking impact progress, and balancing between proactive and retroactive funding models
 headIcon:
 keywords:
+  - progressive public goods funding
+  - quadratic funding
+  - onchain organization
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Publicly tracking impact progress, and balancing between proactive and retroactive funding models.
+subtitle: Publicly tracking impact progress, and balancing between proactive and retroactive funding models
 tags:
   - personal-discourse
   - text

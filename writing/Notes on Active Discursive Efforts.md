@@ -7,13 +7,15 @@ headDescription: Regarding nascent theories of bureaumancy, zettelkasten methodo
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-subtitle: Regarding nascent theories of bureaumancy, zettelkasten methodology, and other existing topic clusters.
+subtitle: Regarding nascent theories of bureaumancy, zettelkasten methodology, and other existing topic clusters
 tags:
   - personal-discourse/log
 title: Notes on Active Discursive Efforts
 type: writing
 uuid: 6bb44688-327e-4fad-b841-e1a8ce685969
 publication-url: "-"
+keywords:
+  - auto-discourse
 ---
 
 ![[Boilerplate#Canvas Foreword]]

@@ -7,12 +7,13 @@ date: 2023-12-10
 headDescription: Using smart contracts to design organizations and facilitate governance processes
 headIcon:
 keywords:
+  - onchain organization
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Using smart contracts to design organizations and facilitate governance processes.
+subtitle: Using smart contracts to design organizations and facilitate governance processes
 tags:
   - personal-discourse
   - reading-note/bureaumancy

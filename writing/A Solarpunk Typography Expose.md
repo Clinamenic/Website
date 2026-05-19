@@ -8,12 +8,14 @@ date: 2023-11-13
 headDescription: This expose highlights a number of fonts which encapsulate the solarpunk ethos
 headIcon:
 keywords:
+  - solarpunk fonts
+  - solarpunk typography
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: This expose highlights a number of fonts which encapsulate the solarpunk ethos.
+subtitle: This expose highlights a number of fonts which encapsulate the solarpunk ethos
 tags:
   - personal-discourse
   - reading-note/design

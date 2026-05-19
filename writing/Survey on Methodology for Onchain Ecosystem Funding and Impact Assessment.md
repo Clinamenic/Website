@@ -5,17 +5,21 @@ authorURL:
   - https://www.clinamenic.com
 bannerURI: https://arweave.net/adMJyqREd1b7sFF_EWbcUWGN54A84doFU-fFEB-gX1Q
 date: 2025-02-11
-draftStart: 0024-06-28
+draftStart: 2024-06-28
 headDescription:
 headIcon:
 keywords:
+  - impact assessment
+  - onchain organization
+  - quadratic funding
+  - progressive public goods funding
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sponsor: LexDAO, SuperBenefitDAO
-subtitle: An analysis of the innovations and challenges of the onchain philanthropy sector.
+subtitle: An analysis of the innovations and challenges of the onchain philanthropy sector
 tags:
   - personal-discourse
   - text
@@ -24,7 +28,7 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: writing
 uuid: 98b0c624-84a8-4a8c-8c1b-ee9b2451aeb9
-publication-url: "-"
+publication-url: https://solosalon.substack.com/p/survey-on-methodology-for-onchain
 ---
 ## Acknowledgments
 

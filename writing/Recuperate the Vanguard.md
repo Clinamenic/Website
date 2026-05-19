@@ -9,12 +9,15 @@ headDescription: Free-market collectivism via self-regulation in emerging techno
 headIcon:
 hideGraph: false
 keywords:
+  - governance
+  - free market collectivism
+  - vanguardism
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: Free-market collectivism via self-regulation in emerging technology sectors.
+subtitle: Free-market collectivism via self-regulation in emerging technology sectors
 tags:
   - personal-discourse
   - reading-note/postcapitalism

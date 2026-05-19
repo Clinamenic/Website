@@ -8,12 +8,16 @@ date: 2023-11-01
 headDescription: A potential solution to the content moderation problem
 headIcon:
 keywords:
+  - content moderation
+  - enshittification
+  - social protocols
+  - public goods
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: A potential solution to the content moderation problem.
+subtitle: A potential solution to the content moderation problem
 tags:
   - personal-discourse
   - text

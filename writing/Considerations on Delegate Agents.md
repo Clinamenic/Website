@@ -6,10 +6,12 @@ doi:
 headDescription: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.
 headIcon:
 keywords:
+  - delegate agents
+  - ai governance
 language: en
 license: CC BY-SA 4.0
 publish: true
-subtitle: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.
+subtitle: Implications of an arrangement whereby representative agents predictively queue voting decisions for users
 tags:
 title: Considerations on Delegate Agents
 type: writing

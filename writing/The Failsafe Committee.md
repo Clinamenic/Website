@@ -7,12 +7,13 @@ date: 2023-09-25
 headDescription: A hedge to better enable a "Code is Law" organizational policy.
 headIcon:
 keywords:
+  - onchain organization
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: A hedge to better enable a "Code is Law" organizational policy.
+subtitle: A hedge to better enable a "Code is Law" organizational policy
 tags:
   - reading-note/bureaumancy
   - personal-discourse

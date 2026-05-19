@@ -7,12 +7,14 @@ date: 2023-11-24
 headDescription: A template and methodology for initializing your organization's governance
 headIcon:
 keywords:
+  - onchain organization
+  - governance
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: A template and methodology for initializing your organization's governance.
+subtitle: A template and methodology for initializing your organization's governance
 tags:
   - personal-discourse
   - text

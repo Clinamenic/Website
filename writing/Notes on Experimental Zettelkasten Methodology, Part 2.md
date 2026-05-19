@@ -3,17 +3,19 @@ author: Spencer Saar Cavanaugh
 authorURL: https://www.clinamenic.com
 date: 2024-11-08
 draft started: 2024-11-08
-headDescription: Prospects of a bespoke folgezettel UUID system and other considerations.
+headDescription: Prospects of a bespoke folgezettel UUID system and other considerations
 headIcon:
 license: CC BY-SA 4.0
 publish: true
-subtitle: Prospects of a bespoke folgezettel UUID system and other considerations.
+subtitle: Prospects of a bespoke folgezettel UUID system and other considerations
 tags:
   - personal-discourse/log
-title: Notes on Experimental Zettelkasten Methodology (2)
+title: Notes on Experimental Zettelkasten Methodology, Part 2
 type: writing
 uuid: cecbb51f-fb07-456f-835d-36d4300fb89f
-publication-url: "-"
+publication-url: https://solosalon.substack.com/p/notes-on-experimental-zettelkasten-79a
+keywords:
+  - zettelkasten
 ---
 
 ![[Boilerplate#Canvas Foreword]]

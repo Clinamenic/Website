@@ -8,13 +8,14 @@ date: 2025-06-05
 headDescription:
 headIcon:
 keywords:
+  - knowledge garden
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 structuredData:
-subtitle: Learnings from configuring a cosmolocal community knowledge base.
+subtitle: Learnings from configuring a cosmolocal community knowledge base
 tags:
 title: "Retrospective: Ethereum Localism Knowledge Garden"
 twitterCard: summary_large_image

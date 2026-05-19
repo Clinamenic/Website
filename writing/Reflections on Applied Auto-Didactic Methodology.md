@@ -7,10 +7,12 @@ date: 2025-02-03
 headDescription:
 headIcon:
 keywords:
+  - autodidacticism
+  - auto-discourse
 language: en
 license: CC BY-SA 4.0
 publish: true
-subtitle: Notes on recent experiences and how they may inform a generalized practice.
+subtitle: Notes on recent experiences and how they may inform a generalized practice
 tags:
 title: Reflections on Applied Auto-Didactic Methodology
 type: writing

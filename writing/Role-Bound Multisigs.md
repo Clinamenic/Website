@@ -7,12 +7,13 @@ date: 2023-08-08
 headDescription: Electable multisig signers for democratic onchain organizations
 headIcon:
 keywords:
+  - onchain organization
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
-subtitle: No longer must multisigs be statically assigned to wallet addresses.
+subtitle: No longer must multisigs be statically assigned to wallet addresses
 tags:
   - reading-note/bureaumancy
   - personal-discourse

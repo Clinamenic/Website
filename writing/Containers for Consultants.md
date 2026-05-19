@@ -7,6 +7,7 @@ date: 2023-07-23
 headDescription: How should consultants approach on-chain engagements with clients?
 headIcon:
 keywords:
+  - onchain organization
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC

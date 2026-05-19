@@ -8,13 +8,17 @@ date: 2023-01-21
 headDescription:
 headIcon:
 keywords:
+  - dao
+  - dao governance
+  - organization design
+  - automatos
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
 ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/SL3pcfxKAE4D4wlEKHjeMjna8fHZmwGeYEC-47icYs0
-subtitle:
+subtitle: Organizational considerations around decentralized commercial content production
 tags:
   - personal-discourse
   - text
