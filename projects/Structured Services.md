@@ -1,5 +1,5 @@
 ---
-title: Service Schema Scoping
+title: Structured Services
 subtitle: Exploring machine-readable representation of service offerings
 date: 2025-04-16
 publish: true
