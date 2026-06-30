@@ -186,7 +186,7 @@ These documents are generated programmatically via AI, according to frameworks a
 #### Preliminary
 
 - [[Integrating Quartz and Arwiki]]
-- [[Service Schema Scoping]]
+- [[Structured Services]]
 
 #### Refined
 
