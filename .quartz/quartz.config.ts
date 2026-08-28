@@ -7,7 +7,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      websiteId: "2f7a2940-be21-4f59-ac1e-ff6407b7e5a2",
+      host: "https://stats.clinamenic.com",
     },
     locale: "en-US",
     baseUrl: "www.clinamenic.com",

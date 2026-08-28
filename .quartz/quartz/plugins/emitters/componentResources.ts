@@ -116,9 +116,15 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       const umamiScript = document.createElement("script")
       umamiScript.src = "${cfg.analytics.host ?? "https://analytics.umami.is"}/script.js"
       umamiScript.setAttribute("data-website-id", "${cfg.analytics.websiteId}")
-      umamiScript.async = true
+      umamiScript.defer = true
 
       document.head.appendChild(umamiScript)
+
+      document.addEventListener("nav", () => {
+        if (typeof umami !== "undefined" && umami.track) {
+          umami.track()
+        }
+      })
     `)
   } else if (cfg.analytics?.provider === "goatcounter") {
     componentResources.afterDOMLoaded.push(`

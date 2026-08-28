@@ -22,7 +22,6 @@ title: Clinamenic LLC
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: homepage
-umami_id: 2f7a2940-be21-4f59-ac1e-ff6407b7e5a2
 uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
 ---
 

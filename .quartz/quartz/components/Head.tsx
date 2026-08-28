@@ -21,7 +21,6 @@ interface QuartzFrontmatter {
   twitterSite?: string
   twitterCreator?: string
   structuredData?: object | string
-  umami_id?: string
 }
 
 // Helper to check if a URL is absolute
@@ -128,9 +127,6 @@ export default (() => {
         : safeStringifyStructuredData(structuredDataRaw)
       : undefined
 
-    // Analytics
-    const umamiId = frontmatter.umami_id
-
     return (
       <head>
         <title>{title}</title>
@@ -190,16 +186,6 @@ export default (() => {
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}
-
-        {/* Analytics */}
-        {umamiId && (
-          <script
-            async
-            defer
-            src="https://umami-dashboard-sand.vercel.app/script.js"
-            data-website-id={umamiId}
-          />
-        )}
       </head>
     )
   }
