@@ -8,11 +8,11 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: {
       provider: "umami",
-      websiteId: "2f7a2940-be21-4f59-ac1e-ff6407b7e5a2",
+      websiteId: "5d8a5a5b-7740-4aec-ab30-f544994619b1",
       host: "https://stats.clinamenic.com",
     },
     locale: "en-US",
-    baseUrl: "www.clinamenic.com",
+    baseUrl: "www.ssc.studio",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {

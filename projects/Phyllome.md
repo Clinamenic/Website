@@ -8,7 +8,7 @@ license:
 ogType: website
 ogSiteName: Clinamenic LLC
 publish: false
-active:
+active: true
 project-type:
 project-status:
 project-repo:
@@ -17,14 +17,8 @@ title:
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: project
-uuid: 1c10dacc-eda1-4135-b223-588b838b5537
+uuid: a0ec2b28-0f60-4a01-9c97-1bb151b4c161
 version:
 source-url:
 successor-projects:
 ---
-## See Also
-
-
-- https://www.archivinci.com/ai-renders/concrete-brutal-complex-render-1760333771118-56
-- https://vazgriz.com/119/procedurally-generated-dungeons/
-- https://github.com/Aljullu/threejs-procedural-building-generator

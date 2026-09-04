@@ -8,16 +8,17 @@ license:
 ogType: website
 ogSiteName: Clinamenic LLC
 publish: false
-project-type: software
-repo:
-project-status: prototype
+active: true
+project-type:
+project-status:
+project-repo:
 subtitle:
-title: Seed Protocol
+title:
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: project
-uuid: 80d5542b-4660-4488-a3f5-0f2b99f569d1
+uuid: 6da30328-4bd2-46f9-9137-f6440500b6d2
 version:
 source-url:
-active: false
+successor-projects:
 ---

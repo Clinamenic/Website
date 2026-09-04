@@ -3,7 +3,7 @@ availability: active
 bannerURI:
 billing-type: deliverable
 child-services:
-cost: "500"
+cost: "750"
 keywords:
   - consulting services
   - clinamenic

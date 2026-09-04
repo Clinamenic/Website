@@ -11,6 +11,7 @@
     "build": "cd .quartz && npm run build",
     "serve": "cd .quartz && npm run serve",
     "quartz": "cd .quartz && tsx ./quartz/bootstrap-cli.mjs",
-    "strip-quartz-frontmatter": "node .workspace/scripts/remove-quartz-frontmatter.mjs"
+    "strip-quartz-frontmatter": "node .workspace/scripts/remove-quartz-frontmatter.mjs",
+    "deploy:tekhnema": "/Users/gideon/Hub/projects/tekhnema-remote/.workspace/scripts/deploy-website.sh"
   }
 }

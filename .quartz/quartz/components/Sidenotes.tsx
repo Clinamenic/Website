@@ -42,88 +42,66 @@ interface SidenoteData {
 function extractBlockReferences(tree: Root): BlockReference[] {
   const blockRefs: BlockReference[] = []
   let position = 0
-  let totalElements = 0
-
-  console.log(`[Sidenotes] Starting block reference extraction`)
-  console.log(`[Sidenotes] Tree type:`, tree.type)
-  console.log(`[Sidenotes] Tree children count:`, tree.children?.length)
 
   visit(tree, "element", (node: Element) => {
-    totalElements++
     position++
-    
-    if (node.type === "element") {
-      // Log every element we visit for debugging
-      if (totalElements <= 20) { // Only log first 20 to avoid spam
-        console.log(`[Sidenotes] Element ${totalElements}:`, {
-          tagName: node.tagName,
-          properties: node.properties,
-          hasId: !!node.properties?.id,
-          idValue: node.properties?.id
+
+    if (node.properties?.id && typeof node.properties.id === "string") {
+      const blockId = node.properties.id as string
+      if (/^[a-zA-Z0-9-_]+$/.test(blockId)) {
+        blockRefs.push({
+          blockId,
+          element: node,
+          position,
         })
-      }
-      
-      // Look for elements with id attributes that look like block references
-      if (node.properties?.id && typeof node.properties.id === "string") {
-        const blockId = node.properties.id as string
-        console.log(`[Sidenotes] Found element with ID "${blockId}" on tag <${node.tagName}>`)
-        
-        // Check if this looks like a block reference (alphanumeric, dashes, underscores)
-        if (/^[a-zA-Z0-9-_]+$/.test(blockId)) {
-          console.log(`[Sidenotes] Block ID "${blockId}" matches pattern, adding to block references`)
-          blockRefs.push({
-            blockId,
-            element: node,
-            position
-          })
-        } else {
-          console.log(`[Sidenotes] Block ID "${blockId}" does not match pattern`)
-        }
       }
     }
   })
 
-  console.log(`[Sidenotes] Visited ${totalElements} total elements`)
-  console.log(`[Sidenotes] Found ${blockRefs.length} block references:`, blockRefs.map(b => b.blockId))
   return blockRefs
 }
 
+function slugBasename(slug: string): string {
+  return slug.split("/").pop() ?? slug
+}
+
+function slugsMatch(dataSlug: string | undefined, currentSlug: FullSlug): boolean {
+  if (!dataSlug) return false
+  if (dataSlug === currentSlug) return true
+
+  const normalize = (s: string) =>
+    s.toLowerCase().replace(/[^a-z0-9]/g, "-").replace(/-+/g, "-")
+
+  if (normalize(dataSlug) === normalize(currentSlug)) return true
+  return normalize(slugBasename(dataSlug)) === normalize(slugBasename(currentSlug))
+}
+
+function hrefMatchesBlockId(href: string, blockId: string): boolean {
+  const escaped = blockId.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+  return new RegExp(`#\\^?${escaped}$`).test(href)
+}
+
 function findReferencingNotes(blockId: string, currentSlug: FullSlug, allFiles: QuartzPluginData[]): QuartzPluginData[] {
-  console.log(`[Sidenotes] Looking for notes referencing block "${blockId}" in file "${currentSlug}"`)
-  
   const referencingNotes: QuartzPluginData[] = []
   
   for (const file of allFiles) {
-    if (file.slug === currentSlug) continue // Don't include self-references
-    
-    // Only include notes with type: zettel in their frontmatter
-    if (file.frontmatter?.type !== 'zettel') {
+    if (file.slug === currentSlug) continue
+
+    if (file.frontmatter?.type !== "zettel") {
       continue
     }
     
-    // Search the htmlAst for link elements that reference our exact block
     if (file.htmlAst && file.htmlAst.children) {
       let foundBlockReference = false
       
       const searchForBlockLinks = (node: any): void => {
-        if (node.type === 'element' && node.tagName === 'a' && node.properties?.href) {
+        if (node.type === "element" && node.tagName === "a" && node.properties?.href) {
           const href = node.properties.href as string
-          const dataSlug = node.properties['data-slug'] as string
+          const dataSlug = node.properties["data-slug"] as string
           
-          // Check if this link points to our current file with the EXACT block ID
-          // href format: './Sample-Text#203341' or similar
-          // Use a more precise regex to match the exact block ID at the end of the href
-          const blockPattern = new RegExp(`#${blockId}$`)
-          if (blockPattern.test(href)) {
-            // Normalize the data-slug and current slug for comparison
-            const normalizedDataSlug = dataSlug?.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')
-            const normalizedCurrentSlug = currentSlug.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')
-            
-            if (normalizedDataSlug === normalizedCurrentSlug || dataSlug === currentSlug) {
-              console.log(`[Sidenotes] Found exact block reference link in zettel "${file.slug}": href="${href}", dataSlug="${dataSlug}"`)
-              foundBlockReference = true
-              return
-            }
+          if (hrefMatchesBlockId(href, blockId) && slugsMatch(dataSlug, currentSlug)) {
+            foundBlockReference = true
+            return
           }
         }
         
@@ -140,7 +118,6 @@ function findReferencingNotes(blockId: string, currentSlug: FullSlug, allFiles: 
     }
   }
   
-  console.log(`[Sidenotes] Found ${referencingNotes.length} referencing zettel notes for block "${blockId}"`)
   return referencingNotes
 }
 
@@ -219,8 +196,6 @@ function renderSidenoteAst(children: any[]): JSX.Element[] {
           }
         }
         
-        console.log(`[Sidenotes] Tag link found: text="${child.children?.[0]?.value}", href="${child.properties?.href}", extracted="${fullTag}"`)
-        
         elements.push(
           <span key={i} class="sidenote-tag">
             #{fullTag}
@@ -277,29 +252,10 @@ const Sidenotes: QuartzComponent = ({ fileData, allFiles, tree, cfg }: QuartzCom
     return null
   }
 
-  // Debug logging for all files to understand patterns
-  console.log(`[Sidenotes] Processing file: "${fileData.slug}"`)
-  console.log(`[Sidenotes] File title: "${fileData.frontmatter?.title}"`)
-  console.log(`[Sidenotes] Tree type: ${tree.type}, children: ${(tree as Root).children?.length || 0}`)
-  
-  // Special debug for sample-text
-  if (fileData.slug === 'sample-text') {
-    console.log(`[Sidenotes] *** SAMPLE-TEXT DETAILED DEBUG ***`)
-    console.log(`[Sidenotes] Tree:`, tree)
-    console.log(`[Sidenotes] Tree children:`, (tree as Root).children)
-    if ((tree as Root).children && (tree as Root).children.length > 0) {
-      console.log(`[Sidenotes] First few children:`, (tree as Root).children.slice(0, 5))
-    }
-  }
-
   const blockRefs = extractBlockReferences(tree as Root)
-  console.log(`[Sidenotes] Found ${blockRefs.length} block references:`, blockRefs.map(b => b.blockId))
-  
   const sidenotes = organizeSidenotes(blockRefs, allFiles, fileData.slug, options.forceRightOnly)
-  console.log(`[Sidenotes] Generated ${sidenotes.length} sidenotes`)
-  
+
   if (sidenotes.length === 0) {
-    console.log(`[Sidenotes] No sidenotes to display for ${fileData.slug}`)
     return null
   }
 

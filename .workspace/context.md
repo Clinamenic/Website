@@ -6,21 +6,30 @@ This project is configured for multiple code assistants (e.g., Cursor, Claude) t
 
 - Provide a single place for shared scripts, configs, and docs
 - Keep assistant-specific rules decoupled from shared project resources
-- Make release/versioning workflows unambiguous and automatable
+- Make release/versioning and Tekhnema publish workflows unambiguous
 
 ## Directory map (high level)
 
+- `AGENTS.md`: Assistant entrypoint (build/deploy orientation)
 - `CHANGELOG.md`: Human-readable release notes for each version
 - `package.json`: Project metadata and version (authoritative SemVer source)
+- `.quartz/`: Quartz framework and build output under `.quartz/public`
 - `.workspace/` (assistant-agnostic, shared by all assistants)
   - `scripts/`: Shared automation (e.g., `version-bump.sh`)
   - `config/`: Shared tool/config overrides (e.g., `version-bump.conf`)
-  - `docs/`: Project docs and references (e.g., `docs/ref`, `docs/arch`, `docs/temp`)
-  - `templates/`: Optional reusable patterns
-- `.cursor/`: Cursor-specific rules and guidance
-- `.claude/`: Claude-specific rules and guidance
+  - `docs/`: Project docs and references (`docs/ref`, `docs/arch`, `docs/temp`)
+  - `archive/`: Retired workflows (e.g. `archive/github-pages-deploy/`)
+- `.cursor/`: Cursor-specific rules and guidance (see `.cursor/rules/rules_index.md`)
+- `.claude/`: Claude-specific rules and guidance when present
 
-Note: Code lives in the project space (outside assistant directories). Assistant directories are scaffolding and guidance only.
+Note: Site content lives in the project space (outside assistant directories). Assistant directories are scaffolding and guidance only.
+
+## Live site and publish
+
+- Canonical host: `https://www.ssc.studio` (Tekhnema)
+- Local build: `npm run build`
+- Production deploy: `npm run deploy:tekhnema` (does **not** run on git push)
+- Full rules: `.cursor/rules/website_publish.mdc`
 
 ## Conventions and workflows
 
@@ -29,9 +38,9 @@ Note: Code lives in the project space (outside assistant directories). Assistant
 - `fix:` → PATCH (0.0.x)
 - `feat:` → MINOR (0.x.0)
 - `BREAKING CHANGE` or `!` → MAJOR (x.0.0)
-- `docs/style/refactor/test/chore` → PATCH (non-breaking)
+- `docs` / `style` / `refactor` / `test` / `chore` → PATCH (non-breaking)
 
-See `/.cursor/rules/024_changelog.mdc` for details on analysis, impact assessment, and release process.
+See `.cursor/rules/project_update.mdc` for analysis, bump, changelog, and tag flow. SemVer release does not auto-deploy; use `website_publish.mdc` to ship HTML.
 
 ### CHANGELOG
 
@@ -47,15 +56,11 @@ See `/.cursor/rules/024_changelog.mdc` for details on analysis, impact assessmen
 
 - Script: `.workspace/scripts/version-bump.sh`
 - Usage: `.workspace/scripts/version-bump.sh [patch|minor|major]`
-- Defaults: updates `package.json` via `npm version --no-git-tag-version` and, if present and enabled, updates display version in `src/renderer/index.html`
+- Updates `package.json` via `npm version --no-git-tag-version`
 
 Customization without editing the script:
 
 - Optional config file: `.workspace/config/version-bump.conf`
-  - `REQUIRE_CLEAN_TREE` (default: `false`)
-  - `PACKAGE_JSON_PATH` (default: `<repo_root>/package.json`)
-  - `UPDATE_DISPLAY_VERSION` (default: `true`)
-  - `DISPLAY_VERSION_HTML_PATH` (default: `<repo_root>/src/renderer/index.html`)
 - Optional hooks:
   - Pre: `.workspace/scripts/version-bump.pre.sh VERSION_TYPE CURRENT_VERSION`
   - Post: `.workspace/scripts/version-bump.post.sh VERSION_TYPE NEW_VERSION`
@@ -66,21 +71,16 @@ Recommended release flow:
 2. Run: `.workspace/scripts/version-bump.sh patch|minor|major`
 3. Update `CHANGELOG.md` for the new version
 4. Optionally: `npm install` to refresh `package-lock.json`
-5. Commit, tag, push:
-   - `git add .`
-   - `git commit -m "chore: bump version to X.Y.Z"`
-   - `git tag vX.Y.Z`
-   - `git push && git push --tags`
+5. Commit, tag, push (`chore(release): bump…`, then changelog commit, then `vX.Y.Z`)
+6. If the live site should update: `npm run deploy:tekhnema`
 
 ## Orientation steps for a new assistant
 
-1. Read this file and scan `.workspace/scripts/` and `.workspace/config/`
-2. Review assistant-specific rules (e.g., `.cursor/rules/`, `.claude/`)
-3. Check `package.json` for scripts, tooling, and version
-4. Review `CHANGELOG.md` and recent tags/commits for context
-5. If present, scan app entry points (e.g., `src/` tree) and build scripts
-6. Follow release/versioning rules from `/.cursor/rules/024_changelog.mdc`
-7. Add shared automation to `.workspace/scripts/` and document it in `.workspace/docs/`
+1. Read `AGENTS.md` and this file; scan `.workspace/scripts/` and `.cursor/rules/rules_index.md`
+2. Check `package.json` for scripts, tooling, and version
+3. Review `CHANGELOG.md` and recent tags/commits for context
+4. Use `npm run build` / `npm run serve` for local Quartz work
+5. Follow `.cursor/rules/project_update.mdc` for releases and `.cursor/rules/website_publish.mdc` for Tekhnema
 
 ## Etiquette for assistants
 
@@ -92,4 +92,4 @@ Recommended release flow:
 ## Environment
 
 - macOS development environment
-- Node.js and npm required for versioning and build tooling
+- Node.js >= 22 and npm for Quartz build and versioning

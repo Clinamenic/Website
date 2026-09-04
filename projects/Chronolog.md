@@ -21,3 +21,5 @@ version:
 source-url:
 active: true
 ---
+To do
+- build in optional Year selector into calendar section, to lessen the amount of date elements which need to be rendered

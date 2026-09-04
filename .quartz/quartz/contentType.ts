@@ -8,6 +8,8 @@ import type { QuartzPluginData } from "./plugins/vfile"
  * - `site-page` plus slug `index` (home): index.md suppressed sidebars/meta and disables TOC.
  * - `type: writing`: long-form essays overwhelmingly enabled every optional block
  *   (citation strip, graph, flex license row, backlinks, TOC, search).
+ * - `type: text`: reference texts in zettelgarten/ref/ with sidenotes enabled for
+ *   heading/block-linked zettel annotations.
  */
 export type ContentLayoutTemplate = "default" | "writing" | "site-page" | "homepage"
 
@@ -108,6 +110,26 @@ const homepageProfile: ContentTypeProfile = {
   showArchive: false,
 }
 
+/** Reference texts (zettelgarten/ref/) with zettel sidenote annotations */
+const referenceTextProfile: ContentTypeProfile = {
+  layout: "default",
+  searchable: true,
+  showExplorer: true,
+  showBacklinks: true,
+  showTOC: true,
+  showTitle: true,
+  showSubtitle: true,
+  showAuthor: true,
+  showDate: true,
+  showBanner: true,
+  showGraph: true,
+  showFlex: false,
+  showCitation: false,
+  showLicenseInfo: false,
+  showSidenotes: true,
+  showArchive: false,
+}
+
 /** Same column layout as site-page; formerly the separate "focused" profile (no local graph, citations on) */
 const serviceLikeProfile: ContentTypeProfile = {
   layout: "site-page",
@@ -131,6 +153,7 @@ const serviceLikeProfile: ContentTypeProfile = {
 /** Explicit catalogue for extension; unknown types fall back to `defaultProfile` */
 const registeredProfiles: Record<string, ContentTypeProfile> = {
   writing: writingEssayProfile,
+  text: referenceTextProfile,
   homepage: homepageProfile,
   /** Default site-section pages (non-index) mirror about.md et al. Slug branching handles index.md */
   "site-page": sitePageInnerProfile,
