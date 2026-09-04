@@ -6,7 +6,7 @@ Quartz digital garden / marketing site for Clinamenic. Content and framework liv
 
 - Rules index: `.cursor/rules/rules_index.md`
 - Workspace context: `.workspace/context.md`
-- Quartz architecture: `.workspace/docs/ref/quartz/quartz-architecture.md`
+- Quartz architecture: `.workspace/docs/arch/quartz-architecture.md`
 
 ## Always-on rules (pointers)
 

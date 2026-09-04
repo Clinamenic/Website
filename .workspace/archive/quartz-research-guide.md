@@ -6,7 +6,7 @@ This guide outlines a process for effectively handling research-related inquirie
 
 The goal is to provide a structured approach for tasks like comparative analysis, information extraction, summarization, and synthesis when dealing with substantial internal documents and potentially external sources.
 
-**Reference:** For technical details on Quartz features mentioned here (like search, backlinks, content processing), refer to `@quartz-architecture.md`.
+**Reference:** For technical details on Quartz features mentioned here (like search, backlinks, content processing), refer to `.workspace/docs/arch/quartz-architecture.md`.
 
 ## 2. Core Principles
 

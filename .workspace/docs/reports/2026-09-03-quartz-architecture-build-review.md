@@ -56,7 +56,7 @@ website/                          # content root (Obsidian-friendly)
 5. **Filter** `RemoveDrafts` then `ExplicitPublish` (`publish: true` required).  
 6. **Emit** AliasRedirects → ComponentResources → ContentPage → FolderPage → TagPage → ContentIndex → Assets → Static → NotFoundPage.
 
-This matches stock Quartz more closely than the narrative in `.workspace/docs/ref/quartz/quartz-architecture.md` (see §5).
+This matches stock Quartz more closely than the prior narrative that lived in `quartz-architecture.md` (see §5; that doc now lives under `arch/` and is site-specific).
 
 ### 1.3 Customization surface (what makes this fork local)
 
@@ -138,10 +138,10 @@ Average `content` field length ≈ **27 KB** per page. Difference is essentially
 Root `.gitignore` ignores **all** `package-lock.json`, including `.quartz/package-lock.json`. Lockfile exists on disk (~334 KB) but is not a reliable git artifact.  
 **Fix:** Track `.quartz/package-lock.json` (narrow the ignore rule); keep root lockfile ignored if root has no deps.
 
-### P1.5 Architecture reference doc is not authoritative
+### P1.5 Architecture reference doc is not authoritative — addressed 2026-09-03
 
-`.workspace/docs/ref/quartz/quartz-architecture.md` is a long, generic/aspirational Quartz treatise (fictional PluginManager, NavigationManager, Jest harness, ErrorRecovery, etc.). It diverges from this tree and misleads agents (`quartz.mdc` points here).  
-**Fix:** Replace with a short **site-specific** architecture note: pipeline diagram, plugin list from `quartz.config.ts`, content-type table, emit outputs, deploy path. Move or archive the generic essay.
+`.workspace/docs/arch/quartz-architecture.md` (moved from `ref/quartz/`) was previously a long, generic/aspirational Quartz treatise (fictional PluginManager, NavigationManager, Jest harness, ErrorRecovery, etc.).  
+**Status:** Replaced with a site-specific architecture reference (pipeline, plugins, content-type table, layouts, emitters, deploy, known gaps) and relocated under `arch/`. `quartz.mdc` / `AGENTS.md` point at the new path.
 
 ### P1.6 v3 restructure docs contradict git reality
 
@@ -231,7 +231,7 @@ Content root (website/)
 |-----|--------|
 | `AGENTS.md`, `website_publish.mdc`, `quartz.mdc` | Current for Tekhnema / local build |
 | `features/uuid-permalink-system.md` | Matches aliases emitter behavior |
-| `ref/quartz/quartz-architecture.md` | **Stale / fictional** relative to this fork |
+| `arch/quartz-architecture.md` | **Updated + moved 2026-09-03** — site-specific SoT under `arch/` |
 | `ref/quartz/quartz-arweave-index.md` | Paths and tooling partially obsolete |
 | `arch/v3-restructuring.md` | Historical; `.quartz` gitignore claim wrong |
 | `.quartz/README.md` | Meridian marketing claims not true for this checkout |
@@ -250,7 +250,7 @@ Content root (website/)
 
 ### Wave B — maintainability
 
-5. Replace `quartz-architecture.md` with a concise site-specific architecture page; demote the long essay.  
+5. ~~Replace `quartz-architecture.md` with a concise site-specific architecture page~~ (**done** 2026-09-03).  
 6. Collapse duplicate layout templates or make homepage structurally bare.  
 7. Track `.quartz/package-lock.json`; delete `*.original` and empty `plugins/`.  
 8. Fix DownloadMarkdown “unused” comment; drop FlexContainer2 if unused.

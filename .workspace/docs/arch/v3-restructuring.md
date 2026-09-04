@@ -178,5 +178,5 @@ custom-quartz/
 ## Related Documentation
 
 - [Custom-Quartz to Website Sync Plan](../temp/2025-10-15-custom-quartz-to-website-sync.md)
-- [Quartz Architecture](../ref/quartz/quartz-architecture.md)
+- [Quartz Architecture](./quartz-architecture.md)
 

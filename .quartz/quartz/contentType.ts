@@ -93,7 +93,7 @@ const sitePageInnerProfile: ContentTypeProfile = {
 /** Home page stays full width without side/meta chrome */
 const homepageProfile: ContentTypeProfile = {
   layout: "homepage",
-  searchable: false,
+  searchable: true,
   showExplorer: false,
   showBacklinks: false,
   showTOC: true,
