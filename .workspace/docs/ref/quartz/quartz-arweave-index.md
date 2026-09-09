@@ -103,6 +103,17 @@ The script uses arkb's bundling feature for efficient uploads:
 - Automatic retries on failed uploads
 - Caches uploads to avoid re-uploading unchanged files
 
+## Frontmatter migration
+
+To copy history from central index JSON into each page's `arweave-hashes` frontmatter (portfolio schema: `txId` / `uploadedAt`), use:
+
+```bash
+npm run migrate:arweave-hashes          # dry-run
+npm run migrate:arweave-hashes -- --apply
+```
+
+Script: `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs`. Sources: `.meridian/data/archive.json`, `.meridian/exports/archive.json`, and archived `.workspace/archive/tools/temp/arweave.json`. Does not modify `ArweaveIndex` yet.
+
 ## File Structure
 
 - `.cursor/tools/arweave-uploader.py` - Upload script
@@ -111,6 +122,7 @@ The script uses arkb's bundling feature for efficient uploads:
 - `quartz/components/ArweaveIndex.tsx` - Version history component
 - `quartz/components/styles/arweaveindex.scss` - Component styles
 - `data/arweave.json` - Version history index
+- `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs` - Index → frontmatter migration
 
 ## Index File Format
 

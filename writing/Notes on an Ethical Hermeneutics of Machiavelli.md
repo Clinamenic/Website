@@ -16,6 +16,9 @@ uuid: 3e5a522f-7b32-4909-9559-fd07b6d038a1
 publication-url: https://solosalon.substack.com/p/notes-on-an-ethical-hermeneutics
 keywords:
   - post-machiavellianism
+arweave-hashes:
+  - txId: tk3EN2S9PGtVu6tUkl1RDN_1ke90w1fS6LJDU9TqSB0
+    uploadedAt: "2024-11-02T00:52:43+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

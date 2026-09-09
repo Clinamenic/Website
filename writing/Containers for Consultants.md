@@ -24,6 +24,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 3c20ac50-e3f4-4b7b-9304-7abed12298d7
 publication-url: "-"
+arweave-hashes:
+  - txId: IA2DIJUr9UBYqdvjUy49osBdrSqNGHVfe5nbL3vyd7c
+    uploadedAt: "2023-09-25T18:51:41+00:00"
 ---
 
 By virtue of being public and deterministic, smart contracts enable novel approaches to business engagements. Where and when this novelty has real utility, however, is a matter still early in the unfolding.

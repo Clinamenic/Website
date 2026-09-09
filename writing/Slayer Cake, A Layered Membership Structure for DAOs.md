@@ -26,6 +26,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: a017e199-2054-48ef-a637-568e69348c8c
 publication-url: "-"
+arweave-hashes:
+  - txId: adYCfiTpszM00-hYZwjX0h7AXOFDUTtbZf-dpLTf_jU
+    uploadedAt: "2023-03-26T21:38:29+00:00"
 ---
 
 Despite frigid market conditions, the DAO space remains a robust laboratory for organizational design.

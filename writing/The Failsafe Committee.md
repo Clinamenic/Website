@@ -24,6 +24,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 707bafc0-4074-4ea1-98cd-ce7dd8e16961
 publication-url: https://solosalon.substack.com/p/the-failsafe-committee
+arweave-hashes:
+  - txId: 5RFMa6GU3HIrm4Mh6FEjnkGNQNoAoh5aRlSxaAkGU7k
+    uploadedAt: "2023-09-25T19:14:11+00:00"
 ---
 
 On-chain organizations have a multitude of techniques available to institute truly community-led governance, without the need for representatives or committees to approve the will of the community.

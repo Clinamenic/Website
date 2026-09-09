@@ -21,6 +21,11 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 22647dd6-7c7b-438b-9da9-20773f493e50
 publication-url: "-"
+arweave-hashes:
+  - txId: 4i6Y5Ncc_EbntkGLwv5d8gEflFSSoV1PhQCvO-Xuuvk
+    uploadedAt: "2025-08-16T15:45:21.837Z"
+  - txId: x8nQt_D95l72yLNLOzjifk5cOO-WVKfnj5ZQzHr__yg
+    uploadedAt: "2025-09-17T18:34:12.614Z"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

@@ -28,6 +28,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: b537813f-7859-4bb0-929c-f7090375820e
 publication-url: https://solosalon.substack.com/p/trust-and-trustlessness
+arweave-hashes:
+  - txId: "-mhdqD0HOi1GlWYQwygt_K85OKYlyZdNqSplU_GyWOM"
+    uploadedAt: "2023-01-21T23:22:02+00:00"
 ---
 
 One of the core innovations unfolding in the web3 space is the utilization of smart contracts to facilitate interpersonal dynamics, thus augmenting, if not altogether supplanting, any requisite counterparty trust. The idea is that counterparty trust has long required the parties involved to take measures to establish said trust, measures which may be time-consuming or costly, and that the minimization of such costs could be a boon for business in general.

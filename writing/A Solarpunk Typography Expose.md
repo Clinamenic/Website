@@ -26,6 +26,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: ca7f828d-9d36-4557-8e3b-7300001d25f0
 publication-url: https://solosalon.substack.com/p/a-solarpunk-typography-expose
+arweave-hashes:
+  - txId: Jb3VeB5IHdCy9l7jn_Wy3fZFM0fyH5OTGKRKS9eQdNE
+    uploadedAt: "2023-11-13T18:33:52+00:00"
 ---
 
 Characterized chiefly by its hopeful aesthetics of nature-technology balance, solarpunk is a relatively young genre and movement, and yet it has already secured a foothold among technologists who reject the otherwise prevailing prognoses of doom and dystopia. Combining aspects of liberal economics, bioregionalism, emerging technology, participatory civics, and various other ideas and traditions, solarpunk constitutes a syncretic and solutions-oriented "infraculture" geared toward a healthier future.

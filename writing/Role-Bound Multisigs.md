@@ -24,6 +24,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 26f1afd1-3d34-47db-be11-c68707fa13e4
 publication-url: https://solosalon.substack.com/p/role-bound-multisigs
+arweave-hashes:
+  - txId: gg2RXJ-jhjx5ylqmPYWZfhgpC-NjFc-XAvqanuDNzUo
+    uploadedAt: "2023-09-25T18:51:41+00:00"
 ---
 
 The multisig wallet is a powerful organizational primitive, enabling individuals to share control over funds and assets, and to collectively execute smart contract interactions. They can be created quickly and inexpensively, and they facilitate international financial cooperation.

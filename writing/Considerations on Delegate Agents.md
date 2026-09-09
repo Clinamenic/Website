@@ -18,6 +18,9 @@ type: writing
 url:
 uuid: 34e0a0b9-b0be-406d-8eb3-402678309d8f
 publication-url: "-"
+arweave-hashes:
+  - txId: 5zEpR__dnrhxGDmuBkJqfHsP1PwNBTk57sUZyBXx5Jw
+    uploadedAt: "2025-04-18T00:06:30.951501+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

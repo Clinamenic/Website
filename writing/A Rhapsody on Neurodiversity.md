@@ -24,6 +24,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 245497b4-8ced-46b3-a841-d8e683c09373
 publication-url: https://solosalon.substack.com/p/a-rhapsody-on-neurodiversity
+arweave-hashes:
+  - txId: A1BQ7QUEnQ5I6W-o-ot4GB0w832OkR0LbNAjtqPX_GQ
+    uploadedAt: "2023-01-17T21:08:26+00:00"
 ---
 
 As someone without formal experience in STEM higher education, but rather as a [**self-guided generalist**](https://solosalon.substack.com/p/mogenpro-background), I should perhaps preface what follows with an explanation of my intentions.

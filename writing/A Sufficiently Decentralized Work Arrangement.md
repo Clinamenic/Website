@@ -28,6 +28,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 6a9687f8-9470-4497-ac00-813b164517bf
 publication-url: https://solosalon.substack.com/p/a-sufficiently-decentralized-work
+arweave-hashes:
+  - txId: wXt1bW1sXe-ShxX0Pp_Jy06yrV4jvmppg_VS2x4nuJM
+    uploadedAt: "2023-01-21T23:19:55+00:00"
 ---
 
 One indicator that DAOs are still young in their development, is the fact that they are still searching for business models which fit the web3 ethos of decentralized power and transparency. Currently DAOs mainly rely on speculative asset sales and royalties, early-stage private investments, or grants to financially sustain their operations.

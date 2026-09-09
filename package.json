@@ -12,6 +12,7 @@
     "serve": "cd .quartz && npm run serve",
     "quartz": "cd .quartz && tsx ./quartz/bootstrap-cli.mjs",
     "strip-quartz-frontmatter": "node .workspace/scripts/remove-quartz-frontmatter.mjs",
+    "migrate:arweave-hashes": "node .workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs",
     "deploy:tekhnema": "/Users/gideon/Hub/projects/tekhnema-remote/.workspace/scripts/deploy-website.sh"
   }
 }

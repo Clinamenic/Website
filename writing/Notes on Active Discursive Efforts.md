@@ -16,6 +16,9 @@ uuid: 6bb44688-327e-4fad-b841-e1a8ce685969
 publication-url: "-"
 keywords:
   - auto-discourse
+arweave-hashes:
+  - txId: 5V_C2jsrTfSy7g05v7R7WIapntH4EagEvMkwGkCUzYE
+    uploadedAt: "2024-08-25T18:15:39+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

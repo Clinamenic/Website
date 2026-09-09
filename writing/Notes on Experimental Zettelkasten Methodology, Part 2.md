@@ -16,6 +16,9 @@ uuid: cecbb51f-fb07-456f-835d-36d4300fb89f
 publication-url: https://solosalon.substack.com/p/notes-on-experimental-zettelkasten-79a
 keywords:
   - zettelkasten
+arweave-hashes:
+  - txId: XGXJIK9bqziUAg4lDKHBrXVpVTNNVIIND0AaL04_PnM
+    uploadedAt: "2024-11-09T02:51:29+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

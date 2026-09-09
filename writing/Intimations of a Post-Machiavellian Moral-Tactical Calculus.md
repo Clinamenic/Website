@@ -18,6 +18,9 @@ type: writing
 url:
 uuid: b839b873-b32b-431c-9583-f8669ad41eac
 publication-url: https://solosalon.substack.com/p/intimations-of-a-post-machiavellian
+arweave-hashes:
+  - txId: nYtRGR01C1lMbie6R__XoMiX5ecUSdN9AiVUmqzxb1M
+    uploadedAt: "2025-04-18T00:06:30.959767+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

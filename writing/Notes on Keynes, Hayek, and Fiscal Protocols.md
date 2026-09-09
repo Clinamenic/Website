@@ -19,6 +19,9 @@ publication-url: https://solosalon.substack.com/p/notes-on-keynes-hayek-and-fisc
 keywords:
   - fiscal protocols
   - protocolization
+arweave-hashes:
+  - txId: uM0nTbf1nc5xmLjstGl6kxPBEhq5Rmsn2fgKILmL_CY
+    uploadedAt: "2024-10-06T20:36:33+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

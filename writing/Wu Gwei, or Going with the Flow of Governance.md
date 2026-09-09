@@ -25,6 +25,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 37c66fd7-dc8a-4baa-a266-ec28b3a23983
 publication-url: https://solosalon.substack.com/p/wu-gwei-or-going-with-the-flow-of
+arweave-hashes:
+  - txId: 2Yu2IpW_5BCSlokztrzgQKZScaDDVR71M39eX9gWLEs
+    uploadedAt: "2024-08-04T20:16:05+00:00"
 ---
 
 For some time people have wondered, however seriously, whether the acronym 'DAO' was at all intended as a nod to Daoism, or if it was just a coincidence of technical nomenclature. While the [**prevailing (albeit nascent) history**](https://policyreview.info/glossary/DAO) of DAOs doesn't seem to indicate much intentional relation between the two terms, there is one concept which may curiously unite them, namely that of [**wu wei**](https://en.wikipedia.org/wiki/Wu_wei).

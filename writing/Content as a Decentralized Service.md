@@ -28,6 +28,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: dc9a4759-964b-4ddd-8a38-ccd91e529eee
 publication-url: https://solosalon.substack.com/p/content-as-a-decentralized-service
+arweave-hashes:
+  - txId: _DJgldYi4gjB3_9XE47T4iwy0gmhF7ttCZ-T6lm2Trw
+    uploadedAt: "2023-01-21T20:24:17+00:00"
 ---
 
 At this early stage of the development of PubDAO, we are building the base layer of our service model, a model which could be called Content as a Service, or CaaS.

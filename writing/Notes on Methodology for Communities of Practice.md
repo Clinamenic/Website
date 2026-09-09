@@ -16,6 +16,9 @@ uuid: 4df08591-dc72-43d1-9236-853f6c43a3f4
 publication-url: https://solosalon.substack.com/p/notes-on-methodology-for-communities
 keywords:
   - community of practice
+arweave-hashes:
+  - txId: 9ZrAhEvc_H5d06n5A6PTreYjabMXv9bTGdF3xaE_3fU
+    uploadedAt: "2024-10-31T22:30:49+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]

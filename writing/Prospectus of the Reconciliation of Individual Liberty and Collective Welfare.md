@@ -25,6 +25,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 2c052cbc-a0fe-4585-86d5-7d6477db9eac
 publication-url: https://solosalon.substack.com/p/prospectus-of-the-reconciliation
+arweave-hashes:
+  - txId: fXBe4dKiAhhCieD2H4_vb3tZGms8CTwws-XeCRcb28Q
+    uploadedAt: "2024-05-23T17:44:35+00:00"
 ---
 
 ## Prefatory Comments on the Semantics, Intentions, and Method of the Discourse

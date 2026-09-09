@@ -27,6 +27,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 8166b4bc-4b46-4aba-be6d-e59607cc4aac
 publication-url: https://solosalon.substack.com/p/progressive-public-goods-funding
+arweave-hashes:
+  - txId: YwpUk7Vxn2c6YKPTGmODfyA5u1-n6VvrZHJXNDy1fBE
+    uploadedAt: "2024-04-05T20:19:02+00:00"
 ---
 
 _The following does not constitute legal, financial, accounting, or compliance advice, but is intended purely for informational purposes._

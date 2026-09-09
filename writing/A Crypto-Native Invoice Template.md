@@ -24,6 +24,9 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: e836933a-e99c-4c6a-abf3-9a03fe90f47c
 publication-url: "-"
+arweave-hashes:
+  - txId: p9gGX1WhTPClo3xP84rUHhNFd6f9CC_atIm6WIW2b9U
+    uploadedAt: "2024-03-26T04:29:44+00:00"
 ---
 
 Given how early the onchain economy is, compensation arrangements are often ambiguous and disordered, whether they involve DAO contributors or freelance service-providers. Despite the transparency of the underlying technology, allowing anyone to track payments between entities, personal and enterprise accounting practices remain largely undefined. This article will cover some basic practices for invoicing in the onchain economy, using both traditional invoice templates, as well as using smart contracts to facilitate invoices.

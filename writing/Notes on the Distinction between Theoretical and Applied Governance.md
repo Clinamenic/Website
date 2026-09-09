@@ -16,6 +16,9 @@ uuid: 79a7882b-cdd3-4cdd-a9ca-b560e1b10441
 publication-url: "-"
 keywords:
   - theoretical governance
+arweave-hashes:
+  - txId: Y-rz2GxolvHqX_QQWUwozUvXRNtvB2aAnYZIq51BFQU
+    uploadedAt: "2024-09-09T01:28:14+00:00"
 ---
 
 ![[Boilerplate#Canvas Foreword]]
