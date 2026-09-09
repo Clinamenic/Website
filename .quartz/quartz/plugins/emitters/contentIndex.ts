@@ -15,12 +15,15 @@ export type ContentDetails = {
   title: string
   links: SimpleSlug[]
   tags: string[]
-  content: string
+  content?: string
   richContent?: string
   date?: Date
   description?: string
   type?: string
 }
+
+/** Graph corpus: metadata only (no full-text body). */
+type GraphContentDetails = Omit<ContentDetails, "content" | "description" | "richContent">
 
 interface Options {
   enableSiteMap: boolean
@@ -36,6 +39,16 @@ const defaultOptions: Options = {
   rssLimit: 10,
   rssFullHtml: false,
   includeEmptyFiles: true,
+}
+
+function toGraphDetails(details: ContentDetails): GraphContentDetails {
+  return {
+    title: details.title,
+    links: details.links,
+    tags: details.tags,
+    date: details.date,
+    type: details.type,
+  }
 }
 
 function generateSiteMap(cfg: GlobalConfiguration, idx: ContentIndex): string {
@@ -101,24 +114,27 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       for (const [_tree, file] of content) {
         const sourcePath = file.data.filePath!
 
-        // Always add to graph for non-search features
+        // All published pages feed the graph index and sitemap/RSS
         graph.addEdge(
           sourcePath,
           joinSegments(ctx.argv.output, "static/contentIndex.json") as FilePath,
         )
+        if (opts?.enableSiteMap) {
+          graph.addEdge(sourcePath, joinSegments(ctx.argv.output, "sitemap.xml") as FilePath)
+        }
+        if (opts?.enableRSS) {
+          graph.addEdge(sourcePath, joinSegments(ctx.argv.output, "index.xml") as FilePath)
+        }
 
         const profile = getContentTypeProfile({
           type: file.data.frontmatter?.type,
           slug: file.data.slug,
         })
-        // Only add to search-related outputs when enabled for this content type
         if (profile.searchable) {
-          if (opts?.enableSiteMap) {
-            graph.addEdge(sourcePath, joinSegments(ctx.argv.output, "sitemap.xml") as FilePath)
-          }
-          if (opts?.enableRSS) {
-            graph.addEdge(sourcePath, joinSegments(ctx.argv.output, "index.xml") as FilePath)
-          }
+          graph.addEdge(
+            sourcePath,
+            joinSegments(ctx.argv.output, "static/searchIndex.json") as FilePath,
+          )
         }
       }
 
@@ -133,40 +149,44 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
-        
-        // Always add to linkIndex for graph functionality
-        if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
-          linkIndex.set(slug, {
-            title: file.data.frontmatter?.title!,
-            links: file.data.links ?? [],
-            tags: file.data.frontmatter?.tags ?? [],
-            content: file.data.text ?? "",
-            richContent: opts?.rssFullHtml
-              ? escapeHTML(toHtml(tree as Root, { allowDangerousHtml: true }))
-              : undefined,
-            date: date,
-            description: file.data.description ?? "",
-            type: typeof file.data.frontmatter?.type === 'string' ? file.data.frontmatter.type : undefined,
-          })
+        const hasContent = opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")
+
+        if (!hasContent) {
+          continue
         }
+
+        const details: ContentDetails = {
+          title: file.data.frontmatter?.title!,
+          links: file.data.links ?? [],
+          tags: file.data.frontmatter?.tags ?? [],
+          content: file.data.text ?? "",
+          richContent: opts?.rssFullHtml
+            ? escapeHTML(toHtml(tree as Root, { allowDangerousHtml: true }))
+            : undefined,
+          date: date,
+          description: file.data.description ?? "",
+          type: typeof file.data.frontmatter?.type === "string" ? file.data.frontmatter.type : undefined,
+        }
+
+        // Graph + sitemap/RSS: all published pages with content
+        linkIndex.set(slug, details)
 
         const profile = getContentTypeProfile({
           type: file.data.frontmatter?.type,
           slug: file.data.slug,
         })
-        // Only add to searchIndex when enabled for this content type
-        if (profile.searchable &&
-            (opts?.includeEmptyFiles || (file.data.text && file.data.text !== ""))) {
-          searchIndex.set(slug, linkIndex.get(slug)!)
+        // Search corpus: searchable types only (excludes type:text / zettelgarten/ref/)
+        if (profile.searchable) {
+          searchIndex.set(slug, details)
         }
       }
 
-      // Use searchIndex for search-related outputs
+      // Sitemap and RSS from full published set (not gated on searchable)
       if (opts?.enableSiteMap) {
         emitted.push(
           await write({
             ctx,
-            content: generateSiteMap(cfg, searchIndex),
+            content: generateSiteMap(cfg, linkIndex),
             slug: "sitemap" as FullSlug,
             ext: ".xml",
           }),
@@ -177,17 +197,20 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         emitted.push(
           await write({
             ctx,
-            content: generateRSSFeed(cfg, searchIndex, opts.rssLimit),
+            content: generateRSSFeed(cfg, linkIndex, opts.rssLimit),
             slug: "index" as FullSlug,
             ext: ".xml",
           }),
         )
       }
 
-      // Write both indexes to separate files
       const searchFp = joinSegments("static", "searchIndex") as FullSlug
       const graphFp = joinSegments("static", "contentIndex") as FullSlug
-      
+
+      const leanGraphIndex = Object.fromEntries(
+        Array.from(linkIndex.entries()).map(([slug, details]) => [slug, toGraphDetails(details)]),
+      )
+
       emitted.push(
         await write({
           ctx,
@@ -197,10 +220,10 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         }),
         await write({
           ctx,
-          content: JSON.stringify(Object.fromEntries(linkIndex)),
+          content: JSON.stringify(leanGraphIndex),
           slug: graphFp,
           ext: ".json",
-        })
+        }),
       )
 
       return emitted

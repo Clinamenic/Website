@@ -2,7 +2,7 @@
 
 Site-specific technical reference for the customized Quartz fork that builds this site. Prefer this document over generic Quartz essays when changing structure, plugins, layouts, or content-type behavior.
 
-**Last reviewed:** 2026-09-03  
+**Last reviewed:** 2026-09-08  
 **Upstream base:** Quartz 4.x (fork labeled `meridian-quartz` in `.quartz/package.json`; `package.json.original` records upstream `4.5.1`)  
 **Live host:** `https://www.ssc.studio` (Tekhnema)
 
@@ -156,8 +156,8 @@ Legacy per-page `quartzShow*` / `quartzSearch` frontmatter was replaced by a sin
 | `frontmatter.type` | Layout key | Notable flags |
 |--------------------|------------|---------------|
 | `writing` | `writing` | Full chrome; sidenotes; archive on; searchable |
-| `text` | `default` | Reference texts; sidenotes on; flex/citation/archive off |
-| `homepage` | `homepage` | Side/meta chrome off; **`searchable: false`** |
+| `text` | `default` | Reference texts (`zettelgarten/ref/`); sidenotes on; **`searchable: false`** (still in sitemap + graph) |
+| `homepage` | `homepage` | Side/meta chrome off; searchable |
 | `site-page` | `site-page` | Marketing/inner pages; author/date/banner off; flex/citation off |
 | `publication` | `site-page` (serviceLike) | Graph off; citation/license on |
 | `service` | `site-page` (serviceLike) | Same as publication |
@@ -176,11 +176,9 @@ Published notes commonly use `zettel`, and sometimes `project`, `resource`, `pre
 |----------|----------------|
 | `quartz.layout.ts` | `show*` callbacks on Banner, Explorer, Graph, etc. |
 | `emitters/contentPage.tsx` | `resolveContentPageLayout(type, slug)` |
-| `emitters/contentIndex.ts` | `searchable` gates search index **and** (currently) sitemap/RSS membership |
+| `emitters/contentIndex.ts` | `searchable` gates **searchIndex only**; sitemap/RSS use all published pages |
 | `transformers/toc.ts` | `showTOC` |
 | `CitationGenerator`, `ArweaveIndex` | `showCitation` / `showArchive` |
-
-**Caveat:** Reusing `searchable` for sitemap means `homepage` is omitted from `sitemap.xml` / RSS while still present in `contentIndex.json` for the graph. Prefer splitting those concerns if SEO requires the home URL in the sitemap.
 
 ---
 
@@ -221,12 +219,12 @@ Primary readable URLs remain path-based; UUID URLs are permanent redirects. See 
 
 | Output | Role |
 |--------|------|
-| `static/contentIndex.json` | Full link/graph corpus (all published pages with content) |
-| `static/searchIndex.json` | Search corpus (`profile.searchable` only) |
-| `sitemap.xml` | Built from **search** index today |
-| `index.xml` | RSS from **search** index (limit default 10) |
+| `static/contentIndex.json` | Lean graph corpus: `title`, `links`, `tags`, `type?`, `date?` (no body text) for all published pages |
+| `static/searchIndex.json` | Search corpus with full-text `content` for `profile.searchable` only (`type: text` / `zettelgarten/ref/` excluded) |
+| `sitemap.xml` | All published pages with content (not gated on `searchable`) |
+| `index.xml` | RSS from the same published set (limit default 10) |
 
-Payloads can be large (full page text per entry). Graph and search clients both download multi-megabyte JSON in current builds.
+Graph never needs body text. Search omits reference books so clients avoid multi-megabyte FlexSearch payloads.
 
 ### 6.3 Component resources
 
@@ -334,8 +332,7 @@ Tracked in `.workspace/docs/reports/2026-09-03-quartz-architecture-build-review.
 
 - `ignorePatterns` does not exclude `.workspace` / `.quartz` / `.meridian`; Meridian README claims are not implemented in this checkout.
 - Layout template keys are duplicated; homepage chrome is mostly flag-driven.
-- `searchable` incorrectly doubles as sitemap/RSS membership.
-- Arweave archive path vs `.meridian/data/archive.json` mismatch.
+- Arweave archive path vs `.meridian/data/archive.json` mismatch (`.meridian/` may be absent).
 - Root `.gitignore` ignores all `package-lock.json` (including `.quartz` lockfile).
 - Empty `.quartz/plugins/` directory and leftover `*.original` config snapshots are not part of the runtime design.
 

@@ -299,3 +299,13 @@ Published `type` values vs profiles (approx.):
 ---
 
 *Report only. No changes were made under `.quartz/` or content markdown for this examination.*
+
+---
+
+## Addendum — 2026-09-08 (index slim)
+
+Addressed in fork:
+
+- Sitemap/RSS no longer gated on `profile.searchable` (P0.1 / Wave A.1).
+- `type: text` (`zettelgarten/ref/`) sets `searchable: false`; pages remain in sitemap + lean graph index.
+- `contentIndex.json` emits metadata only (no body); full text lives only in `searchIndex.json` for searchable types (Wave C.9).

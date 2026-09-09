@@ -110,10 +110,10 @@ const homepageProfile: ContentTypeProfile = {
   showArchive: false,
 }
 
-/** Reference texts (zettelgarten/ref/) with zettel sidenote annotations */
+/** Reference texts (zettelgarten/ref/) with zettel sidenote annotations; omitted from FlexSearch */
 const referenceTextProfile: ContentTypeProfile = {
   layout: "default",
-  searchable: true,
+  searchable: false,
   showExplorer: true,
   showBacklinks: true,
   showTOC: true,
