@@ -30,6 +30,10 @@ arweave-upload.log
 # Environment & Secrets
 .env
 
+# Meridian local/runtime data (credentials, DBs, upload history)
+.meridian/
+.workspace/archive/meridian-archive/
+
 # Private & Local Content
 private/
 
