@@ -24,16 +24,17 @@ export default ((opts?: PublishDateOptions) => {
 
       // Check if the date is valid
       if (!isNaN(date.getTime())) {
-        return date
+        // UTC calendar day (same timezone contract as ArweaveIndex); append UTC
+        // explicitly because date-only + timeZoneName yields awkward "at UTC".
+        const formatted = date
           .toLocaleDateString(cfg.locale, {
             year: "numeric",
             month: "long",
             day: "numeric",
+            timeZone: "UTC",
           })
-          .replace(
-            /(\w+)\s(\d+),\s(\d+)/,
-            (_, month, day, year) => `${month.toUpperCase()} ${day}, ${year}`,
-          )
+          .replace(/^(\w+)/, (_, month: string) => month.toUpperCase())
+        return `${formatted} UTC`
       }
 
       // If the date is invalid, return the original string

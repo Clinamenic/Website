@@ -4,7 +4,7 @@ author:
 authorURL:
   - https://www.clinamenic.com
 bannerURI:
-date: 2026-09-10
+date: 2026-09-09
 keywords:
 language: en
 license: CC BY-NC-SA 4.0
@@ -29,7 +29,7 @@ In more direct terms, there are futures in which we can benefit from affordable 
 
 In our 20-person household called Embassy, which also operates as an active community space, we have home servers running run local-first apps and services. We run Home Assistant as a unified home automation framework, which can connect with our solar panels, our dryers, our light bulbs, our ESP sensors for temperature and humidity, and more. We host our own private AI, which we can use offline to chat with our finances, our appliances, and our knowledge base, without needing to trust any third parties. We have a media server which stores our film library, and speakers which automatically play classical music in the morning. We can download medical guides, appliance user manuals, and other key documents needed in the case of an emergency, so we can ask our house AI to explain these things to us where we lack the technical knowledge. All of this works offline: no subscriptions, no telemetry, no third parties involved.
 
-We are also exploring various other components: self-hosted biometric wearables; NFC chips around the house to explain house protocols to guests; cryptographically secure tools for communicating complex private information between community members; a self-hosted website and wiki; robots which use our local AI to chat with people in the house; offline lending platforms so community members can browse and borrow from our book collection, as well as from our tool collection; and ESP sensors placed in plants to signal vegetation health; local-first circuit-specific power monitoring.
+We are also exploring various other components: self-hosted biometric wearables; NFC chips around the house to explain house protocols to guests; cryptographically secure tools for communicating complex private information between community members; a self-hosted website and wiki; robots which use our local AI to chat with people in the house; offline lending platforms so community members can browse and borrow from our book collection, as well as from our tool collection; and ESP sensors placed in plants to signal vegetation health; and local-first circuit-specific power monitoring.
 
 Many of these components become more interesting as their utilities compound upon one another. For example, if we had self-hosted analytics for biometric rings, decibel sensors around the house, and speakers which can play white noise, then we can probabilistically modulate a white noise soundscape throughout the house to smooth out spikes in traffic noise during the night, based on readings of REM sleep disruption from our rings. If we had daylight sensors near our plants, those readings can be wired through Home Assistant to dynamically turn on grow lights near the plants; and likewise could soil moisture sensors be configured to activate automatic drip irrigators. If we had motion detection sensors throughout the house, we could program lights to turn off past a certain time of night, after a sufficient break in detected movement in the room. All of these things would operate in a unified system which would be legible to our local AI, and kept private from outside commercial interests.
 
