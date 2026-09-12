@@ -3,8 +3,8 @@ author:
   - Spencer Saar Cavanaugh
 authorURL:
   - https://www.clinamenic.com
-bannerURI:
-date: 2026-09-09
+bannerURI: /assets/banners/domestic-cybernetics.png
+date: 2026-09-11
 keywords:
 language: en
 license: CC BY-NC-SA 4.0
@@ -19,9 +19,13 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: bc35cc6e-33ad-4c69-b951-ffc3e70e4322
 ---
-"Then she generated the light, and the sight of her room, flooded with radiance and studded with electric buttons, revived her." (E.M. Forster, *The Machine Stops*)
+"Then she generated the light, and the sight of her room, flooded with radiance and studded with electric buttons, revived her."
 
-We have long dreamt of sentient homes and domestic automatons, with many such technologies actually coming to fruition in some form or another. Many of these technologies come as products which restrict customization, slouch intentionally toward obsolescence, and entail invasive telemetry practices as a crucial part of their business models. Does this promise of household intelligence, of an enlivened locale, truly require us to concede the privacy and autonomy of our own homes? Even putting aside the question of privacy, we still incur the risks of technical dependency on external parties, parties with policies and imperatives which often bear little obligation to adhere to the interests of those whom their technologies nominally serve. Indeed in this context we are framed as the users, our individual and communal nuance notwithstanding, and it is in this capacity that we receive such fickle fire.
+E. M. Forster, *The Machine Stops*
+
+---
+
+We have long dreamt of sentient homes and domestic automatons, with many such technologies actually coming to fruition in some form or another. Generally, they come as products which restrict customization, slouch intentionally toward obsolescence, and entail invasive telemetry practices as a crucial part of their business models. Does this promise of household intelligence, of an enlivened locale, truly require us to concede the privacy and autonomy of our own homes? Even putting aside the question of privacy, we still incur the risks of technical dependency on external parties, parties with policies and imperatives which often bear little obligation to adhere to the interests of those whom their technologies nominally serve. Indeed in this context we are framed as the users, our individual and communal nuance notwithstanding, and it is in this capacity that we receive such fickle fire.
 
 Even in the language of institutional economic liberalism, [technological progress](https://en.wikipedia.org/wiki/Solow%E2%80%93Swan_model) can force [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) which, in turn, scramble the relations of production. That is, the nature of the tools we have at our disposal is liable to change, but naturally that depends on who is building what, and for whom. The future may be unevenly distributed, and capital may tend to accumulate upward, but there nonetheless remain windows of opportunity to seize, in the spirit of the public good. 
 

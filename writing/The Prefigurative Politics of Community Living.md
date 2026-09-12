@@ -3,7 +3,7 @@ author:
   - Spencer Saar Cavanaugh
 authorURL:
   - https://www.clinamenic.com
-bannerURI:
+bannerURI: /assets/banners/prefigurative-politics.png
 date: 2026-09-09
 keywords:
 language: en
@@ -19,7 +19,11 @@ twitterCreator: "@clinamenic"
 type: writing
 uuid: 4f1dbe3c-70a4-4107-9740-ef61dfa7af06
 ---
-“When a complex system is far from equilibrium, small islands of coherence in a sea of chaos have the capacity to shift the entire system to a higher order.” (Ilya Prigogine)
+“When a complex system is far from equilibrium, small islands of coherence in a sea of chaos have the capacity to shift the entire system to a higher order.” 
+
+Ilya Prigogine
+
+---
 
 Living in community, especially a community actively aligned toward serving a particular cause, can imbue an otherwise mundane domestic life with splendid serendipity. The reduced cost of coordination, such as the high likelihood of spontaneous discussion and collaboration within the house, has proven over time to be conducive to various emergent developments. For example, our community house has several people actively working at the intersection of public goods and technology, and we've decided to host a residency to help catalyze collaboration across these efforts. 
 
