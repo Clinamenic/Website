@@ -693,7 +693,7 @@ document.addEventListener("DOMContentLoaded", function() {
       >Coming soon!</a>
   </p></div>
 
-<a href="https://autoglypha.clinamenic.com/?ref=clinamenic" class="text-box" id="autoglypha-box">
+<a href="https://autoglypha.ssc.studio/?ref=clinamenic" class="text-box" id="autoglypha-box">
   <div style="position: relative; width: 325px; height: 325px; display: flex; justify-content: center; align-items: center;">
     <svg viewBox="-150 -150 300 300" style="position: absolute; width: 325px; height: 325px; transform: rotate(145deg);">
       <path id="circle-path" d="M 0,90 A 90,90 0 1 1 0,-90 A 90,90 0 1 1 0,90" fill="none"/>

@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2023-09-25
 headDescription: A hedge to better enable a "Code is Law" organizational policy.
 headIcon:
@@ -11,7 +11,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: A hedge to better enable a "Code is Law" organizational policy
 tags:
@@ -41,7 +40,7 @@ Through a combination of smart contracts and internal policy, this failsafe comm
 
 ## On-Chain Architecture
 
-Below is a draft "blackprint" for an on-chain organization's implementation of a failsafe committee. For additional technical context, see my prior article about [**role-bound multisigs**](https://solosalon.clinamenic.com/2), which make use of the SignerGate contract from Hats Protocol, here represented by the yellow Safe logo.
+Below is a draft "blackprint" for an on-chain organization's implementation of a failsafe committee. For additional technical context, see my prior article about [**role-bound multisigs**](https://www.ssc.studio/writing/Role-Bound-Multisigs), which make use of the SignerGate contract from Hats Protocol, here represented by the yellow Safe logo.
 
 ![](https://storage.googleapis.com/papyrus_images/19815f0d428c49f13264bab8b71b6420.jpg)
 

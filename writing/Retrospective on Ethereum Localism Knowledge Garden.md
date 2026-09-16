@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2025-06-05
 headDescription:
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 structuredData:
 subtitle: Learnings from configuring a cosmolocal community knowledge base

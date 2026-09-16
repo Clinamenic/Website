@@ -74,7 +74,7 @@ export default ((opts?: Options) => {
               &nbsp;© 2024<br />
               Published to Arweave via&nbsp;
               <a href="https://protocol.land/#/repository/4323e52e-edf7-4f09-8d3c-b9add2bb14cb">Protocol.land</a><br />
-              Designed by <a href="https://www.clinamenic.com">Clinamenic LLC</a>
+              Designed by <a href="https://www.ssc.studio">Clinamenic LLC</a>
             </p>
 
             </div>

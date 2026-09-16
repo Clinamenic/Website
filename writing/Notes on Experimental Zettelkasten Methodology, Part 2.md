@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-11-08
 draft started: 2024-11-08
 headDescription: Prospects of a bespoke folgezettel UUID system and other considerations

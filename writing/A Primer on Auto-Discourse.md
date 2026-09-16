@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2024-05-03
 headDescription: Introductory remarks on an experimental mode of transparent discourse
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Introductory remarks on an experimental mode of transparent discourse
 tags:

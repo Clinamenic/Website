@@ -23,7 +23,7 @@ structuredData:
   provider:
     "@type": Organization
     name: Clinamenic LLC
-    url: https://clinamenic.com
+    url: https://www.ssc.studio
     founder:
       "@type": Person
       name: Spencer Saar Cavanaugh
@@ -45,7 +45,7 @@ structuredData:
         description: Personal and organizational wikis with various tiers of engagement
   mainEntityOfPage:
     "@type": WebPage
-    "@id": https://clinamenic.com/services
+    "@id": https://www.ssc.studio/services
 tags: []
 title: Services
 twitterCard: summary_large_image

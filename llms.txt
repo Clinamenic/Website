@@ -1,0 +1,39 @@
+# Clinamenic LLC / SSC Studio
+
+> Professional services and writing on organizational design, governance, branding, and digital knowledge systems. Public site at https://www.ssc.studio
+
+This file is a curated map for agents and documentation tools. It does not affect search rankings. Prefer these pages over thin notes or tag indexes.
+
+## Site
+
+- [Home](https://www.ssc.studio/): Consultancy overview
+- [About](https://www.ssc.studio/about): Media, presentations, and background
+- [Services](https://www.ssc.studio/services): Service offerings
+- [Writing portfolio](https://www.ssc.studio/writing): Essay index
+- [Zettelgarten hub](https://www.ssc.studio/zettelgarten): Knowledge garden entry (individual zettel notes are noindex by default)
+
+## Flagship writing
+
+- [Pre-Constitutional Governance](https://www.ssc.studio/writing/Pre-Constitutional-Governance)
+- [Notes on Experimental Zettelkasten Methodology](https://www.ssc.studio/writing/Notes-on-Experimental-Zettelkasten-Methodology)
+- [Notes on Experimental Zettelkasten Methodology, Part 2](https://www.ssc.studio/writing/Notes-on-Experimental-Zettelkasten-Methodology,-Part-2)
+- [A Primer on Auto-Discourse](https://www.ssc.studio/writing/A-Primer-on-Auto-Discourse)
+- [Considerations on Delegate Agents](https://www.ssc.studio/writing/Considerations-on-Delegate-Agents)
+- [What Are Onchain Organizations?](https://www.ssc.studio/writing/What-Are-Onchain-Organizations)
+- [The Failsafe Committee](https://www.ssc.studio/writing/The-Failsafe-Committee)
+- [Containers for Consultants](https://www.ssc.studio/writing/Containers-for-Consultants)
+- [Progressive Public Goods Funding](https://www.ssc.studio/writing/Progressive-Public-Goods-Funding)
+- [Intimations of a Post-Machiavellian Moral-Tactical Calculus](https://www.ssc.studio/writing/Intimations-of-a-Post-Machiavellian-Moral-Tactical-Calculus)
+- [Domestic Cybernetics, or If These Walls Could Talk](https://www.ssc.studio/writing/Domestic-Cybernetics,-or-If-These-Walls-Could-Talk)
+- [PKM Techniques for Stable Links, Flexible Tags, and Evolving Metadata](https://www.ssc.studio/writing/PKM-Techniques-for-Stable-Links,-Flexible-Tags,-and-Evolving-Metadata)
+- [Recuperate the Vanguard](https://www.ssc.studio/writing/Recuperate-the-Vanguard)
+
+## Machine indexes
+
+- [Sitemap](https://www.ssc.studio/sitemap.xml): Crawlable URL list
+- [RSS](https://www.ssc.studio/index.xml): Recent notes feed
+- [Search index JSON](https://www.ssc.studio/static/searchIndex.json): Full text for searchable page types only; fetch sparingly and rate-limit politely
+
+## Citations
+
+UUID permalinks of the form `https://www.ssc.studio/{uuid}` redirect to the canonical slug page and are stable citation targets. Prefer the canonical slug URL when sharing content with readers.

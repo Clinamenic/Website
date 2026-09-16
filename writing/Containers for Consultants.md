@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2023-07-23
 headDescription: How should consultants approach on-chain engagements with clients?
 headIcon:
@@ -11,7 +11,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: How should consultants approach on-chain engagements with clients?
 tags:

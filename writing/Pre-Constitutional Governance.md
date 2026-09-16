@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2023-11-24
 headDescription: A template and methodology for initializing your organization's governance
 headIcon:
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: A template and methodology for initializing your organization's governance
 tags:
@@ -65,7 +64,7 @@ This approach should not be considered a substitute for a set of legally-binding
 
 Below is attached a boilerplate document which may be used by an association of individuals to ratify a minimum viable framework for internal governance. This document includes a template for proposals to follow, and a lightweight framework of guidelines around how to make these proposals, and how to amend the proposal template and framework itself.
 
-Please feel free to copy the following template and fill out the designations as appropriate for your organization. Clinamenic LLC is available for [**billable hourly consultations**](https://www.clinamenic.com/services.html), if you would like to have your particular framework reviewed.
+Please feel free to copy the following template and fill out the designations as appropriate for your organization. Clinamenic LLC is available for [**billable hourly consultations**](https://www.ssc.studio/services), if you would like to have your particular framework reviewed.
 
 ```
  PRE-CONSTITUTIONAL GOVERNANCE FRAMEWORK

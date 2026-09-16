@@ -37,6 +37,9 @@ arweave-upload.log
 # Private & Local Content
 private/
 
+# Bookmark collections corpus stamp (touched by Obsidian plugin on index rebuild)
+collections/.corpus-stamp
+
 # Python Environment
 .venv/
 

@@ -16,6 +16,7 @@ publish: true
 service-category:
   - Governance
 subtitle: A custom governance framework for your early stage organization
+headDescription: A custom governance framework for your early-stage organization
 title: Custom Governance Framework
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

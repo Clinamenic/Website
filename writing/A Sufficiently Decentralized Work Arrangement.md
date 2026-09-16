@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/EOOrxyrx519Kaz2R5ULq_5IwX_AdK51rM4zK_OFkOqg
 date: 2023-01-21
 headDescription: One indicator that DAOs are still young in their development, is the fact that they are still searching for business models which fit the web3 ethos of decentralized power and transparency.
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/58IFNhSUmneWrH8Cr_zg5U09U2muI2FxQ-HtuCCv9Fw
 subtitle: Technological experiments around a peer-based economic model for business and governance

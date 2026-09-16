@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-10-12
 draft started: 2024-10-12
 headDescription: Some coverage of the various challenges faced in the construction of a bespoke multi-purpose zettelkasten.

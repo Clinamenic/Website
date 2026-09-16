@@ -27,14 +27,14 @@ structuredData:
     worksFor:
       "@type": Organization
       name: Clinamenic LLC
-      url: https://clinamenic.com
+      url: https://www.ssc.studio
   description: Presentations, interviews, and other media featuring Clinamenic LLC and Spencer Saar Cavanaugh. Learn more about our work in organization design, governance, and creative services.
   keywords: clinamenic, podcasts, spencer saar cavanaugh, clinamenic LLC, presentations, interviews, media
   image: https://arweave.net/QdjXOvmwj_JevlF53JDj5v0tMKRQz5gvPzgsh7ulKyc
   dateModified: 2024-03-19
   mainEntityOfPage:
     "@type": WebPage
-    "@id": https://clinamenic.com/about
+    "@id": https://www.ssc.studio/about
 tags: []
 title: About
 twitterCard: summary_large_image

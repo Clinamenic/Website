@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/xyErVkoWdB0uDWV5a5onev40x8gZBSd8yINxgzKKOrE
 date: 2023-01-17
 keywords:
@@ -12,13 +12,13 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Reflections on auto-didacticism and neurodiversity
 tags:
   - personal-discourse
   - text
 title: A Rhapsody on Neurodiversity
+headDescription: Reflections on auto-didacticism and neurodiversity
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: writing

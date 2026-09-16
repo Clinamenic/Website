@@ -20,6 +20,7 @@ publish: true
 service-category:
   - Design
 subtitle: A comprehensive suite of design assets and style guidelines for a new or established brand
+headDescription: A comprehensive suite of design assets and style guidelines for a new or established brand
 title: Extended Branding Kit
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

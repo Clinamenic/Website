@@ -27,7 +27,7 @@ structuredData:
         "name": "Spencer Saar Cavanaugh",
         "jobTitle": "Creative Director",
         "worksFor":
-          { "@type": "Organization", "name": "Clinamenic LLC", "url": "https://clinamenic.com" },
+          { "@type": "Organization", "name": "Clinamenic LLC", "url": "https://www.ssc.studio" },
       },
     "description": "The Zettelgarten of Spencer Saar Cavanaugh - an experimental knowledge graph blending zettelkasten methodology with digital gardening principles.",
     "keywords": "clinamenic, zettelgarten, spencer saar cavanaugh, clinamenic LLC, zettelkasten, digital garden, hypergraph",
@@ -46,7 +46,7 @@ structuredData:
           "description": "A method of cultivating and sharing knowledge online",
         },
       ],
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://clinamenic.com/zettelgarten" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ssc.studio/zettelgarten" },
   }
 tags:
   - zettelkasten

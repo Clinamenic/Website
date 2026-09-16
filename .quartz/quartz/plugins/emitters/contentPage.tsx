@@ -15,10 +15,11 @@ import {
   resolveContentPageLayout,
   sharedPageComponents,
 } from "../../../quartz.layout"
-import { Content } from "../../components"
+import { CollectionContent, Content } from "../../components"
 import chalk from "chalk"
 import { write } from "./helpers"
 import DepGraph from "../../depgraph"
+import { loadBookmarkCorpus, resolveBookmarkIndexPath, resolveCorpusStampPath } from "../../util/loadBookmarkCorpus"
 
 // get all the dependencies for the markdown file
 // eg. images, scripts, stylesheets, transclusions
@@ -56,20 +57,24 @@ const parseDependencies = (argv: Argv, hast: Root, file: VFile): string[] => {
 }
 
 export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
-  const toFullLayout = (pageLayout: PageLayout): FullPageLayout => ({
+  const isCollectionType = (type: unknown) => String(type ?? "").trim() === "collection"
+
+  const toFullLayout = (pageLayout: PageLayout, type: unknown): FullPageLayout => ({
     ...sharedPageComponents,
     ...pageLayout,
-    pageBody: Content(),
+    pageBody: isCollectionType(type) ? CollectionContent() : Content(),
     ...userOpts,
   })
 
   const getLayoutForType = (type: unknown, slug: unknown): FullPageLayout =>
-    toFullLayout(resolveContentPageLayout(type, slug))
+    toFullLayout(resolveContentPageLayout(type, slug), type)
 
-  const getAllLayouts = (): FullPageLayout[] =>
-    Object.values(contentPageLayoutTemplates).map((pageLayout) =>
-      toFullLayout(pageLayout),
-    )
+  const getAllLayouts = (): FullPageLayout[] => [
+    ...Object.values(contentPageLayoutTemplates).map((pageLayout) =>
+      toFullLayout(pageLayout, "default"),
+    ),
+    toFullLayout(contentPageLayoutTemplates.collection, "collection"),
+  ]
 
   const Header = HeaderConstructor()
   const Body = BodyConstructor()
@@ -88,14 +93,45 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
     async getDependencyGraph(ctx, content, _resources) {
       const graph = new DepGraph<FilePath>()
 
+      const collectionOutputs: FilePath[] = []
       for (const [tree, file] of content) {
         const sourcePath = file.data.filePath!
         const slug = file.data.slug!
-        graph.addEdge(sourcePath, joinSegments(ctx.argv.output, slug + ".html") as FilePath)
+        const outputPath = joinSegments(ctx.argv.output, slug + ".html") as FilePath
+        graph.addEdge(sourcePath, outputPath)
 
         parseDependencies(ctx.argv, tree as Root, file).forEach((dep) => {
           graph.addEdge(dep as FilePath, sourcePath)
         })
+
+        if (isCollectionType(file.data.frontmatter?.type)) {
+          collectionOutputs.push(outputPath)
+        }
+      }
+
+      if (collectionOutputs.length > 0) {
+        const stampPath = resolveCorpusStampPath(ctx) as FilePath
+        const indexPath = resolveBookmarkIndexPath(ctx) as FilePath
+        for (const outputPath of collectionOutputs) {
+          graph.addEdge(stampPath, outputPath)
+          graph.addEdge(indexPath, outputPath)
+        }
+
+        try {
+          const records = await loadBookmarkCorpus(ctx)
+          for (const record of records) {
+            for (const outputPath of collectionOutputs) {
+              graph.addEdge(record.filePath, outputPath)
+            }
+          }
+        } catch (err) {
+          if (ctx.argv.verbose) {
+            const message = err instanceof Error ? err.message : String(err)
+            console.log(
+              chalk.yellow(`ContentPage dependency graph: could not load bookmark corpus (${message})`),
+            )
+          }
+        }
       }
 
       return graph
@@ -104,6 +140,13 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       const cfg = ctx.cfg.configuration
       const fps: FilePath[] = []
       const allFiles = content.map((c) => c[1].data)
+
+      const hasCollectionPages = content.some(([, file]) =>
+        isCollectionType(file.data.frontmatter?.type),
+      )
+      if (hasCollectionPages) {
+        await loadBookmarkCorpus(ctx)
+      }
 
       let containsIndex = false
       for (const [tree, file] of content) {

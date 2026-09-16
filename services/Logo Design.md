@@ -17,6 +17,7 @@ service-category:
   - Design
 subtitle:
 title: Logo Design
+headDescription: Custom logo design for new or established brands by Clinamenic LLC
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: service

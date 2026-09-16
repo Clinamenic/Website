@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/SE7Zm0pn6jbAg5tLwspSK_C8ckuBC9zS98QdmLLz6iw
 date: 2023-01-21
 headDescription:
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/r26ztiaaCV89ykuKaVwa_KgHmC6YW8Q6rBNDLqFWETw
 subtitle: Experimental methodology for organizational transparency, accessibility, and individual empowerment

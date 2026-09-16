@@ -17,6 +17,7 @@ service-category:
   - Governance
 subtitle:
 title: Grant Program Committee
+headDescription: Retainer service for grant program committee design, facilitation, and operations
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: service

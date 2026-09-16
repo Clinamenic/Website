@@ -195,7 +195,7 @@ Below are some examples of my organizational maps and ontological diagrams, made
 
 ## Lattelier
 
-Below are selected output from [Lattelier](https://lattelier.clinamenic.com), a lattice-based distortion pattern generator I created and deployed to Arweave.
+Below are selected output from [Lattelier](https://lattelier.ssc.studio), a lattice-based distortion pattern generator I created and deployed to Arweave.
 
 <div class="gallery cols-3">
   <div class="gallery-column">

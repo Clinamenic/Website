@@ -76,7 +76,7 @@ From `quartz.config.ts`:
 
 1. `AliasRedirects` — aliases, permalink, **UUID** → HTML meta-refresh pages  
 2. `ComponentResources` — bundled CSS/JS from all registered layout components  
-3. `ContentPage` — one HTML page per published note (layout from content type)  
+3. `ContentPage` — one HTML page per published note (layout from content type). Pages with `type: collection` use `CollectionContent` to resolve filtered bookmarks from the external corpus at build time; see [bookmark-collections.md](./bookmark-collections.md).  
 4. `FolderPage` / `TagPage` — list pages  
 5. `ContentIndex` — `sitemap.xml`, `index.xml` (RSS), `static/searchIndex.json`, `static/contentIndex.json`  
 6. `Assets` — non-markdown files from content tree  
@@ -282,7 +282,9 @@ uuid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   # optional but recommended
 ---
 ```
 
-Common SEO / Head fields (see `components/Head.tsx`): `headDescription`, `subtitle`, `keywords`, `bannerURI`, `headIcon`, `canonicalUrl`, `ogType`, `ogSiteName`, `twitterCard`, `twitterCreator`, `structuredData`.
+Common SEO / Head fields (see `components/Head.tsx`): `headDescription`, `subtitle`, `keywords`, `bannerURI`, `headIcon`, `canonicalUrl`, `ogType`, `ogSiteName`, `twitterCard`, `twitterCreator`, `structuredData`, `index` (opt into crawl for `type: zettel`; see `util/indexPolicy.ts`).
+
+Root `llms.txt` (content root, copied by Assets) is a curated agent entry map; revisit quarterly.
 
 Publishing gate is **ExplicitPublish**: without `publish: true`, the file is parsed (if globbed) but not emitted.
 

@@ -19,6 +19,7 @@ service-category:
   - Design
 subtitle:
 title: General Consultation
+headDescription: Hourly consultation on knowledge management, governance, and design from Clinamenic LLC
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: service

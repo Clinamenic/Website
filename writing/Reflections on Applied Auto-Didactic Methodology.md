@@ -1,7 +1,7 @@
 ---
 author:
   - Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 bannerURI:
 date: 2025-02-03
 headDescription:

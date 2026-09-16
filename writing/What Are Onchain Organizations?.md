@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2023-12-10
 headDescription: Using smart contracts to design organizations and facilitate governance processes
 headIcon:
@@ -11,7 +11,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Using smart contracts to design organizations and facilitate governance processes
 tags:
@@ -89,7 +88,7 @@ Many onchain organizations actually use smart contracts for some or all of their
 
 The benefits include the potential for structural decentralization and censorship-resistance. Stakeholders can rest assured that proposals which are passed in a fully onchain manner _will_ be executed, whereas with off-chain proposals, there is always the risk that some executive figure, usually a multisig signer, will circumvent or ignore the popular opinion.
 
-The risks of onchain governance include the difficulty, or even impossibility, of intervening in situations of bugs or unforeseen technical circumstances. There is also the risk of an unscrupulous stakeholder making a dangerous or illegal proposal, and gaming the system to force that proposal through. That said, there are onchain methods, such as the [**failsafe committee**](https://solosalon.clinamenic.com/3)**,** to enable manual emergency intervention to prevent such malicious acts.
+The risks of onchain governance include the difficulty, or even impossibility, of intervening in situations of bugs or unforeseen technical circumstances. There is also the risk of an unscrupulous stakeholder making a dangerous or illegal proposal, and gaming the system to force that proposal through. That said, there are onchain methods, such as the [**failsafe committee**](https://www.ssc.studio/writing/The-Failsafe-Committee)**,** to enable manual emergency intervention to prevent such malicious acts.
 
 If onchain governance is of interest to your organization, two of the leading industry standards are the [**Moloch framework**](https://daohaus.club/moloch) and the [**Governor framework**](https://docs.tally.xyz/user-guides/deploying-governor-daos/deploy-a-governor), both of which are smart contracts which facilitate voting, proposals, and member onboarding.
 
@@ -115,7 +114,7 @@ With Hats Protocol, a hierarchy of roles can be created, called a hat tree, and 
 
 For example, one hat can be configured to give the wearer signer access to a multisig, whereas another hat can give the wearer permission to submit proposals in the organization's governance framework. This first example, of a hats-integrated multisig, is one of the more versatile examples of combining smart contracts. Normally multisigs have regular individual accounts attached as signers, but with hats-integrated multisigs, that signer position becomes abstracted into a role, a hat which can be transferred from one user to another.
 
-Yes, depending on how the organization has configured its internal governance processes, these hats can be transferred from one user to another, or they can have their settings adjusted, or they can be revoked. If an onchain organization wants to enable a community of stakeholders to [**elect signers to their multisig treasury**](https://solosalon.clinamenic.com/2), they can use Hats Protocol.
+Yes, depending on how the organization has configured its internal governance processes, these hats can be transferred from one user to another, or they can have their settings adjusted, or they can be revoked. If an onchain organization wants to enable a community of stakeholders to [**elect signers to their multisig treasury**](https://www.ssc.studio/writing/Role-Bound-Multisigs), they can use Hats Protocol.
 
 To take a step back, hats are assets that are held by individual accounts, or smart contracts (because they can both hold assets), and which can be programmed to grant the holder certain levels access or authority. They are called "hats" as a nod to the colloquialism of a person "wearing a hat" by operating in a certain role or position. To create and manage hats, you create a new "hat tree" which starts with a single parent hat, below which you can create a large number of child hats, allowing you to engineer an intricate system of roles. As such, Hats Protocol is a very interesting example of a smart contract which can be used as a building block for onchain organizations.
 
@@ -137,4 +136,4 @@ It may be worthwhile to go over the above diagram one more time, before getting 
 
 All of this is intended to demonstrate how smart contracts can be combined in useful ways to facilitate sophisticated and transparent governance models, some of which present profound implications for how humans do business and do politics.
 
-[**_Clinamenic LLC_**](https://www.clinamenic.com/) _is available for hourly consultations and service retainers regarding onchain governance and operations._
+[**_Clinamenic LLC_**](https://www.ssc.studio/) _is available for hourly consultations and service retainers regarding onchain governance and operations._

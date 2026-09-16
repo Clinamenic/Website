@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-12-02
 doi:
 headDescription: Implications of an arrangement whereby representative agents predictively queue voting decisions for users.

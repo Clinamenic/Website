@@ -17,6 +17,7 @@ service-category:
   - Governance
 subtitle:
 title: Project Governance Council
+headDescription: Retainer service for ongoing project governance council facilitation and support
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: service

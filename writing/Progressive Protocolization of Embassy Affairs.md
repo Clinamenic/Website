@@ -2,14 +2,13 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2026-01-28
 keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: false
 subtitle: A message containing ideas and aspirations around domestic cybernetics, posted to an internal residents' channel
 tags:

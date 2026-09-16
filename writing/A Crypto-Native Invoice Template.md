@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2024-03-05
 headDescription: Early thoughts on best practices for crypto-native invoicing, and an invoice template.
 headIcon:
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Early thoughts on best practices for crypto-native invoicing, and an invoice template
 tags:
@@ -78,4 +77,4 @@ While the above template regards using standard invoicing practices, only with c
 
 _Clinamenic LLC is a solo consultancy and service provider. The above content is intended as a public good, freely accessible for informational purposes. If you wish to support Clinamenic LLC, please consider collecting an edition of this post._
 
-_If you seek consultation or other services from Clinamenic LLC, please feel free to_ [**_browse available services_**](https://www.clinamenic.com/) _and reach out to_ [**_ssc@clinamenic.com_**](mailto:ssc@clinamenic.com) _with your inquiries._
+_If you seek consultation or other services from Clinamenic LLC, please feel free to_ [**_browse available services_**](https://www.ssc.studio/) _and reach out to_ [**_ssc@clinamenic.com_**](mailto:ssc@clinamenic.com) _with your inquiries._

@@ -2,18 +2,18 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: http://i.ibb.co/pjV24YTb/second-brain.png
 date: 2026-05-26
 keywords:
 language: en
 license:
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Personal knowledge management practices for permalinks, tag-based file organization, and metadata schemas that can evolve with your needs
 tags:
 title: PKM Techniques for Stable Links, Flexible Tags, and Evolving Metadata
+headDescription: Personal knowledge management practices for permalinks, flexible tags, and metadata schemas that evolve with your needs
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: publication
@@ -35,15 +35,15 @@ One way to address this is via permalinks, or alternative links which are design
 
 For example, below is the URL for an article I wrote:
 
-- [https://www.clinamenic.com/writing/A-Rhapsody-on-Neurodiversity](https://www.clinamenic.com/writing/A-Rhapsody-on-Neurodiversity')
+- [https://www.ssc.studio/writing/A-Rhapsody-on-Neurodiversity](https://www.ssc.studio/writing/A-Rhapsody-on-Neurodiversity)
 
 If I were to move this article (a markdown file named ‘A Rhapsody on Neurodiversity.md’) from the ‘writing’ folder to another folder, say ‘blog’, the above link would no longer work, and the article would then be available at the following:
 
-- [https://www.clinamenic.com/blog/A-Rhapsody-on-Neurodiversity](https://www.clinamenic.com/blog/A-Rhapsody-on-Neurodiversity)
+- [https://www.ssc.studio/blog/A-Rhapsody-on-Neurodiversity](https://www.ssc.studio/blog/A-Rhapsody-on-Neurodiversity)
 
 Because I have UUID permalinks enabled, I can use the following stable link to point to the current URL for that article, even if I move the article to a different folder:
 
-- [https://www.clinamenic.com/245497b4-8ced-46b3-a841-d8e683c09373](https://www.clinamenic.com/245497b4-8ced-46b3-a841-d8e683c09373)
+- [https://www.ssc.studio/245497b4-8ced-46b3-a841-d8e683c09373](https://www.ssc.studio/245497b4-8ced-46b3-a841-d8e683c09373)
 
 This means that I can share and publish the above permalink without the tension of knowing that the link will break if I change the article title or move it to a different folder.
 
@@ -92,7 +92,7 @@ For example, I just reactivated my Substack account, after several years of dorm
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/xyErVkoWdB0uDWV5a5onev40x8gZBSd8yINxgzKKOrE
 date: 2023-01-17
 keywords:
@@ -102,7 +102,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Reflections on auto-didacticism and neurodiversity
 tags:

@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2024-04-05
 headDescription: Publicly tracking impact progress, and balancing between proactive and retroactive funding models
@@ -14,7 +14,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Publicly tracking impact progress, and balancing between proactive and retroactive funding models
 tags:
@@ -111,4 +110,4 @@ During the impact certification stage, which can be several months after the gra
 
 Many of the ideas explored above are posited as potential solutions to perceived inefficiencies in the existing philanthropic sector, while other ideas are more experimental and innovative in nature. In both cases, experimentation is required to discern how effective these technologies and techniques are. Fortunately, at the time of writing, [**this very methodology is about to be implemented for a grant round**](https://gov.gitcoin.co/t/gg20-proposal-opencivics-consortium-round/18296), with the hope of not only allocating funding to non-profit projects, but also of innovating upon the very nature of the allocation of such funding.
 
-[**_Clinamenic LLC_**](https://www.clinamenic.com/) _is available for hourly consultations and service retainers regarding onchain governance and operations._
+[**_Clinamenic LLC_**](https://www.ssc.studio/) _is available for hourly consultations and service retainers regarding onchain governance and operations._

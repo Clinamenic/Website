@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/IDVBPcLEntrZ09zDqjzjk1ETPnHNeWKuMlQdTIELnTg
 date: 2023-11-01
 headDescription: A potential solution to the content moderation problem
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: A potential solution to the content moderation problem
 tags:

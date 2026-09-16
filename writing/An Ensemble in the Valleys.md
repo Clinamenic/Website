@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2025-12-09
 keywords:
@@ -12,11 +12,11 @@ keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Auto-discursive Reflections on Active Rhizomatic Individuation
 tags:
 title: An Ensemble in the Valleys
+headDescription: Auto-discursive reflections on active rhizomatic individuation
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: writing

@@ -1,7 +1,7 @@
 ---
 author:
   - Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 bannerURI:
 date: 2025-04-01
 headDescription:
@@ -42,7 +42,7 @@ Additionally, as a generalist consultant active in the intersection of emerging 
 
 ## Cultivating Software Development Skills
 
-A month and a half ago, I started creating a typography app using Cursor, within a custom framework of rules and prompting technique (see [[Cursor Rules Framework]]). During the previous month, I had made [Autoglypha](https://autoglypha.clinamenic.com/), a glyph-based cellular automata animation web app, deployed on Arweave. Prior to this, I had virtually no software development experience, and could only really understand HTML and CSS. I would have only been able to roughly infer the difference between "development" and "production" environments, and even still my understanding is at an early stage.
+A month and a half ago, I started creating a typography app using Cursor, within a custom framework of rules and prompting technique (see [[Cursor Rules Framework]]). During the previous month, I had made [Autoglypha](https://autoglypha.ssc.studio/), a glyph-based cellular automata animation web app, deployed on Arweave. Prior to this, I had virtually no software development experience, and could only really understand HTML and CSS. I would have only been able to roughly infer the difference between "development" and "production" environments, and even still my understanding is at an early stage.
 
 This project seemed like a great opportunity to feed a few birds with one hand, professionally and educationally. I defaulted to developing Runique as a web app, only because thats what I did with Autoglypha.
 

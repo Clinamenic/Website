@@ -29,10 +29,22 @@ The following frontmatter keys are proposed to control SEO and social sharing me
 | `twitterCard`     | `<meta name="twitter:card">`                                         | `string`             | Optional        | Twitter card type ('summary', 'summary_large_image', 'app', 'player'). Defaults to **'summary_large_image' if `bannerURI` is present, 'summary' otherwise.**                                                              |
 | `twitterSite`     | `<meta name="twitter:site">`                                         | `string`             | Optional        | The Twitter handle of the site owner/publisher (e.g., '@clinamenic').                                                                                                                                                     |
 | `twitterCreator`  | `<meta name="twitter:creator">`                                      | `string`             | Optional        | The Twitter handle of the content author (e.g., '@gidworks').                                                                                                                                                             |
-| `structuredData`  | `<script type="application/ld+json">`                                | `object`\|`string`   | **Highly Rec.** | **Crucial for rich results.** JSON-LD structured data object or a stringified JSON object. Enables rich snippets (ratings, FAQs, article info, etc.) in search results. See schema.org for types.                         |
+| `structuredData`  | `<script type="application/ld+json">`                                | `object`\|`string`   | Optional override | Deep-merged over auto-generated schema from `type` (see Auto schema below). Frontmatter keys win. |
 | `headIcon`        | `<link rel="icon">`                                                  | `string`             | Optional        | Path (absolute or relative) to the favicon. Defaults to `static/icon.png`.                                                                                                                                                |
 
-**Note:** `headIcon` exists but had type errors in the provided context. `bannerURI` also had potential type issues related to absolute/relative URL handling that should be resolved in `Head.tsx`.
+### Auto schema (Head.tsx / `util/structuredData.ts`)
+
+`Head` builds a baseline JSON-LD object from `frontmatter.type`, then deep-merges any `structuredData` override on top:
+
+| `type` | Auto `@type` |
+| ------ | ------------ |
+| `homepage` (or slug `index`) | `@graph` of `WebSite` + `Organization` |
+| `writing`, `publication` | `BlogPosting` (author, dates, image, `isBasedOn` from `publication-url` when set) |
+| `service` | `Service` |
+| `site-page` and other indexable types | `WebPage` |
+| `zettel`, `text` | none (no auto schema) |
+
+Defaults when omitted: `ogType` is `article` for writing/publication, `website` for homepage/site-page/service; `twitter:site` is `@clinamenic`.
 
 ## 4. Best Practices for Rich Discoverability
 
@@ -62,19 +74,19 @@ ogType: CollectionPage # More specific than 'article' for a portfolio
 twitterCard: summary_large_image
 twitterSite: "@clinamenic"
 twitterCreator: "@gidworks"
-canonicalUrl: "https://clinamenic.com/design" # Explicit canonical URL
+canonicalUrl: "https://www.ssc.studio/design" # Explicit canonical URL
 structuredData:
   "@context": "https://schema.org"
   "@type": "CollectionPage"
   "name": "Clinamenic Design Portfolio"
   "description": "A showcase of innovative graphic design and branding projects by Clinamenic LLC. Discover logos, diagrams, and more."
-  "url": "https://clinamenic.com/design"
+  "url": "https://www.ssc.studio/design"
   "publisher":
     "@type": "Organization"
     "name": "Clinamenic LLC"
     "logo":
       "@type": "ImageObject"
-      "url": "https://clinamenic.com/static/icon.png"
+      "url": "https://www.ssc.studio/static/icon.png"
   # Example of breadcrumbs within the same script
   "breadcrumb":
     "@type": "BreadcrumbList"
@@ -82,21 +94,21 @@ structuredData:
       - "@type": "ListItem"
         "position": 1
         "name": "Home"
-        "item": "https://clinamenic.com/"
+        "item": "https://www.ssc.studio/"
       - "@type": "ListItem"
         "position": 2
         "name": "Design Portfolio"
-        "item": "https://clinamenic.com/design"
+        "item": "https://www.ssc.studio/design"
 ---
 Page content starts here...
 ```
 
 ## 6. Implementation Notes
 
-- The `quartz/components/Head.tsx` component needs to be **thoroughly reviewed and updated** to:
-  - Correctly parse all the fields listed above, applying the specified defaults.
-  - Reliably handle both absolute and relative URLs for `bannerURI`, `canonicalUrl`, `ogUrl`, and `headIcon`.
-  - **Robustly handle `structuredData`**: Ensure it correctly stringifies JSON objects and embeds them within the `<script type="application/ld+json">` tag. Consider a dedicated helper function or integrating a schema builder library if complexity increases.
-- **Address TypeScript errors**: Fix the type errors noted in `Head.tsx` related to `headIcon`, `bannerURI`, `ogImagePath`, and `iconPath`. Prioritize type safety, using type guards, optional chaining (`?.`), and nullish coalescing (`??`) appropriately when accessing potentially undefined frontmatter properties.
-- **Validation:** Consider adding warnings during the build process if required fields (`title`, `headDescription`) are missing or if `structuredData` fails basic validation (e.g., cannot be parsed as JSON).
-- **Default `ogType`**: Implement logic to default `ogType` to 'article' for most pages but potentially 'website' for the root index page.
+- Auto schema and merge live in `quartz/util/structuredData.ts`, wired from `quartz/components/Head.tsx`.
+- Prefer omitting `ogType` on essays so Head defaults to `article`; do not set `ogType: website` on `type: writing` pages.
+- Prefer omitting `structuredData` on typical essays — `BlogPosting` is generated from title, description, author, dates, and image.
+- Use `structuredData` on section pages (about, writing portfolio, services) to specialize `@type` (e.g. `AboutPage`); it deep-merges over the auto `WebPage` baseline.
+- **Index policy** (`quartz/util/indexPolicy.ts`): `type: zettel` is `noindex` and excluded from sitemap/RSS by default. Set `index: true` to opt a note back into crawl discovery. `index: false` forces noindex on any type. FlexSearch stays off for all zettel (`searchable: false`).
+- Run `npm run seo:lint` to warn on published `{writing, service, site-page, publication, project}` pages missing `headDescription` (warn-only; does not fail the build).
+- Root [`llms.txt`](../../llms.txt) is a curated agent entry map (hubs, flagship essays, sitemap/RSS/searchIndex, UUID citation note). Revisit quarterly; it is not a ranking signal.

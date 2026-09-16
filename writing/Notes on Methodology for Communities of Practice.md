@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-10-31
 draft started: 2024-10-31
 headDescription: Considerations on community growth and lightweight administration

@@ -18,6 +18,6 @@ twitterCreator: "@clinamenic"
 type: project
 uuid: eb421bef-9336-4187-9dbe-8d530cc54fb8
 version:
-source-url: https://schemeweave.clinamenic.com
+source-url: https://schemeweave.ssc.studio
 active: true
 ---

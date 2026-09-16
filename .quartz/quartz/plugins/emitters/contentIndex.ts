@@ -2,6 +2,7 @@ import { Root } from "hast"
 import { GlobalConfiguration } from "../../cfg"
 import { getDate } from "../../components/Date"
 import { escapeHTML } from "../../util/escape"
+import { isSearchEngineIndexed } from "../../util/indexPolicy"
 import { FilePath, FullSlug, SimpleSlug, joinSegments, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
 import { toHtml } from "hast-util-to-html"
@@ -144,6 +145,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       const cfg = ctx.cfg.configuration
       const emitted: FilePath[] = []
       const linkIndex: ContentIndex = new Map()
+      const crawlIndex: ContentIndex = new Map()
       const searchIndex: ContentIndex = new Map()
 
       for (const [tree, file] of content) {
@@ -168,25 +170,30 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
           type: typeof file.data.frontmatter?.type === "string" ? file.data.frontmatter.type : undefined,
         }
 
-        // Graph + sitemap/RSS: all published pages with content
+        // Graph corpus: all published pages with content
         linkIndex.set(slug, details)
+
+        const fm = (file.data.frontmatter ?? {}) as { type?: unknown; index?: unknown }
+        if (isSearchEngineIndexed(fm)) {
+          crawlIndex.set(slug, details)
+        }
 
         const profile = getContentTypeProfile({
           type: file.data.frontmatter?.type,
           slug: file.data.slug,
         })
-        // Search corpus: searchable types only (excludes type:text / zettelgarten/ref/)
+        // Search corpus: searchable types only (excludes type:text / zettel)
         if (profile.searchable) {
           searchIndex.set(slug, details)
         }
       }
 
-      // Sitemap and RSS from full published set (not gated on searchable)
+      // Sitemap and RSS: search-engine-indexed pages only
       if (opts?.enableSiteMap) {
         emitted.push(
           await write({
             ctx,
-            content: generateSiteMap(cfg, linkIndex),
+            content: generateSiteMap(cfg, crawlIndex),
             slug: "sitemap" as FullSlug,
             ext: ".xml",
           }),
@@ -197,7 +204,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         emitted.push(
           await write({
             ctx,
-            content: generateRSSFeed(cfg, linkIndex, opts.rssLimit),
+            content: generateRSSFeed(cfg, crawlIndex, opts.rssLimit),
             slug: "index" as FullSlug,
             ext: ".xml",
           }),

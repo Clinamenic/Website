@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/q2Iv0vm7Fi5JCcbPFdx3CAweppk8SwUXT2mA8HU2DNA
 date: 2023-11-13
 headDescription: This expose highlights a number of fonts which encapsulate the solarpunk ethos
@@ -13,7 +13,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: This expose highlights a number of fonts which encapsulate the solarpunk ethos
 tags:

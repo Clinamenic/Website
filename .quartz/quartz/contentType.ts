@@ -11,7 +11,7 @@ import type { QuartzPluginData } from "./plugins/vfile"
  * - `type: text`: reference texts in zettelgarten/ref/ with sidenotes enabled for
  *   heading/block-linked zettel annotations.
  */
-export type ContentLayoutTemplate = "default" | "writing" | "site-page" | "homepage"
+export type ContentLayoutTemplate = "default" | "writing" | "site-page" | "homepage" | "collection"
 
 export interface ContentTypeProfile {
   layout: ContentLayoutTemplate
@@ -150,6 +150,32 @@ const serviceLikeProfile: ContentTypeProfile = {
   showArchive: false,
 }
 
+/** Zettel notes: same chrome as default, omitted from FlexSearch; sitemap/RSS gated by indexPolicy */
+const zettelProfile: ContentTypeProfile = {
+  ...defaultProfile,
+  searchable: false,
+}
+
+/** Bookmark collection pages: site-page-like chrome, searchable index page */
+const collectionProfile: ContentTypeProfile = {
+  layout: "collection",
+  searchable: true,
+  showExplorer: true,
+  showBacklinks: true,
+  showTOC: true,
+  showTitle: true,
+  showSubtitle: true,
+  showAuthor: false,
+  showDate: false,
+  showBanner: false,
+  showGraph: true,
+  showFlex: false,
+  showCitation: false,
+  showLicenseInfo: false,
+  showSidenotes: false,
+  showArchive: false,
+}
+
 /** Explicit catalogue for extension; unknown types fall back to `defaultProfile` */
 const registeredProfiles: Record<string, ContentTypeProfile> = {
   writing: writingEssayProfile,
@@ -159,6 +185,8 @@ const registeredProfiles: Record<string, ContentTypeProfile> = {
   "site-page": sitePageInnerProfile,
   publication: serviceLikeProfile,
   service: serviceLikeProfile,
+  zettel: zettelProfile,
+  collection: collectionProfile,
 }
 
 /** Accepts Quartz plugin data objects, contextual objects, or a bare `type` string */

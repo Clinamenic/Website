@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/OlfYxTPNxpv3HKgFm0pQruQkzURTxy02Th141M9kDEI
 date: 2023-09-13
 headDescription: Free-market collectivism via self-regulation in emerging technology sectors.
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Free-market collectivism via self-regulation in emerging technology sectors
 tags:

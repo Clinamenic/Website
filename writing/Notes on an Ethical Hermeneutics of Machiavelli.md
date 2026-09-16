@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-11-01
 draft started: 2024-11-01
 headDescription: Applications of Machiavellian moral-tactical calculus to micropolitics and peer-to-peer statecraft.

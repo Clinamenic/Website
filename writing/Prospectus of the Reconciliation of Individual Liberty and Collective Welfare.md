@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2024-05-23
 headDescription: Considerations to inform a more cogent economic philosophy
 headIcon:
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Considerations to inform a more cogent economic philosophy
 tags:

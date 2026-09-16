@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2021-10-29
 headDescription: An overview of the development of this program so far.
@@ -13,7 +13,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 source: https://solosalon.substack.com/p/mogenpro-background
 subtitle: An overview of the early iterations of Modular Generalist Program, an experiment in auto-didacticism

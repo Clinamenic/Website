@@ -20,6 +20,7 @@ publish: true
 service-category:
   - Design
 subtitle: A basic suite of design assets for a new or established brand
+headDescription: A basic suite of design assets for a new or established brand
 title: Basic Branding Kit
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

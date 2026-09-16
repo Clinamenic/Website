@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-10-06
 draft started: 2024-10-06
 headDescription: Peer-to-peer economic infrastructure to address foundational disagreements in the discourse.

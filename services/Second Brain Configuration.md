@@ -28,6 +28,7 @@ twitterCard: summary_large_image
 type: service
 uuid: da880ed7-f3b7-40ef-8bf4-674d87d28dc2
 subtitle: Bespoke personal knowledge base as a service
+headDescription: Bespoke personal knowledge base setup as a service, including Obsidian and digital garden workflows
 ---
 
 _A service offering of Clinamenic LLC._

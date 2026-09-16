@@ -1,4 +1,5 @@
 import Content from "./pages/Content"
+import CollectionContent from "./pages/CollectionContent"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import NotFound from "./pages/404"
@@ -38,6 +39,7 @@ import PermalinkButton from "./PermalinkButton"
 export {
   ArticleTitle,
   Content,
+  CollectionContent,
   TagContent,
   FolderContent,
   Darkmode,

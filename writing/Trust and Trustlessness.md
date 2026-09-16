@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/1OCpB8IN7kO8LiEOoutCLSSyGbHLHfhoJSQoloN_Y5g
 date: 2023-01-21
 headDescription:
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/CMWteFrY7Xyapf4R9fsnyZYm4Q81VUyWyeBkeo0zzDM
 subtitle: Advents in censorship-resistant technology enable novel forms of economic cooperation, but at what cost?

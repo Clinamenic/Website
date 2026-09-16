@@ -2,18 +2,18 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: /assets/banners/prefigurative-politics.png
 date: 2026-09-09
 keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: An overview of Embassy's new residency program, and the impact we hope it can make
 tags:
 title: The Prefigurative Politics of Community Living
+headDescription: An overview of Embassy's new residency program, and the impact we hope it can make
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: writing
@@ -33,4 +33,4 @@ Given this particular relational container, our daily routine affords plenty of 
 
 One of our house stewards has spoken of this idea of communal luxury, and how it can be incrementally rendered more accessible, if even slightly, to the wider public. Another house steward has argued in favor of the "complete development cycle" contained in the house, where ideation, development, and end users constitute a complete feedback loop for [home-cooked software](https://maggieappleton.com/home-cooked-software). At a high level, one can argue that our daily mode of relating with other people, and making sense of problems together, plays a determining role in the emergent higher orders of local, national, and global politics. If we can't figure out how work together to keep our kitchen clean, how can we work together to keep our elections clean?
 
-Much of the experimental economics of this living arrangement regard how domestic labor can be consolidated, how wasteful consumption can be minimized, and how the cost of having a robust and enriching social life can be reduced. Beyond that, many of our technological and governance inquiries concern how this lifestyle can be [protocolized](https://www.clinamenic.com/695f780e-5cbe-4ed7-bdef-818dbd227ec9) and rendered more accessible, so that a wider socio-economic stratum of the population can afford to practice it. Even if this model can't scale beyond local communities, then hopefully some positive externalities can be generated.
+Much of the experimental economics of this living arrangement regard how domestic labor can be consolidated, how wasteful consumption can be minimized, and how the cost of having a robust and enriching social life can be reduced. Beyond that, many of our technological and governance inquiries concern how this lifestyle can be [protocolized](https://www.ssc.studio/695f780e-5cbe-4ed7-bdef-818dbd227ec9) and rendered more accessible, so that a wider socio-economic stratum of the population can afford to practice it. Even if this model can't scale beyond local communities, then hopefully some positive externalities can be generated.

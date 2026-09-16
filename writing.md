@@ -27,7 +27,7 @@ structuredData:
     worksFor:
       "@type": Organization
       name: Clinamenic LLC
-      url: https://clinamenic.com
+      url: https://www.ssc.studio
   description: Professional writing, editing, and content strategy services by Clinamenic LLC. Specializing in technical writing, documentation, and content development for modern businesses and organizations.
   keywords: writing, editing, content strategy, technical writing, documentation, clinamenic, spencer saar cavanaugh, creative agency, content development
   image: https://arweave.net/QdjXOvmwj_JevlF53JDj5v0tMKRQz5gvPzgsh7ulKyc
@@ -39,7 +39,7 @@ structuredData:
     priceCurrency: USD
   mainEntityOfPage:
     "@type": WebPage
-    "@id": https://clinamenic.com/writing
+    "@id": https://www.ssc.studio/writing
 tags: []
 title: Writing Portfolio
 twitterCard: summary_large_image

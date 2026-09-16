@@ -17,6 +17,7 @@ service-category:
   - Governance
 subtitle:
 title: Onchain Grant Program Manager
+headDescription: Retainer service for managing onchain grant programs and related governance operations
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: service

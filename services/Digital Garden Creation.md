@@ -16,6 +16,7 @@ publish: true
 service-category:
   - Knowledge Management
 subtitle: Creation of a digital garden
+headDescription: Design and build a public digital garden for publishing and organizing knowledge
 title: Digital Garden Creation
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"

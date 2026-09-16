@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI:
 date: 2025-08-16
 keywords:
@@ -10,12 +10,12 @@ keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Practical considerations around political stability within a given social milieu
 tags:
   - micropolitik
 title: Reflections on Deep-Network Diplomacy and Micropolitical Stabilization
+headDescription: Practical considerations around political stability within a given social milieu
 twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: writing

@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Index",
+    pageTitle: "Clinamenic LLC",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -13,7 +13,13 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "www.ssc.studio",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "collections/.corpus-stamp"],
+    bookmarkCorpus: {
+      path: "../bookmarks",
+      glob: "bookmark_*.md",
+      indexPath: "../bookmarks/.workspace/cache/bookmark-index.json",
+      stampPath: "collections/.corpus-stamp",
+    },
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

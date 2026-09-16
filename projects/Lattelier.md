@@ -18,6 +18,6 @@ twitterCreator: "@clinamenic"
 type: project
 uuid: 84dc44cd-6308-47a3-bc72-aac1bfd97f69
 version:
-source-url: https://lattelier.clinamenic.com
+source-url: https://lattelier.ssc.studio
 active: true
 ---

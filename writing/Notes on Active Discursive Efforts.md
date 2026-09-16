@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-08-25
 draft started: 2024-08-25
 headDescription: Regarding nascent theories of bureaumancy, zettelkasten methodology, and other existing topic clusters.

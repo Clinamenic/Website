@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/adMJyqREd1b7sFF_EWbcUWGN54A84doFU-fFEB-gX1Q
 date: 2025-02-11
 draftStart: 2024-06-28
@@ -16,7 +16,6 @@ keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sponsor: LexDAO, SuperBenefitDAO
 subtitle: An analysis of the innovations and challenges of the onchain philanthropy sector
@@ -32,7 +31,7 @@ publication-url: https://solosalon.substack.com/p/survey-on-methodology-for-onch
 ---
 ## Acknowledgments
 
-This report was researched and written by Spencer Saar Cavanaugh of [Clinamenic LLC](https://www.clinamenic.com/). Support for this research was provided by [LexDAO](https://lexdao.org/) and [SuperBenefitDAO](https://superbenefit.org/).
+This report was researched and written by Spencer Saar Cavanaugh of [Clinamenic LLC](https://www.ssc.studio/). Support for this research was provided by [LexDAO](https://lexdao.org/) and [SuperBenefitDAO](https://superbenefit.org/).
 
 I would like to thank the following individuals for their feedback and support: Kyle Smith of LexClinic; rathermercurial, Michelle Baldwin, and Heenal Rajani of SuperBenefitDAO; Holke Brammer and bitbeckers of Hypercerts; Mahesh Murthy of Karma; Natalie J. Crüe; Monty Merlin of ReFi DAO; Eugene Leventhal of MetaGov; Mashal Waqar of Octant; LauNaMu of Optimism; Mike Natanzon of Abundance Protocol.
 
@@ -421,8 +420,8 @@ Naturally, these capture-resistant peer-to-peer economic technologies are conduc
 
 - Bedawala, M., Ozbay, M., & Gu, C. [What is account abstraction? Exploring new techniques for blockchain payment processing](https://usa.visa.com/solutions/crypto/rethink-digital-transactions-with-account-abstraction.html). [Visa Crypto Thought Leadership](https://usa.visa.com/solutions/crypto.html#3).
 - Buterin, V., Hitzig, Z., & Weyl, E. G. (2018). [A Flexible Design for Funding Public Goods](https://arxiv.org/abs/1809.06421v2).
-- Cavanaugh, S. S. (2023). [What Are Onchain Organizations?](https://www.clinamenic.com/Writing/What-Are-Onchain-Organizations). ([Arweave](https://viewblock.io/arweave/tx/GxrelcyAGMRd0lqR-uNZG9pcWGRaaqf1HaEtLy8nNvs)).
-- Cavanaugh, S. S. (2024). [Progressive Public Goods Funding](https://www.clinamenic.com/Writing/Progressive-Public-Goods-Funding). ([Arweave](https://viewblock.io/arweave/tx/YwpUk7Vxn2c6YKPTGmODfyA5u1-n6VvrZHJXNDy1fBE)).
+- Cavanaugh, S. S. (2023). [What Are Onchain Organizations?](https://www.ssc.studio/writing/What-Are-Onchain-Organizations). ([Arweave](https://viewblock.io/arweave/tx/GxrelcyAGMRd0lqR-uNZG9pcWGRaaqf1HaEtLy8nNvs)).
+- Cavanaugh, S. S. (2024). [Progressive Public Goods Funding](https://www.ssc.studio/writing/Progressive-Public-Goods-Funding). ([Arweave](https://viewblock.io/arweave/tx/YwpUk7Vxn2c6YKPTGmODfyA5u1-n6VvrZHJXNDy1fBE)).
 - Common Approach to Impact Measurement (2024) [Technical Guide: The Common Impact Data Standard V3.0 Exposure Draft. An Ontology for Representing Impact](https://www.commonapproach.org/wp-content/uploads/2024/06/Exposure-Draft_Common-Impact-Data-Standard-v3.0.pdf), Common Approach to Impact Measurement.
 - Graham, S. (2022). [Anticapture: Towards a Framework of Capture-Resistant Governance](https://spengrah.mirror.xyz/f6bZ6cPxJpP-4K_NB7JcjbU0XblJcaf7kVLD75dOYRQ). [Arweave](https://viewblock.io/arweave/tx/yAxnXi_oZlIa5eB3CkKujBwzrprX177jEPemu2LeLl8).
 - Leventhal, E., Waqar, M., Liu, A., Biedermann, B., Feems, Devjani, H., LauNaMu, Grendel, M., Mori, S., & Elefante, V. (2024). [State of Web3 Grants Report 2024](https://drive.google.com/file/d/1JBbGos6Bjdvd1LRGDvIijREic4l7Th2I/view).

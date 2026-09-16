@@ -3,6 +3,7 @@ import { QuartzComponent } from "./components/types"
 import { ValidLocale } from "./i18n"
 import { PluginTypes } from "./plugins/types"
 import { Theme } from "./util/theme"
+import type { BookmarkCorpusConfig } from "./util/bookmarkCollection"
 
 export type Analytics =
   | null
@@ -65,6 +66,8 @@ export interface GlobalConfiguration {
    * Region Codes: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
    */
   locale: ValidLocale
+  /** External bookmark corpus for type: collection pages (path relative to content root) */
+  bookmarkCorpus?: BookmarkCorpusConfig
 }
 
 export interface QuartzConfig {

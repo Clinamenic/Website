@@ -2,7 +2,7 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: https://arweave.net/S_7elciXXNRVye1evieIApJiMkrnv327zPve2NfHqS4
 date: 2023-01-21
 headDescription:
@@ -15,7 +15,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sourceURL: https://mirror.xyz/ops.clinamenic.eth/SL3pcfxKAE4D4wlEKHjeMjna8fHZmwGeYEC-47icYs0
 subtitle: Organizational considerations around decentralized commercial content production

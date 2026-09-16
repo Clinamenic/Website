@@ -5,8 +5,10 @@ Previously the Quartz site published to GitHub Pages at `www.clinamenic.com` via
 ## Status
 
 - Active publish target is Tekhnema: `https://www.ssc.studio` via `tekhnema-remote/.workspace/scripts/deploy-website.sh`.
-- `www.clinamenic.com` may still resolve to GitHub Pages as a **frozen** snapshot. Do not re-enable this workflow unless intentionally resurrecting Pages deploys.
-- clinamenic.com DNS was not changed as part of the Tekhnema cutover.
+- DNS for apex `clinamenic.com` and `www.clinamenic.com` points to Tekhnema (`178.105.131.220`).
+- Traefik on `website-static` permanently redirects those hosts to `https://www.ssc.studio` (path preserved).
+- GitHub Pages custom domain for `www.clinamenic.com` should remain disabled so Pages cannot reclaim the hostname.
+- Do not re-enable this workflow unless intentionally resurrecting Pages deploys.
 
 ## Contents
 
@@ -21,3 +23,4 @@ Previously the Quartz site published to GitHub Pages at `www.clinamenic.com` via
 2. Copy `CNAME` to the website repo root
 3. Re-enable GitHub Pages in the repo settings if disabled
 4. Set Quartz `baseUrl` back to `www.clinamenic.com` for that build target
+5. Point DNS back at GitHub Pages and remove Traefik clinamenic routers from `docker-compose.website.yml`

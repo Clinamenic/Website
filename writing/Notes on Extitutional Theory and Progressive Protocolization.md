@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-09-18
 draft started: 2024-09-18
 headDescription: An open and protocol-oriented philosophy of social organization

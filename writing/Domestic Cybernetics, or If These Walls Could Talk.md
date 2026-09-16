@@ -2,16 +2,16 @@
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 bannerURI: /assets/banners/domestic-cybernetics.png
 date: 2026-09-11
 keywords:
 language: en
 license: CC BY-NC-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 subtitle: Local-first cybernetic infrastructure as a domestic club good
+headDescription: Local-first cybernetic infrastructure as a domestic club good
 tags:
 title: Domestic Cybernetics, or If These Walls Could Talk
 twitterCard: summary_large_image

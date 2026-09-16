@@ -61,6 +61,11 @@ export const contentPageLayoutTemplates: Record<ContentLayoutTemplate, PageLayou
     left: [explorer, backlinks],
     right: [tableOfContents],
   },
+  collection: {
+    beforeBody: [banner, articleTitle, articleSubtitle, authorName, publishDate],
+    left: [explorer, backlinks],
+    right: [tableOfContents],
+  },
 }
 
 export const resolveContentPageLayout = (

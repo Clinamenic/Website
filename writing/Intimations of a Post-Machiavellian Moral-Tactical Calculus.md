@@ -1,6 +1,6 @@
 ---
 author: Spencer Saar Cavanaugh
-authorURL: https://www.clinamenic.com
+authorURL: https://www.ssc.studio/about
 date: 2024-11-30
 doi:
 headDescription: Probing the prospects of reconciliation between political realism and principled conduct.

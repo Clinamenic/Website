@@ -28,14 +28,14 @@ structuredData:
     worksFor:
       "@type": Organization
       name: Clinamenic LLC
-      url: https://clinamenic.com
+      url: https://www.ssc.studio
   description: Custom typography and font design by Spencer Saar Cavanaugh of Clinamenic LLC. Featuring original typefaces including Blocker, Sundae Plush, Redactor, and Dr. Mingo.
   keywords: clinamenic, design, spencer saar cavanaugh, clinamenic LLC, typography, font design, typeface design
   image: https://arweave.net/QdjXOvmwj_JevlF53JDj5v0tMKRQz5gvPzgsh7ulKyc
   dateModified: 2024-03-19
   mainEntityOfPage:
     "@type": WebPage
-    "@id": https://clinamenic.com/typography
+    "@id": https://www.ssc.studio/typography
 tags: []
 title: Typography
 twitterCard: summary_large_image

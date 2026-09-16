@@ -2,6 +2,12 @@ import { i18n } from "../i18n"
 import { FullSlug, joinSegments, pathToRoot } from "../util/path"
 import { JSResourceToScriptElement } from "../util/resources"
 import { googleFontHref } from "../util/theme"
+import {
+  buildStructuredData,
+  defaultOgType,
+  resolveStructuredData,
+} from "../util/structuredData"
+import { isSearchEngineIndexed } from "../util/indexPolicy"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // Define frontmatter interface for TypeScript
@@ -21,18 +27,24 @@ interface QuartzFrontmatter {
   twitterSite?: string
   twitterCreator?: string
   structuredData?: object | string
+  type?: string
+  index?: boolean | string
+  author?: string | string[]
+  authorURL?: string | string[]
+  date?: string
+  "publication-url"?: string
 }
 
 // Helper to check if a URL is absolute
 const isAbsoluteUrl = (str: string): boolean => {
-  return str.startsWith('http://') || str.startsWith('https://')
+  return str.startsWith("http://") || str.startsWith("https://")
 }
 
 // Helper to construct absolute URLs
 const constructAbsoluteUrl = (baseUrl: string, path: string): string => {
   if (!baseUrl) return path
-  baseUrl = baseUrl.replace(/\/$/, '') // Remove trailing slash
-  path = path.replace(/^\//, '') // Remove leading slash
+  baseUrl = baseUrl.replace(/\/$/, "") // Remove trailing slash
+  path = path.replace(/^\//, "") // Remove leading slash
   return `https://${baseUrl}/${path}`
 }
 
@@ -41,64 +53,61 @@ const safeStringifyStructuredData = (data: unknown): string => {
   try {
     // Replace potential XSS vectors
     return JSON.stringify(data)
-      .replace(/</g, '\\u003c')
-      .replace(/>/g, '\\u003e')
-      .replace(/&/g, '\\u0026')
-      .replace(/'/g, '\\u0027')
+      .replace(/</g, "\\u003c")
+      .replace(/>/g, "\\u003e")
+      .replace(/&/g, "\\u0026")
+      .replace(/'/g, "\\u0027")
   } catch (e) {
-    console.error('Error stringifying structured data:', e)
-    return ''
+    console.error("Error stringifying structured data:", e)
+    return ""
   }
 }
 
 export default (() => {
   const Head: QuartzComponent = ({ cfg, fileData, externalResources }: QuartzComponentProps) => {
-    const frontmatter = fileData.frontmatter as QuartzFrontmatter ?? {}
+    const frontmatter = (fileData.frontmatter as QuartzFrontmatter) ?? {}
     const { css, js } = externalResources
 
     // Base URL and paths
     const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
-    const baseDir = fileData.slug === "404" ? url.pathname as FullSlug : pathToRoot(fileData.slug!)
+    const baseDir = fileData.slug === "404" ? (url.pathname as FullSlug) : pathToRoot(fileData.slug!)
     const defaultCanonicalUrl = constructAbsoluteUrl(cfg.baseUrl ?? "", fileData.slug ?? "")
 
     // Core metadata
     const title = frontmatter.title ?? i18n(cfg.locale).propertyDefaults.title
-    const description = (
+    const description =
       frontmatter.headDescription ??
       frontmatter.subtitle ??
       fileData.description?.trim() ??
       i18n(cfg.locale).propertyDefaults.description
-    )
 
     // Keywords
     const keywordsRaw = frontmatter.keywords
     const keywords = Array.isArray(keywordsRaw)
-      ? keywordsRaw.join(', ')
-      : typeof keywordsRaw === 'string'
+      ? keywordsRaw.join(", ")
+      : typeof keywordsRaw === "string"
         ? keywordsRaw
         : undefined
 
     // URLs and paths
     const canonicalUrl = frontmatter.canonicalUrl ?? defaultCanonicalUrl
 
+    const contentType =
+      typeof frontmatter.type === "string" && frontmatter.type.trim() !== ""
+        ? frontmatter.type.trim()
+        : undefined
+
     // Open Graph
-    const ogType = frontmatter.ogType ?? (
-      fileData.slug === 'index' || fileData.slug === '/'
-        ? 'website'
-        : 'article'
-    )
+    const ogType =
+      frontmatter.ogType ?? defaultOgType(contentType, fileData.slug)
 
     const ogSiteName = frontmatter.ogSiteName ?? cfg.pageTitle
     const ogUrl = frontmatter.ogUrl ?? canonicalUrl
 
     // Twitter Card
-    const twitterCard = frontmatter.twitterCard ?? (
-      frontmatter.bannerURI
-        ? 'summary_large_image'
-        : 'summary'
-    )
+    const twitterCard = frontmatter.twitterCard ?? (frontmatter.bannerURI ? "summary_large_image" : "summary")
 
-    const twitterSite = frontmatter.twitterSite
+    const twitterSite = frontmatter.twitterSite ?? "@clinamenic"
     const twitterCreator = frontmatter.twitterCreator
 
     // Icon (Favicon)
@@ -111,27 +120,34 @@ export default (() => {
 
     // Open Graph Image
     const bannerUriString = frontmatter.bannerURI
-    const ogImagePath = cfg.baseUrl && (
-      bannerUriString
+    const ogImagePath =
+      cfg.baseUrl &&
+      (bannerUriString
         ? isAbsoluteUrl(bannerUriString)
           ? bannerUriString
           : constructAbsoluteUrl(cfg.baseUrl, bannerUriString)
-        : constructAbsoluteUrl(cfg.baseUrl, 'static/og-image.png')
-    )
+        : constructAbsoluteUrl(cfg.baseUrl, "static/og-image.png"))
 
-    // Structured Data
-    const structuredDataRaw = frontmatter.structuredData
-    const structuredDataStr = structuredDataRaw
-      ? typeof structuredDataRaw === 'string'
-        ? structuredDataRaw // Already a JSON string
-        : safeStringifyStructuredData(structuredDataRaw)
-      : undefined
+    // Structured Data: auto baseline + frontmatter deep-merge
+    const auto = buildStructuredData({
+      cfg,
+      fileData,
+      frontmatter: frontmatter as Record<string, unknown>,
+      title,
+      description,
+      canonicalUrl,
+      ogImagePath: ogImagePath || undefined,
+      constructAbsoluteUrl,
+    })
+    const merged = resolveStructuredData(auto, frontmatter.structuredData)
+    const structuredDataStr = merged ? safeStringifyStructuredData(merged) : undefined
+    const searchEngineIndexed = isSearchEngineIndexed(frontmatter)
 
     return (
       <head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-        
+
         {/* Font Loading */}
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
@@ -145,6 +161,7 @@ export default (() => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
+        {!searchEngineIndexed && <meta name="robots" content="noindex, follow" />}
         <link rel="canonical" href={canonicalUrl} />
         {keywords && <meta name="keywords" content={keywords} />}
         <link rel="icon" href={iconPath} />
@@ -173,10 +190,7 @@ export default (() => {
 
         {/* Structured Data */}
         {structuredDataStr && (
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: structuredDataStr }}
-          />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredDataStr }} />
         )}
 
         {/* Resource Loading */}

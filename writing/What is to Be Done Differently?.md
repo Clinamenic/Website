@@ -3,7 +3,7 @@ altDate: June 2022
 author:
   - Spencer Saar Cavanaugh
 authorURL:
-  - https://www.clinamenic.com
+  - https://www.ssc.studio
 date: 2022-06-15
 headDescription: Reflections on the early stages of metagovernance in decentralized society.
 headIcon:
@@ -12,7 +12,6 @@ keywords:
 language: en
 license: CC BY-SA 4.0
 ogSiteName: Clinamenic LLC
-ogType: website
 publish: true
 sourceURL:
 subtitle: Reflections on the early stages of metagovernance in decentralized society
