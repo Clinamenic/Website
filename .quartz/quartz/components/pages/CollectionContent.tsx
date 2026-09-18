@@ -1,10 +1,9 @@
-import { Root } from "hast"
-import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import style from "../styles/collectionGrid.scss"
 import listPageStyle from "../styles/listPage.scss"
 import {
   filterBookmarks,
+  formatCollectionFilterDescription,
   parseBookmarkCollectionSpec,
   resolveBookmarkDescription,
   sortBookmarks,
@@ -83,7 +82,7 @@ function ListItem({
 
 export default (() => {
   const CollectionContent: QuartzComponent = (props: QuartzComponentProps) => {
-    const { tree, fileData, ctx } = props
+    const { fileData, ctx } = props
     const pageType = fileData.frontmatter?.type
 
     if (pageType !== "collection") {
@@ -105,10 +104,7 @@ export default (() => {
     }
 
     const matched = sortBookmarks(filterBookmarks(corpus, spec), spec.sort)
-    const intro =
-      (tree as Root).children.length === 0
-        ? fileData.description
-        : htmlToJsx(fileData.filePath!, tree)
+    const intro = formatCollectionFilterDescription(spec.filters)
 
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = ["popover-hint", "collection-listing", ...cssClasses].join(" ")
@@ -116,7 +112,7 @@ export default (() => {
 
     return (
       <div class={classes} data-content-type="collection">
-        {intro && <article class="collection-intro">{intro}</article>}
+        {intro && <article class="collection-intro"><p>{intro}</p></article>}
         <p class="collection-count">{matched.length} bookmarks</p>
         {spec.layout.variant === "list" ? (
           <ul class="collection-list">

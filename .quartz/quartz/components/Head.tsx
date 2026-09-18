@@ -8,6 +8,10 @@ import {
   resolveStructuredData,
 } from "../util/structuredData"
 import { isSearchEngineIndexed } from "../util/indexPolicy"
+import {
+  formatCollectionFilterDescription,
+  parseBookmarkCollectionSpec,
+} from "../util/bookmarkCollection"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // Define frontmatter interface for TypeScript
@@ -75,7 +79,27 @@ export default (() => {
 
     // Core metadata
     const title = frontmatter.title ?? i18n(cfg.locale).propertyDefaults.title
+
+    const contentType =
+      typeof frontmatter.type === "string" && frontmatter.type.trim() !== ""
+        ? frontmatter.type.trim()
+        : undefined
+
+    let collectionFilterDescription: string | undefined
+    if (contentType === "collection") {
+      try {
+        const spec = parseBookmarkCollectionSpec(
+          (fileData.frontmatter as { bookmarkCollection?: unknown })?.bookmarkCollection,
+          fileData.filePath ?? fileData.slug ?? "unknown",
+        )
+        collectionFilterDescription = formatCollectionFilterDescription(spec.filters)
+      } catch {
+        collectionFilterDescription = undefined
+      }
+    }
+
     const description =
+      collectionFilterDescription ??
       frontmatter.headDescription ??
       frontmatter.subtitle ??
       fileData.description?.trim() ??
@@ -92,11 +116,6 @@ export default (() => {
     // URLs and paths
     const canonicalUrl = frontmatter.canonicalUrl ?? defaultCanonicalUrl
 
-    const contentType =
-      typeof frontmatter.type === "string" && frontmatter.type.trim() !== ""
-        ? frontmatter.type.trim()
-        : undefined
-
     // Open Graph
     const ogType =
       frontmatter.ogType ?? defaultOgType(contentType, fileData.slug)
@@ -104,8 +123,15 @@ export default (() => {
     const ogSiteName = frontmatter.ogSiteName ?? cfg.pageTitle
     const ogUrl = frontmatter.ogUrl ?? canonicalUrl
 
+    // Open Graph / Twitter preview image (Banner.tsx display is gated separately via showBanner)
+    const COLLECTION_OG_BANNER = "/assets/banners/collections.png"
+    const bannerUriString =
+      frontmatter.bannerURI ??
+      (contentType === "collection" ? COLLECTION_OG_BANNER : undefined)
+
     // Twitter Card
-    const twitterCard = frontmatter.twitterCard ?? (frontmatter.bannerURI ? "summary_large_image" : "summary")
+    const twitterCard =
+      frontmatter.twitterCard ?? (bannerUriString ? "summary_large_image" : "summary")
 
     const twitterSite = frontmatter.twitterSite ?? "@clinamenic"
     const twitterCreator = frontmatter.twitterCreator
@@ -119,7 +145,6 @@ export default (() => {
       : joinSegments(baseDir, "static/icon.png")
 
     // Open Graph Image
-    const bannerUriString = frontmatter.bannerURI
     const ogImagePath =
       cfg.baseUrl &&
       (bannerUriString

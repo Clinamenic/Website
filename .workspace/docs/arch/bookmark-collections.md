@@ -1,9 +1,26 @@
 # Bookmark Collections (Quartz)
 
-**Last reviewed:** 2026-09-16  
+**Last reviewed:** 2026-09-17  
 **Report:** `ssc-brainmesh/.workspace/docs/reports/bookmark-collections-2026-09-16.md`
 
 Collection pages are published site notes with `type: collection`. At build time Quartz reads the external bookmark corpus (`ssc-vault/bookmarks/`), applies frontmatter filters, and renders a grid or list layout.
+
+## Social preview (OG / Twitter)
+
+`Head.tsx` defaults collection pages to `/assets/banners/collections.png` for `og:image` and `twitter:image` when frontmatter has no `bannerURI`. Per-page `bannerURI` overrides that default. The on-page Banner component stays hidden: the `collection` content profile sets `showBanner: false`.
+
+## Filter description (intro + meta)
+
+Page intro and SEO / Open Graph description are **derived** from `bookmarkCollection.filters` via `formatCollectionFilterDescription` (not hand-written body markdown or `headDescription`).
+
+Examples:
+
+- Tags `any`: `Bookmarks filtered by #design`
+- Tags `any` (multi): `Bookmarks filtered by #at-proto OR #atproto OR #at-protocol`
+- Tags `all`: `Bookmarks filtered by #foo AND #bar`
+- With extras: `Bookmarks filtered by #design; title containing "poster"; domain are.na`
+
+`headDescription` and note body prose are unused for collections when filters parse successfully.
 
 ## Data flow
 
@@ -64,8 +81,8 @@ Corpus stamp: `website/collections/.corpus-stamp` (gitignored). Touched whenever
 type: collection
 publish: true
 title: Page Title
-headDescription: SEO description for the collection page.
 ogType: CollectionPage
+# bannerURI: /assets/banners/other.png  # optional; defaults to /assets/banners/collections.png
 bookmarkCollection:
   filters:
     tags:
@@ -81,9 +98,9 @@ bookmarkCollection:
     descriptionSource: llm  # llm | clipper | both
   sort: indexed-desc        # indexed-desc | indexed-asc | title-asc | title-desc
 ---
-
-Optional intro markdown rendered above the listing.
 ```
+
+Intro and meta description are generated from `filters` (see above). No body markdown required.
 
 Use `bookmarkCollection:` -- not portfolio asset field `collections:`.
 
@@ -106,9 +123,10 @@ Paths are relative to the Quartz content root (`website/`). Quartz does **not** 
 
 | File | Role |
 |------|------|
-| `quartz/util/bookmarkCollection.ts` | Types, filter, sort, description resolution |
+| `quartz/util/bookmarkCollection.ts` | Types, filter, sort, description resolution, filter description formatter |
 | `quartz/util/loadBookmarkCorpus.ts` | Index-first corpus load + frontmatter scan fallback |
-| `quartz/components/pages/CollectionContent.tsx` | Grid/list renderer |
+| `quartz/components/pages/CollectionContent.tsx` | Grid/list renderer; filter-derived intro |
+| `quartz/components/Head.tsx` | Collection OG banner default; filter-derived meta description |
 | `quartz/components/styles/collectionGrid.scss` | Layout styles |
 | `quartz/contentType.ts` | `collection` content profile |
 | `quartz/plugins/emitters/contentPage.tsx` | Corpus preload, CollectionContent body, depgraph edges |
@@ -117,10 +135,10 @@ Paths are relative to the Quartz content root (`website/`). Quartz does **not** 
 
 Use the **Bookmark Collections** plugin (`.obsidian/plugins/bookmark-collections/`):
 
-1. Command **Create bookmark collection page** (or ribbon icon)
+1. Grid ribbon or command **Open bookmark collection** — pick **+ Create new** or an existing collection
 2. Set title, tags, layout; confirm match preview
 3. Save to `website/collections/{slug}.md`
-4. Command **Edit bookmark collection** when a collection note is active
+4. Command **Edit bookmark collection** edits the active collection note (or opens the hub)
 5. Command **Rebuild bookmark index** after bulk bookmark changes (or rely on save debounce)
 
 See [PLUGIN_DEV.md](../../../.obsidian/plugins/bookmark-collections/PLUGIN_DEV.md) for build and settings.

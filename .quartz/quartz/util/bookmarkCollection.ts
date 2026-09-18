@@ -260,3 +260,35 @@ export function resolveBookmarkDescription(
       return llm || clipper
   }
 }
+
+/**
+ * Human-readable summary of collection filters for page intro and SEO meta.
+ * Example: "Bookmarks filtered by #at-proto OR #atproto OR #at-protocol"
+ */
+export function formatCollectionFilterDescription(
+  filters: BookmarkCollectionFilters,
+): string {
+  const tags = (filters.tags ?? []).map(normalizeTag).filter(Boolean)
+  const clauses: string[] = []
+
+  if (tags.length > 0) {
+    const joiner = filters.tagsMatch === "all" ? " AND " : " OR "
+    clauses.push(tags.map((t) => `#${t}`).join(joiner))
+  }
+
+  const titleContains = filters.titleContains?.trim()
+  if (titleContains) {
+    clauses.push(`title containing "${titleContains}"`)
+  }
+
+  const domain = filters.domain?.trim()
+  if (domain) {
+    clauses.push(`domain ${domain}`)
+  }
+
+  if (clauses.length === 0) {
+    return "Bookmarks collection"
+  }
+
+  return `Bookmarks filtered by ${clauses.join("; ")}`
+}
