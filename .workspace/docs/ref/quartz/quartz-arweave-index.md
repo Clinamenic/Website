@@ -1,8 +1,33 @@
 # Arweave Integration for Quartz
 
-This integration allows you to automatically upload your Quartz notes to Arweave and track their version history.
+This integration uploads selected Quartz notes to Arweave and displays per-page version history from frontmatter.
 
-## Setup
+## Version history (source of truth)
+
+`ArweaveIndex` reads `arweave-hashes` from the current page’s frontmatter. Visibility is gated by the content-type profile (`showArchive`, currently writing essays).
+
+Portfolio schema:
+
+```yaml
+---
+title: Your Note Title
+uuid: 123e4567-e89b-12d3-a456-426614174000
+arweave-hashes:
+  - txId: tx-hash-1
+    uploadedAt: "2024-01-01T00:00:00.000Z"
+  - txId: tx-hash-2
+    uploadedAt: "2024-01-02T00:00:00.000Z"
+---
+```
+
+Each entry links to `https://www.arweave.net/{txId}`. The component also accepts legacy keys (`hash` / `timestamp`) if present.
+
+The UI shows:
+
+- Timestamp of each version (UTC)
+- External link to the Arweave transaction
+
+## Setup (uploader)
 
 1. Install arkb CLI:
 
@@ -51,6 +76,8 @@ arweaveTrack: true # Required: Set to true to enable Arweave tracking
 ---
 ```
 
+After upload, append the new transaction under `arweave-hashes` on that page (see schema above). Do not maintain a central index JSON for the site UI.
+
 ### Uploading to Arweave
 
 Make sure your virtual environment is activated, then run the uploader script:
@@ -68,7 +95,7 @@ This will:
 1. Scan the entire website directory for markdown files (including subdirectories)
 2. Find files with `arweaveTrack: true` and a UUID
 3. Upload them to Arweave using arkb (with bundling for efficiency)
-4. Update the index file at `data/arweave.json`
+4. Record the transaction (historically wrote a central index; prefer writing `arweave-hashes` on the page)
 
 The script will print its progress, showing which files it's checking and uploading:
 
@@ -77,13 +104,6 @@ Checking content/notes/example.md...
 Uploading content/notes/example.md to Arweave...
 Successfully uploaded content/notes/example.md with hash tx-hash-123...
 ```
-
-### Viewing Version History
-
-The ArweaveIndex component will automatically display version history for any page that has been uploaded to Arweave. The history will show:
-
-- Timestamp of each version
-- Arweave transaction hash (links to ViewBlock explorer)
 
 ### Arweave Transaction Tags
 
@@ -103,50 +123,25 @@ The script uses arkb's bundling feature for efficient uploads:
 - Automatic retries on failed uploads
 - Caches uploads to avoid re-uploading unchanged files
 
-## Frontmatter migration
+## Frontmatter migration (historical)
 
-To copy history from central index JSON into each page's `arweave-hashes` frontmatter (portfolio schema: `txId` / `uploadedAt`), use:
+Central index JSON (`data/arweave.json`, `archive.json`) is **retired**. The site UI no longer reads those files.
+
+To copy history from archived index JSON into each page's `arweave-hashes` frontmatter (one-time or recovery):
 
 ```bash
 npm run migrate:arweave-hashes          # dry-run
 npm run migrate:arweave-hashes -- --apply
 ```
 
-Script: `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs`. Sources: `.meridian/data/archive.json`, `.meridian/exports/archive.json`, and archived `.workspace/archive/tools/temp/arweave.json`. Does not modify `ArweaveIndex` yet.
+Script: `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs`. Sources: `.meridian/data/archive.json`, `.meridian/exports/archive.json`, and archived `.workspace/archive/tools/temp/arweave.json`.
 
 ## File Structure
 
 - `.cursor/tools/arweave-uploader.py` - Upload script
 - `.cursor/tools/requirements.txt` - Python dependencies
 - `myenv/` - Python virtual environment (don't commit this)
-- `quartz/components/ArweaveIndex.tsx` - Version history component
-- `quartz/components/styles/arweaveindex.scss` - Component styles
-- `data/arweave.json` - Version history index
-- `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs` - Index → frontmatter migration
-
-## Index File Format
-
-The `arweave.json` file maintains the version history in this format:
-
-```json
-{
-  "files": [
-    {
-      "uuid": "123e4567-e89b-12d3-a456-426614174000",
-      "title": "Example Note",
-      "arweave_hashes": [
-        {
-          "hash": "tx-hash-1",
-          "timestamp": "2024-01-01T00:00:00.000Z",
-          "link": "https://www.arweave.net/tx-hash-1"
-        },
-        {
-          "hash": "tx-hash-2",
-          "timestamp": "2024-01-02T00:00:00.000Z",
-          "link": "https://www.arweave.net/tx-hash-2"
-        }
-      ]
-    }
-  ]
-}
-```
+- `.quartz/quartz/components/ArweaveIndex.tsx` - Version history component (reads frontmatter)
+- `.quartz/quartz/components/styles/arweaveindex.scss` - Component styles
+- `.workspace/scripts/migrate-arweave-hashes-to-frontmatter.mjs` - Index → frontmatter migration (historical)
+- `data/arweave.json` / `archive.json` - **Retired**; do not use for the site UI
