@@ -292,3 +292,6 @@ export function formatCollectionFilterDescription(
 
   return `Bookmarks filtered by ${clauses.join("; ")}`
 }
+
+/** Shared glyph-grid banner when a bookmark has no image or the remote image fails. */
+export const BOOKMARK_FALLBACK_BANNER = "/assets/banners/fallback-bookmark.png"

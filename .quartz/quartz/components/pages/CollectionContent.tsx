@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import style from "../styles/collectionGrid.scss"
 import listPageStyle from "../styles/listPage.scss"
 import {
+  BOOKMARK_FALLBACK_BANNER,
   filterBookmarks,
   formatCollectionFilterDescription,
   parseBookmarkCollectionSpec,
@@ -19,6 +20,14 @@ function tryDomain(source: string): string {
   }
 }
 
+function escapeHtmlAttr(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+}
+
 function GridCard({
   record,
   descriptionSource,
@@ -29,7 +38,10 @@ function GridCard({
   cardStyle: "image-forward" | "compact" | "text-only"
 }) {
   const description = resolveBookmarkDescription(record, descriptionSource)
-  const showImage = cardStyle !== "text-only" && record.imageUri.length > 0
+  const showImage = cardStyle !== "text-only"
+  const fallbackSrc = BOOKMARK_FALLBACK_BANNER
+  const hasRemoteImage = record.imageUri.length > 0
+  const imageSrc = hasRemoteImage ? record.imageUri : fallbackSrc
 
   return (
     <article class={`collection-card ${cardStyle}`}>
@@ -40,11 +52,19 @@ function GridCard({
         rel="noopener noreferrer"
         title={description || undefined}
       >
-        {showImage && (
-          <div class="collection-card-image">
-            <img src={record.imageUri} alt={record.title} loading="lazy" />
-          </div>
-        )}
+        {showImage &&
+          (hasRemoteImage ? (
+            <div
+              class="collection-card-image"
+              dangerouslySetInnerHTML={{
+                __html: `<img src="${escapeHtmlAttr(imageSrc)}" alt="${escapeHtmlAttr(record.title)}" loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('is-fallback');this.alt='';this.src='${escapeHtmlAttr(fallbackSrc)}'" />`,
+              }}
+            />
+          ) : (
+            <div class="collection-card-image is-fallback">
+              <img src={fallbackSrc} alt="" loading="lazy" />
+            </div>
+          ))}
         <div class="collection-card-body">
           <h3 class="collection-card-title">{record.title}</h3>
           {description && <p class="collection-card-description">{description}</p>}

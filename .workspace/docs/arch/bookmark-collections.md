@@ -22,6 +22,15 @@ Examples:
 
 `headDescription` and note body prose are unused for collections when filters parse successfully.
 
+## Card image fallbacks
+
+Grid cards (`image-forward` / `compact`) always show an image area:
+
+- If the bookmark has `image-uri`, that URL is used first.
+- If `image-uri` is missing, or the remote image fails to load (`onerror`), the card uses the full glyph grid at `/assets/banners/fallback-bookmark.png` for every bookmark.
+
+List layout and `text-only` cards are unchanged.
+
 ## Data flow
 
 1. Collection definition markdown lives under `website/collections/`.
@@ -123,9 +132,9 @@ Paths are relative to the Quartz content root (`website/`). Quartz does **not** 
 
 | File | Role |
 |------|------|
-| `quartz/util/bookmarkCollection.ts` | Types, filter, sort, description resolution, filter description formatter |
+| `quartz/util/bookmarkCollection.ts` | Types, filter, sort, description resolution, filter description formatter, fallback banner path |
 | `quartz/util/loadBookmarkCorpus.ts` | Index-first corpus load + frontmatter scan fallback |
-| `quartz/components/pages/CollectionContent.tsx` | Grid/list renderer; filter-derived intro |
+| `quartz/components/pages/CollectionContent.tsx` | Grid/list renderer; filter-derived intro; image fallbacks |
 | `quartz/components/Head.tsx` | Collection OG banner default; filter-derived meta description |
 | `quartz/components/styles/collectionGrid.scss` | Layout styles |
 | `quartz/contentType.ts` | `collection` content profile |
