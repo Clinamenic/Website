@@ -458,14 +458,6 @@ document.addEventListener("DOMContentLoaded", function() {
     <img src="/assets/experience/holonym.svg" alt="Holonym" />
   </a>
 
-  <a class="exp-tile" href="/about/Experience#lobby3-una">
-    <div class="exp-text">
-      <p style="padding-bottom: 0.5rem; font-weight: 300;">Lobby3 UNA</p>
-      <p>Director</p>
-    </div>
-    <img src="/assets/experience/lobby3.svg" alt="Lobby3 UNA" />
-  </a>
-
   <a class="exp-tile" href="/about/Experience#dao-coalition">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
@@ -528,14 +520,6 @@ document.addEventListener("DOMContentLoaded", function() {
       <p>Committee</p>
     </div>
     <img src="/assets/experience/octant.svg" alt="Octant" />
-  </a>
-
-  <a class="exp-tile" href="/about/Experience#superbenefitdao">
-    <div class="exp-text">
-      <p style="padding-bottom: 0.5rem; font-weight: 300;">SuperBenefit</p>
-      <p>Contractor</p>
-    </div>
-    <img src="/assets/experience/superbenefitdao.svg" alt="SuperBenefitDAO" />
   </a>
 
   <a class="exp-tile" href="/about/Experience#journodao">
@@ -570,14 +554,6 @@ document.addEventListener("DOMContentLoaded", function() {
     <img src="/assets/experience/holonym.svg" alt="Holonym" />
   </a>
 
-  <a class="exp-tile" href="/about/Experience#lobby3-una">
-    <div class="exp-text">
-      <p style="padding-bottom: 0.5rem; font-weight: 300;">Lobby3 UNA</p>
-      <p>Director</p>
-    </div>
-    <img src="/assets/experience/lobby3.svg" alt="Lobby3 UNA" />
-  </a>
-
   <a class="exp-tile" href="/about/Experience#dao-coalition">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
@@ -640,14 +616,6 @@ document.addEventListener("DOMContentLoaded", function() {
       <p>Committee</p>
     </div>
     <img src="/assets/experience/octant.svg" alt="Octant" />
-  </a>
-
-  <a class="exp-tile" href="/about/Experience#superbenefitdao">
-    <div class="exp-text">
-      <p style="padding-bottom: 0.5rem; font-weight: 300;">SuperBenefit</p>
-      <p>Contractor</p>
-    </div>
-    <img src="/assets/experience/superbenefitdao.svg" alt="SuperBenefitDAO" />
   </a>
 
   </div>

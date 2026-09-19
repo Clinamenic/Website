@@ -11,8 +11,6 @@ twitterCreator: "@clinamenic"
 
 Work history and client engagements for Spencer Saar Cavanaugh, primarily through Clinamenic LLC (organization design, governance, branding, and knowledge systems), alongside steward and founder roles in the onchain and civic-tech ecosystem.
 
-This page is a working draft.
-
 ---
 
 ## <span class="experience-heading"><span class="experience-logo" style="--logo: url('/assets/experience/dweb-camp-2026.svg')" aria-hidden="true"></span>DWeb Camp</span>
@@ -23,7 +21,7 @@ _Space Steward (Idea Stage)_ · 2026
 
 - Co-stewarded the Idea Stage with Steven Elleman; reviewed speaker applications and curated 19 presentations over three days
 - Used PreTalx for approval and scheduling; handled speaker logistics, rescheduling, and technical support
-- Built an outdoor discussion space to absorb overflow; gave a talk on self-hosted second brains
+- Facilitated an outdoor discussion space to absorb overflow; gave a talk on self-hosted second brains
 
 ---
 
