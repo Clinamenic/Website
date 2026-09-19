@@ -601,7 +601,8 @@
 
   /* Quartz a.internal:has(> img) zeros border-radius; restore tile corners */
   &.internal,
-  &.internal:has(> img) {
+  &.internal:has(> img),
+  &.internal:has(> .exp-tile-logo) {
     border-radius: 10px;
     background-color: rgba(121, 197, 126, 0.6);
     padding: 0;
@@ -610,27 +611,37 @@
   &.external > .external-icon {
     display: none;
   }
-  > img {
+  > .exp-tile-logo {
+    display: block;
     margin: 5px;
     width: 90px;
     height: 90px;
+    background-color: var(--gray);
+    -webkit-mask-image: var(--logo);
+    mask-image: var(--logo);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
   }
   /* Slightly smaller glyphs that visually overpower the tile */
-  > img[src*="journodao"],
-  > img[src*="pubdao"],
-  > img[src*="lobby3"],
-  > img[src*="education-dao"] {
+  > .exp-tile-logo[data-logo="journodao"],
+  > .exp-tile-logo[data-logo="pubdao"],
+  > .exp-tile-logo[data-logo="lobby3"],
+  > .exp-tile-logo[data-logo="education-dao"] {
     width: 76.5px;
     height: 76.5px;
     margin: 11.75px;
   }
-  > img[src*="opencivics"],
-  > img[src*="dao-coalition"] {
+  > .exp-tile-logo[data-logo="opencivics"],
+  > .exp-tile-logo[data-logo="dao-coalition"] {
     width: 81px;
     height: 81px;
     margin: 9.5px;
   }
-  > img[src*="superbenefitdao"] {
+  > .exp-tile-logo[data-logo="superbenefitdao"] {
     width: 68.85px;
     height: 68.85px;
     margin: 15.575px;
@@ -661,15 +672,6 @@
 
 .exp-tile:hover .exp-text {
   opacity: 0.9;
-}
-
-/* White-glyph experience SVGs: recolor to theme text tokens */
-.marquee .exp-tile > img {
-  filter: brightness(0);
-}
-
-:root[saved-theme="dark"] .marquee .exp-tile > img {
-  filter: brightness(0) invert(1);
 }
 
 // Copy button styling

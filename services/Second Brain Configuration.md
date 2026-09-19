@@ -77,7 +77,7 @@ Write articles directly in Obsidian and publish them for free to your website, w
 
 ### Portfolio
 
-Curate your visual work into a gallery for visitors to explore. (See my example here: [[design]] and [[gallery]])
+Curate your visual work into a gallery for visitors to explore. (See my example here: [[portfolio]])
 
 ### Service Catalog
 

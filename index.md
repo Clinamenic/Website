@@ -185,7 +185,8 @@ uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
     overflow: hidden;
   }
   & a.exp-tile.internal,
-  & a.exp-tile.internal:has(> img) {
+  & a.exp-tile.internal:has(> img),
+  & a.exp-tile.internal:has(> .exp-tile-logo) {
     border-radius: 10px;
     background: var(--lightgray);
     padding: 0;
@@ -354,7 +355,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <a href="/about" class="l1">About</a>
 <a href="/services" class="l2">Services</a>
 <a href="" class="l3"></a>
-<a href="/design" class="l4">Design</a>
+<a href="/portfolio" class="l4">Portfolio</a>
 <a href="" class="l5"></a>
 <a href="/typography" class="l6">Fonts</a>
 </div>
@@ -393,9 +394,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="side-column">
 <a href="/about#contact" class="r1">Contact</a>
 <a href="/writing" class="r2">Writing</a>
-<a href="/zettelgarten" class="r3">Zettel</a>
+<a href="/zettelgarten" class="r3">Notes</a>
 <a href="" class="r4"></a>
-<a href="/gallery" class="r5">Gallery</a>
+<a href="" class="r5"></a>
 <a href="" class="r6"></a>
 </div>
  
@@ -407,7 +408,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <a href="/about" class="l1">About</a>
   <a href="/services" class="l2">Services</a>
   <a href="" class="l3"></a>
-  <a href="/design" class="l4">Design</a>
+  <a href="/portfolio" class="l4">Portfolio</a>
   <a href="" class="l5"></a>
   <a href="/typography" class="l6">Fonts</a>
   </div>
@@ -415,9 +416,9 @@ document.addEventListener("DOMContentLoaded", function() {
   <div class="side-column">
   <a href="about#contact" class="r1">Contact</a>
   <a href="/writing" class="r2">Writing</a>
-  <a href="/zettelgarten" class="r3" style="letter-spacing: 1px;">Zettel</a>
+  <a href="/zettelgarten" class="r3" style="letter-spacing: 1px;">Notes</a>
   <a href="" class="r4"></a>
-  <a href="/gallery" class="r5">Gallery</a>
+  <a href="" class="r5"></a>
   <a href="" class="r6"></a>
   </div>
 
@@ -431,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p style="padding-bottom: 0.5rem; font-weight: 300;">JournoDAO</p>
         <p>Co-founder</p>
       </div>
-      <img src="/assets/experience/journodao.svg" alt="JournoDAO" />
+      <span class="exp-tile-logo" data-logo="journodao" style="--logo: url('/assets/experience/journodao.svg')" role="img" aria-label="JournoDAO"></span>
     </a>
 
   <a class="exp-tile" href="/about/Experience#pubdao">
@@ -439,7 +440,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">PubDAO</p>
       <p>Core Team</p>
     </div>
-    <img src="/assets/experience/pubdao.svg" alt="PubDAO" />
+    <span class="exp-tile-logo" data-logo="pubdao" style="--logo: url('/assets/experience/pubdao.svg')" role="img" aria-label="PubDAO"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#decrypt">
@@ -447,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Decrypt</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/decrypt.svg" alt="Decrypt" />
+    <span class="exp-tile-logo" data-logo="decrypt" style="--logo: url('/assets/experience/decrypt.svg')" role="img" aria-label="Decrypt"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#holonym">
@@ -455,7 +456,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Holonym</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/holonym.svg" alt="Holonym" />
+    <span class="exp-tile-logo" data-logo="holonym" style="--logo: url('/assets/experience/holonym.svg')" role="img" aria-label="Holonym"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#dao-coalition">
@@ -463,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
       <p>Chairman</p>
     </div>
-    <img src="/assets/experience/dao-coalition.svg" alt="DAO Coalition" />
+    <span class="exp-tile-logo" data-logo="dao-coalition" style="--logo: url('/assets/experience/dao-coalition.svg')" role="img" aria-label="DAO Coalition"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#education-dao">
@@ -471,7 +472,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Education<br>DAO</p>
       <p>Counsel</p>
     </div>
-    <img src="/assets/experience/education-dao.svg" alt="Education DAO" />
+    <span class="exp-tile-logo" data-logo="education-dao" style="--logo: url('/assets/experience/education-dao.svg')" role="img" aria-label="Education DAO"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#consensys">
@@ -479,7 +480,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Consensys</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/consensys.svg" alt="Consensys" />
+    <span class="exp-tile-logo" data-logo="consensys" style="--logo: url('/assets/experience/consensys.svg')" role="img" aria-label="Consensys"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#tally">
@@ -487,7 +488,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Tally</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/tally.svg" alt="Tally" />
+    <span class="exp-tile-logo" data-logo="tally" style="--logo: url('/assets/experience/tally.svg')" role="img" aria-label="Tally"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#alexandria-labs">
@@ -495,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Alexandria</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/alexandria.svg" alt="Alexandria" />
+    <span class="exp-tile-logo" data-logo="alexandria" style="--logo: url('/assets/experience/alexandria.svg')" role="img" aria-label="Alexandria"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#opencivics-consortium">
@@ -503,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">OpenCivics</p>
       <p>Steward</p>
     </div>
-    <img src="/assets/experience/opencivics.svg" alt="OpenCivics" />
+    <span class="exp-tile-logo" data-logo="opencivics" style="--logo: url('/assets/experience/opencivics.svg')" role="img" aria-label="OpenCivics"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#metagov">
@@ -511,7 +512,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">MetaGov</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/metagov.svg" alt="MetaGov" />
+    <span class="exp-tile-logo" data-logo="metagov" style="--logo: url('/assets/experience/metagov.svg')" role="img" aria-label="MetaGov"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#octant">
@@ -519,7 +520,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Octant</p>
       <p>Committee</p>
     </div>
-    <img src="/assets/experience/octant.svg" alt="Octant" />
+    <span class="exp-tile-logo" data-logo="octant" style="--logo: url('/assets/experience/octant.svg')" role="img" aria-label="Octant"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#journodao">
@@ -527,7 +528,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <p style="padding-bottom: 0.5rem; font-weight: 300;">JournoDAO</p>
         <p>Co-founder</p>
       </div>
-      <img src="/assets/experience/journodao.svg" alt="JournoDAO" />
+      <span class="exp-tile-logo" data-logo="journodao" style="--logo: url('/assets/experience/journodao.svg')" role="img" aria-label="JournoDAO"></span>
     </a>
 
   <a class="exp-tile" href="/about/Experience#pubdao">
@@ -535,7 +536,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">PubDAO</p>
       <p>Core Team</p>
     </div>
-    <img src="/assets/experience/pubdao.svg" alt="PubDAO" />
+    <span class="exp-tile-logo" data-logo="pubdao" style="--logo: url('/assets/experience/pubdao.svg')" role="img" aria-label="PubDAO"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#decrypt">
@@ -543,7 +544,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Decrypt</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/decrypt.svg" alt="Decrypt" />
+    <span class="exp-tile-logo" data-logo="decrypt" style="--logo: url('/assets/experience/decrypt.svg')" role="img" aria-label="Decrypt"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#holonym">
@@ -551,7 +552,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Holonym</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/holonym.svg" alt="Holonym" />
+    <span class="exp-tile-logo" data-logo="holonym" style="--logo: url('/assets/experience/holonym.svg')" role="img" aria-label="Holonym"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#dao-coalition">
@@ -559,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
       <p>Chairman</p>
     </div>
-    <img src="/assets/experience/dao-coalition.svg" alt="DAO Coalition" />
+    <span class="exp-tile-logo" data-logo="dao-coalition" style="--logo: url('/assets/experience/dao-coalition.svg')" role="img" aria-label="DAO Coalition"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#education-dao">
@@ -567,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Education<br>DAO</p>
       <p>Counsel</p>
     </div>
-    <img src="/assets/experience/education-dao.svg" alt="Education DAO" />
+    <span class="exp-tile-logo" data-logo="education-dao" style="--logo: url('/assets/experience/education-dao.svg')" role="img" aria-label="Education DAO"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#consensys">
@@ -575,7 +576,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Consensys</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/consensys.svg" alt="Consensys" />
+    <span class="exp-tile-logo" data-logo="consensys" style="--logo: url('/assets/experience/consensys.svg')" role="img" aria-label="Consensys"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#tally">
@@ -583,7 +584,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Tally</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/tally.svg" alt="Tally" />
+    <span class="exp-tile-logo" data-logo="tally" style="--logo: url('/assets/experience/tally.svg')" role="img" aria-label="Tally"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#alexandria-labs">
@@ -591,7 +592,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Alexandria</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/alexandria.svg" alt="Alexandria" />
+    <span class="exp-tile-logo" data-logo="alexandria" style="--logo: url('/assets/experience/alexandria.svg')" role="img" aria-label="Alexandria"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#opencivics-consortium">
@@ -599,7 +600,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">OpenCivics</p>
       <p>Steward</p>
     </div>
-    <img src="/assets/experience/opencivics.svg" alt="OpenCivics" />
+    <span class="exp-tile-logo" data-logo="opencivics" style="--logo: url('/assets/experience/opencivics.svg')" role="img" aria-label="OpenCivics"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#metagov">
@@ -607,7 +608,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">MetaGov</p>
       <p>Contractor</p>
     </div>
-    <img src="/assets/experience/metagov.svg" alt="MetaGov" />
+    <span class="exp-tile-logo" data-logo="metagov" style="--logo: url('/assets/experience/metagov.svg')" role="img" aria-label="MetaGov"></span>
   </a>
 
   <a class="exp-tile" href="/about/Experience#octant">
@@ -615,7 +616,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Octant</p>
       <p>Committee</p>
     </div>
-    <img src="/assets/experience/octant.svg" alt="Octant" />
+    <span class="exp-tile-logo" data-logo="octant" style="--logo: url('/assets/experience/octant.svg')" role="img" aria-label="Octant"></span>
   </a>
 
   </div>

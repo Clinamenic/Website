@@ -21,6 +21,8 @@ twitterCard: summary_large_image
 twitterCreator: "@clinamenic"
 type: site-page
 uuid: bf82f849-e253-426f-8c18-a69446f10b32
+aliases:
+  - design
 ---
 
 ---
