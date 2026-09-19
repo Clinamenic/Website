@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import style from "../styles/collectionGrid.scss"
 import listPageStyle from "../styles/listPage.scss"
 import {
-  BOOKMARK_FALLBACK_BANNER,
+  bookmarkFallbackToneIndex,
   filterBookmarks,
   formatCollectionFilterDescription,
   parseBookmarkCollectionSpec,
@@ -39,9 +39,12 @@ function GridCard({
 }) {
   const description = resolveBookmarkDescription(record, descriptionSource)
   const showImage = cardStyle !== "text-only"
-  const fallbackSrc = BOOKMARK_FALLBACK_BANNER
   const hasRemoteImage = record.imageUri.length > 0
-  const imageSrc = hasRemoteImage ? record.imageUri : fallbackSrc
+  const tone = bookmarkFallbackToneIndex(record.source || record.filePath || record.title)
+  const onError =
+    "this.onerror=null;var p=this.parentElement;if(p){p.classList.add('is-fallback');p.setAttribute('data-tone','" +
+    String(tone) +
+    "');}this.remove();"
 
   return (
     <article class={`collection-card ${cardStyle}`}>
@@ -56,14 +59,13 @@ function GridCard({
           (hasRemoteImage ? (
             <div
               class="collection-card-image"
+              data-tone={String(tone)}
               dangerouslySetInnerHTML={{
-                __html: `<img src="${escapeHtmlAttr(imageSrc)}" alt="${escapeHtmlAttr(record.title)}" loading="lazy" onerror="this.onerror=null;this.parentElement.classList.add('is-fallback');this.alt='';this.src='${escapeHtmlAttr(fallbackSrc)}'" />`,
+                __html: `<img src="${escapeHtmlAttr(record.imageUri)}" alt="${escapeHtmlAttr(record.title)}" loading="lazy" onerror="${onError}" />`,
               }}
             />
           ) : (
-            <div class="collection-card-image is-fallback">
-              <img src={fallbackSrc} alt="" loading="lazy" />
-            </div>
+            <div class="collection-card-image is-fallback" data-tone={String(tone)} />
           ))}
         <div class="collection-card-body">
           <h3 class="collection-card-title">{record.title}</h3>

@@ -558,7 +558,7 @@
 .marquee-content {
   display: inline-block;
   gap: 1rem;
-  animation: marquee 30s linear infinite;
+  animation: marquee 39s linear infinite;
 }
 
 .marquee:hover .marquee-content {
@@ -591,10 +591,49 @@
   width: 100px;
   height: 100px;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  line-height: normal;
+
+  /* Quartz a.internal:has(> img) zeros border-radius; restore tile corners */
+  &.internal,
+  &.internal:has(> img) {
+    border-radius: 10px;
+    background-color: rgba(121, 197, 126, 0.6);
+    padding: 0;
+  }
+
+  &.external > .external-icon {
+    display: none;
+  }
   > img {
     margin: 5px;
     width: 90px;
     height: 90px;
+  }
+  /* Slightly smaller glyphs that visually overpower the tile */
+  > img[src*="journodao"],
+  > img[src*="pubdao"],
+  > img[src*="lobby3"],
+  > img[src*="education-dao"] {
+    width: 76.5px;
+    height: 76.5px;
+    margin: 11.75px;
+  }
+  > img[src*="opencivics"],
+  > img[src*="dao-coalition"] {
+    width: 81px;
+    height: 81px;
+    margin: 9.5px;
+  }
+  > img[src*="superbenefitdao"] {
+    width: 68.85px;
+    height: 68.85px;
+    margin: 15.575px;
   }
   > .exp-text {
     position: absolute;
@@ -622,6 +661,15 @@
 
 .exp-tile:hover .exp-text {
   opacity: 0.9;
+}
+
+/* White-glyph experience SVGs: recolor to theme text tokens */
+.marquee .exp-tile > img {
+  filter: brightness(0);
+}
+
+:root[saved-theme="dark"] .marquee .exp-tile > img {
+  filter: brightness(0) invert(1);
 }
 
 // Copy button styling
@@ -861,5 +909,37 @@ div[id^="service-"] {
 :root.dark .service-tile-error {
   background-color: rgba(255, 82, 82, 0.2);
   color: #ff8a8a;
+}
+
+/* Experience page: white-glyph SVGs recolored via theme tokens */
+.experience-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.experience-logo {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: var(--dark);
+  -webkit-mask-image: var(--logo);
+  mask-image: var(--logo);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.experience-logo--sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.experience-logo--accent {
+  background-color: var(--secondary);
 }
 

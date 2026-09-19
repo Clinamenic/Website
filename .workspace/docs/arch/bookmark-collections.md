@@ -27,7 +27,7 @@ Examples:
 Grid cards (`image-forward` / `compact`) always show an image area:
 
 - If the bookmark has `image-uri`, that URL is used first.
-- If `image-uri` is missing, or the remote image fails to load (`onerror`), the card uses the full glyph grid at `/assets/banners/fallback-bookmark.png` for every bookmark.
+- If `image-uri` is missing, or the remote image fails to load (`onerror`), the card uses a solid theme-green swatch. Tone is chosen stably from a hash of the bookmark `source` URL (`data-tone` 0–5 around `--secondary` / `--tertiary`).
 
 List layout and `text-only` cards are unchanged.
 
@@ -158,5 +158,7 @@ Published (no site nav links in Phase 4):
 
 - https://www.ssc.studio/collections/design
 - https://www.ssc.studio/collections/local-first
+- https://www.ssc.studio/collections/osint
+- https://www.ssc.studio/collections/map
 
 Deploy is user-initiated via `tekhnema-remote/.workspace/scripts/deploy-website.sh` (builds Quartz and rsyncs to Tekhnema `/srv/website`). Git push alone does not update production.

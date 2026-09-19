@@ -293,5 +293,19 @@ export function formatCollectionFilterDescription(
   return `Bookmarks filtered by ${clauses.join("; ")}`
 }
 
-/** Shared glyph-grid banner when a bookmark has no image or the remote image fails. */
-export const BOOKMARK_FALLBACK_BANNER = "/assets/banners/fallback-bookmark.png"
+/** Number of solid green fallback tones for bannerless collection cards. */
+export const BOOKMARK_FALLBACK_TONE_COUNT = 6
+
+/**
+ * Stable tone index for a bookmark fallback swatch (0 .. BOOKMARK_FALLBACK_TONE_COUNT - 1).
+ * Seeds from source URL so the color does not flicker across rebuilds.
+ */
+export function bookmarkFallbackToneIndex(seed: string): number {
+  const s = seed.trim() || "bookmark"
+  let hash = 2166136261
+  for (let i = 0; i < s.length; i++) {
+    hash ^= s.charCodeAt(i)
+    hash = Math.imul(hash, 16777619)
+  }
+  return (hash >>> 0) % BOOKMARK_FALLBACK_TONE_COUNT
+}

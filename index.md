@@ -181,10 +181,14 @@ uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
     box-sizing: border-box;
     background: var(--lightgray);
     border: 1px solid var(--gray);
-    > img {
-      opacity: 100%;
-      filter: invert(30%);
-    }
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  & a.exp-tile.internal,
+  & a.exp-tile.internal:has(> img) {
+    border-radius: 10px;
+    background: var(--lightgray);
+    padding: 0;
   }
 }
 
@@ -329,26 +333,6 @@ uuid: 6f1b19c8-a1ab-43ff-8408-317cc9a598f8
     }
   }
 
-.center > article.popover-hint > h1,
-.center > article.popover-hint > h2,
-.center > article.popover-hint > h3,
-.center > article.popover-hint > h4,
-.center > article.popover-hint > h5,
-.center > article.popover-hint > h6,
-.center > .popover-hint > article > h1,
-.center > .popover-hint > article > h2,
-.center > .popover-hint > article > h3,
-.center > .popover-hint > article > h4,
-.center > .popover-hint > article > h5,
-.center > .popover-hint > article > h6 {
-  font-family: MEK-Mono;
-  margin: 1rem 0rem;
-  animation: fade-in 4.5s ease-in; 
-  text-transform: uppercase;
-  opacity: 0.75;
-  font-size: 2.7rem;
-  letter-spacing: 1px
-}
 
 ul {
   animation: fade-in 4.5s ease-in; 
@@ -442,181 +426,229 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="marquee" style="margin: 1rem 0rem 0rem 0rem;">
   <div class="marquee-content">
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#journodao">
       <div class="exp-text">
         <p style="padding-bottom: 0.5rem; font-weight: 300;">JournoDAO</p>
         <p>Co-founder</p>
       </div>
-      <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmW14vYxLFSCTwfHBA3x1aNz5hxXxnXBv7rTozTnKnnJS4" alt="JournoDAO" />
-    </div>
+      <img src="/assets/experience/journodao.svg" alt="JournoDAO" />
+    </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#pubdao">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">PubDAO</p>
       <p>Core Team</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmUqoP49eDSyriR6oettsdfig27hXufCa6pPyuR7PYg7Jm" alt="PubDAO" />
-  </div>
+    <img src="/assets/experience/pubdao.svg" alt="PubDAO" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#decrypt">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Decrypt</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmUkoLVZZruos3gqh88nnUF1811S6haR3CXsSNw58hbtLd" alt="Decrypt" />
-  </div>
+    <img src="/assets/experience/decrypt.svg" alt="Decrypt" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#holonym">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Holonym</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmVY6gdSXhBL5QdfapSKciSKG7oVbppQDhSaaEABC9nKNW" alt="Holonym" />
-  </div>
+    <img src="/assets/experience/holonym.svg" alt="Holonym" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#lobby3-una">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Lobby3 UNA</p>
       <p>Director</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmeCKyJFTMKVErB1u31NoEokYHUWsFiMeYk6nuariWSdEW" alt="Lobby3 UNA" />
-  </div>
+    <img src="/assets/experience/lobby3.svg" alt="Lobby3 UNA" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#dao-coalition">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
       <p>Chairman</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmaP6CSzJp6wJbECW4gLGfrDhjpu48oMEhm7tyg8oZaMFg" alt="DAO Coalition" />
-  </div>
+    <img src="/assets/experience/dao-coalition.svg" alt="DAO Coalition" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#education-dao">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Education<br>DAO</p>
       <p>Counsel</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmbxodFHbEpZaYo5AdjUR5Wu77vVJ5H53ZDHRLPawJRiRT" alt="Education DAO" />
-  </div>
+    <img src="/assets/experience/education-dao.svg" alt="Education DAO" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#consensys">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Consensys</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmZCijUn73vZnCU6PyMGmTe9kMXzDZHgQzXVmZCwidaZmH" alt="Consensys" />
-  </div>
+    <img src="/assets/experience/consensys.svg" alt="Consensys" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#tally">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Tally</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmRcnc8rhYXYw9uKREKGUuTcevNnDbiwBusGni41HHMPbm" alt="Tally" />
-  </div>
+    <img src="/assets/experience/tally.svg" alt="Tally" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#alexandria-labs">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Alexandria</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmQLR5YTZj9XB4DrNbU9JXGi989cC8aDxwxXV66Yj5ph2z" alt="Alexandria" />
-  </div>
+    <img src="/assets/experience/alexandria.svg" alt="Alexandria" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#opencivics-consortium">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">OpenCivics</p>
       <p>Steward</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmXPC32sP9t7U3aFwk4Qpi16oMycekazrP9rGfYVoYGJrX" alt="OpenCivics" />
-  </div>
+    <img src="/assets/experience/opencivics.svg" alt="OpenCivics" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#metagov">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">MetaGov</p>
+      <p>Contractor</p>
+    </div>
+    <img src="/assets/experience/metagov.svg" alt="MetaGov" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#octant">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">Octant</p>
+      <p>Committee</p>
+    </div>
+    <img src="/assets/experience/octant.svg" alt="Octant" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#superbenefitdao">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">SuperBenefit</p>
+      <p>Contractor</p>
+    </div>
+    <img src="/assets/experience/superbenefitdao.svg" alt="SuperBenefitDAO" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#journodao">
       <div class="exp-text">
         <p style="padding-bottom: 0.5rem; font-weight: 300;">JournoDAO</p>
         <p>Co-founder</p>
       </div>
-      <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmW14vYxLFSCTwfHBA3x1aNz5hxXxnXBv7rTozTnKnnJS4" alt="JournoDAO" />
-  </div>
+      <img src="/assets/experience/journodao.svg" alt="JournoDAO" />
+    </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#pubdao">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">PubDAO</p>
       <p>Core Team</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmUqoP49eDSyriR6oettsdfig27hXufCa6pPyuR7PYg7Jm" alt="PubDAO" />
-  </div>
+    <img src="/assets/experience/pubdao.svg" alt="PubDAO" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#decrypt">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Decrypt</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmUkoLVZZruos3gqh88nnUF1811S6haR3CXsSNw58hbtLd" alt="Decrypt" />
-  </div>
+    <img src="/assets/experience/decrypt.svg" alt="Decrypt" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#holonym">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Holonym</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmVY6gdSXhBL5QdfapSKciSKG7oVbppQDhSaaEABC9nKNW" alt="Holonym" />
-  </div>
+    <img src="/assets/experience/holonym.svg" alt="Holonym" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#lobby3-una">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Lobby3 UNA</p>
       <p>Director</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmeCKyJFTMKVErB1u31NoEokYHUWsFiMeYk6nuariWSdEW" alt="Lobby3 UNA" />
-  </div>
+    <img src="/assets/experience/lobby3.svg" alt="Lobby3 UNA" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#dao-coalition">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">DAO<br>Coalition</p>
       <p>Chairman</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmaP6CSzJp6wJbECW4gLGfrDhjpu48oMEhm7tyg8oZaMFg" alt="DAO Coalition" />
-  </div>
+    <img src="/assets/experience/dao-coalition.svg" alt="DAO Coalition" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#education-dao">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Education<br>DAO</p>
       <p>Counsel</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmbxodFHbEpZaYo5AdjUR5Wu77vVJ5H53ZDHRLPawJRiRT" alt="Education DAO" />
-  </div>
+    <img src="/assets/experience/education-dao.svg" alt="Education DAO" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#consensys">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Consensys</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmZCijUn73vZnCU6PyMGmTe9kMXzDZHgQzXVmZCwidaZmH" alt="Consensys" />
-  </div>
+    <img src="/assets/experience/consensys.svg" alt="Consensys" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#tally">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Tally</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmRcnc8rhYXYw9uKREKGUuTcevNnDbiwBusGni41HHMPbm" alt="Tally" />
-  </div>
+    <img src="/assets/experience/tally.svg" alt="Tally" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#alexandria-labs">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">Alexandria</p>
       <p>Contractor</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmQLR5YTZj9XB4DrNbU9JXGi989cC8aDxwxXV66Yj5ph2z" alt="Alexandria" />
-  </div>
+    <img src="/assets/experience/alexandria.svg" alt="Alexandria" />
+  </a>
 
-  <div class="exp-tile">
+  <a class="exp-tile" href="/about/Experience#opencivics-consortium">
     <div class="exp-text">
       <p style="padding-bottom: 0.5rem; font-weight: 300;">OpenCivics</p>
       <p>Steward</p>
     </div>
-    <img src="https://indigo-cautious-chinchilla-877.mypinata.cloud/ipfs/QmXPC32sP9t7U3aFwk4Qpi16oMycekazrP9rGfYVoYGJrX" alt="OpenCivics" />
-  </div>
+    <img src="/assets/experience/opencivics.svg" alt="OpenCivics" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#metagov">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">MetaGov</p>
+      <p>Contractor</p>
+    </div>
+    <img src="/assets/experience/metagov.svg" alt="MetaGov" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#octant">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">Octant</p>
+      <p>Committee</p>
+    </div>
+    <img src="/assets/experience/octant.svg" alt="Octant" />
+  </a>
+
+  <a class="exp-tile" href="/about/Experience#superbenefitdao">
+    <div class="exp-text">
+      <p style="padding-bottom: 0.5rem; font-weight: 300;">SuperBenefit</p>
+      <p>Contractor</p>
+    </div>
+    <img src="/assets/experience/superbenefitdao.svg" alt="SuperBenefitDAO" />
+  </a>
 
   </div>
 </div>
