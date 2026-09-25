@@ -31,7 +31,7 @@ aliases:
 
 Below are some samples of my graphic design work, showcasing a speciality for geometric and technoclassical aesthetics. I have long been a user and supporter of [GIMP](https://www.gimp.org/), which remains my preferred graphic design software.
 
-See [[Museotheque]] for some examples of artists who have influenced me.
+See [[Influences]] for some examples of artists who have influenced me.
 
 <div class="gallery cols-3">
   <div class="gallery-column">

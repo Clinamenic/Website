@@ -1,5 +1,5 @@
 ---
-title: Museotheque
+title: Influences
 publish: true
 bannerURI: https://arweave.net/MALjimE4g6_dO_DOWwbA_LOPOCNQkjI2v2aL3oYuG3w
 headDescription: Some examples of aesthetic works which have inspired me.
@@ -210,6 +210,22 @@ Listed below in chronological order are various artists and designers who have i
 
 ---
 
+## Brent Wong
+
+<p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;"></p>
+
+<div class="gallery">
+  <div class="gallery-column">
+    <img src="/assets/influences/brent-wong-colonial-summer-1968.png" class="gallery-img" alt="Colonial Summer (1968)"/>
+    <img src="/assets/influences/brent-wong-field-peninsula-clouds.png" class="gallery-img" alt=""/>
+  </div>
+  <div class="gallery-column">
+    <img src="/assets/influences/brent-wong-matrix-1971.png" class="gallery-img" alt=""/>
+  </div>
+</div>
+
+---
+
 ## Patrick Gunkel
 
 <p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;">1947 - 2017</p>
@@ -224,6 +240,18 @@ Listed below in chronological order are various artists and designers who have i
     <img src="https://ideonomy.mit.edu/scanned-charts/pic040.jpg" class="gallery-img" alt="A Chart of the Morphodynamic Trajectory Manifold of the Triode"/>
   </div>
 </div>
+
+---
+
+## David Goodsell
+
+<p style="text-align: center; font-size: 0.9rem; color: var(--dark); font-style: italic; margin-top: -1.5rem;"></p>
+
+<img src="/assets/influences/david-goodsell-abiogenesis-2018.png" class="gallery-img" alt="Abiogenesis (2018)"/>
+
+<img src="/assets/influences/david-goodsell-cytoskeleton-2021.png" class="gallery-img" alt="Cytoskeleton (2021)"/>
+
+<img src="/assets/influences/david-goodsell-reca-and-dna-2021.png" class="gallery-img" alt="RecA and DNA (2021)"/>
 
 ---
 
